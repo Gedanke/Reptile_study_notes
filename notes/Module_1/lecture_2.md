@@ -48,10 +48,10 @@ JavaScript(通常缩写为JS)是一种高级的，解释型的编程语言。Jav
 总的来说，HTML定义了网页的内容和结构，CSS描述了网页的布局，JavaScript定义了网页的行为。
 
 ## 网页结构
+
 来看一个含[HTML](../../codes/Module_1/index.html)和[CSS](../../codes/Module_1/style.css)的例子
 
-index.html:
-
+[index.html](../../codes/Module_1/index.html) :
 ```html
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -67,9 +67,7 @@ index.html:
   </body>
 </html>
 ```
-
-style.css:
-
+[style.css](../../codes/Module_1/style.css) :
 ```css
 body{
   margin: 0;
@@ -181,11 +179,11 @@ XPath选择器内容将在之后介绍。
 
 推荐几个学习web的网站：
 
-https://www.runoob.com/
+[https://www.runoob.com/](https://www.runoob.com/)
 
-https://www.w3school.com.cn/
+[https://www.w3school.com.cn/](https://www.w3school.com.cn/)
 
-https://developer.mozilla.org/zh-CN/
+[https://developer.mozilla.org/zh-CN/](https://developer.mozilla.org/zh-CN/)
 
 
 

@@ -12,6 +12,7 @@ class MyThread(threading.Thread):
 
     def run(self):
         global count
+        # count 加一
         temp = count + 1
         time.sleep(0.001)
         count = temp
