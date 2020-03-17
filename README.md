@@ -7,7 +7,7 @@
 
 按模块不定期更新中。
 
-* [目录](content.md):
+* [目录](README.md):
 
     * 模块一 [爬虫基础原理](notes/Module_1/)
         * [HTTP基本原理](notes/Module_1/lecture_1.md)
@@ -16,12 +16,12 @@
         * [Session与Cookies](notes/Module_1/lecture_4.md)
         * [多线程](notes/Module_1/lecture_5.md)
         * [多进程](notes/Module_1/lecture_6.md)
-    * 模块二 [爬虫基本库使用](notes/) 
-        * [Requests库使用](notes/)
-        * [正则表达式](notes/)
-        * [PyQuery使用](notes/)
-        * [MongoDB用法](notes/)
-        * [Requests+PyQuery+PyMongo实战](notes/)
+    * 模块二 [爬虫基本库使用](notes/Module_2/) 
+        * [Requests库使用](notes/Module_2/lecture_7.md)
+        * [正则表达式](notes/Module_2/lecture_8.md)
+        * [PyQuery使用](notes/Module_2/lecture_9.md)
+        * [MongoDB用法](notes/Module_2/lecture_10.md)
+        * [Requests+PyQuery+PyMongo实战](notes/Module_2/lecture_11.md)
     * 模块三 [多种爬取方法]()
 
     * 模块四 [反爬虫应对方法]()
