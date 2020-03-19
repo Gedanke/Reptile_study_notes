@@ -34,7 +34,7 @@
 
 Thread类传入运行方法名称，args列表指定待传参数。
 
-[程序](../../codes/Module_1/lecture_5_1.py)如下：
+[程序](../../codes/Module_1/lecture_5/lecture_5_1.py)如下：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -116,7 +116,7 @@ Thread MainThread is ended
 
 继承Thread类，重写run方法。
 
-[程序](../../codes/Module_1/lecture_5_2.py)如下：
+[程序](../../codes/Module_1/lecture_5/lecture_5_2.py)如下：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -166,7 +166,7 @@ Thread MainThread is ended
 ## 守护线程
 
 如果一个线程是守护线程，当主线程结束后，它将强行被终止，可以使用setDaemon方法。
-[程序](../../codes/Module_1/lecture_5_3.py)如下：
+[程序](../../codes/Module_1/lecture_5/lecture_5_3.py)如下：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -211,7 +211,7 @@ Thread-2还没执行完就随主线程的退出而退出了。
 
 一个进程的多个线程是共享进程内的资源，在多线程中，如果不对线程访问资源继续约束，得到的结果往往事与愿违，先看一个例子。
 
-[程序](../../codes/Module_1/lecture_5_4.py)如下：
+[程序](../../codes/Module_1/lecture_5/lecture_5_4.py)如下：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -255,7 +255,7 @@ count : 103
 
 这样就保证了一个时刻仅有一个线程访问该数据，保证了并发结果的正确性。
 
-对源程序稍作修改，[如下](../../codes/Module_1/lecture_5_5.py)：
+对源程序稍作修改，[如下](../../codes/Module_1/lecture_5/lecture_5_5.py)：
 ```python
 # -*- coding: utf-8 -*-
 

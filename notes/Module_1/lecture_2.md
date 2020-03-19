@@ -10,7 +10,7 @@
 
 ## HTML
 
-超文本标记语言(HyperText Markup Language，简称：HTML)是一种用于创建网页的标准标记语言。HTML是一种基础技术，常与CSS、JavaScript一起被众多网站用于设计网页，网页应用程序以及移动应用程序的用户界面。网页浏览器可以解析HTML文件，并将其渲染成可视化网页。
+超文本标记语言(HyperText Markup Language，简称：HTML)是一种用于创建网页的标准标记语言。HTML是一种基础技术，常与CSS，JavaScript一起被众多网站用于设计网页，网页应用程序以及移动应用程序的用户界面。网页浏览器可以解析HTML文件，并将其渲染成可视化网页。
 
 HTML允许嵌入图像与对象，并且可以用于创建交互式表单，它被用来结构化信息——例如标题，段落和列表等等，也可用来在一定程度上描述文档的外观和语义。
 HTML的语言形式为尖括号包围的HTML元素(如\<html\>)，浏览器使用HTML标签和脚本来诠释网页内容，但不会将它们显示在页面上。
@@ -19,7 +19,7 @@ HTML的语言形式为尖括号包围的HTML元素(如\<html\>)，浏览器使�
 
 例如https://www.runoob.com/html/html5-intro.html介绍了HTML5的相关内容。
 
-我们可以通过右键查看网页的HTML源代码。
+在Chrome浏览器中，我们可以通过右键查看网页的HTML源代码。
 
 ![](../../images/Module_1/lecture_2_1.jpg)
 
@@ -49,10 +49,10 @@ JavaScript(通常缩写为JS)是一种高级的，解释型的编程语言。Jav
 
 ## 网页结构
 
-来看一个含[HTML](../../codes/Module_1/index.html)和[CSS](../../codes/Module_1/style.css)的例子
+来看一个含[HTML](../../codes/Module_1/lecture_2/index.html)和[CSS](../../codes/Module_1/lecture_2/style.css)的例子
 
-[index.html](../../codes/Module_1/index.html) :
-```html
+[index.html](../../codes/Module_1/lecture_2/index.html) :
+```html5
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -67,7 +67,7 @@ JavaScript(通常缩写为JS)是一种高级的，解释型的编程语言。Jav
   </body>
 </html>
 ```
-[style.css](../../codes/Module_1/style.css) :
+[style.css](../../codes/Module_1/lecture_2/style.css) :
 ```css
 body{
   margin: 0;

@@ -1,6 +1,6 @@
 # 多进程
 
-上节提到，单一进程同一时刻内就有一个线程运行，无法发挥多核优势，如果想发挥多核优势，就得使用多进程。
+上节提到，单一进程同一时刻内只有一个线程运行，无法发挥多核优势，如果想发挥多核优势，就得使用多进程。
 
 <br>
 
@@ -29,7 +29,7 @@ name: 进程别名
 group: 分组
 ```
 
-先看个[例子](../../codes/Module_1/lecture_6_1.py)：
+先看个[例子](../../codes/Module_1/lecture_6/lecture_6_1.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -57,7 +57,7 @@ process : 1
 ```
 multiprocessing的其他方法，如cpu_count的方法来获取当前机器CPU的核心数量，通过active_children方法获取当前还在运行的所有进程。
 
-来看个[例子](../../codes/Module_1/lecture_6_2.py)：
+来看个[例子](../../codes/Module_1/lecture_6/lecture_6_2.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -101,7 +101,7 @@ process : 4
 
 和线程类似，我们可以继承Process类，重写run方法来实现我们的操作。
 
-来看一个[示例](../../codes/Module_1/lecture_6_3.py)：
+来看一个[示例](../../codes/Module_1/lecture_6/lecture_6_3.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -142,7 +142,8 @@ Pid: 21292 LoopCount: 3
 ### 守护进程
 
 和多线程类似，多进程中同样存在守护进程的概念，属性是daemon。
-在上个例子的基础上，稍微修改，[如下](../../codes/Module_1/lecture_6_4.py)：
+
+在上个例子的基础上，稍微修改，[如下](../../codes/Module_1/lecture_6/lecture_6_4.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -181,7 +182,7 @@ Main Process ended
 
 上面的例子当然有它的好处，但是子进程还没来得及运行就结束了，也不太合适，引入join方法，主进程可以等待所有子进程结束再结束。
 
-[例子](../../codes/Module_1/lecture_6_5.py)如下：
+[示例](../../codes/Module_1/lecture_6/lecture_6_5.py)如下：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -229,7 +230,7 @@ Main Process ended
 
 但是呢，join会等到所有子进程结束后，主进程结束，否则将一直等待，如果子进程陷入死循环，主进程会一直等待，这时，join方法可以传入一个超时参数，即最长等待时间，超过该时间，子进程将强制终止，主进程不会等待子进程。
 
-我们传入2，表示最长等待2秒，[程序](../../codes/Module_1/lecture_6_6.py)如下：
+我们传入2，表示最长等待2秒，[程序](../../codes/Module_1/lecture_6/lecture_6_6.py)如下：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -272,7 +273,7 @@ Main Process ended
 
 我们也可以通过terminate方法来终止某个子进程，也可以通过is_alive方法判断进程是否还在运行。
 
-来看一个[例子](../../codes/Module_1/lecture_6_7.py)：
+来看一个[例子](../../codes/Module_1/lecture_6/lecture_6_7.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -320,7 +321,7 @@ Joined:  <Process(Process-1, stopped[SIGTERM])> False
 
 这种解决方案实际上就是实现了进程互斥，避免了多个进程同时抢占临界区(输出)资源。我们可以通过multiprocessing中的Lock来实现。Lock，即锁，在一个进程输出时，加锁，其他进程等待。等此进程执行结束后，释放锁，其他进程可以进行输出。
 
-先看一个不加锁的[例子](../../codes/Module_1/lecture_6_8.py)：
+先看一个不加锁的[例子](../../codes/Module_1/lecture_6/lecture_6_8.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -384,7 +385,7 @@ Pid: 7368 LoopCount: 2
 
 信号量是操作系统中的重要概念，在Python中，我们可以用multiprocessing库中的Semaphore来实现信号量机制。
 
-来看一个[例子](../../codes/Module_1/lecture_6_9.py)：
+来看一个[例子](../../codes/Module_1/lecture_6/lecture_6_9.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -448,7 +449,7 @@ Producer append an element
 
 多进程间进行数据共享使用的是特定的数据结构Queue队列，这里的队列是multiprocessing中的Queue。
 
-来看一个[例子](../../codes/Module_1/lecture_6_10.py)：
+来看一个[例子](../../codes/Module_1/lecture_6/lecture_6_10.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -517,7 +518,7 @@ Producer put 0.18752387120600655
 
 默认声明Pipe对象是双向管道，如果要创建单向管道，可以在初始化的时候传入deplex参数为False。
 
-来看一个[例子](../../codes/Module_1/lecture_6_11.py)：
+来看一个[例子](../../codes/Module_1/lecture_6/lecture_6_11.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -570,7 +571,7 @@ Main Process Ended
 
 此时multiprocessing中的Pool进程池就派上用场了，Pool可以提供指定数量的进程，供用户调用，当有新的请求提交到pool中时，如果池还没有满，就会创建一个新的进程用来执行该请求；但如果池中的进程数已经达到规定最大值，那么该请求就会等待，直到池中有进程结束，才会创建新的进程来执行它。
 
-来看一个[例子](../../codes/Module_1/lecture_6_12.py):
+来看一个[例子](../../codes/Module_1/lecture_6/lecture_6_12.py):
 ```python
 # -*- coding: utf-8 -*-
 
@@ -614,7 +615,7 @@ Main Process ended
 
 这里我们介绍map方法，map方法第一个参数就是要启动的进程对应的执行方法，第二个参数是一个可迭代对象，其中的每个元素会被传递给这个执行方法。
 
-来看一个[例子](../../codes/Module_1/lecture_6_13.py)：
+来看一个[例子](../../codes/Module_1/lecture_6/lecture_6_13.py)：
 ```python
 # -*- coding: utf-8 -*-
 
@@ -658,4 +659,3 @@ URL http://xxxyxxx.net not Scraped
 <br>
 
 至此，爬虫基本原理介绍完毕，下一个模块将介绍爬虫基本库的使用。
-

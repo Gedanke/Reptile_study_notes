@@ -8,7 +8,7 @@
 
 URL全称为"Universal Resource Locator"，即统一资源定位符。
 
-URN全称为 Universal Resource Name，即统一资源名称。
+URN全称为"Universal Resource Name"，即统一资源名称。
 
 URI全称为"Uniform Resource Identifier"，即统一资源标志符。
 
@@ -192,5 +192,3 @@ HTTP的请求与其描述如下表所示：
 在浏览器右键，就可以看到网页的源代码，也就是响应体的内容，它是解析的目标。
 
 在做爬虫时，我们主要通过响应体得到网页的源代码，JSON数据等，然后从中做相应内容的提取。
-
-
