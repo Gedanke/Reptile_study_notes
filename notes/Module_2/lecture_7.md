@@ -832,11 +832,10 @@ requests_oauthlib更多内容可参考其[官方文档](https://requests-oauthli
 
 import requests
 
-url = "http://httpbin.org/get"
+url = "https://httpbin.org/get"
 proxies = {
-    "http": "http://10.10.10.10.1080",
-    "https": "http://10.10.10.10.1080"
-
+    "http": "http://10.10.10.10:1080",
+    "https": "http://10.10.10.10:1080",
 }
 r = requests.get(url=url, proxies=proxies)
 print(r)
@@ -845,5 +844,93 @@ print(r)
 
 我们可以直接搜索寻找有效的代理并替换试验一下。
 
-若代理需要使用上文所述的身份认证，可以使用类似http://user:password@host:port 这样的语法来设置代理，示例如下：
+若代理需要使用上文所述的身份认证，可以使用类似http://user:password@host:port这样的语法来设置代理，示例如下：
 
+[示例](../../codes/Module_2/lecture_7_26.py)如下：
+```python
+# -*- coding: utf-8 -*-
+
+import requests
+
+proxies = {
+    "https": "http://user:password@10.10.10.10:1080/",
+}
+url = "https://httpbin.org/get"
+requests.get(url, proxies=proxies)
+```
+
+除了基本的HTTP代理外，requests还支持SOCKS协议的代理。
+首先，需要安装socks这个库：
+```shell script
+pip3 install "requests[socks]"
+```
+然后就可以使用SOCKS协议代理了。
+
+[示例](../../codes/Module_2/lecture_7_26.py)如下：
+```python
+# -*- coding: utf-8 -*-
+
+import requests
+
+proxies = {
+    "http": "socks5://user:password@host:port",
+    "https": "socks5://user:password@host:port",
+}
+url = "https://httpbin.org/get"
+requests.get(url, proxies=proxies)
+```
+
+### Prepared Request
+
+requests在发送请求时会构造一个Request对象，并给该对象赋予各种参数，包括url，headers，data等等。
+
+下面我们尝试构造一个Prepared Request对象。
+
+[示例](../../codes/Module_2/lecture_7_28.py)如下：
+```python
+# -*- coding: utf-8 -*-
+
+from requests import Request, Session
+
+url = "http://httpbin.org/post"
+data = {
+    "name": "germey"
+}
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+                  "AppleWebKit/537.36 (KHTML, like Gecko) "
+                  "Chrome/80.0.3987.132 Safari/537.36"
+}
+s = Session()
+req = Request("POST", url=url, data=data, headers=headers)
+prepped = s.prepare_request(req)
+r = s.send(prepped)
+
+print(r.text)
+```
+结果为：
+```json5
+{
+  "args": {}, 
+  "data": "", 
+  "files": {}, 
+  "form": {
+    "name": "germey"
+  }, 
+  "headers": {
+    "Accept": "*/*", 
+    "Accept-Encoding": "gzip, deflate", 
+    "Content-Length": "11", 
+    "Content-Type": "application/x-www-form-urlencoded", 
+    "Host": "httpbin.org", 
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36", 
+    "X-Amzn-Trace-Id": "Root=1-5e732921-8aa94b987b7b42903544f248"
+  }, 
+  "json": null, 
+  "origin": "117.178.92.249", 
+  "url": "http://httpbin.org/post"
+}
+```
+可以看出，我们得到了POST相同的请求效果，这样的方式显然更加灵活。
+
+更多Request内容可参考官方文档：[http://docs.python-requests.org/](http://docs.python-requests.org/)。
