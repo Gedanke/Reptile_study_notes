@@ -59,8 +59,6 @@ Hello, my phone number is 010-86432100 and email is cqc@cuiqingcai.com, and my w
 |$a\mid b$|匹配a或b|
 |()|匹配括号内的表达式，也表示一个组|
 
-接下来我们将详细介绍一些常用的规则用法。
-
 Python中re库提供了正则表达式的实现，下面就来了解它的一些常用方法。
 
 ## match
@@ -78,7 +76,8 @@ import re
 content = "Hello 123 4567 World_This is a Regex Demo"
 print(len(content))
 pattern_str = "^Hello\s\d\d\d\s\d{4}\s\w{10}"
-result = re.match(pattern_str, content)
+pattern = re.compile(pattern_str)
+result = re.match(pattern, content)
 print(result)
 print(result.group())
 print(result.span())
@@ -105,7 +104,7 @@ Hello 123 4567 World_This
 ```
 在match方法中，第一个参数传入正则表达式，第二个参数传入要匹配的字符串。
 
-在匹配结果result中有两个方法：group方法输出匹配的内容，结果是Hello1234567World_This，这恰好是正则表达式规则所匹配的内容。span方法输出匹配的范围，结果是(0, 25)，这就是匹配到的结果字符串在原字符串中的位置范围。
+在匹配结果result中有两个方法：group方法输出匹配的内容，结果是Hello 123 4567 World_This，这恰好是正则表达式规则所匹配的内容。span方法输出匹配的范围，结果是(0, 25)，这就是匹配到的结果字符串在原字符串中的位置范围。
 
 现在，我们基本知道了如何使用正则表达式匹配一段文本了。
 
@@ -121,7 +120,8 @@ import re
 
 content = "Hello 1234567 World_This is a Regex Demo"
 pattern_str = "^Hello\s(\d+)\sWorld"
-result = re.match(pattern_str, content)
+pattern = re.compile(pattern_str)
+result = re.match(pattern, content)
 print(result)
 print(result.group())
 print(result.group(0))
@@ -152,7 +152,8 @@ import re
 
 content = "Hello 1234567 World_This is a Regex Demo"
 pattern_str = "^Hello.*Demo$"
-result = re.match(pattern_str, content)
+pattern = re.compile(pattern_str)
+result = re.match(pattern, content)
 print(result)
 print(result.group())
 print(result.span())
@@ -179,7 +180,8 @@ import re
 
 content = "Hello 1234567 World_This is a Regex Demo"
 pattern_str = "^He.*(\d+).*Demo$"
-result = re.match(pattern_str, content)
+pattern = re.compile(pattern_str)
+result = re.match(pattern, content)
 print(result)
 print(result.group(1))
 ```
@@ -202,7 +204,8 @@ import re
 
 content = "Hello 1234567 World_This is a Regex Demo"
 pattern_str = "^He.*?(\d+).*Demo$"
-result = re.match(pattern_str, content)
+pattern = re.compile(pattern_str)
+result = re.match(pattern, content)
 print(result)
 print(result.group(1))
 ```
@@ -574,7 +577,6 @@ for result in results:
         </li>
     </ul>
 </div>
-
 一路上有你
 沧海一声笑
 往事随风
@@ -608,6 +610,6 @@ print(result1, result2, result3)
 ```textmate
 2020-3-19  2020-3-19  2020-3-19 
 ```
+这个方法我们之前也是用到了，实际上直接传入一个正则表达式字符串也是可以的。
 
 另外，compile还可以传入修饰符，例如re.S等修饰符，这样在search，findall等方法中就不需要额外传了。
-

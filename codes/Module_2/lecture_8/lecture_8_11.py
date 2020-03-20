@@ -32,5 +32,3 @@ print(type(results))
 for result in results:
     print(result)
     print(result[0], result[1], result[2])
-
-

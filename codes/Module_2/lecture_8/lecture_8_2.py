@@ -4,7 +4,8 @@ import re
 
 content = "Hello 1234567 World_This is a Regex Demo"
 pattern_str = "^Hello\s(\d+)\sWorld"
-result = re.match(pattern_str, content)
+pattern = re.compile(pattern_str)
+result = re.match(pattern, content)
 print(result)
 print(result.group())
 print(result.group(0))

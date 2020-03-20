@@ -1,15 +1,16 @@
 # Requests库使用
 
-爬虫，可以说是模拟浏览器向服务器发出请求，从服务器处得到响应并解析处理的过程。我们也知道这其中发生很复杂的过程，通信协议，服务器响应和应答等等。
+爬虫，可以说是用程序模拟浏览器向服务器发出请求，从服务器处得到响应并解析处理的过程。这其中发生很复杂的过程，通信协议，服务器响应和应答等等。
 
-Python的强大之处就是有很多封装好了的“轮子”可以直接使用，比如这节要讲的Requests库，有了它，我们可以很简单地完成一个请求和应答过程，而不需要关系太多的底层细节。
-
+如果这些过程需要我们手动完成，工作量太大了。Python的强大之处就是有很多封装好了的“轮子”可以直接使用，
+比如这节要讲的Requests库，有了它，我们可以很简单地完成一个请求和应答过程，而不需要关心太多的底层细节。
 
 <br>
 
 ## 安装
 
 如果你已经安装了Python3，使用pip3就可以安装了。
+
 在命令行里输入：
 ```text
 pip3 install requests
@@ -20,7 +21,7 @@ pip3 install requests
 
 ## 实例
 
-当我们在浏览器中输入一个URL回车，浏览器就发出来了一个GET请求，浏览器得到响应，解析源代码得到网页内容。
+当我们在浏览器中输入一个URL并回车，浏览器就发出来了一个GET请求，浏览器得到响应，解析源代码得到网页内容。
 
 如果我们想模拟这个过程的话，使用requests库的get方法，传入URL，就可以得到网页源代码了。
 
@@ -99,7 +100,7 @@ print(r.text)
 
 [http://httpbin.org/get?name=germey&age=25](http://httpbin.org/get?name=germey&age=25)
 
-那构造这个请求连接，可以写成这样：
+构造这个请求连接，可以写成这样：
 ```text
 r = requests.get("http://httpbin.org/get?name=germey&age=25")
 ```
@@ -192,7 +193,7 @@ print(title)
 
 ## 抓取二进制数据
 
-之前例子抓取的是网页页面，返回了一个HTML文档，对于图片，视频，音频等等，它们都是由二进制根据特定的编码格式组成的，由特征的解析格式就可以得到它们。
+之前例子抓取的是网页页面，返回了一个HTML文档，对于图片，视频，音频等等，它们都是由二进制根据特定的编码格式组成的，由特定的解析格式就可以得到它们。
 
 来看一个[示例](../../codes/Module_2/lecture_7/lecture_7_6.py)：
 ```python
@@ -213,7 +214,7 @@ b'\x00\x00\x01\x00\x02\x00\x10\x10\x00\x00\x01\x00 \x00(\x05\x00\x00&\x00\x00\x0
 ```
 这样打印了r的两个属性，text和content。
 
-前两行是r.text，出现了乱码，以为图片是二进制数据，转换为str类型时自然会乱码，最后一行是r.content，这是bytes类型数据。
+前两行是r.text，出现了乱码，因为图片是二进制数据，转换为str类型时自然会乱码，最后一行是r.content，这是bytes类型数据。
 
 这样URL实际上是github的图标：
 
@@ -229,14 +230,12 @@ import requests
 
 url = "https://github.com/favicon.ico"
 r = requests.get(url)
-# 存放图片的路径
-file_path = "../../images/Module_2/favicon.ico"
-with open(file_path, "wb") as f:
+with open("favicon.ico", "wb") as f:
     f.write(r.content)
 ```
-这里我们将数据以二进制形式写入了指定文件夹中。
+这里我们将数据以二进制形式写入了当前路径下。
 
-可以看到在指定文件夹下出现了favicon.ico的图标：
+运行后，可以在当前路线下看到favicon.ico的图标：
 
 ![](../../images/Module_2/lecture_7_4.jpg)
 
@@ -244,7 +243,7 @@ with open(file_path, "wb") as f:
 
 ## 添加headers
 
-在一个HTTP请求中，请求头是一个重要的组成部分，如果不设置请求头，网站发现它不是一个正常浏览器发起的，很可能会得不到预期结果，如果想添加Headers信息
+在一个HTTP请求中，请求头是一个重要的组成部分，如果不设置请求头，网站发现它不是一个正常浏览器发起的，很可能会得不到预期结果。
 
 如果我们想添加一个User-Agent字段，我们可以从浏览器中得到：
 
@@ -482,7 +481,7 @@ Request Successfully
 
 import requests
 
-file_path = "../../images/Module_2/favicon.ico"
+file_path = "favicon.ico"
 files = {
     "file": open(file_path, "rb")
 }
@@ -718,7 +717,7 @@ C:\Users\hasee\AppData\Roaming\Python\Python37\site-packages\urllib3\connectionp
 # -*- coding: utf-8 -*-
 
 import requests
-from requests.packages import urllib3
+import urllib3
 
 urllib3.disable_warnings()
 url = "https://static2.scrape.cuiqingcai.com/"
@@ -857,6 +856,7 @@ requests.get(url, proxies=proxies)
 ```
 
 除了基本的HTTP代理外，requests还支持SOCKS协议的代理。
+
 首先，需要安装socks这个库：
 ```shell script
 pip3 install "requests[socks]"

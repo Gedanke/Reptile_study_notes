@@ -2,7 +2,7 @@
 
 import requests
 
-file_path = "../../images/Module_2/favicon.ico"
+file_path = "favicon.ico"
 files = {
     "file": open(file_path, "rb")
 }
