@@ -852,6 +852,6 @@ print(li)
 
 <br>
 
-更多有关CSS选择器内容可参考，[https://www.w3school.com.cn/css/index.asp](https://www.w3school.com.cn/css/index.asp)。
+更多有关CSS选择器的内容可参考，[https://www.w3school.com.cn/css/index.asp](https://www.w3school.com.cn/css/index.asp)。
 
-更多有关pyquery内容可参考官方文档，[https://pyquery.readthedocs.io/en/latest/](https://pyquery.readthedocs.io/en/latest/)。
+更多有关pyquery内容的可参考官方文档，[https://pyquery.readthedocs.io/en/latest/](https://pyquery.readthedocs.io/en/latest/)。
