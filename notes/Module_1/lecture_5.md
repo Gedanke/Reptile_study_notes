@@ -31,17 +31,18 @@
 
 ---
 
-## Python多线程
+## Python 多线程
 
 在 Python 中，实现多线程是 Python 自带的库 ```threading```。
 
 ---
 
-### Thread直接创建子线程
+### Thread 直接创建子线程
 
 ```Thread``` 类传入运行方法名称，```args``` 列表指定待传参数。
 
 [程序](../../codes/Module_1/lecture_5/lecture_5_1.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -52,8 +53,8 @@ import time
 def target(second):
     thread_name = threading.current_thread().name
     print("Thread {0} is running".format(thread_name))
-    print("Thread {0} sleep {1}s".format(thread_name, second))
-    # 线程休眠时间
+    print("Thread {0} sleep {1} s".format(thread_name, second))
+    '''线程休眠时间'''
     time.sleep(second)
     print("Thread {0} is ended".format(thread_name))
 
@@ -64,39 +65,54 @@ if __name__ == "__main__":
     for i in [1, 5]:
         thread = threading.Thread(target=target, args=[i])
         thread.start()
+        thread.join()
+    # threads = list()
+    # for i in [1, 5]:
+    #     thread = threading.Thread(target=target, args=[i])
+    #     threads.append(thread)
+    #     thread.start()
+    # for thread in threads:
+    #     thread.join()
     print("Thread {0} is ended".format(main_thread_name))
 ```
+
 结果：
+
 ```text
 Thread MainThread is running
 Thread Thread-1 is running
-Thread Thread-1 sleep 1s
+Thread Thread-1 sleep 1 s
 Thread Thread-2 is running
-Thread Thread-2 sleep 5s
+Thread Thread-2 sleep 5 s
 Thread MainThread is ended
 Thread Thread-1 is ended
 Thread Thread-2 is ended
 ```
 
-我们发现，Thread-2 由于休眠时间长，还没等其运行完，主线程就结果了，如果向让主线程等待子线程执行完退出，可以如下操作。让每个子线程都调用 ```join()``` 方法。
+我们发现，Thread-2 由于休眠时间长，还没等其运行完，主线程就结果了，如果想 **让主线程等待子线程执行完退出**，可以如下操作。让每个子线程都调用 ```join()``` 方法。
+
 ```text
 for i in [1, 5]:
     thread = threading.Thread(target=target, args=[i])
     thread.start()
     thread.join()
 ```
+
 结果为：
+
 ```text
 Thread MainThread is running
 Thread Thread-1 is running
-Thread Thread-1 sleep 1s
+Thread Thread-1 sleep 1 s
 Thread Thread-1 is ended
 Thread Thread-2 is running
-Thread Thread-2 sleep 5s
+Thread Thread-2 sleep 5 s
 Thread Thread-2 is ended
 Thread MainThread is ended
 ```
+
 或者
+
 ```text
 threads = list()
 for i in [1, 5]:
@@ -106,24 +122,28 @@ for i in [1, 5]:
 for thread in threads:
     thread.join()
 ```
+
 结果为：
+
 ```text
 Thread MainThread is running
 Thread Thread-1 is running
-Thread Thread-1 sleep 1s
+Thread Thread-1 sleep 1 s
 Thread Thread-2 is running
-Thread Thread-2 sleep 5s
+Thread Thread-2 sleep 5 s
 Thread Thread-1 is ended
 Thread Thread-2 is ended
 Thread MainThread is ended
 ```
+
 ---
 
-### 继承Thread类创建子线程
+### 继承 Thread 类创建子线程
 
 继承 ```Thread``` 类，重写 ```run``` 方法。
 
 [程序](../../codes/Module_1/lecture_5/lecture_5_2.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -139,8 +159,8 @@ class MyThread(threading.Thread):
     def run(self):
         thread_name = threading.current_thread().name
         print("Thread {0} is running".format(thread_name))
-        print("Thread {0} sleep {1}s".format(thread_name, self.second))
-        # 线程休眠时间
+        print("Thread {0} sleep {1} s".format(thread_name, self.second))
+        '''线程休眠时间'''
         time.sleep(self.second)
         print("Thread {0} is ended".format(thread_name))
 
@@ -157,17 +177,20 @@ if __name__ == "__main__":
         thread.join()
     print("Thread {0} is ended".format(main_thread_name))
 ```
+
 结果为：
+
 ```text
 Thread MainThread is running
 Thread Thread-1 is running
-Thread Thread-1 sleep 1s
+Thread Thread-1 sleep 1 s
 Thread Thread-2 is running
-Thread Thread-2 sleep 5s
+Thread Thread-2 sleep 5 s
 Thread Thread-1 is ended
 Thread Thread-2 is ended
 Thread MainThread is ended
 ```
+
 殊途同归。
 
 ---
@@ -176,6 +199,7 @@ Thread MainThread is ended
 
 如果一个线程是守护线程，当主线程结束后，它将强行被终止，可以使用 ```setDaemon``` 方法。
 [程序](../../codes/Module_1/lecture_5/lecture_5_3.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -186,8 +210,8 @@ import time
 def target(second):
     thread_name = threading.current_thread().name
     print("Thread {0} is running".format(thread_name))
-    print("Thread {0} sleep {1}s".format(thread_name, second))
-    # 线程休眠时间
+    print("Thread {0} sleep {1} s".format(thread_name, second))
+    '''线程休眠时间'''
     time.sleep(second)
     print("Thread {0} is ended".format(thread_name))
 
@@ -196,25 +220,33 @@ if __name__ == "__main__":
     main_thread_name = threading.current_thread().name
     print("Thread {0} is running".format(main_thread_name))
     t1 = threading.Thread(target=target, args=[2])
+    '''first'''
+    # t1.daemon = True
+    '''second'''
     t1.start()
+    # t1.join()
     t2 = threading.Thread(target=target, args=[5])
     t2.setDaemon(True)
     t2.start()
+    # t2.join()
     print("Thread {0} is ended".format(main_thread_name))
 ```
+
 结果，打印的次序可能稍有不同：
+
 ```text
 Thread MainThread is running
 Thread Thread-1 is running
-Thread Thread-1 sleep 2s
+Thread Thread-1 sleep 2 s
 Thread Thread-2 is running
-Thread Thread-2 sleep 5s
+Thread Thread-2 sleep 5 s
 Thread MainThread is ended
 Thread Thread-1 is ended
 ```
+
 Thread-2 还没执行完就随主线程的退出而退出了。
 
-如果我们让 t1 和 t2 都调用 ```join``` 方法，主线程就会仍然等待各个子线程执行完毕再退出，不论其是否是守护线程。
+**如果我们让 t1 和 t2 都调用 ```join``` 方法，主线程就会仍然等待各个子线程执行完毕再退出，不论其是否是守护线程。**
 
 ---
 
@@ -223,6 +255,7 @@ Thread-2 还没执行完就随主线程的退出而退出了。
 一个进程的多个线程是共享进程内的资源，在多线程中，如果不对线程访问资源继续约束，得到的结果往往事与愿违，先看一个例子。
 
 [程序](../../codes/Module_1/lecture_5/lecture_5_4.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -238,7 +271,7 @@ class MyThread(threading.Thread):
 
     def run(self):
         global count
-        # count 加一
+        '''count 加一'''
         temp = count + 1
         time.sleep(0.001)
         count = temp
@@ -254,10 +287,13 @@ if __name__ == "__main__":
         thread.join()
     print("count : {0}".format(count))
 ```
+
 结果为：
+
 ```text
 count : 103
 ```
+
 结果不是 1000，而且每次运行的结果都不同。
 
 这是因为 count 是被所有线程共享的，每个线程都可以对 count 加一，但是在这些线程中，有的是串行执行，有的是并发执行，不同的线程操作的 count 可能是同一个，这样它们的加一操作没有生效，结果与预期不同。
@@ -267,6 +303,7 @@ count : 103
 这样就保证了一个时刻仅有一个线程访问该数据，保证了并发结果的正确性。
 
 对源程序稍作修改，[如下](../../codes/Module_1/lecture_5/lecture_5_5.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -283,10 +320,12 @@ class MyThread(threading.Thread):
 
     def run(self):
         global count, lock
+        '''gain lock'''
         lock.acquire()
         temp = count + 1
         time.sleep(0.001)
         count = temp
+        '''release lock'''
         lock.release()
 
 
@@ -300,19 +339,25 @@ if __name__ == "__main__":
         thread.join()
     print("count : {0}".format(count))
 ```
+
 结果为：
+
 ```text
 count : 1000
 ```
+
 得到预期结果。
 
-更多 Python 多线程可参考 [https://www.runoob.com/python/python-multithreading.html](https://www.runoob.com/python/python-multithreading.html) 。
+更多 Python
+多线程可参考 [https://www.runoob.com/python/python-multithreading.html](https://www.runoob.com/python/python-multithreading.html)
+。
 
 ----
 
 ## Python 多线程的限制
 
 在 Python 中，由于 GIL(Global Interpreter Lock) 全局解释器锁的存在，每个线程的执行方式是：
+
 * 获取 GIL
 * 执行对应线程的代码
 * 释放 GIL

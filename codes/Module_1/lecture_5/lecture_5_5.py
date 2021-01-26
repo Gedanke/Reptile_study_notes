@@ -13,10 +13,12 @@ class MyThread(threading.Thread):
 
     def run(self):
         global count, lock
+        '''gain lock'''
         lock.acquire()
         temp = count + 1
         time.sleep(0.001)
         count = temp
+        '''release lock'''
         lock.release()
 
 

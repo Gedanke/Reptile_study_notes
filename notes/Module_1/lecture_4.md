@@ -16,7 +16,7 @@
 静态网页是指存放在服务器文件系统中实实在在的 HTML 文件。当用户在浏览器中输入页面的 URL，然后回车，浏览器就会将对应的 html 文件下载，渲染并呈现在窗口中。早期的网站通常都是由静态页面制作的。
 如 [https://www.runoob.com/css/css-tutorial.html](https://www.runoob.com/css/css-tutorial.html) 是一个静态网页。
 
-动态网页是相对于静态网页而言的。当浏览器请求服务器的某个页面时，服务器根据当前时间，环境参数，数据库操作等动态的生成HTML页面，然后在发送给浏览器(后面的处理就跟静态网页一样了)。而 [https://www.w3school.com.cn/htmldom/dom_nodes.asp](https://www.w3school.com.cn/htmldom/dom_nodes.asp) 是一个动态网页。
+动态网页是相对于静态网页而言的。当浏览器请求服务器的某个页面时，服务器根据当前时间，环境参数，数据库操作等动态的生成 HTML 页面，然后在发送给浏览器(后面的处理就跟静态网页一样了)。而 [https://www.w3school.com.cn/htmldom/dom_nodes.asp](https://www.w3school.com.cn/htmldom/dom_nodes.asp) 是一个动态网页。
 
 动态网页中的“动态”是指服务器端页面的动态生成，相反，“静态”则指页面是实实在在的，独立的文件。静态网页简单安全，加载快但可维护性，交互性差。动态网页可维护性号，内容丰富但成本高，对安全性和保密性要求高。
 

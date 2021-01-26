@@ -28,6 +28,8 @@ Process([group [, target [, name [, args [, kwargs]]]]])
 * ```name``` : 进程别名
 * ```group``` : 分组
 
+注意：```args``` 必须要是一个元组，和被调用的方法 ```process``` 的参数是一一对应的，如果只有一个参数，那也要在元组第一个元素后面加一个逗号，如果没有逗号则和单个元素本身没有区别，无法构成元组，导致参数传递出现问题。
+
 先看个 [例子](../../codes/Module_1/lecture_6/lecture_6_1.py) ：
 ```python
 # -*- coding: utf-8 -*-
@@ -42,7 +44,7 @@ def process(index):
 # 一定要有 if __name__ == "__main__":
 if __name__ == "__main__":
     for i in range(5):
-        # 传参为元组
+        '''传参为元组'''
         p = multiprocessing.Process(target=process, args=(i,))
         p.start()
 ```
@@ -217,7 +219,7 @@ if __name__ == "__main__":
         p.join()
     print("Main Process ended")
 ```
-结果如下，进程pid不唯一：
+结果如下，进程 pid 不唯一：
 ```text
 Pid: 17848 LoopCount: 0
 Pid: 17972 LoopCount: 0
@@ -316,7 +318,7 @@ Joined:  <Process(Process-1, stopped[SIGTERM])> False
 ```
 在调用 ```terminate``` 方法之后，用 ```is_alive``` 方法获取进程的状态发现依然还是运行状态。在调用 ```join``` 方法之后，```is_alive``` 方法获取进程的运行状态才变为终止状态。
 
-所以，在调用 ```terminate``` 方法之后，还得调用一下 ```join``` 方法，这里调用 ```join``` 方法可以为进程提供时间来更新对象状态，用来反映出最终的进程终止效果。
+所以，**在调用 ```terminate``` 方法之后，还得调用一下 ```join``` 方法**，这里调用 ```join``` 方法可以为进程提供时间来更新对象状态，用来反映出最终的进程终止效果。
 
 ---
 

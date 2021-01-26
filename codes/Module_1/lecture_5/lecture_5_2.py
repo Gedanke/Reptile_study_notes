@@ -12,8 +12,8 @@ class MyThread(threading.Thread):
     def run(self):
         thread_name = threading.current_thread().name
         print("Thread {0} is running".format(thread_name))
-        print("Thread {0} sleep {1}s".format(thread_name, self.second))
-        # 线程休眠时间
+        print("Thread {0} sleep {1} s".format(thread_name, self.second))
+        '''线程休眠时间'''
         time.sleep(self.second)
         print("Thread {0} is ended".format(thread_name))
 

@@ -1,4 +1,4 @@
-# HTTP基本原理
+# HTTP 基本原理
 
 本节内容是了解 HTTP 的基本原理，以及在浏览器中输入 URL，回车到获取网页内容之间的过程。
 
@@ -34,7 +34,7 @@ URL 是 URI 的子集，URN 只命名了一个资源，例如书籍的 ISBN，�
 
 ## HTTP 和 HTTPS
 
-在 [https://www.bilibili.com](https://www.bilibili.com) 中，URL 的开头是 https，它便是访问资源所需要的协议类型，有时候会有以 http，sfp，sftp，smb 等等开头的URL，这些都是不同的访问协议，我们见的最多的便是 http 或者 https 协议了。
+在 [https://www.bilibili.com](https://www.bilibili.com) 中，URL 的开头是 https，它便是访问资源所需要的协议类型，有时候会有以 http，sfp，sftp，smb 等等开头的 URL，这些都是不同的访问协议，我们见的最多的便是 http 或者 https 协议了。
 
 <br>
 
@@ -83,10 +83,10 @@ HTTPS 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL �
 
 请求是由客户端向服务端发出，由4部分内容：
 
-* 请求方法(RequestMethod)
-* 请求的网址(RequestURL)
-* 请求头(RequestHeaders)
-* 请求体(Request Body)
+* 请求方法 (RequestMethod)
+* 请求的网址 (RequestURL)
+* 请求头 (RequestHeaders)
+* 请求体 (Request Body)
 
 ----
 
@@ -97,7 +97,7 @@ HTTP1.0 定义了三种请求方法：GET，POST 和 HEAD 方法。
 HTTP1.1 新增了六种请求方法：OPTIONS，PUT，PATCH，DELETE，TRACE 和 CONNECT 方法。
 
 常用的请求方法是 GET 和 POST，区别：
-* GET 请求的参数会直接包含在 URL 中，提交的数据至多为 1024 字节；POST请求通常在表单提起时发起(如填写完用户名和密码后登陆时)，数据以表单形式传输，不在 URL 中，数据量没有限制。
+* GET 请求的参数会直接包含在 URL 中，提交的数据至多为 1024 字节；POST 请求通常在表单提起时发起(如填写完用户名和密码后登陆时)，数据以表单形式传输，不在 URL 中，数据量没有限制。
 * 显然 POST 比 GET 更安全，也适用于文件传输。
 
 HTTP 的请求与其描述如下表所示：
@@ -134,7 +134,7 @@ HTTP 的请求与其描述如下表所示：
 | :----: | :----: |
 | Accept | 指定客户端能够接收的内容类型|
 | Accept-Charset |浏览器可接受的字符编码集|
-| Accept-Encoding | 指定浏览器可以支持的web服务器返回内容压缩编码类型|
+| Accept-Encoding | 指定浏览器可以支持的 web 服务器返回内容压缩编码类型|
 | Accept-Language | 浏览器可接受的语言 |
 | Cookie | HTTP 请求发送时，会把保存在该请求域名下的所有 cookie 值一起发送给 web 服务器，维持当前访问会话|
 | Content-Length | 请求的内容长度 |
@@ -163,9 +163,9 @@ HTTP 的请求与其描述如下表所示：
 ### 响应
 
 响应，由服务端返回给客户端，可以分为三部分：
-* 响应状态码(Response Status Code)
-* 响应头(Response Headers)
-* 响应体(Response Body)。
+* 响应状态码 (Response Status Code)
+* 响应头 (Response Headers)
+* 响应体 (Response Body)。
 
 ---
 
@@ -173,7 +173,7 @@ HTTP 的请求与其描述如下表所示：
 
 响应状态码表示服务器的响应状态，如 200 代表服务器正常响应，301 代表资源(网页等)被永久转移到其它 URL，404 代表页面未找到，500 代表服务器内部发生错误。
 
-更多HTTP状态码分类可参见，[https://www.runoob.com/http/http-status-codes.html](https://www.runoob.com/http/http-status-codes.html) 。
+更多 HTTP 状态码分类可参见，[https://www.runoob.com/http/http-status-codes.html](https://www.runoob.com/http/http-status-codes.html) 。
 
 ---
 
@@ -183,12 +183,12 @@ HTTP 的请求与其描述如下表所示：
 
 | 方法 | 描述 |
 | :----: | :----: |
-|Allow| 服务器支持哪些请求方法(如 GET，POST 等)|
+|Allow| 服务器支持哪些请求方法 (如 GET，POST 等)|
 |Content-Encoding|指定响应内容的编码|
 |Content-Type|表示后面的文档属于什么 MIME 类型。Servlet 默认为 text/plain|
 |Date| 标识响应产生的时间，用 setDateHeader 来设置这个头以避免转换时间格式的麻烦|
 |Expires|应该在什么时候认为文档已经过期，从而不再缓存它|
-|Set-Cookie|设置 Cookies。响应头中的 Set-Cookie 告诉浏览器需要将此内容放在 Cookies 中，下次请求携带Cookies请求|
+|Set-Cookie|设置 Cookies。响应头中的 Set-Cookie 告诉浏览器需要将此内容放在 Cookies 中，下次请求携带 Cookies 请求|
 |Server	|服务器名字。Servlet 一般不设置这个值，而是由 Web 服务器自己设置|
 
 ---
