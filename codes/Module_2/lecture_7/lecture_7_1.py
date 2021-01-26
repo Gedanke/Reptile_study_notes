@@ -3,5 +3,5 @@
 import requests
 
 url = "https://static1.scrape.cuiqingcai.com/"
-r = requests.get(url=url)
+r = requests.get(url=url, verify=False)
 print(r.text)

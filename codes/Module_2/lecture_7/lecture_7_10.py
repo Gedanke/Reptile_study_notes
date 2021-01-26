@@ -3,7 +3,7 @@
 import requests
 
 url = "https://static1.scrape.cuiqingcai.com/"
-r = requests.get(url=url)
+r = requests.get(url=url, verify=False)
 
 print(type(r.status_code), r.status_code)
 print(type(r.headers), r.headers)
