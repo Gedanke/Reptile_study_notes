@@ -230,7 +230,7 @@ print(title)
 
 ## 抓取二进制数据
 
-之前例子抓取的是网页页面，返回了一个HTML文档，对于图片，视频，音频等等，它们都是由二进制根据特定的编码格式组成的，由特定的解析格式就可以得到它们。
+之前例子抓取的是网页页面，返回了一个 HTML 文档，对于图片，视频，音频等等，它们都是由二进制根据特定的编码格式组成的，由特定的解析格式就可以得到它们。
 
 来看一个 [示例](../../codes/Module_2/lecture_7/lecture_7_6.py) ：
 
@@ -456,81 +456,81 @@ Request Successfully
 
 ```python
     # Informational.
-    100: ('continue',),
-    101: ('switching_protocols',),
-    102: ('processing',),
-    103: ('checkpoint',),
-    122: ('uri_too_long', 'request_uri_too_long'),
-    200: ('ok', 'okay', 'all_ok', 'all_okay', 'all_good', '\\o/', '✓'),
-    201: ('created',),
-    202: ('accepted',),
-    203: ('non_authoritative_info', 'non_authoritative_information'),
-    204: ('no_content',),
-    205: ('reset_content', 'reset'),
-    206: ('partial_content', 'partial'),
-    207: ('multi_status', 'multiple_status', 'multi_stati', 'multiple_stati'),
-    208: ('already_reported',),
-    226: ('im_used',),
+100: ('continue',),
+101: ('switching_protocols',),
+102: ('processing',),
+103: ('checkpoint',),
+122: ('uri_too_long', 'request_uri_too_long'),
+200: ('ok', 'okay', 'all_ok', 'all_okay', 'all_good', '\\o/', '✓'),
+201: ('created',),
+202: ('accepted',),
+203: ('non_authoritative_info', 'non_authoritative_information'),
+204: ('no_content',),
+205: ('reset_content', 'reset'),
+206: ('partial_content', 'partial'),
+207: ('multi_status', 'multiple_status', 'multi_stati', 'multiple_stati'),
+208: ('already_reported',),
+226: ('im_used',),
 
-    # Redirection.
-    300: ('multiple_choices',),
-    301: ('moved_permanently', 'moved', '\\o-'),
-    302: ('found',),
-    303: ('see_other', 'other'),
-    304: ('not_modified',),
-    305: ('use_proxy',),
-    306: ('switch_proxy',),
-    307: ('temporary_redirect', 'temporary_moved', 'temporary'),
-    308: ('permanent_redirect',
-          'resume_incomplete', 'resume',),  # These 2 to be removed in 3.0
+# Redirection.
+300: ('multiple_choices',),
+301: ('moved_permanently', 'moved', '\\o-'),
+302: ('found',),
+303: ('see_other', 'other'),
+304: ('not_modified',),
+305: ('use_proxy',),
+306: ('switch_proxy',),
+307: ('temporary_redirect', 'temporary_moved', 'temporary'),
+308: ('permanent_redirect',
+      'resume_incomplete', 'resume',),  # These 2 to be removed in 3.0
 
-    # Client Error.
-    400: ('bad_request', 'bad'),
-    401: ('unauthorized',),
-    402: ('payment_required', 'payment'),
-    403: ('forbidden',),
-    404: ('not_found', '-o-'),
-    405: ('method_not_allowed', 'not_allowed'),
-    406: ('not_acceptable',),
-    407: ('proxy_authentication_required', 'proxy_auth', 'proxy_authentication'),
-    408: ('request_timeout', 'timeout'),
-    409: ('conflict',),
-    410: ('gone',),
-    411: ('length_required',),
-    412: ('precondition_failed', 'precondition'),
-    413: ('request_entity_too_large',),
-    414: ('request_uri_too_large',),
-    415: ('unsupported_media_type', 'unsupported_media', 'media_type'),
-    416: ('requested_range_not_satisfiable', 'requested_range', 'range_not_satisfiable'),
-    417: ('expectation_failed',),
-    418: ('im_a_teapot', 'teapot', 'i_am_a_teapot'),
-    421: ('misdirected_request',),
-    422: ('unprocessable_entity', 'unprocessable'),
-    423: ('locked',),
-    424: ('failed_dependency', 'dependency'),
-    425: ('unordered_collection', 'unordered'),
-    426: ('upgrade_required', 'upgrade'),
-    428: ('precondition_required', 'precondition'),
-    429: ('too_many_requests', 'too_many'),
-    431: ('header_fields_too_large', 'fields_too_large'),
-    444: ('no_response', 'none'),
-    449: ('retry_with', 'retry'),
-    450: ('blocked_by_windows_parental_controls', 'parental_controls'),
-    451: ('unavailable_for_legal_reasons', 'legal_reasons'),
-    499: ('client_closed_request',),
+# Client Error.
+400: ('bad_request', 'bad'),
+401: ('unauthorized',),
+402: ('payment_required', 'payment'),
+403: ('forbidden',),
+404: ('not_found', '-o-'),
+405: ('method_not_allowed', 'not_allowed'),
+406: ('not_acceptable',),
+407: ('proxy_authentication_required', 'proxy_auth', 'proxy_authentication'),
+408: ('request_timeout', 'timeout'),
+409: ('conflict',),
+410: ('gone',),
+411: ('length_required',),
+412: ('precondition_failed', 'precondition'),
+413: ('request_entity_too_large',),
+414: ('request_uri_too_large',),
+415: ('unsupported_media_type', 'unsupported_media', 'media_type'),
+416: ('requested_range_not_satisfiable', 'requested_range', 'range_not_satisfiable'),
+417: ('expectation_failed',),
+418: ('im_a_teapot', 'teapot', 'i_am_a_teapot'),
+421: ('misdirected_request',),
+422: ('unprocessable_entity', 'unprocessable'),
+423: ('locked',),
+424: ('failed_dependency', 'dependency'),
+425: ('unordered_collection', 'unordered'),
+426: ('upgrade_required', 'upgrade'),
+428: ('precondition_required', 'precondition'),
+429: ('too_many_requests', 'too_many'),
+431: ('header_fields_too_large', 'fields_too_large'),
+444: ('no_response', 'none'),
+449: ('retry_with', 'retry'),
+450: ('blocked_by_windows_parental_controls', 'parental_controls'),
+451: ('unavailable_for_legal_reasons', 'legal_reasons'),
+499: ('client_closed_request',),
 
-    # Server Error.
-    500: ('internal_server_error', 'server_error', '/o\\', '✗'),
-    501: ('not_implemented',),
-    502: ('bad_gateway',),
-    503: ('service_unavailable', 'unavailable'),
-    504: ('gateway_timeout',),
-    505: ('http_version_not_supported', 'http_version'),
-    506: ('variant_also_negotiates',),
-    507: ('insufficient_storage',),
-    509: ('bandwidth_limit_exceeded', 'bandwidth'),
-    510: ('not_extended',),
-    511: ('network_authentication_required', 'network_auth', 'network_authentication'),
+# Server Error.
+500: ('internal_server_error', 'server_error', '/o\\', '✗'),
+501: ('not_implemented',),
+502: ('bad_gateway',),
+503: ('service_unavailable', 'unavailable'),
+504: ('gateway_timeout',),
+505: ('http_version_not_supported', 'http_version'),
+506: ('variant_also_negotiates',),
+507: ('insufficient_storage',),
+509: ('bandwidth_limit_exceeded', 'bandwidth'),
+510: ('not_extended',),
+511: ('network_authentication_required', 'network_auth', 'network_authentication'),
 ```
 
 ---
@@ -591,7 +591,8 @@ print(r.text)
 }
 ```
 
-这里我们上传指定路径下的 ```favicon.ico``` 文件，上传其他文件的操作类似，网站返回响应，里面包含 ```files``` 这个字段，而 ```form字``` 段是空的，这证明文件上传部分会单独有一个 ```files``` 字段来标识。
+这里我们上传指定路径下的 ```favicon.ico``` 文件，上传其他文件的操作类似，网站返回响应，里面包含 ```files``` 这个字段，而 ```form字```
+段是空的，这证明文件上传部分会单独有一个 ```files``` 字段来标识。
 
 ---
 
@@ -621,7 +622,8 @@ for key, value in r.cookies.items():
 BDORZ=27315
 ```
 
-这里我们首先调用 ```cookies``` 属性即可成功得到 Cookies，可以发现它是 ```RequestCookieJar``` 类型。然后用 ```items``` 方法将其转化为元组组成的列表，遍历输出每一个 Cookie 的名称和值，实现 Cookie 的遍历解析。
+这里我们首先调用 ```cookies``` 属性即可成功得到 Cookies，可以发现它是 ```RequestCookieJar``` 类型。然后用 ```items``` 方法将其转化为元组组成的列表，遍历输出每一个 Cookie
+的名称和值，实现 Cookie 的遍历解析。
 
 我们可以使用 Cookie 来维持登陆状态，以 Github 为例。
 
@@ -705,7 +707,8 @@ print(r.text)
 
 正常登陆。
 
-这里我们首先新建一个 ```RequestCookieJar``` 对象，然后将复制下来的 cookies 利用 ```split``` 方法分割，接着利用 ```set``` 方法设置好每个 Cookie 的 ```key``` 和 ```value```，最后通过调用 ```requests``` 的 ```get``` 方法并传递给 cookies 参数即可。
+这里我们首先新建一个 ```RequestCookieJar``` 对象，然后将复制下来的 cookies 利用 ```split``` 方法分割，接着利用 ```set``` 方法设置好每个 Cookie 的 ```key```
+和 ```value```，最后通过调用 ```requests``` 的 ```get``` 方法并传递给 cookies 参数即可。
 
 ---
 
@@ -727,7 +730,7 @@ r = requests.get("http://httpbin.org/cookies")
 print(r.text)
 ```
 
-结果为，运行时间较长：
+结果为：
 
 ```json5
 {
@@ -735,7 +738,9 @@ print(r.text)
 }
 ```
 
-这里我们请求了一个测试网址 [http://httpbin.org/cookies/set/number/123456789](http://httpbin.org/cookies/set/number/123456789) 。请求这个网址时，可以设置一个 cookie，名称叫作 number，内容是 123456789，随后又请求了 [http://httpbin.org/cookies](http://httpbin.org/cookies) ，此网址可以获取当前的 Cookies。
+这里我们请求了一个测试网址 [http://httpbin.org/cookies/set/number/123456789](http://httpbin.org/cookies/set/number/123456789)
+。请求这个网址时，可以设置一个 cookie，名称叫作 number，内容是 123456789，随后又请求了 [http://httpbin.org/cookies](http://httpbin.org/cookies)
+，此网址可以获取当前的 Cookies。
 
 没有得到，使用 Session 试试。
 
@@ -784,7 +789,7 @@ r = s.get("http://httpbin.org/cookies")
 
 import requests
 
-url = "https://static2.scrape.cuiqingcai.com/"
+url = "https://static1.scrape.cuiqingcai.com/"
 response = requests.get(url)
 print(response.status_code)
 ```
@@ -792,6 +797,7 @@ print(response.status_code)
 报错了：
 
 ```textmate
+...
 requests.exceptions.SSLError: HTTPSConnectionPool(host='static2.scrape.cuiqingcai.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLError("bad handshake: Error([('SSL routines', 'tls_process_server_certificate', 'certificate verify failed')])")))
 ```
 
@@ -808,7 +814,7 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='static2.scrape.cuiqingca
 
 import requests
 
-url = "https://static2.scrape.cuiqingcai.com/"
+url = "https://static1.scrape.cuiqingcai.com/"
 response = requests.get(url, verify=False)
 print(response.status_code)
 ```
@@ -816,8 +822,8 @@ print(response.status_code)
 结果为：
 
 ```textmate
-C:\Users\hasee\AppData\Roaming\Python\Python37\site-packages\urllib3\connectionpool.py:858: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
-  InsecureRequestWarning)
+/home/d/.local/lib/python3.8/site-packages/urllib3/connectionpool.py:1013: InsecureRequestWarning: Unverified HTTPS request is being made to host 'static2.scrape.cuiqingcai.com'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+  warnings.warn(
 200
 ```
 
@@ -834,7 +840,7 @@ import requests
 import urllib3
 
 urllib3.disable_warnings()
-url = "https://static2.scrape.cuiqingcai.com/"
+url = "https://static1.scrape.cuiqingcai.com/"
 response = requests.get(url, verify=False)
 print(response.status_code)
 ```
@@ -853,7 +859,8 @@ response = requests.get(url, verify=False)
 print(response.status_code)
 ```
 
-当然，我们也可以指定一个本地证书用作客户端证书，这可以是单个文件(包含密钥和证书)或一个包含两个文件路径的元组：```crt``` 和 ```key``` 文件，并且指定它们的路径。另外注意，本地私有证书的 ```key``` 必须是解密状态，加密状态的 ```key``` 是不支持的。
+当然，我们也可以指定一个本地证书用作客户端证书，这可以是单个文件(包含密钥和证书)或一个包含两个文件路径的元组：```crt``` 和 ```key``` 文件，并且指定它们的路径。另外注意，本地私有证书的 ```key```
+必须是解密状态，加密状态的 ```key``` 是不支持的。
 
 ---
 
@@ -898,7 +905,8 @@ r = requests.get("http://httpbin.org/get")
 
 ### 身份认证
 
-在访问某些设置了身份认证的网站时，例如：[https://static3.scrape.cuiqingcai.com/](https://static3.scrape.cuiqingcai.com/) ，我们可能会遇到这样的认证窗口，如图所示：
+在访问某些设置了身份认证的网站时，例如：[https://static3.scrape.cuiqingcai.com/](https://static3.scrape.cuiqingcai.com/)
+，我们可能会遇到这样的认证窗口，如图所示：
 
 ![](../../images/Module_2/lecture_7_8.jpg)
 
@@ -915,7 +923,7 @@ import requests
 from requests.auth import HTTPBasicAuth
 
 url = "https://static3.scrape.cuiqingcai.com/"
-r = requests.get(url, auth=HTTPBasicAuth("admin", "admin"))
+r = requests.get(url, auth=HTTPBasicAuth("admin", "admin"), verify=False)
 print(r.status_code)
 ```
 
@@ -997,7 +1005,7 @@ requests.get(url, proxies=proxies)
 
 除了基本的 HTTP 代理外，```requests``` 还支持 SOCKS 协议的代理。
 
-首先，需要安装socks这个库：
+首先，需要安装 ```socks``` 这个库：
 
 ```shell script
 pip3 install "requests[socks]"
@@ -1079,4 +1087,7 @@ print(r.text)
 
 可以看出，我们得到了 POST 相同的请求效果，这样的方式显然更加灵活。
 
-更多Request内容可参考官方文档：[http://docs.python-requests.org/](http://docs.python-requests.org/) 。
+更多 Request 内容可参考官方文档：[http://docs.python-requests.org/](http://docs.python-requests.org/) 。
+
+---
+---
