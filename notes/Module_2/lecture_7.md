@@ -222,7 +222,7 @@ print(title)
 '喜剧之王 - The King of Comedy', '楚门的世界 - The Truman Show', '狮子王 - The Lion King']
 ```
 
-我们使用了正则表达式匹配出所有的标题，关于正则表达式会在下一节消息介绍。
+我们使用了正则表达式匹配出所有的标题，关于正则表达式会在下一节介绍。
 
 从运行结果可知，我们提取出了所有的电影标题，一个最基本的抓取并提取网页内容流程就完成了。
 
@@ -539,7 +539,7 @@ Request Successfully
 
 刚才，我们了解了 ```requests``` 的基本用法，如基本的 GET，POST 请求以及 Response 对象。
 
-这仅仅是冰山一角，```requests``` 几乎可以完成HTPP的所有操作。
+这仅仅是冰山一角，```requests``` 几乎可以完成 HTPP 的所有操作。
 
 接下来，我们将介绍 ```requests``` 库的高级用法，如文件上传，Cookies 设置，代理设置等等
 

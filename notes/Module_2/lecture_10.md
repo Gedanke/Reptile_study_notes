@@ -274,12 +274,14 @@ for result in results:
     print(result)
 ```
 
-结果为，可能出现多个结果，这种情况可能是之前多次插入相同的数据造成的：
+结果为：
 
 ```textmate
 <pymongo.cursor.Cursor object at 0x00000289D0C1DCC0>
 {'_id': ObjectId('5e7739b2b0de20fb9b5a3e6a'), 'id': '20170101', 'name': 'LiHua', 'age': 20, 'gender': 'male'}
 ```
+
+可能出现多个结果，这种情况可能是之前多次插入相同的数据造成的。
 
 返回结果是 ```Cursor``` 类型，它相当于一个生成器，我们需要遍历获取的所有结果，其中每个结果都是字典类型。
 
@@ -378,7 +380,7 @@ print(count)
 
 ## 排序
 
-排序时，我们可以直接调用 ``sort``` 方法，并在其中传入排序的字段及升降序标志。
+排序时，我们可以直接调用 ```sort``` 方法，并在其中传入排序的字段及升降序标志。
 
 [示例](../../codes/Module_2/lecture_10/lecture_10_4.py) 如下：
 

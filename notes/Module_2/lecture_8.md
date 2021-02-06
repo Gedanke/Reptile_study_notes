@@ -12,13 +12,17 @@
 打开开源中国提供的正则表达式测试工具，[https://tool.oschina.net/regex/](https://tool.oschina.net/regex/) ，输入待匹配文本和正则表达式，即可得到匹配结果。
 
 例如，输入以下文本：
+
 ```textmate
 Hello, my phone number is 010-86432100 and email is cqc@cuiqingcai.com, and my website is https://cuiqingcai.com.
 ```
-如果想提取其中的URL的话，可以输入以下正则表达式：
+
+如果想提取其中的 URL 的话，可以输入以下正则表达式：
+
 ```textmate
 [a-zA-Z]+://[^\s]*
 ```
+
 结果如下：
 
 ![](../../images/Module_2/lecture_8_1.jpg)

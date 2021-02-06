@@ -11,3 +11,5 @@ html = '''
 doc = PyQuery(html)
 wrap = doc(".wrap")
 print(wrap.text())
+wrap.find("p").remove()
+print(wrap.text())
