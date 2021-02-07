@@ -174,8 +174,51 @@ def parse_index(html: str):
 好，接下来我们把上面的方法串联调用一下，实现如下：
 
 ```python
+def main():
+    """
+    
+    :return: 
+    """
+    for page in range(1, PAGE_NUM + 1):
+        index_html = scrape_index(page)
+        detail_urls = parse_index(index_html)
+        logging.info('detail urls %s', list(detail_urls))
 
+
+if __name__ == '__main__':
+    """"""
+    main()
 ```
 
+这里我们定义了 main 方法来完成上面所有方法的调用，首先使用 range 方法遍历一下页码，得到的 page 是 1~10，接着把 page 变量传给 scrape_index 方法，得到列表页的 HTML，赋值为 index_html 变量。接下来再将 index_html 变量传给 parse_index 方法，得到列表页所有电影的详情页 URL，赋值为 detail_urls，结果是一个生成器，我们调用 list 方法就可以将其输出出来。
+
+好，我们运行一下上面的代码，结果如下：
+
+部分结果如下：
+
+```text
+2021-02-07 23:09:37,735 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/91
+2021-02-07 23:09:37,735 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/92
+2021-02-07 23:09:37,736 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/93
+2021-02-07 23:09:37,736 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/94
+2021-02-07 23:09:37,736 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/95
+2021-02-07 23:09:37,737 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/96
+2021-02-07 23:09:37,737 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/97
+2021-02-07 23:09:37,737 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/98
+2021-02-07 23:09:37,737 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/99
+2021-02-07 23:09:37,738 - INFO: get detail url https://static1.scrape.cuiqingcai.com/detail/100
+2021-02-07 23:09:37,738 - INFO: detail urls ['https://static1.scrape.cuiqingcai.com/detail/91', 'https://static1.scrape.cuiqingcai.com/detail/92', 'https://static1.scrape.cuiqingcai.com/detail/93', 'https://static1.scrape.cuiqingcai.com/detail/94', 'https://static1.scrape.cuiqingcai.com/detail/95', 'https://static1.scrape.cuiqingcai.com/detail/96', 'https://static1.scrape.cuiqingcai.com/detail/97', 'https://static1.scrape.cuiqingcai.com/detail/98', 'https://static1.scrape.cuiqingcai.com/detail/99', 'https://static1.scrape.cuiqingcai.com/detail/100']
+```
+
+由于输出内容比较多，这里只贴了一部分。
+
+可以看到，在这个过程中程序首先爬取了第 1 页列表页，然后得到了对应详情页的每个 URL，接着再接着爬第 2 页、第 3 页，一直到第 10 页，依次输出了每一页的详情页 URL。这样，我们就成功获取到所有电影详情页 URL 啦。
+
+---
+
+## 爬取详情页
 
 
+现在我们已经成功获取所有详情页 URL 了，那么下一步当然就是解析详情页并提取出我们想要的信息了。
+
+我们首先观察一下详情页的 HTML 代码吧，如图所示：
