@@ -6,6 +6,7 @@ import requests
 import logging
 import pymongo
 from pyquery import PyQuery
+from sklearn.cluster import KMeans
 from urllib.parse import urljoin
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s: %(message)s')
@@ -76,4 +77,4 @@ def main():
 
 if __name__ == '__main__':
     """"""
-    main()
+    # main()
