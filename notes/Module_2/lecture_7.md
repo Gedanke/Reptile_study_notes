@@ -29,7 +29,7 @@ pip3 install requests
 
 如果我们想模拟这个过程的话，使用 ```requests``` 库的 ```get``` 方法，传入 URL，就可以得到网页源代码了。
 
-以 [https://static1.scrape.cuiqingcai.com/](https://static1.scrape.cuiqingcai.com/) 为实例网站：
+以 [https://static1.scrape.center/](https://static1.scrape.center/) 为实例网站：
 
 ![](../../images/Module_2/lecture_7_2.jpg)
 
@@ -40,8 +40,15 @@ pip3 install requests
 
 import requests
 
-url = "https://static1.scrape.cuiqingcai.com/"
-r = requests.get(url=url, verify=False)
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+url = "https://static1.scrape.center/"
+r = requests.get(url=url, headers=headers)
 print(r.text)
 ```
 
@@ -89,8 +96,15 @@ print(r.text)
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "http://httpbin.org/get"
-r = requests.get(url=url)
+r = requests.get(url=url, headers=headers)
 print(r.text)
 ```
 
@@ -100,13 +114,14 @@ print(r.text)
 {
   "args": {},
   "headers": {
-    "Accept": "*/*",
-    "Accept-Encoding": "gzip, deflate",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, sdch",
+    "Accept-Language": "en-US,en;q=0.8",
     "Host": "httpbin.org",
-    "User-Agent": "python-requests/2.18.4",
-    "X-Amzn-Trace-Id": "Root=1-5e71a091-dddec6cc677846b05c4e05f8"
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-607bcbc5-41c4f1fc4daa58057f25409a"
   },
-  "origin": "117.178.93.51",
+  "origin": "xxx.xxx.xxx.xxx",
   "url": "http://httpbin.org/get"
 }
 ```
@@ -130,12 +145,19 @@ r = requests.get("http://httpbin.org/get?name=germey&age=25")
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "http://httpbin.org/get"
 data = {
     "name": "germey",
     "age": 25
 }
-r = requests.get(url=url, params=data)
+r = requests.get(url=url, headers=headers, params=data)
 print(r.text)
 ```
 
@@ -148,13 +170,14 @@ print(r.text)
     "name": "germey"
   },
   "headers": {
-    "Accept": "*/*",
-    "Accept-Encoding": "gzip, deflate",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, sdch",
+    "Accept-Language": "en-US,en;q=0.8",
     "Host": "httpbin.org",
-    "User-Agent": "python-requests/2.18.4",
-    "X-Amzn-Trace-Id": "Root=1-5e71c90d-bb2daf48b3597b920f434f08"
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-607bcc14-2ed8a5b6628c7cc75a1200ac"
   },
-  "origin": "117.178.93.51",
+  "origin": "xxx.xxx.xxx.xxx",
   "url": "http://httpbin.org/get?name=germey&age=25"
 }
 ```
@@ -172,8 +195,15 @@ print(r.text)
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "http://httpbin.org/get"
-r = requests.get(url=url)
+r = requests.get(url=url, headers=headers)
 print(type(r.text))
 print(r.json())
 print(type(r.json()))
@@ -183,8 +213,7 @@ print(type(r.json()))
 
 ```text
 <class 'str'>
-{'args': {}, 'headers': {'Accept': '*/*', 'Accept-Encoding': 'gzip, deflate', 'Host': 'httpbin.org', 'User-Agent': 'python-requests/2.18.4', 
-'X-Amzn-Trace-Id': 'Root=1-5e71cb6e-b13fd4d8862a8338ce169e80'}, 'origin': '117.178.93.51', 'url': 'http://httpbin.org/get'}
+{'args': {}, 'headers': {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8', 'Accept-Encoding': 'gzip, deflate, sdch', 'Accept-Language': 'en-US,en;q=0.8', 'Host': 'httpbin.org', 'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36', 'X-Amzn-Trace-Id': 'Root=1-607bcc5d-4ad6273e733ed1ea219ec19b'}, 'origin': '117.178.92.183', 'url': 'http://httpbin.org/get'}
 <class 'dict'>
 ```
 
@@ -206,8 +235,15 @@ print(type(r.json()))
 import requests
 import re
 
-url = "https://static1.scrape.cuiqingcai.com/"
-r = requests.get(url=url, verify=False)
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+url = "https://static1.scrape.center/"
+r = requests.get(url=url, headers=headers)
 pattern_str = "<h2.*?>(.*?)</h2>"
 pattern = re.compile(pattern_str, re.S)
 title = re.findall(pattern, r.text)
@@ -217,9 +253,7 @@ print(title)
 结果为：
 
 ```text
-['霸王别姬 - Farewell My Concubine', '这个杀手不太冷 - Léon', '肖申克的救赎 - The Shawshank Redemption', 
-'泰坦尼克号 - Titanic', '罗马假日 - Roman Holiday', '唐伯虎点秋香 - Flirting Scholar', '乱世佳人 - Gone with the Wind', 
-'喜剧之王 - The King of Comedy', '楚门的世界 - The Truman Show', '狮子王 - The Lion King']
+['霸王别姬 - Farewell My Concubine', '这个杀手不太冷 - Léon', '肖申克的救赎 - The Shawshank Redemption', '泰坦尼克号 - Titanic', '罗马假日 - Roman Holiday', '唐伯虎点秋香 - Flirting Scholar', '乱世佳人 - Gone with the Wind', '喜剧之王 - The King of Comedy', '楚门的世界 - The Truman Show', '狮子王 - The Lion King']
 ```
 
 我们使用了正则表达式匹配出所有的标题，关于正则表达式会在下一节介绍。
@@ -239,8 +273,15 @@ print(title)
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "https://github.com/favicon.ico"
-r = requests.get(url)
+r = requests.get(url, headers=headers)
 print(r.text)
 print(r.content)
 ```
@@ -270,8 +311,15 @@ b'\x00\x00\x01\x00\x02\x00\x10\x10\x00\x00\x01\x00 \x00(\x05\x00\x00&\x00\x00\x0
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "https://github.com/favicon.ico"
-r = requests.get(url)
+r = requests.get(url, headers=headers)
 with open("favicon.ico", "wb") as f:
     f.write(r.content)
 ```
@@ -304,11 +352,13 @@ Python 一键构造爬虫请求头，[参考](https://segmentfault.com/a/1190000
 import requests
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) "
-                  "Chrome/80.0.3987.132 Safari/537.36"
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
 }
-url = "https://static1.scrape.cuiqingcai.com/"
+url = "https://static1.scrape.center/"
 r = requests.get(url=url, headers=headers)
 print(r.text)
 ```
@@ -349,12 +399,19 @@ print(r.text)
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 data = {
     "name": "germey",
     "age": "25"
 }
 url = "http://httpbin.org/post"
-r = requests.post(url=url, data=data)
+r = requests.post(url=url, headers=headers, data=data)
 print(r.text)
 ```
 
@@ -370,16 +427,17 @@ print(r.text)
     "name": "germey"
   },
   "headers": {
-    "Accept": "*/*",
-    "Accept-Encoding": "gzip, deflate",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, sdch",
+    "Accept-Language": "en-US,en;q=0.8",
     "Content-Length": "18",
     "Content-Type": "application/x-www-form-urlencoded",
     "Host": "httpbin.org",
-    "User-Agent": "python-requests/2.18.4",
-    "X-Amzn-Trace-Id": "Root=1-5e71dfcd-d55d50bec263dd263752df20"
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-607bcdb5-0de9d6bc7076f4ae02f7de07"
   },
   "json": null,
-  "origin": "117.178.93.51",
+  "origin": "xxx.xxx.xxx.xxx",
   "url": "http://httpbin.org/post"
 }
 ```
@@ -401,8 +459,15 @@ form 部分就是提交的数据，这就证明 POST 请求成功发送了。
 
 import requests
 
-url = "https://static1.scrape.cuiqingcai.com/"
-r = requests.get(url=url, verify=False)
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+url = "https://static1.scrape.center/"
+r = requests.get(url=url, headers=headers)
 
 print(type(r.status_code), r.status_code)
 print(type(r.headers), r.headers)
@@ -415,9 +480,9 @@ print(type(r.history), r.history)
 
 ```text
 <class 'int'> 200
-<class 'requests.structures.CaseInsensitiveDict'> {'Server': 'nginx/1.17.8', 'Date': 'Wed, 18 Mar 2020 08:53:19 GMT', 'Content-Type': 'text/html; charset=utf-8', 'Transfer-Encoding': 'chunked', 'Connection': 'keep-alive', 'Vary': 'Accept-Encoding', 'X-Frame-Options': 'SAMEORIGIN', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains', 'Content-Encoding': 'gzip'}
+<class 'requests.structures.CaseInsensitiveDict'> {'Server': 'NWS_SPMid', 'Date': 'Sun, 18 Apr 2021 06:13:24 GMT', 'Cache-Control': 'max-age=600', 'Content-Type': 'text/html; charset=utf-8', 'X-NWS-UUID-VERIFY': 'ec47dd53f1ea9a349894b75c418cbfd0', 'X-Cache-Lookup': 'Hit From Disktank3, Hit From Inner Cluster, Cache Miss, Hit From Inner Cluster', 'X-Frame-Options': 'DENY', 'X-Content-Type-Options': 'nosniff', 'Expires': 'Tue, 09 Mar 2021 09:17:09 GMT', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains', 'X-Daa-Tunnel': 'hop_count=1', 'Accept-Ranges': 'bytes', 'Content-Length': '41538', 'X-NWS-LOG-UUID': '15176903640881133617', 'Connection': 'keep-alive'}
 <class 'requests.cookies.RequestsCookieJar'> <RequestsCookieJar[]>
-<class 'str'> https://static1.scrape.cuiqingcai.com/
+<class 'str'> https://static1.scrape.center/
 <class 'list'> []
 ```
 
@@ -435,8 +500,15 @@ print(type(r.history), r.history)
 
 import requests
 
-url = "https://static1.scrape.cuiqingcai.com/"
-r = requests.get(url=url, verify=False)
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+url = "https://static1.scrape.center/"
+r = requests.get(url=url, headers=headers)
 
 if not r.status_code == requests.codes.ok:
     exit()
@@ -556,12 +628,19 @@ Request Successfully
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 file_path = "favicon.ico"
 files = {
     "file": open(file_path, "rb")
 }
 url = "http://httpbin.org/post"
-r = requests.post(url=url, files=files)
+r = requests.post(url=url, headers=headers, files=files)
 
 print(r.text)
 ```
@@ -577,16 +656,17 @@ print(r.text)
   },
   "form": {},
   "headers": {
-    "Accept": "*/*",
-    "Accept-Encoding": "gzip, deflate",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, sdch",
+    "Accept-Language": "en-US,en;q=0.8",
     "Content-Length": "6665",
-    "Content-Type": "multipart/form-data; boundary=22ee8820c2f949c7a662ade1c3f9b4f6",
+    "Content-Type": "multipart/form-data; boundary=abd98b86b58c60e0013a6345bafcdb38",
     "Host": "httpbin.org",
-    "User-Agent": "python-requests/2.18.4",
-    "X-Amzn-Trace-Id": "Root=1-5e71e564-5191e1c012596fb04fcfefe0"
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-607bce9a-25b9cd287400b0ba2b6fa7df"
   },
   "json": null,
-  "origin": "117.178.93.51",
+  "origin": "xxx.xxx.xxx.xxx",
   "url": "http://httpbin.org/post"
 }
 ```
@@ -607,8 +687,15 @@ print(r.text)
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "https://www.baidu.com/"
-r = requests.get(url=url)
+r = requests.get(url=url, headers=headers)
 
 print(r.cookies)
 for key, value in r.cookies.items():
@@ -618,8 +705,13 @@ for key, value in r.cookies.items():
 结果为：
 
 ```textmate
-<RequestsCookieJar[<Cookie BDORZ=27315 for .baidu.com/>]>
-BDORZ=27315
+<RequestsCookieJar[<Cookie BAIDUID=9E962100EEF5A676C52D22AA8CD89EEF:FG=1 for .baidu.com/>, <Cookie BIDUPSID=9E962100EEF5A67640A439591EB58C21 for .baidu.com/>, <Cookie H_PS_PSSID=31253_33690_33848_26350_33810 for .baidu.com/>, <Cookie PSTM=1618726655 for .baidu.com/>, <Cookie BDSVRTM=19 for www.baidu.com/>, <Cookie BD_HOME=1 for www.baidu.com/>]>
+BAIDUID=9E962100EEF5A676C52D22AA8CD89EEF:FG=1
+BIDUPSID=9E962100EEF5A67640A439591EB58C21
+H_PS_PSSID=31253_33690_33848_26350_33810
+PSTM=1618726655
+BDSVRTM=19
+BD_HOME=1
 ```
 
 这里我们首先调用 ```cookies``` 属性即可成功得到 Cookies，可以发现它是 ```RequestCookieJar``` 类型。然后用 ```items``` 方法将其转化为元组组成的列表，遍历输出每一个 Cookie
@@ -725,7 +817,14 @@ print(r.text)
 
 import requests
 
-requests.get("http://httpbin.org/cookies/set/number/123456789")
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+requests.get("http://httpbin.org/cookies/set/number/123456789", headers=headers)
 r = requests.get("http://httpbin.org/cookies")
 print(r.text)
 ```
@@ -751,12 +850,20 @@ print(r.text)
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 s = requests.Session()
-s.get("http://httpbin.org/cookies/set/number/123456789")
-r = s.get("http://httpbin.org/cookies")
+s.get("http://httpbin.org/cookies/set/number/123456789", headers=headers)
+r = s.get("http://httpbin.org/cookies", headers=headers)
+print(r.text)
 ```
 
-结果为，运行时间较长：
+结果为：
 
 ```json
 {
@@ -774,7 +881,7 @@ r = s.get("http://httpbin.org/cookies")
 
 之前我们说过，HTTPS 比 HTTP 更安全，如果有些网站没有设置 HTTPS 证书，或者网站的 HTTPS 证书不被 CA 机构认可，在浏览器中打开这些 URL 时就会出现 SSL 证书错误。
 
-以 [https://static2.scrape.cuiqingcai.com/](https://static2.scrape.cuiqingcai.com/) 为例，使用 Chrome 打开它，会出现以下提示。
+以 [https://static2.scrape.center/](https://static2.scrape.center/) 为例，使用 Chrome 打开它，会出现以下提示。
 
 ![](../../images/Module_2/lecture_7_7.jpg)
 
@@ -789,8 +896,15 @@ r = s.get("http://httpbin.org/cookies")
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "https://static1.scrape.cuiqingcai.com/"
-response = requests.get(url)
+response = requests.get(url, headers=headers)
 print(response.status_code)
 ```
 
@@ -814,8 +928,15 @@ requests.exceptions.SSLError: HTTPSConnectionPool(host='static2.scrape.cuiqingca
 
 import requests
 
-url = "https://static1.scrape.cuiqingcai.com/"
-response = requests.get(url, verify=False)
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+url = "https://static1.scrape.center/"
+response = requests.get(url, headers=headers, verify=False)
 print(response.status_code)
 ```
 
@@ -839,9 +960,16 @@ print(response.status_code)
 import requests
 import urllib3
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 urllib3.disable_warnings()
-url = "https://static1.scrape.cuiqingcai.com/"
-response = requests.get(url, verify=False)
+url = "https://static1.scrape.center/"
+response = requests.get(url, headers=headers, verify=False)
 print(response.status_code)
 ```
 
@@ -853,9 +981,16 @@ print(response.status_code)
 import requests
 import logging
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 logging.captureWarnings(True)
-url = "https://static2.scrape.cuiqingcai.com/"
-response = requests.get(url, verify=False)
+url = "https://static1.scrape.center/"
+response = requests.get(url, headers=headers, verify=False)
 print(response.status_code)
 ```
 
@@ -875,7 +1010,14 @@ print(response.status_code)
 
 import requests
 
-r = requests.get("http://httpbin.org/get", timeout=1)
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+r = requests.get("http://httpbin.org/get", headers=headers, timeout=1)
 print(r.status_code)
 ```
 
@@ -886,26 +1028,26 @@ print(r.status_code)
 实际上，请求分为两个阶段，即连接 (connect) 和读取 (read)。 上面设置的 ```timeout``` 将用作连接和读取这二者的 ```timeout``` 总和，如果要分别指定，就可以传入一个元组。
 
 ```python
-r = requests.get("http://httpbin.org/get", timeout=(5, 30))
+r = requests.get("http://httpbin.org/get", headers=headers, timeout=(5, 30))
 ```
 
 如果想永久等待，可以直接将 ```timeout``` 设置为 ```None```，或者不设置直接留空，这样我们就会一直等待响应。
 
 ```python
-r = requests.get("http://httpbin.org/get", timeout=None)
+r = requests.get("http://httpbin.org/get", headers=headers, timeout=None)
 ```
 
 或者不加参数：
 
 ```python
-r = requests.get("http://httpbin.org/get")
+r = requests.get("http://httpbin.org/get", headers=headers)
 ```
 
 ---
 
 ### 身份认证
 
-在访问某些设置了身份认证的网站时，例如：[https://static3.scrape.cuiqingcai.com/](https://static3.scrape.cuiqingcai.com/)
+在访问某些设置了身份认证的网站时，例如：[https://static3.scrape.center/](https://static3.scrape.center/)
 ，我们可能会遇到这样的认证窗口，如图所示：
 
 ![](../../images/Module_2/lecture_7_8.jpg)
@@ -922,8 +1064,15 @@ r = requests.get("http://httpbin.org/get")
 import requests
 from requests.auth import HTTPBasicAuth
 
-url = "https://static3.scrape.cuiqingcai.com/"
-r = requests.get(url, auth=HTTPBasicAuth("admin", "admin"), verify=False)
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+url = "https://static3.scrape.center/"
+r = requests.get(url, headers=headers, auth=HTTPBasicAuth("admin", "admin"), verify=False)
 print(r.status_code)
 ```
 
@@ -946,8 +1095,15 @@ print(r.status_code)
 
 import requests
 
-url = "https://static3.scrape.cuiqingcai.com/"
-r = requests.get(url, auth=("admin", "admin"))
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
+url = "https://static3.scrape.center/"
+r = requests.get(url, headers=headers, auth=("admin", "admin"))
 print(r.status_code)
 ```
 
@@ -974,12 +1130,19 @@ pip3 install requests_oauthlib
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "https://httpbin.org/get"
 proxies = {
     "http": "http://10.10.10.10:1080",
     "https": "http://10.10.10.10:1080",
 }
-r = requests.get(url=url, proxies=proxies)
+r = requests.get(url=url, headers=headers, proxies=proxies)
 print(r)
 ```
 
@@ -996,11 +1159,18 @@ print(r)
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 proxies = {
     "https": "http://user:password@10.10.10.10:1080/",
 }
 url = "https://httpbin.org/get"
-requests.get(url, proxies=proxies)
+requests.get(url, headers=headers, proxies=proxies)
 ```
 
 除了基本的 HTTP 代理外，```requests``` 还支持 SOCKS 协议的代理。
@@ -1013,19 +1183,26 @@ pip3 install "requests[socks]"
 
 然后就可以使用 SOCKS 协议代理了。
 
-[示例](../../codes/Module_2/lecture_7/lecture_7_26.py) 如下：
+[示例](../../codes/Module_2/lecture_7/lecture_7_27.py) 如下：
 
 ```python
 # -*- coding: utf-8 -*-
 
 import requests
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 proxies = {
     "http": "socks5://user:password@host:port",
     "https": "socks5://user:password@host:port",
 }
 url = "https://httpbin.org/get"
-requests.get(url, proxies=proxies)
+requests.get(url, headers=headers, proxies=proxies)
 ```
 
 ---
@@ -1043,14 +1220,16 @@ requests.get(url, proxies=proxies)
 
 from requests import Request, Session
 
+headers = {
+    'Accept-Encoding': 'gzip, deflate, sdch',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+    'Connection': 'keep-alive',
+}
 url = "http://httpbin.org/post"
 data = {
     "name": "germey"
-}
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                  "AppleWebKit/537.36 (KHTML, like Gecko) "
-                  "Chrome/80.0.3987.132 Safari/537.36"
 }
 s = Session()
 req = Request("POST", url=url, data=data, headers=headers)
@@ -1071,16 +1250,17 @@ print(r.text)
     "name": "germey"
   },
   "headers": {
-    "Accept": "*/*",
-    "Accept-Encoding": "gzip, deflate",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+    "Accept-Encoding": "gzip, deflate, sdch",
+    "Accept-Language": "en-US,en;q=0.8",
     "Content-Length": "11",
     "Content-Type": "application/x-www-form-urlencoded",
     "Host": "httpbin.org",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36",
-    "X-Amzn-Trace-Id": "Root=1-5e732921-8aa94b987b7b42903544f248"
+    "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36",
+    "X-Amzn-Trace-Id": "Root=1-607bd458-570cc0be76d8d1576f693701"
   },
   "json": null,
-  "origin": "117.178.92.249",
+  "origin": "xxx.xxx.xxx.xxx",
   "url": "http://httpbin.org/post"
 }
 ```
