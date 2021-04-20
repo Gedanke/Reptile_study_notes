@@ -15,8 +15,6 @@ MongoDB 是由 C++ 语言编写的非关系型数据库，是一个基于分布�
 * win10 [https://www.cnblogs.com/TM0831/p/10606624.html](https://www.cnblogs.com/TM0831/p/10606624.html) 
 * ubuntu [https://blog.csdn.net/yutu75/article/details/110941936#commentBox](https://blog.csdn.net/yutu75/article/details/110941936#commentBox)
 
-注意：这里我们为了学习，仅使用 MongoDB 最基本的单机版，MongoDB 还有主从复制，副本集，分片集群等集群架构，可用性可靠性更好，如有需要可以自行搭建相应的集群进行使用。
-
 使用 Python 来操作 MongoDB，需安装 ```pymongo```：
 
 ```shell script
