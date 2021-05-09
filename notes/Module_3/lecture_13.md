@@ -46,7 +46,7 @@
 ## 初步探索
 
 首先，我们尝试用之前的 ```requests``` 来直接提取页面，看看会得到怎样的结果。用最简单的代码实现一下 ```requests```
-获取首页源码的过程，[代码](../../codes/Module_3/lecture_13/lecture_13_2.py) 如下：
+获取首页源码的过程，[代码](../../codes/Module_3/lecture_13/lecture_13_1.py) 如下：
 
 ```python
 # -*- coding: utf-8 -*-
