@@ -1,0 +1,308 @@
+{
+  "id": 37,
+  "name": "窃听风暴",
+  "alias": "Das Leben der Anderen",
+  "cover": "https://p0.meituan.net/movie/3985eaf3858bea0f2a3d966bf7ee2103178217.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "悬疑"
+  ],
+  "regions": [
+    "德国"
+  ],
+  "actors": [
+    {
+      "name": "乌尔里希·穆埃",
+      "role": "豪普特曼格尔德 Hauptmann Gerd Wiesler",
+      "image": "https://p1.meituan.net/movie/c877eac28a690994d271bc7a5167300823143.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "塞巴斯蒂安·科赫",
+      "role": "乔治 Georg Dreyman",
+      "image": "https://p1.meituan.net/moviemachine/b74bd3f44cac6c065277e2b10437538e30545.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "马蒂娜·格德克",
+      "role": "克里斯塔 - 玛丽亚 Christa-Maria Sieland",
+      "image": "https://p1.meituan.net/movie/01c2044135f8dda4bc53cff1d7102f9918356.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "乌尔里希·图库尔",
+      "role": "安东 Oberstleutnant Anton Grubitz",
+      "image": "https://p0.meituan.net/movie/545faedf56ffc00a503f9df3f9ce46c139751.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "托马斯·蒂梅",
+      "role": "部长布鲁诺 Minister Bruno Hempf",
+      "image": "https://p0.meituan.net/movie/ade6d9d06bc485152c70550f9cf2f0a435884.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "汉斯-尤韦·鲍尔",
+      "role": "保罗·豪瑟 Paul Hauser",
+      "image": "https://p0.meituan.net/movie/78ad69e4993dc8a8dc54661763fd6d0a36751.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "路德韦格·布洛克伯格",
+      "role": "贝内迪克特·莱曼 Benedikt Lehmann",
+      "image": "https://p1.meituan.net/movie/86a3f79382f57d46ce9d78006125255246539.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "托马斯·阿诺德",
+      "role": "诺瓦克 Nowack",
+      "image": "https://p0.meituan.net/movie/322b73d97586a7c5c1ff6ca97858e9be33554.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "玛丽·格鲁伯",
+      "role": "Frau Meineke",
+      "image": "https://p1.meituan.net/movie/8208d544c7d2ce70a421eb6433732de642497.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Volker Michalowski",
+      "role": "Schriftexperte",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "迈克尔·格伯",
+      "role": "Zahnarzt Dr. Czimmy",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "克劳斯·芒斯特",
+      "role": "Erich Mielke (voice)",
+      "image": "https://p0.meituan.net/movie/920020985ad09fda9c140c1e4b65c6b615849.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "巴斯蒂安·特罗斯特",
+      "role": "Häftling",
+      "image": "https://p1.meituan.net/moviemachine/836612ee4a9208051f861e5b23a3647847678.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "赫伯特·克瑙普",
+      "role": "Gregor Hessenstein",
+      "image": "https://p0.meituan.net/movie/c46aad513cff7e29d5b4ec1626085f7843388.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "保罗·法格斯纳赫特",
+      "role": "Onkel Frank Hauser",
+      "image": "https://p1.meituan.net/movie/0a258d34084e73929603159d089e211f9637.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "辛纳克·勋纳曼",
+      "role": "Stigler",
+      "image": "https://p1.meituan.net/moviemachine/e46d86de978479bcb67b9039c72c4f5d34997.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Werner Dähn",
+      "role": "斯塔西 Stasi Einsatzleiter",
+      "image": "https://p1.meituan.net/movie/c4d60b9069364281e38562b4ddec513e28721.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "马丁·布拉巴赫",
+      "role": "Einsatzleiter Meyer",
+      "image": "https://p1.meituan.net/movie/8b97c662d91432b3625717b6836d92f2129161.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "沃克马·克莱纳特",
+      "role": "阿尔伯特·杰莎卡 Albert Jerska",
+      "image": "https://p1.meituan.net/movie/5ed737244c1cbbd559a407f8386390df7717.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "查理·哈纳",
+      "role": "尤杜Udo",
+      "image": "https://p0.meituan.net/movie/e39444b071c0bbd1bbf4308b9b2574a5173572.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Sheri Hagen",
+      "role": "Martha",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Harald Polzin",
+      "role": "Wächter",
+      "image": "https://p1.meituan.net/movie/aaf66b3036f35fad923b6247bb5ad26f8758.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Fabian von Klitzing",
+      "role": "Tagesschausprecher",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Gabi Fleming",
+      "role": "Ute",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Susanna Kraus",
+      "role": "Andrea",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "胡伯图斯·哈特曼",
+      "role": "Egon Schwalber",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Ralf Ehrlich",
+      "role": "Mann in der Kantine",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Paul Maximilian Schüller",
+      "role": "Junge mit Ball",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "马提亚斯·布伦纳",
+      "role": "Karl Wallner",
+      "image": "https://p1.meituan.net/movie/bcda9fa1d12cfe42d93c3940923489a7287458.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "伊嘉·比肯费尔德",
+      "role": "Elena",
+      "image": "https://p0.meituan.net/movie/461d55b4b3de3df809c19a094f0b58ab32113.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "吉塔·施维赫夫",
+      "role": "Anja",
+      "image": "https://p0.meituan.net/movie/343bddec6c1d7b8b57caf08d0b869dc120018.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "希尔德加德·斯罗德",
+      "role": "Elena",
+      "image": "https://p0.meituan.net/movie/599d66ec430b8ba19aabda3c214ab7f115003.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "凯·伊沃·保利兹",
+      "role": "Buchverkäufer",
+      "image": "https://p1.meituan.net/movie/bff9ec2e36eedf745d38a1c77d7972f111605.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Elja-Dusa Kedves",
+      "role": "Anja",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Anabelle Munro",
+      "role": "Theatre Actress",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Ernst-Ludwig Petrowsky",
+      "role": "Bandleader",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Manfred Ludwig Sextett",
+      "role": "Band",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Philipp Kewenig",
+      "role": "Christas Verhafter",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jens Wassermann",
+      "role": "Rolf",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "维尔纳·德恩",
+      "role": "Einsatzleiter in Uniform",
+      "image": "https://p0.meituan.net/movie/333cc3c3460ca7cfc0dab88fddc5b27058941.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "弗洛里安·亨克尔·冯·多纳斯马尔克",
+      "image": "https://p0.meituan.net/moviemachine/c58cdebf9bc58f6a30418ce28c16a47133902.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.8,
+  "rank": 78,
+  "minute": 137,
+  "drama": "1984年的东德，整个社会笼罩在国家安全局的高压统治之下，特工魏斯曼（乌尔利希·穆厄 饰）奉命监听剧作家德莱曼（塞巴斯蒂安·寇治 饰）及其女友演员克里斯蒂娜（玛蒂娜·杰蒂克 饰）的生活，监听过程中，魏斯曼渐渐对这家人的生活产生了兴趣，开始暗中帮助他们。一篇刊登在西德《明 镜》报上的文章引起了特工头目的注意，他们认为这篇文章是德莱曼写的，并逮捕了克里斯蒂娜，希望能够从她口中得出她丈夫的秘密？而审问克里斯蒂娜的正是魏斯曼……",
+  "photos": [
+    "https://p0.meituan.net/movie/e6bdb783a575abf893f819e62a7e813f61021.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3d769cbfcf6539ce5eee36a8783a60ba85819.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ecff5044de74cf5849a57e085522dbf7107613.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6ae8283cfcd2df91c9f4ac06ce86f01e91721.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2cb74049e6e7731cce56967467152f5764945.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2b167af6f50120489c54cca9c28c89dc88837.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e6865bd3d9ce0116fdae75b35793766667298.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3425cf7dc7514cbc5d7e15ce9a6d1a4979018.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d28ca7e1d558ce6853d49513feab4a6d57523.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d273508916fe66c5acb55802721f479577422.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6a45fd7f951d2bc5fee7ec274ad8d0aa41859.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b7cbc8e1492e1a1426a29e23323aec5164971.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b6c9411828cf6b416662dc021e0dbe7b76642.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/be3cd42289ce79da0a522e5de4dccfb0102834.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/22244b9dd348a7ead3f0ed44fde6c72766166.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/27e7bf4e2dcda7c3bb0af3e10d5228d5126582.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8f90a4c1e5b3f1cfd80b344289e44fd546431.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/db489c80d5ac77118a26e9afec0495b152955.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f926e75e7736767e8f6aa74701d5772691755.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b5613b3b3b2d84c047532b946044ea3557901.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a020c9340ee33017c9a8ced4615832ca34879.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/23270f75212c7d0d11d883f4e07ac3d558418.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0a08058835801c093d5b24aa3780d5c968514.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e0d60bdf60d244a00263fb43c4d3c92960678.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/261503c1eed929b4c7410a5a2b36f8fd79266.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/69709dd9b3911900ef2c06ff81c37d0964787.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a7153a732effd3f445c319346396304e72575.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4e2cd7b876de14ddfebfbb9bdb901bff65801.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d6902fffcea0d9638f61c6148eb4507681235.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a07a59d9f04d9d054e9fdddf4480a58265827.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0a8090d2de48b24801a448c39b57d23c51630.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/3bd1e427cc2995bde8a807cf2b20018e34220.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/196c9d77de849a8dec78ce0eae58a73562404.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/67231a1dd67ca04f89f096585a2a89bb45614.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2413a1bb4b3aeaea8912d548e54609d861983.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6ec48b54965ec86037b45533db23084f80306.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/32a9faa69b4dea9046c80bcbb8aec8f279591.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a175f33f7b00b86a23544e6a0fd1ffa9190418.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7b9feeaab9396f226e8b4fb137b52039138306.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/49319a5feab5687227b904ef2273edf5262615.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2b461dc34c5df318813e5bb15b380455314598.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/95c2771a90d82c5b66bac6a17db0e83a153108.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0e90a17fdba639e5c381c8229fa35dad65550.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5d2ae381db397905771a5473083ab40e136532.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3985eaf3858bea0f2a3d966bf7ee2103178217.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e12f9385c8c038f6fd994436744665a4206494.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/62e437f42f2a9351c13703699cf3660e216306.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f14327ee0d58676536407b7473090a43326495.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e4b267edb7d794f48b33eb0af0d1dd88160094.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8afc33500cf21945293ca9f53e96c31d101310.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/718439d80829ae96e89a6d06fbbc097a235481.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/19bd07583d3dfc6e5ae365e601ed0fd5251510.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/92fdeef72eb01f7594480f4d0555be14304793.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4930ff37ee7b11e3c042538be66466e7313057.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/21ac9e1796bb9ce4cfcaee8eb9233107273763.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/512aec7baddf6f70b9ad361731c58ee2263375.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5f15c7c2c0614122a10c014b2191ccb166845.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/64a5e1cb1b7700056d21ba1985519420120490.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/33f3e0e7f868dadf43a6cbf127a7d9d9137098.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c3bf8c90fdae54bd16347adb75c00f1557419.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4ac8a0711ac51a5b78b36a2145a239b968379.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/48bf1f3efe6edef3fa3dcfce598725ca116238.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a126c117cb92b657db62acc98569ae34123110.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8fee79be353f8e397b002d1f0865997857851.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/53564a80086aafa34ef2438130966b9f127762.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/37c5d06e96d216018f1941087650d157121346.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dbe79643e4a7598df1cc2bd270631759113158.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/80146f7d7aad2d3da5d5c5da461750be113398.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/453f32e4cd667ec3ed36fe651026e434149438.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9c901be730b1a4b803d364e416bf3adc120556.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/3b7dd99ee91241bbcae7eb101c62a3bb162948.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e2762d92d644a9866406dadc58fcf8de130607.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/054d766ac72f2855cc28cac9aaae2fd4144999.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f726124e768432e4de17dedc98c7289d23324.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/88df8690d1a2d93b38c0ae544aa4730857014.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/15ec9defbeca08ae1bf18fd0ed4dc22779887.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8abaf22acb115d3205bc89c540f7b64f86156.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2b224aea7000514b340ca6bf0eeb175a125223.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9f1b021d480ccfb6be38d9c4a2f9e5a345533.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "2006-03-23",
+  "updated_at": "2020-03-07T16:39:14.940969Z"
+}

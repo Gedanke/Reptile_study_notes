@@ -1,0 +1,93 @@
+{
+  "id": 20,
+  "name": "迁徙的鸟",
+  "alias": "The Travelling Birds",
+  "cover": "https://p1.meituan.net/movie/a1634f4e49c8517ae0a3e4adcac6b0dc43994.jpg@464w_644h_1e_1c",
+  "categories": [
+    "纪录片"
+  ],
+  "regions": [
+    "法国",
+    "德国",
+    "意大利",
+    "西班牙",
+    "瑞士"
+  ],
+  "actors": [
+    {
+      "name": "雅克·贝汉",
+      "role": "叙述者（声音） Narrator (voice)",
+      "image": "https://p0.meituan.net/movie/664d8122c1abaecedff0e63bffa3bc3b48550.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Philippe Labro",
+      "role": "叙述者（英语版） Narrator (English version)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "雅克·贝汉",
+      "image": "https://p0.meituan.net/movie/664d8122c1abaecedff0e63bffa3bc3b48550.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "雅克·克鲁奥德",
+      "image": "https://p1.meituan.net/movie/e0556f9699c4e3368de997819b529ea039850.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 9.1,
+  "rank": 97,
+  "minute": 98,
+  "drama": "当鸟儿用羽翼去实现梦想，翱翔在我们永远无法凭借自身企及的天空，人类又该赋予他们怎样的赞叹呢？“鸟的迁徙是一个关于承诺的故事，一种对于回归的承诺。”雅克·贝汉以这样一句话带我们踏上了鸟与梦飞行之旅。",
+  "photos": [
+    "https://p0.meituan.net/movie/3add1a28b30c1d6649ed17ddebfa472887251.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/cc801d45e9458a453503690207342d4273194.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/89bc0ef479a53d340bfa0533e7cb4e3f83554.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/347ad3cca5b9337f73f42d93c96b5cd168069.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d60818206fec8c3e7d6aa7dea119c967115982.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/950ff95534dfbef349173870062c777928080.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/341d4b10c8dfcea2ce8c8922ba6a161b38982.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9220e7dd0b1e1f5350264929f4d5562241308.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/70a46e0ba7997a7646b9ac7e21ee0bca74364.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1552e9b1c431dcc5a42f95cad0faeff175910.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0973b82cbf6332a76233bd87d2de493441621.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ff28a90a4d0468a91ba33ac774e2d19b19513.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9f11aa6d8e886ac4df18d57873a507b953359.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4109fe2fc496e2bae81e6d0916cd56ff35418.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/43f4f2042642c1c95ea31561656e19da66736.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/21468e5b10f46f05e24f2fbd6fc523c471619.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/34d688294ce35519302345cd9ceed2cf59947.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/85ae78664587d7192291d09d2cbfc87c56639.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/199ad2a0941ac7f84fcead8bf6e7400a43236.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ebb65d53c8d0ac49148488d346f01a5164882.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ab329ccb41fd6124137dc2cc530a602481228.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/965f3e4476efc7c008a3d6d4fcb2246654422.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/43a0fa360b24bc5771c318ff2a9d1d7255146.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/53c874e716a6ac0f1b73606f05ffa76e66658.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a16ba794abcb98619195aa0429f56f3896593.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4cc9211d59d4c6a6db05a721cd34b97344416.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5822ab785035a2e46f1671b58b22137814413.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/058e1816455158f0df6e59af4310846c37792.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1b9e2bb8f048a220e46ff9993f24149841320.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0b57bffe77dd33b6e6921c651d4d5ab543409.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f11b443f78f103a585b5594a39b43a0485012.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ef2d1ccf33f79db8294831457313c8f032841.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b7a73773186910f80f7775298098b33445260.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/__44335620__4499375.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/bda7ab06d53f1129126742cf4aa39904112220.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/609dd0809b18c68c502f5e44e2d8bdcb67430.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/08be417cc3fc04c8218e054fba00e53295023.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8b1b1d3900a5f43205d663b64cc32301152713.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/01a6bb78804f11e929bd358eb5092004141045.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/df9d6459fa479c04adb889ae006c1c78160870.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/41222141168526442d9acff1ddb12fc846143.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ced38aaf2a4a8ea59d7abba7657f611b290584.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a1634f4e49c8517ae0a3e4adcac6b0dc43994.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4afd382200043f865e91fa544e40324162483.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/aa72c6c67b007b9ee67b5234be5c775e91174.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/156bdec8de151f771392b2a3819d5aab101809.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ff1c6d3a0bfa602cb8ac39f07858238c140593.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "2001-12-12",
+  "updated_at": "2020-03-07T16:35:45.121798Z"
+}

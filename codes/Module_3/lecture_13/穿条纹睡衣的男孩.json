@@ -1,0 +1,209 @@
+{
+  "id": 39,
+  "name": "穿条纹睡衣的男孩",
+  "alias": "The Boy in the Striped Pajamas",
+  "cover": "https://p1.meituan.net/movie/d5970e36c8868a4b746c80f3b3f8a404174615.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "战争"
+  ],
+  "regions": [
+    "英国",
+    "美国"
+  ],
+  "actors": [
+    {
+      "name": "阿沙·巴特菲尔德",
+      "role": "布鲁诺 Bruno",
+      "image": "https://p0.meituan.net/moviemachine/d7a5efcbb62e02190b431273bd4d53e9136604.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "维拉·法梅加",
+      "role": "布鲁诺母亲",
+      "image": "https://p0.meituan.net/moviemachine/8afe2cd311a078f889c14f2783b4d810179095.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "大卫·休里斯",
+      "role": "布鲁诺父亲",
+      "image": "https://p0.meituan.net/movie/3370dae9842b17a809b9ed7628b1193e47146.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "鲁伯特·弗兰德",
+      "role": "Lt Kotler",
+      "image": "https://p0.meituan.net/movie/b2482e8e07afc2ab0aed7d77fe949f1544489.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "杰克·塞隆",
+      "role": "撒慕尔 Shmuel",
+      "image": "https://p1.meituan.net/movie/9409ccc08607a10c659743ce87ce966734096.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "卡拉·霍根",
+      "role": "Maria",
+      "image": "https://p0.meituan.net/movie/786cda02c239274eb2dadd7801ed1b5826874.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "理查德·约翰逊",
+      "role": "布鲁诺祖父 grandpa",
+      "image": "https://p1.meituan.net/movie/c2cb61bf3951abf4e23c94283c34304e31398.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "大卫·海曼",
+      "role": "Pavel",
+      "image": "https://p0.meituan.net/movie/7366382bba35fed7cccfa9ebd5cf3a2928585.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "谢拉·汉考克",
+      "role": "Grandma",
+      "image": "https://p0.meituan.net/movie/5c5c78439d971f8d43d6836a6f4461be40574.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "安贝尔·比蒂",
+      "role": "Gretel",
+      "image": "https://p1.meituan.net/movie/88609161746f3896404cc62126a49c3c16638.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "祖萨·霍尔",
+      "role": "Berlin Cook",
+      "image": "https://p0.meituan.net/movie/b3d2792515ebf9f4cb99f33e6afead5911843.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "拉斯洛·阿隆",
+      "role": "Lars",
+      "image": "https://p1.meituan.net/movie/795fe8fd193ecb9ec463d8b5d33f3b8e17383.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Henry Kingsmill",
+      "role": "Karl",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Zac Mattoon O'Brien",
+      "role": "Leon (as Zac Mattoon-O'Brien)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Gábor Harsai",
+      "role": "Elderly Jewish Man (as Gábor Harsay)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "贝拉·费斯彼姆",
+      "role": "Schultz",
+      "image": "https://p0.meituan.net/movie/3a806b238b337bc6ea8ac1de4623aa4f37706.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Domonkos Németh",
+      "role": "Martin",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "阿提拉·埃杰德",
+      "role": "Heinz",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "伊凡·弗雷贝利",
+      "role": "Meinberg",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Charlie Baker",
+      "role": "Palm Court Singer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "拉斯洛·纳道希",
+      "role": "Isaak",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "László Quitt",
+      "role": "Kapo #1",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "米哈利·绍鲍多什",
+      "role": "Kapo #2",
+      "image": "https://p0.meituan.net/movie/121b711ff11fae863010c13cf431141f83658.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "泽索特·萨法尔·科夫卡",
+      "role": "Kapo #3 Sonderkommando",
+      "image": "https://p0.meituan.net/movie/b7972e88b94974db26e78397f71aaf858479.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "吉姆·诺顿",
+      "role": "Herr Liszt",
+      "image": "https://p1.meituan.net/movie/71135f695281c5d252c612e3d3f61c3510674.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "奥索利亚·茱莉娅·帕普",
+      "role": "Dancer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "马克·赫尔曼",
+      "image": "https://p0.meituan.net/movie/816d91a816ff194d88636b01dd5e042c30501.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.8,
+  "rank": 76,
+  "minute": 94,
+  "drama": "1940年代的柏林，八岁的小男孩布鲁诺和同学在外面玩耍后回 到家里，发现家里正忙得不可开交。原来身为纳粹军官的父亲被升职将要调遣，母亲正在准备一次聚会。只不过布鲁诺一点儿也高兴不起来，父亲的新职务是在波兰的纳粹集中营，全家都要搬过去，这样他不得不离开心爱的家和伙伴们。一开始布鲁诺很难适应新的生活环境，很快就觉得无聊起来。没有同龄人陪他玩，母亲也禁止他到处走。倒是姐姐从来不讨厌跟他聊天，因为姐姐忙于摆弄自己的布娃娃，或者是跟父亲的同事——一位年轻英俊的男子聊天。布鲁诺从自己房间的窗户往外看，有一处很奇怪的农场，人们都穿着条纹睡衣在干活。正当他想试着多去了解一些的时候，又被警告不许接近那里。实际上就连母亲也不太清楚这里，她以为只是住在某个劳动营的隔壁，丈夫隐瞒了这里是杀人工厂 奥斯维辛集中营的真相。有一天布鲁诺在花园里玩的时候，不小心摔倒把膝盖碰伤了。在厨房干活的穿着条纹睡衣的帕维尔赶过来帮助他包扎了伤口。两人从此结为了好友。在房子周围晃悠了几周之后，布鲁诺终于决定越过界限来到了一个用电线网制成的围墙边，看到围墙的另一边有一个穿着条纹睡衣的男孩在用手推车倒碎石子。他很惊讶终于在这里发现了可以一起玩的同龄人，布鲁诺以后每天都要偷偷来这里和新朋友什穆埃尔见面。数周过去，布鲁诺对于自己的所见所闻愈加感到困惑，家人教导他所有 犹太人都是魔鬼而他与什穆埃尔的关系却越来越紧密。另一方面，父亲决定把他们和妈妈送到海德堡的姑姑那里去。一想到从此无法再见到这位最好的新朋友，布鲁诺感到很绝望。什穆埃尔告诉布鲁诺自己的父亲失踪了三天，布鲁诺决定利用最后的时间为他做些事情，于是也穿上了一件条纹睡衣，从一块松动的铁丝网下爬进集中营。然而，无情的命运却与小男孩布鲁诺开了一个天大的玩笑，他的生命也将从此划上句号  。",
+  "photos": [
+    "https://p1.meituan.net/movie/c830c4790757a6317fccb2f85a0dd9ef82305.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/776d6eb77a205057a39c8d894814f1a1218668.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bfb2b48aff6604ff57b5fc2446bd851c101052.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/98e4f94aa331c74a3d3e2a5adbbb5431188276.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a628719def8f28e5129cd007a7107116197839.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2117754d8b3b4577fac125ed55e693a658994.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4a25c6c91e1941cf36f6ae39ddb1d860123201.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7c30ca29138513440431d759f8d8645f24166.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/02a5384610701048da7f79b8bec433e782108.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7f758d0ab7db5f58891807b1df968b1a12905.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f0bb26298afe03f44178021ca4f2098183500.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/01a12c63ac80cd4fbdda983562baaba777542.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a9311ea4ab899874d4a710bcbd87f16f82262.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e24fc614b95005564b7d39065a8dd2e9123256.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0fe34aae45822babc4df0762483066c4115492.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/32fd20fc9ca030c91f6e02d7fd5e77c690765.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/51f7e7dbeff63841d979bfdd8a21f2b187690.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/42240e66cb2902e6184efe04960daff9106324.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b976981de7bdf7e6ff2f5be4102f7f92105994.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f6accc73a74fdc326af809762731ddd8148944.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1159bd7e1c491d5f2032df15a1c2e447187455.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/234f4b7ddb8db74b2f9de87eae10aea8168210.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/820e42f3fe6c3234240d755f18aaccfe65810.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ac5137c5057ba4c6a1e61458c569ee8d130609.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/461e5f85675459c860b68de7f614c523136801.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e61a53ec12ba374e7670916d429eb38098789.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/538153a084a105d4b7506569beccd65f400280.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/48e796c18bac0e8c92dc0498eb0e292994093.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6436c63593e8e165fa499a02fcbd38ae86549.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6f61749af0f0cc4712dc475adde121db304187.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/82d6d76f1a216cd3140882a1c47b527f303993.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0b15c85fe6ad34c885faa83d160a8d64237891.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e370dd43bfd2bc81eeac85bb60b3bebd83441.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/cfa8f629c64e1c29590e8524ecf43d48297941.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2cfe318c305dc3f5598afa9c2addfb0570746.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f3415006269fb4acde6993016642e6ca103767.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/80a8c87e40c7c973fb31f510ad007bca164395.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/3cc896717a06a63e74006d1567c1b775468422.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/db270b5a8d5d72af6376d30b0763a0b7205802.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f4169c95df1d02615f06ecbf32c49333266022.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e682e9e2ae1cde2eccc39bcc417a24f794145.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fc446f88c2076879255512a2cea575a2287234.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a0e0426a4390f5ecb49d25770a184dc0150779.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5a704ea9bba9d76ce6cc33d6727390f496301.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/13c615346f350754c256ff1b6a619110212873.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b4e402dacf1e08baafac1bbb8be3d645131894.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ca7c8b99fb3c7b10452832023808447d155994.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1d2186d075ae77be20b8eeb04d25b1bf53981.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9441de82f33c10ffe18baa1982c3c6cf128144.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "2008-08-28",
+  "updated_at": "2020-03-07T16:39:41.283614Z"
+}

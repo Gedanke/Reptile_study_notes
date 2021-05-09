@@ -1,0 +1,337 @@
+{
+  "id": 16,
+  "name": "一一",
+  "alias": "Yi yi: A One and a Two",
+  "cover": "https://p0.meituan.net/movie/6cb23356f9d8e0b506349561c633310d102189.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "爱情",
+    "家庭"
+  ],
+  "regions": [
+    "中国台湾",
+    "日本"
+  ],
+  "actors": [
+    {
+      "name": "吴念真",
+      "role": "简南俊",
+      "image": "https://p1.meituan.net/movie/1374a080d4855ffe2eec0902034caea057277.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "金燕玲",
+      "role": "敏敏",
+      "image": "https://p0.meituan.net/movie/2a9f0e4396681361955ca375c4307a7635002.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "李凯莉",
+      "role": "简婷婷",
+      "image": "https://p0.meituan.net/movie/adddf522224aa96b17fd8419859f995a8602.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "林孟瑾",
+      "role": "莉莉",
+      "image": "https://p0.meituan.net/movie/91b997890f091fe085b712f78e4b303037742.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "张洋洋",
+      "role": "洋洋",
+      "image": "https://p1.meituan.net/movie/b1285ccd6eaca85f1598d92aa94e8dd77814.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "陈以文",
+      "role": "客串",
+      "image": "https://p0.meituan.net/movie/333b6ae4a5de1593523a41015ba05a6328132.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "柯宇纶",
+      "role": "士兵",
+      "image": "https://p0.meituan.net/movie/1ce5c4965d16a44b482b1b543c95d42312943.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "唐如韫",
+      "role": "祖母",
+      "image": "https://p1.meituan.net/movie/abc2fee1bd836ea2bb5f0289d1d04ea322932.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "杨德昌",
+      "role": "钢琴家",
+      "image": "https://p0.meituan.net/movie/e0227e2fb8e69f0bd86287305a12c55290999.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "萧淑慎",
+      "role": "小燕",
+      "image": "https://p1.meituan.net/movie/517f5052976cd7d092d85e112f4d547b21010.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "尾形一成",
+      "role": "大田",
+      "image": "https://p0.meituan.net/movie/6ecc80094cc444a100557efd5d4c3b0d21070.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "陈希圣",
+      "role": "阿弟",
+      "image": "https://p0.meituan.net/movie/e7a6277e0bc5ee959c6bede7b68bdc75247985.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "张育邦",
+      "role": "胖子",
+      "image": "https://p0.meituan.net/movie/1f46dbacd1e14e7f975113307294b6972748.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "徐淑媛",
+      "role": "蒋太太",
+      "image": "https://p0.meituan.net/movie/57b704bf4abd6efd66dd440aea02454019774.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "曾心怡",
+      "role": "云云",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "许安安",
+      "role": "(as An-an Hsu)",
+      "image": "https://p1.meituan.net/movie/3f64e12edf68352787f6b89ef38d8c0636820.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "柯素云",
+      "role": "阿瑞",
+      "image": "https://p1.meituan.net/movie/33b44e8c7eee336994c4c73d276ee38e42919.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Kai-Li Peng",
+      "role": "Cellist in cello concert scene",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "唐从圣",
+      "role": "Punk at N.Y. Bagel Cafe (as Congsheng Tang)",
+      "image": "https://p1.meituan.net/movie/af773c03d3220fd9aeebf18ea48bf2d0163293.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "戴立忍",
+      "role": "立忍",
+      "image": "https://p1.meituan.net/movie/eb77207e0020f9c67de0322cec5611bb32391.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "陶传正",
+      "role": "大大",
+      "image": "https://p0.meituan.net/movie/42d7ac18f5929047eccf0ad3116e881d13428.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "孙法钧",
+      "role": "A-Di's Friend (as Fajun Sun)",
+      "image": "https://p0.meituan.net/movie/39485d705874b390b9d1324ff3112d9b5535.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "江惠惠",
+      "role": "Big Boss Huang's Lady",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "李永丰",
+      "role": "美国",
+      "image": "https://p0.meituan.net/movie/03dee7778da0942f26e1830c9c954fb044001.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "津田健次郎",
+      "role": "烧烤店员",
+      "image": "https://p0.meituan.net/movie/69b6b9f7291f30886d8ad6de87496e8825540.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "宋少卿",
+      "role": "年轻财务员",
+      "image": "https://p1.meituan.net/movie/bd2eb6b87e9ae4062ff9d851fa2ad18b8008.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "刘亮佐",
+      "role": "Dean (as Liangzuo Liu)",
+      "image": "https://p1.meituan.net/movie/8c567df22590a7d8aa3d0b5946873e8f11324.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "范瑞君",
+      "role": "A-Di's Friend / Yunyun  (as Reijun Fan)",
+      "image": "https://p1.meituan.net/movie/a127c30d7684a9d499502e76bf57b74113582.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Chi-Tung Yu",
+      "role": "Xiao-Yen's Uncle",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "罗北安",
+      "role": "Big Boss Huang (as Bei-an Luo)",
+      "image": "https://p1.meituan.net/movie/f9f700d131b6bf50c45e17b0d6f17e5428827.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "邓安宁",
+      "role": "A-Di's Friend",
+      "image": "https://p1.meituan.net/movie/df73802cb03dd34a449c99785564e3a327383.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "杨淇",
+      "role": "Policewoman (as Qi Yang)",
+      "image": "https://p0.meituan.net/movie/457329677f89055f455664d8525f986837131.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Kiyotaka Ueno",
+      "role": "Hotel Clerk in Atami",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Christian Storms",
+      "role": "Hotel Okura Guest",
+      "image": "https://p1.meituan.net/movie/81b48de7f20b64bf346e580f3c6991ed20541.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Shi-hui Chin",
+      "role": "Nancy",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Kuo-Chih Shu",
+      "role": "Shu Ge",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Mei-Yun Yu",
+      "role": "N.J.'s Neighbor",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Antonio Lee",
+      "role": "Piano Bar Pianist",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Yuen-Cheng Cheng",
+      "role": "A-Di's Friend (as Yuancheng Zhen)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "苗子杰",
+      "role": "A-Di's Friend (as Jay Miao)",
+      "image": "https://p0.meituan.net/movie/d2bfa5e444cd80338a622c4ca202bf968808.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "李键昌",
+      "role": "Punk at N.Y. Bagel Cafe",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "徐珪莹",
+      "role": "N.J.'s Secretary",
+      "image": "https://p0.meituan.net/movie/e7aee2ef7d7cb2cd5339fe3149fe653a20523.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Shih-Ping Yang",
+      "role": "Grandma's Doctor",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "杨谨华",
+      "role": "The Doctor's Wife (as Jinhua Yang)",
+      "image": "https://p1.meituan.net/movie/a9dd9be365246fa783129df6c9ee38b944731.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Cheng-Wan Pieh",
+      "role": "Policewoman",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Shih-hue Tu",
+      "role": "Policewoman",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "毛训容",
+      "role": "Min-Min's Co-worker (as Xunrong Mao)",
+      "image": "https://p0.meituan.net/movie/6dc05ad6f2de0724c56883b0d2dd217717367.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "杨德昌",
+      "image": "https://p0.meituan.net/movie/e0227e2fb8e69f0bd86287305a12c55290999.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.8,
+  "rank": 90,
+  "minute": 173,
+  "drama": "NJ（吴念真 饰）是个很有原则的生意人，同妻子敏敏（金燕玲 饰）、女儿婷婷（李凯莉 饰）、儿子洋洋（张杨洋饰）以及外婆住在台北某所普通公寓里。小舅子的一场麻烦婚礼过后，因为外婆突然中风昏迷，他迎来更加混乱的日子。敏敏公司、家里两头跑，时常感觉自己要被耗空；婷婷一直为外婆的中风内疚，恋爱谈到中途发现自己不过是替代品；NJ更是麻烦重重，公司面临破产，他又不愿放下别人眼里一文不值的自尊。一家人里，似乎只有洋洋没有烦恼，他平静地用照相机拍着各种人的背面，帮他们长出另一双眼睛，然而，洋洋简简单单的一句话，道出更深的悲凉。",
+  "photos": [
+    "https://p1.meituan.net/movie/afe0707554fccc200b380fa8d76c8122105547.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1207103886b22e141ac13604645b1a9553889.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1346a3eb9d9b43293ce389e739b50b60142898.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e9a0e475356758b84b581982ad94881470796.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8ed370e8ba75f6add1641ec9766116b148186.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/298079f0b6d8c0b0b8d9acfecd02a39184346.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/618602f0220d4843fbb0508908458f7664684.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e3ac5b7459b690933056caf3986957ed39237.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c18c4ea8e60bfaf8afc6a3ccb6daca6598206.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d1fcfe605a9f0fc9d5466408c3b773eb117008.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0342e43e8b3d303c3fe519df29a9f52845870.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/448bdc0d031bcdd32cd7ca8ef8d63d8463309.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8d247a840e7e450a741e98b4ec752b93110805.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/913528aa15b68f5df789727e117ef7fe98093.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b731eba2c754516a9db77245f63502d847361.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/220f0ee04ccb022b5f2fd5d6c118c5d797021.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e94ff33644907e932d3ba1cc79fa19c917896.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/00b8dcf90b48ace60faff2a62020694e85906.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9bdee8e94d74b78b7508322889967be659470.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f4a3979365b8d9970548875bb13620b972874.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/edb4b7baebbca93de759eb35c1988bec119578.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/99868b5ccd077ed28da69344df91ed5399378.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dd1e7d6f9b758ee41720d6c19ecbffce89156.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/bfdb16f84392ecff7dafe848f54f188289529.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a4b1975203095ba6220b7177017e431b9593.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/50fbab1d7c90a076f90088ecd38e5ce266395.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/70a8602f9c25cbd4ab36331c28c468b424845.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6471122cb43790b9c2663247e2995dfc14739.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a3008e972807412ba0bbe7eef6ce90fb53029.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6b57ce841cd2fb4bf68f5ed037e8ea1639550.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c94463ac8b2f3247f4f3f14df9471ef233466.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c7f10e1e6c6b99ac614b01cf779da75945282.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c1ef15fcc714e9930110f05b7fe6302056122.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/23336ae430ceb5311587d0693d2005bb43504.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/940c934c976c5733319deb5cd674096439947.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cfb7436c407c83a5e21ca031fd05887249836.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6cb23356f9d8e0b506349561c633310d102189.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9c8b4066f2c0fd9453ace0957dfee75695610.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6c6a47199aecc210c7ba3eebe284f68159062.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/01fefc4939e1a7ffcf646eeb65533c3764959.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1d948256229a4fd7422e8bba1708ff8835668.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4aea63e51ea3a4b91b9b4851b40e0f64121285.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a828135de1d5e36057e994b47a3be43f53614.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/609f5e4bfa2125117e56d4eb2a84d541220372.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/65ded242311531502bf3114081666ab080956.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cc5f8cadf76f7b1403d57369b3d6fae9171637.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7bacec3426076d800ce122f2140d6a51114882.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e4c9111f7a1e5b2815c0d318df4a04db203612.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/077ac0d936d79ae5de5b0f6bcd0f97f3110590.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/12061a38a95df3a7103bb2949f343deb116021.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/109fd37cebb3e6cb18b4a8bf7857cdc3102874.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0eb047f7cfb204cea0d9c154b03b071d106081.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4ca6cc2835f58749faa8ddb4f3a55523170219.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/56fa578d40becdc810fadde05169e6b539895.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/89a5e423b7f4d14452f4a58267f63d60128802.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4d886fb739a58d19cea148bfcfdfcb17104708.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1a74ea127a9e8217c7b8c7ab83f6ea89104537.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/df055a140ce6379ac74ddb04c844380381630.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5eaae14f263dc038bc5e05b4ffb6e46c52820.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6c85bb552499db19c9bd9767f877341052819.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1d16c11f5382e660618c49bebd1cbd6d122811.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c63860d18cdbdc93135eef391fc0d6f0167150.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6b8e161d261d812e6d1fac9cd85fdefa143971.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/48bd2f538a9093e0eff12c890630a810124805.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/13572a4a0aafafcc0c8bea5c56b628a6145980.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e4d3874fbab74c362e7ebf4aea025563275017.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/92168b6edd58da09aebedf333e15eab4118840.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2eb5fb0662508ec2886b7d3102f25ed1193142.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/63715149b8f77b2c3970c88f928c406b192853.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4c4d2a752a8ad3f8f2ced6d135ad8971204825.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8906a93446d845468bbad59941f90c1c106958.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "2000-05-15",
+  "updated_at": "2020-03-07T16:34:46.656102Z"
+}

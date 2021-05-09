@@ -1,0 +1,699 @@
+{
+  "id": 27,
+  "name": "七武士",
+  "alias": "七人の侍",
+  "cover": "https://p1.meituan.net/movie/4ffca83fd972f71e291f8ea8d78a4b58594878.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "动作",
+    "冒险"
+  ],
+  "regions": [
+    "日本"
+  ],
+  "actors": [
+    {
+      "name": "三船敏郎",
+      "role": "菊千代",
+      "image": "https://p0.meituan.net/movie/76ca515b8eaaa8bf4fa0ac4cf479e89026137.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "志村乔",
+      "role": "岛田勘兵卫",
+      "image": "https://p0.meituan.net/movie/90e8fd03bfe7557767334345b94cc49c38759.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "千秋实",
+      "role": "林田平八",
+      "image": "https://p0.meituan.net/movie/2218ace80458d474890658264406eb8627117.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "加东大介",
+      "role": "七郎次",
+      "image": "https://p1.meituan.net/movie/6e0c027dc7857024208fdbd9ced5b84523360.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "稻叶义男",
+      "role": "片山五郎兵卫",
+      "image": "https://p0.meituan.net/movie/730a964c919fd6d8641e3d12630f9dbd10116.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "宫口精二",
+      "role": "久蔵",
+      "image": "https://p1.meituan.net/movie/8766404f78ec06ca6b553cb0a5dd52cf24804.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "木村功",
+      "role": "冈本胜四郎",
+      "image": "https://p0.meituan.net/movie/ba471b540da518713a732f195f4f61a98011.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "藤原釜足",
+      "role": "万造",
+      "image": "https://p0.meituan.net/movie/3ec1db73d981363fc9f9615227d3a66d38280.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "小杉义男",
+      "role": "茂助",
+      "image": "https://p0.meituan.net/movie/06bc0bb71225cf013bd8b046f7394b0f12837.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "左卜全",
+      "role": "与作",
+      "image": "https://p0.meituan.net/movie/bbd797ae0da53c8c5d87e5e5b900ddc612536.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "土屋嘉男",
+      "role": "利吉",
+      "image": "https://p0.meituan.net/movie/0523d939c8596227f3f4e96a04e4414f16627.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "高堂国典",
+      "role": "村里的长老仪助",
+      "image": "https://p1.meituan.net/movie/94d0992075656c8dd1f3d0e968fd16805670.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "东野英治郎",
+      "role": "强盗",
+      "image": "https://p1.meituan.net/movie/ab54aa941414c2786780a93dbf5dfeed24590.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "登山晴子",
+      "role": "仪助之媳",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "上田吉二郎",
+      "role": "斥候A",
+      "image": "https://p1.meituan.net/movie/dc3c41d50d447061479f8e93c7cfe2165901.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "多多良纯",
+      "role": "苦力A",
+      "image": "https://p1.meituan.net/movie/1bd61d72915bd105cc28889501c63fed33183.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "渡边笃",
+      "role": "卖馒头的",
+      "image": "https://p0.meituan.net/movie/4e3201435c136be36e946b7758bea4af11946.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "小川虎之助",
+      "role": "有钱农家的祖父",
+      "image": "https://p0.meituan.net/movie/0f2951dec2701858d7f021e7e7f5b7d123782.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "清水元",
+      "role": "把百姓踢飞的浪人",
+      "image": "https://p0.meituan.net/movie/350dab9dbdb52ef89df1945e95b5add012799.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "大友伸",
+      "role": "野武士的小啰喽",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "堺左千夫",
+      "role": "苦力B",
+      "image": "https://p0.meituan.net/movie/428a33d34fc2a5ef041f2ce3e77834369960.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "谷晃",
+      "role": "斥候B",
+      "image": "https://p1.meituan.net/movie/8b01ed2d823436cd7b977172938e89a712479.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "中岛春雄",
+      "role": "斥候C",
+      "image": "https://p1.meituan.net/movie/d3114c34963b8bb83882b9fb4575ef5814685.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "千叶一郎",
+      "role": "僧侣",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "千石规子",
+      "role": "有钱农家的太太",
+      "image": "https://p1.meituan.net/movie/67315d4f231f11b6462420d72fcdfd9e17800.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "本间文子",
+      "role": "民女",
+      "image": "https://p0.meituan.net/movie/06488239f0f964881487bdeccc1dd2b26627.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "伊藤实",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "大村千吉",
+      "role": "逃亡的野武士A",
+      "image": "https://p1.meituan.net/movie/e275730752a32fdb2e755df2e6a089169428.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "广濑正一",
+      "role": "Bandit",
+      "image": "https://p0.meituan.net/movie/9a679a1db619cc37b3c7fa7fd57b61757466.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "草间璋夫",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "铃木和夫",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "仲代达矢",
+      "role": "Samurai wandering through town (uncredited)",
+      "image": "https://p1.meituan.net/movie/9f8134176da659815bc9d738fff0008d49699.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "林干",
+      "role": "弱浪人",
+      "image": "https://p0.meituan.net/movie/b4a5d6fc363f35fd31a95b875d43b2d74122.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "夏木顺平",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "坂本晴哉",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "樱井巨郎",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "坪野镰之",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "山本廉",
+      "role": "Farmer (uncredited)",
+      "image": "https://p0.meituan.net/movie/776810ee279f084d84c80b9d9d6ded6f18085.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jirya Kimagaya",
+      "role": "Peasant (as Jirô Kumagai)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "马野都留子",
+      "role": "Woman Farmer in front of Gono",
+      "image": "https://p1.meituan.net/movie/d646684917fa4e3dcd5e0039715fb05b10158.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "加藤武",
+      "role": "Samurai Wandering Through Town (uncredited)",
+      "image": "https://p1.meituan.net/movie/120a26b4657c715c433527eb5a3fc35832344.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "津岛惠子",
+      "role": "志乃 Shino",
+      "image": "https://p1.meituan.net/movie/1555127a36bbdb4834f184c83946c14e30031.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "岛崎雪子",
+      "role": "Rikichi's Wife",
+      "image": "https://p0.meituan.net/movie/e691fb53c0a4f9eedc071fa46e13d2d744263.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "熊谷二良",
+      "role": "Peasant",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "片桐恒男",
+      "role": "Farmer in front of Gono",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "堤康久",
+      "role": "Farmer in front of Gono",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "山形勋",
+      "role": "Samurai",
+      "image": "https://p0.meituan.net/movie/2bdf1bf14cc582b28060fc02a94880e231994.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "榊田敬治",
+      "role": "Gosaku",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "杉宽",
+      "role": "Tea Shop Owner",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "宇野晃司",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "天见龙太郎",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "伊原德",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "伊藤久哉",
+      "role": "Samurai wandering through town",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "加藤茂雄",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "森今日子",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/movie/b7f79cd83de4907f1e5dd95a07b426706523.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "中西英介",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "中野俊子",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "大西康雄",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "大城政子",
+      "role": "Woman Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "大塚秀男",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "关猛",
+      "role": "3rd Coolie",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "铃川二郎",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "高原鸟子",
+      "role": "Woman Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "山田彰",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Yu Akitsu",
+      "role": "Husband",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "上山草人",
+      "role": "Blind Minstrel (as Sojin Kamiyama)",
+      "image": "https://p0.meituan.net/movie/f64b6c1315183597a1ab494588cd45259480.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "高原骏雄",
+      "role": "Samurai with gun (as Shuno Takahara)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "牧壮吉",
+      "role": "Strong-looking Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "大久保正信",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "西条悦郎",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "鸭田清",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "成田孝",
+      "role": "Bandit who escapes",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Hiroshi Agetsu",
+      "role": "Gono Husband",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "天野五郎",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Shizuko Hogashi",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "一万慈多鹤惠",
+      "role": "Woman Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "池田兼雄",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "今井和雄",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "神山恭一",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "河边昌义",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "河边美智子",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "川越一平",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "川又吉一",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Akira Kichijoji",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "北野八代子",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "松下正秀",
+      "role": "Samurai",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jun Mikami",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "清水美恵",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Kyoji Naka",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "大江秀",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "小野松枝",
+      "role": "Woman Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "小泽经子",
+      "role": "Woman Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Megeru Shimoda",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "砂川繁视",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Misao Suyama",
+      "role": "Woman Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "户川夕子",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Michiko Uwamoto",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "宇津井健",
+      "role": "Samurai wandering throuth town (uncredited)",
+      "image": "https://p1.meituan.net/movie/2327c9d56ad8b4c78476374d73057b5f32824.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "橘正晃",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "铃木治夫",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "安芸津宏",
+      "role": "Gono Husband",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Kakue Ichibanji",
+      "role": "Woman Farmer (as Tazue Ichimanji)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "东静子",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Chindanji Miyagawa",
+      "role": "Bandit",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Shû Ôe",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "高木新平",
+      "role": "Bandit Chieftain,(as Shimpei Takagi)",
+      "image": "https://p0.meituan.net/movie/7ae8e539c386aab7a26cf0fca376aaa011907.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "稻垣三郎",
+      "role": "Weak Ronin",
+      "image": "https://p0.meituan.net/movie/62d21accafd5f1e343b8ec78ec36618e5345.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "熊谷卓三",
+      "role": "Gisaku's Son (as Jirô Kumagaya)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "岩本弘司",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Akira Kitchôji",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Yasumasa Ônishi",
+      "role": "Farmer (as Yasuo Ônishi)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Tsurue Ichimanji",
+      "role": "Woman Farmer (as Tazue Ichimanji)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "黑泽明",
+      "image": "https://p0.meituan.net/movie/b39ed6b7bf5554a1373196b44236576812849.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.8,
+  "rank": 89,
+  "minute": 207,
+  "drama": "日本战国时代，一小山村面临着山贼的威胁，为了保护秋天的收成，村中长老决定让去请武士来保护村子安全，但只能拿出的报酬是一天三顿的白米饭。在城里，他们遭到了武士白眼甚至被打。直到勘兵卫（志村乔 饰）的出现，他现今已沦为浪人，几经考虑最后答应了。他对农民说至少需要七名武士，于是久藏（宫口精二 饰）、胜四郎（木村功 饰）、五郎（稻叶义男 饰）、七郎（加东大介 饰）、平八（千秋实 饰）和菊千代（三船敏郎 饰）等六人也加入了队伍，七个人肩负保卫村子的任务。整个防御准备的过程中，武士与农民间发生许多摩擦也闹出不少笑话。而在一次偷袭行动中，有武士为救农民被火枪打死，很快山贼的反扑随之而来，一场恶战即将开始。",
+  "photos": [
+    "https://p0.meituan.net/movie/24e3ef438736772d892b90936987ddf5165419.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/73b5bbc9aa3cf4e84cb7dc1626a34815156617.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/65619c57053de7668cc3bd208cb5d26f194530.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4d107f0a3883710cb31a3417e1fc7729116284.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2cd79372591f99d6affc639da3a4ecb1173830.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e5a1b898444cff4605478cb770686853172601.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f7bc8075341572c1b1d81af69f41e13a109227.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0763bac29f5275e3eab7b6ebf749e194119570.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/613e6e92f3260370d398c460e0a6767a67435.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1f5a0cab679d0f1a63c428db245bbeda55743.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9074ab6abf719679f1acc34c2811bd5775632.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8fe604e910a74698643ae7c06dfae315164993.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/218129183a4c9cf35e09aa2347418d9c153754.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4fe96cc892d04ee0df802d66b5edd4ee165099.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/279beb698e2257e5dfa8e2cb44522e1074308.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/eee2aa7e2a87dd180f43a3a557d5bd3856844.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/60a97fb552643f2fa8e71ff501cdfb1e248257.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/84a22c24da3bbe08b5adab621cf6c768193923.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e6806b48760e7b79b9fded41c42955fe213207.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e401a179b543a6ad3407327f4caeb580128151.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/89eccea87460cfc555667e56cdb3cf23276283.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7641177cb7f4b269a088bf0b37783bfd68662.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0caf219431eba96e3026cb9c812d189882299.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f88947a1c230165d545cf307ac0d3b3f150072.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dd025aa4ec740ae2587275e53a5a2bef213516.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/dd9ec86e34cb07cac9d9378addbebdc7187895.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1c1da94d7beebfa13c6fee9f6bb916ec53811.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4e6234621ce4aa405dc1dda88a056cdb31689.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/beb18956da600c0aad050a4f77094162128374.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8e2969371cd36fca303cd2710ac99ec595363.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/35d4b78c922e8c35771fa459b26a835c92934.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/508e5de847a9a2bcfaee6f9e566c8b4f100361.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f625ff7e79eb4a93411d3f970a64c3da92990.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/fe16baf55924bc3e569358b8e22f992b225603.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7888fa7082011304ab8824e929d1f4e978030.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6948a9284595740058b6a334a41aca8d200850.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/652e7387c8e2b74ae707030b43ebe7e933165.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d29c0048694f896dbfe5fbc8f676d893149080.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d15169ea53ee70b642c68696690f5811238348.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/377c374d50478564db3e32042781e4c1196868.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4d6a93287ce089e56c69daf4b2189e39125088.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9ed554d02421d52345e5ac3ad463f96d230157.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8d3e3ded3d6d002ca1546cc31c7a0043256013.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1fcbdcb4bb77791ad943714d45448b7583498.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/61eedebb9fca82551f6b7c6a30fa172b92026.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/118c6256a2063e9738ce2c68eb609ff544318.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/105f4de9f0a2b99a0da1bee780e2558b60761.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5cc8391ac5d198d37a2a2cee348f742b64429.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d425c472980bfc232f2143bf1b727c0c67212.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4dccd6b6ef0e599e090401c460ac8064136841.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/93bf1b90fff843497d541c6b1eab7549448943.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/26630ef79c6c59ad0448504f7cf0036560046.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6dae374b994c209984ddaa63e5cfef6377522.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5d3a1f064dc2602704ba037c9f845dcd205771.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/68acb64a4a72035ecabd6f067054e910122280.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8078db2b460f99a34d5e3e58e0f5783b110727.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7af015ea6bc6fb1fa6552c64844d4a8f117356.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/37fe56be4dbab95bfedf0c637d1c45aa185407.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/48e4578e8352c54573c303b84d108653190613.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/3ad4b344b0aff0cf6899b52f2cdb2e9e349457.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0a364fadc9e959897df0726a678a0eca100413.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bba0f71393065996ee1e4c357b0f2f5f102765.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fae947b29055c3d45a8bdc7c6077f144308599.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f13770056a0d83fd0f001e916d116d66214560.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/dcf7b9c5e73131887a33dfed5ab78c73146438.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9a58f516d7d8344d47d64e2f64ab6428131703.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/783a673f899b685ddc8b3794f5bd5f55314644.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a7cd1bfb246a85f5b5792842b082a53a601644.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c713ec633a1baf25a29d2652bee38c66129628.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/526cf09d38c1e4efcf1880eaba71bc17323216.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f64ef0cbc91fe30940c3073021ee6e76134124.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8872e2a04dc8152bc6e1e9da184f93dd402532.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/66148b437c4e51fa28c27965854e856172256.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5256393cb43545cc82ef525cc0b4bebe82457.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fb52064ccc4b55b9ab04f7354823592c138255.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0ed10eb5c8da371ec5af3c5e25b43d5483602.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/53d630cd98acf08d0644f79b95b0321c78951.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d99cbcc1e9deb316c6f2072cfcfd4a09118584.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6502289b8084c9a010383975b3d4a900127507.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/08e0951ee0ce56bd639ebcc6660c4574151743.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/971687406f340d3a2b20b3d538e7dc74191457.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/395638f708a0e73ede8f156a9ea99e7e191292.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/eca8de8451774c9e0d9b1291e3a09a5c146843.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4a24db0c927ded4bdf75e8fa9921aa4c177173.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9311a733d49e2eec90c8c51ce72a2ad795945.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a1fcca22726bb2b4440719b12914365b91233.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1d34f3253b6892b4906f192bbfc160b1152324.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/41e8964ee1c752aad96d78db975506db31684.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0e27ac42381c3f4a5f56668680f9a426132309.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7f6e9e6a4432707f3f39bbeba3a04c63151335.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1f35fb92000ee002f33b53eacef5a670177854.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c16fa2b1757e5002c91121791839ee34124019.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/132885c81f6847b96c473c7fdfbe4d8e210905.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/abfa14b44dc3c03e5882b3776025aeb6149108.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/40cb3e2ac9dd2d10bcab7e00e221767c119640.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/71733d415a1574689ef48ef4f59b5a42112994.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/88f65cbdb645aa6e85882fa30a6c81f1108529.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/653f7f3884cdc28acebaa55aeeec179c213534.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e4350723e2fa1e9882f206d6e114bb6b56071.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9bd55742fc2e9fc511ad9fe8598191d967785.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/51586b88afb6f05ef6804c1fbed71984163740.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/433b7eed8cdcd0301cab5524a71fb446113170.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2f785ad7b1430a545fe5cb07ccbb9b5072995.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b5ea4c038be524cd1d3aea0af7089146535226.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/38b592064e9d780e8048795f7c77c0bc50733.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/16714f8d114f0d48a2956444993fa6a3241027.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ef5ba083d5da69cfefa904b611346cc6376124.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/50f5edc25579e428d161a3d3e22655e843446.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/02783a460740db0dd22f4510db428bad123790.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "1954-04-26",
+  "updated_at": "2020-03-07T16:37:21.080377Z"
+}

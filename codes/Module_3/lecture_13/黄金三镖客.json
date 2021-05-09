@@ -1,0 +1,305 @@
+{
+  "id": 21,
+  "name": "黄金三镖客",
+  "alias": "Il buono, il brutto, il cattivo.",
+  "cover": "https://p0.meituan.net/movie/cd18ed2c5cda9e71e17e5e6ef61ced172912303.jpg@464w_644h_1e_1c",
+  "categories": [
+    "西部",
+    "冒险"
+  ],
+  "regions": [
+    "意大利",
+    "西班牙",
+    "西德"
+  ],
+  "actors": [
+    {
+      "name": "克林特·伊斯特伍德",
+      "role": "布兰迪 Blondie",
+      "image": "https://p1.meituan.net/moviemachine/d1156c14dd899ada7c2b98bc373021c852875.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "李·范·克里夫",
+      "role": "桑坦萨 Sentenza",
+      "image": "https://p0.meituan.net/movie/665eab6fdb7755138e0c8092f35ba39327553.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "埃里·瓦拉赫",
+      "role": "图科 Tuco",
+      "image": "https://p1.meituan.net/movie/275042f2bbe012263b8deed1c96e611b42623.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "路易吉·皮斯蒂利",
+      "role": "Father Pablo Ramirez",
+      "image": "https://p1.meituan.net/movie/3c91cd5186e89e927056adbc8a722f5014760.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Claudio Scarchilli",
+      "role": "Bounty Hunter in Ghost Town",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "John Bartha",
+      "role": "Sheriff (as John Bartho)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Livio Lorenzon",
+      "role": "Baker",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "贝尼托·斯特凡内利",
+      "role": "Member of Angel Eyes' Gang",
+      "image": "https://p0.meituan.net/movie/69698bc0960b07e3acddd412f3b88ee821953.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Angelo Novi",
+      "role": "Monk",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "安东尼奥·卡萨斯",
+      "role": "Stevens",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "阿尔多·桑布雷利",
+      "role": "Member of Angel Eyes' Gang",
+      "image": "https://p0.meituan.net/movie/a608b42289f39ebd73e7550c38b3be0430595.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Al Mulock",
+      "role": "One-armed Bounty Hunter (as Al Mulloch)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Sergio Mendizábal",
+      "role": "Blonde Bounty Hunter (as Sergio Mendizabal)",
+      "image": "https://p0.meituan.net/movie/59d0f1cb25db1e1ed6d57cf1c163da9e36698.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Antonio Molino Rojo",
+      "role": "Captain Harper (as Molino Rocho)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Lorenzo Robledo",
+      "role": "Member of Angel Eyes' Gang",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "马里奥·布雷加",
+      "role": "Cpl. Wallace",
+      "image": "https://p0.meituan.net/movie/5d53dde873a6c1570d3c934c8a146fe314431.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "弗兰克·布拉尼亚",
+      "role": "Bounty Hunter #2 (uncredited)",
+      "image": "https://p0.meituan.net/movie/2f87d0b53695ba7fe2d1f0ed47f5998112368.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Luigi Ciavarro",
+      "role": "Member of Angel Eye's Gang (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jesús Guzmán",
+      "role": "Pardue the Hotel Owner (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Víctor Israel",
+      "role": "Sergeant at Confederate Fort (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "纳扎雷诺·纳塔莱",
+      "role": "Mexican Bounty Hunter (uncredited)",
+      "image": "https://p1.meituan.net/movie/c0b9c3bbec6fdb7026c412ec85150e9e20784.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Ricardo Palacios",
+      "role": "Bartender in Socorro (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Romano Puppo",
+      "role": "Slim (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Antonio Ruiz",
+      "role": "Stevens' Youngest Son (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Román Ariznavarreta",
+      "role": "Bounty Hunter (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "José Terrón",
+      "role": "Thomas 'Shorty' Larson (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Saturno Cerra",
+      "role": "Bounty Hunter (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Enrique Santiago",
+      "role": "Mexican Bounty Hunter (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Fortunato Arena",
+      "role": "1st Sombrero Onlooker at Tuco's 1st Hanging (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "阿蒂利奥·罗戴德约",
+      "role": "3rd Sombrero Onlooker at Tuco's 1st Hanging (uncredited)",
+      "image": "https://p1.meituan.net/movie/9bdf1740721372b72f1fb6040ab34a3b7406.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Veriano Genesi",
+      "role": "Bald Onlooker at Tuco's 1st Hanging (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "阿尔多·久弗瑞",
+      "role": "Alcoholic Union Captain",
+      "image": "https://p1.meituan.net/movie/24473db1b02483d777a08270d4faa99c30173.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Rada Rassimov",
+      "role": "Maria",
+      "image": "https://p0.meituan.net/movie/2aee47645d238cdbfa48e167e6fbecb88474.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Enzo Petito",
+      "role": "Storekeeper",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Antonio Casale",
+      "role": "Jackson,Bill Carson",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Sandro Scarchilli",
+      "role": "Deputy",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "切诺·阿隆索",
+      "role": "Stevens' Wife (uncredited)",
+      "image": "https://p1.meituan.net/movie/41ae6b3e57bf9e4123089180d755507a36295.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "William Conroy",
+      "role": "Confederate Soldier (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Aysanoa Runachagua",
+      "role": "Pistolero recruited by Tuco in the cave (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Franco Doria",
+      "role": "Deputy (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Amerigo Castrighella",
+      "role": "2nd Sombrero Onlooker at Tuco's 1st Hanging (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Tony Di Mitri",
+      "role": "Deputy (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "赛尔乔·莱翁内",
+      "image": "https://p0.meituan.net/movie/bc6d42116220a072db01371208b5157815631.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 9.1,
+  "rank": 96,
+  "minute": 161,
+  "drama": "故事发生在美国南北战争时期。图科（埃里·瓦拉赫 饰）是一个图财害命的江洋大盗，因此他被镇上悬赏通缉。布兰迪（克林特·伊斯特伍德  饰）是一个除暴安良的牛仔，他无意中抓住了图科，但嫌赏金不够又掳走了他。在荒漠中，布兰迪惩罚图科让其自生自灭。但是诡诈的图科居然逃过了一劫，并纠集一些帮凶在客栈捉住了布兰迪。正当图科以牙还牙折磨布兰迪的时候，他劫持了一个名叫卡森的士兵。后者临死前留下了宝藏的秘密，图科和布兰迪分别获得了一半信息。与此同时，一个狡猾的杀手桑坦萨（李·范·克里夫 饰）也通过其他渠道发现了宝藏的秘密。于是，在寻宝的道路上，三个人使出浑身解数，上演了一场场对决的好戏……",
+  "photos": [
+    "https://p0.meituan.net/movie/eef08a97793d4c2f2e87504ff477fd8424369.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6b996d3da56b91a57b7193e7aee6b58f69308.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e7560b9c5546a8165d025d9a79608df577058.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fba30d80addfa7a50d4c9f08a37736c064370.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2f191e352bc899d483fc05659977ec7380866.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/346f5adcbc57529e223b2abbe2e3800438255.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9e3e0a9c19e5df76792b8f42a4f5ecae57535.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0d4cb6e77a74447869c4e44b7fb69544112003.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/119f4a45857ba5906b209006d97cc9fc98358.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5bb4a8dd25ffc685cfa0fa5e2b5f602644107.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7e0b1e6e3b314dc0eb5f1cba36ea664a41638.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/90ab49b483e84ea73c3bd05dde81f59d127743.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/57427161de836d2961935fd739ff506e93430.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d1384a000956885b26978be09f3d21ee100976.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/50c8d2e39521511ffe5b539fc3f6e538141471.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f8488c9b587cbd69c327c1b2c716c02357660.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0014269432f69e2818b06309332e6ff943185.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/099c5c6ab80f6e6eabd9c56022dfaabe113575.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ff8ebca79c4b4be4dfe60bfca92d3f8557419.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c4302244baa9628687964a9e3a66cbf766188.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a66cad5abb1dbc74d8048dab0071deeb52709.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/64ecbd5bbedaf8a0b3360b572b487392182927.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/332309b24d54cf1300c2759afcfd16b352562.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cbaeb446b9874aa3b0d996260282061864061.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1b68943f06cbd3e6e383faed04a3aec253298.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/57a7ffac5a4fd668ce4b6ba7da3a582a127238.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b89da83dd9676baad092a5edc370463c273644.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/df48f92a01a5c90987d691cbd6abefd0368749.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f4b69f5503a52865361e3be4af900ffa73072.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0e8aee033d43a2502a7e90c84a65e41975080.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f4e2a6bdee85c01250af812b93726151261281.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2a446e1dbad8575fe3e6c92bdc172c20281028.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/966e7f0450392ad583393c8e38d9bfd0161981.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/223f6f42f7d4aa677fa1e617b74649bf149406.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/210e12ae589c773cb703354dd9f5596e82191.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1bcf104f703d394365a6653abf6b971187959.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4af44e4941cd56bd326e789e96704e65485663.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a6bfdab2723a902bcd2cd953ae5f2389201521.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b944b46910da57a3cb45ce6f849c1e2466830.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/916bbc96f7e1cd279483bc6f350b1861221132.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9bff56ed3ea38bb1825daa1d354bc92352781.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1b3e6db685688c193c788da8418e8839358639.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/901fb2617ebbb9cd14ad062d71df7871150761.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ef3675472b2628ce638a20e4eb4c0ff284053.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/bc523b4b157071381130786aeef68a3d116083.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ddf86e4cb32eaa1b213321ff11d3e2da150168.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/15268c66e68cdf64af4b51c3bf6d14eb435305.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ce45f4a2317fb622d1429b838da7a872334644.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8a4d670e54e256489a2400e712f8fab9173697.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4e84a5f154f88358c87e534f7610798c135357.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5edb4d0ac434508428425f16ebaeb1dc80029.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f8fd21fa5928894317aee0bf04facd38152280.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6ef54566e37e00b4ac5417f8cd24d513131939.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e07220e3093e249a381a23d310c8bbfc127744.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7e2b1723cead6664ee561c0afdf46477133613.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a4a1eebb96a03293f48b380dc6f31ac4136122.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c5bc4d909cd145d73ce362c7ec84af4b189884.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8fa556c250d1da93c726d56776c431e4149444.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/00613bde803c21448c331b76380fb29b130128.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a93b70e162a51ac66eecc54f0012de35143785.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/506735de4d7ba3dce7703afd28b8306938997.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6da90a79df5cf5fdeba21eec9d95b96139895.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/08039d21ee778e004d80c681e8da8965141730.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1eb9bc7a598608089db617c7bf1012a7111020.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "1966-12-23",
+  "updated_at": "2020-03-07T16:35:59.465117Z"
+}

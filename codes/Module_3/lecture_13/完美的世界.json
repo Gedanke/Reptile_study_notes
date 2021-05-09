@@ -1,0 +1,361 @@
+{
+  "id": 29,
+  "name": "完美的世界",
+  "alias": "A Perfect World",
+  "cover": "https://p1.meituan.net/movie/30310858fdab34c7a17cfd7ec8ad8bfc112201.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "犯罪"
+  ],
+  "regions": [
+    "美国"
+  ],
+  "actors": [
+    {
+      "name": "凯文·科斯特纳",
+      "role": "Robert 'Butch' Haynes",
+      "image": "https://p0.meituan.net/movie/c4331ef1c71624e8192a19bffd6c866c33173.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "克林特·伊斯特伍德",
+      "role": "Chief Red Garnett",
+      "image": "https://p1.meituan.net/moviemachine/d1156c14dd899ada7c2b98bc373021c852875.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "T·J·劳瑟",
+      "role": "菲利普·佩里 Phillip 'Buzz' Perry",
+      "image": "https://p1.meituan.net/movie/0be007da9d9475185a1bc40edffaaa7e45195.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "劳拉·邓恩",
+      "role": "Sally Gerber",
+      "image": "https://p0.meituan.net/moviemachine/a4c68ea6f5fe5f997f1aeacd1ddd5f7d196388.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "布莱德利·惠特福德",
+      "role": "Bobby Lee",
+      "image": "https://p1.meituan.net/moviemachine/f9e81024debc7d163a3cbaac42638591173059.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "布鲁斯·麦克吉尔",
+      "role": "Paul Saunders",
+      "image": "https://p0.meituan.net/movie/745d8d871a6f3fbd4984195f32bbbec741049.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "基斯·斯扎拉巴基克",
+      "role": "Terry Pugh",
+      "image": "https://p1.meituan.net/movie/5c84d50dea8a5f9134c233293a911b1838310.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "里奥·伯梅斯特",
+      "role": "Tom Adler",
+      "image": "https://p0.meituan.net/movie/6149021436651b09e00468128af57e7b35336.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Paul Hewitt",
+      "role": "Dick Suttle",
+      "image": "https://p0.meituan.net/movie/9ab671bd4bc3804372b451ef8a853ffc13606.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "雷·迈克金农",
+      "role": "Bradley",
+      "image": "https://p1.meituan.net/movie/41d062b6a6442e34d046031cd9409bca61165.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jennifer Griffin",
+      "role": "Gladys Perry",
+      "image": "https://p1.meituan.net/movie/2b9b96479343629e2043e6cebcaee80a8252.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "达里尔·考克斯",
+      "role": "Mr. Hughes",
+      "image": "https://p0.meituan.net/movie/7af541da5013107754dbd127dee056f111634.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Mark Voges",
+      "role": "Larry Billings",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Vernon Grote",
+      "role": "Prison Guard",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "James Jeter",
+      "role": "Oldtimer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Ed Geldart",
+      "role": "Fred Cummings",
+      "image": "https://p0.meituan.net/movie/3fa1ad29d3c7b602e2dea4b353171f575074.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Nik Hagler",
+      "role": "General Store Manager",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Gary Moody",
+      "role": "Local Sheriff",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "玛丽埃塔·马利奇",
+      "role": "Farmer's Wife",
+      "image": "https://p1.meituan.net/movie/33206809e1efc5fe8bc09fb342360d3c29224.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "罗杰·博伊斯",
+      "role": "Mr. Willits",
+      "image": "https://p1.meituan.net/movie/19b0aac659c75d6294212008f11f0ee049579.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Lucy Lee Flippin",
+      "role": "Lucy",
+      "image": "https://p0.meituan.net/movie/548ebe542ea793b5800c1fd9330bc28513457.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Elizabeth Ruscio",
+      "role": "Paula",
+      "image": "https://p1.meituan.net/movie/262e17cddb57c5a56ed9acaa0700c08d6806.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "加布里埃尔·福尔斯",
+      "role": "Officer Terrance",
+      "image": "https://p1.meituan.net/movie/dda749dc6022618be17ac5eb0dfa6fbb10275.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Gil Glasgow",
+      "role": "Officer Pete",
+      "image": "https://p1.meituan.net/movie/997c87a9a95471bdac9cd8966f8a846e17566.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "丹尼斯莱茨",
+      "role": "Governor",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "John Hussey",
+      "role": "Governor's Aide",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Margaret Bowman",
+      "role": "Trick 'r Treat Lady",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "约翰·M·杰克逊",
+      "role": "Bob Fielder",
+      "image": "https://p1.meituan.net/movie/a7cc7ec4077dfa96d4796395dbed484435930.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Cameron Finley",
+      "role": "Bob Fielder, Jr.",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "马可·佩雷拉",
+      "role": "Road Block Officer",
+      "image": "https://p1.meituan.net/movie/16347cc04eeeddf04e225a3ae1b77b0610503.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Linda Hart",
+      "role": "Eileen, Waitress",
+      "image": "https://p1.meituan.net/movie/16e6c9c781d5de46a4c5b246504e92569979.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "布兰顿·史密斯",
+      "role": "Officer Jones",
+      "image": "https://p1.meituan.net/movie/ec00f66a1a612f4c41b8ef83cd34f8bf43527.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "乔治·奧瑞森",
+      "role": "Officer Orrison",
+      "image": "https://p0.meituan.net/movie/150c32e4a9e983b6483cca1cffc99ec39710.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Wayne Dehart",
+      "role": "Mack, the Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "玛丽·爱丽丝",
+      "role": "Lottie, Mack's Wife",
+      "image": "https://p0.meituan.net/movie/fd362351ffd50d95f99d3778177a3c7e126468.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "凯文·贾马尔·伍德斯",
+      "role": "Cleveland, Mack's Grandson (as Kevin Woods)",
+      "image": "https://p0.meituan.net/movie/14cc0a2f9394b0c80225d7885104d84c28891.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Tony Frank",
+      "role": "Arch Andrews, Farm Owner",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Woody Watson",
+      "role": "Lt. Hendricks",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "James W. Gavin",
+      "role": "Helicopter Pilot",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Craig Hosking",
+      "role": "Helicopter Pilot",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "吉米·雷·皮肯斯",
+      "role": "Cop (uncredited)",
+      "image": "https://p0.meituan.net/movie/5514aa3161086e33788ef8f85bade79c89515.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "利比·维拉利",
+      "role": "Reporter (uncredited)",
+      "image": "https://p0.meituan.net/movie/02ff72bc0ea2e6f591da467390ea66b46512.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Greg Stechman",
+      "role": "Teen Onlooker (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "George Haynes",
+      "role": "Farmer",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Christopher Reagan Ammons",
+      "role": "Dancing Skeleton",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Connie Cooper",
+      "role": "Bob's Wife",
+      "image": "https://p1.meituan.net/movie/658c70c62c7c5717e52be718d63a8dd511540.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "David Kroll",
+      "role": "Newscaster",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "David Stanford",
+      "role": "Neighbor kid       (uncredited)",
+      "image": "https://p1.meituan.net/movie/f318567fb09f2ae3d446df88adce708771124.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Katy Wottrich",
+      "role": "Patsy Fielder",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Belinda Flowers",
+      "role": "Ruth Perry",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Leslie Flowers",
+      "role": "Naomi Perry",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Taylor Suzanna McBride",
+      "role": "Tinkerbell",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jay Whiteaker",
+      "role": "Superman",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "克林特·伊斯特伍德",
+      "image": "https://p1.meituan.net/moviemachine/d1156c14dd899ada7c2b98bc373021c852875.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.8,
+  "rank": 87,
+  "minute": 138,
+  "drama": "单亲孩子菲利普·佩里（T·J·劳瑟 饰）的母亲对他管教甚严，8岁的小菲利普甚至从未参加过一次鬼节讨糖果的游戏。附近州监狱的两名罪犯越狱成功，劫持了菲利普作为人质，向德州边界逃窜。途中，罪犯之一的布奇（凯文·科斯特纳 饰）干掉了鲁莽愚蠢的同伙，却对小菲利普照顾有佳。与此同时，德州警探瑞德（克林特·伊斯特伍德 饰）带着手下和州长特派的犯罪专家萨利（劳拉·邓恩 饰）一同火速追捕布奇。双方在德克萨斯州境内展开了一场公路赛大竞技；而小菲利普也经历了很多从未想过过的刺激与快乐，并与布奇产生了一种近似父子的不寻常感情……",
+  "photos": [
+    "https://p1.meituan.net/movie/dd329fcfa998119c70b123e466c48f2569308.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6aaf7e0141233a8a117725a1aced6a52201324.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/82824678aff255e58397993a42391010128885.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8d0cb74997005bea4b6c7842fbcd4e11147613.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1231984127e00061dd0a66c775900a83101191.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d1a19b7fce1819aec3c0399a476685b384830.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/23f924d93ec11e76702a994cefc15f6078056.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ef6df970c6afc0abfa69ccfd596b8c8b55040.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5d4ea3c7f65f050c87392d01505f17b959618.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bd0d7603a38330014008fd6452afd48a57791.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/404b5d842e0f9089e239a641bedb1c6e64753.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7855bbd8126c7a9d5c70a780dafa799171899.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/cd266de36fba028c377e42971130141438198.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7087c1b5e2872a4dcdb4d867ba1e9d6d87200.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8eea5fd8baf64a1cb47a81287484083c113763.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2868412fbe3914350bc5293e076922ca56590.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dd5cb0f53acc78be7f9fadd6f0840ffa105370.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c1ea8c89bd0d0fbf5018a6f28118cd3495903.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8561056489e5e5e6ecc0162a80f7fac3129948.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8f1733ce16dd225f31341f88775d18d994355.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/07eb3079fa56c08fe8cee01cb282c49a72890.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/339a6a35e2dd406647dac75be2f4de9180725.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/42c616e834f49c69bddbbcef3def5dae53957.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4f94082420f522298b351c8042f8a4e0119674.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b05b18fddcaa29d7c6a0c528442877d8138105.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f957e1dc3a4e539cd7b6524af6c5c7c972255.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/698c72fceda85f297337520ee14dbd0496495.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f82cd432b55c2588f1e57f28e4aa8d3e80262.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a6996a28b80cdef41482db2de34e36ee99336.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6e7990e1a9190a2dbe3ed79ec3a80c7c48836.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f8806431672312adcb16c4f361eb142849476.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7ee3b5b7c6e6332bf13f11ff0310d46e66767.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b3ea085e59d6092020b48e080a94e99c261442.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6887eb32c3c85cf06a78fcff0e2aef3497322.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/decd4a8b2c6ce079d03316ab32759f8d86813.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/75c5f2a6aab0e99673181497d87608a955644.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/587b810d5e314115674271566ddb1cd674735.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/733aa3f8329d86f6d0fa650693c969a974037.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fe7e7ecf8a1cb3284cfc4cd9cb37331459591.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/22ab44cfb7a50b8f9993ebb9ba05819f68511.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/339bd5981e224baf92879f6db9869d7869116.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d1d4779dc1ba07f7e189f1dc73c38e97126510.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f7e068b63929c64cad5ff4840f1d299280514.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/58e7113a106db94e6d37ab311a2ef2f583033.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/858c809616a52a1fa7dc46800c1d6990119242.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/096f3c3222903300bc322f5152c5f712170615.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9bcc503672d8bacfd81254be54dd6d38127763.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f0b89fea34691f2fec775ec3aef05e11121232.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6d2eb47d6e12ab23a0d2ca4709d020b0218104.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e0ab5ed8bbbc81ba492b4cd1c3baaee1130915.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c08947e53ff67d190d08ae68722a2666207474.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f991d96162bd7478ed27b3be0ba01aba126790.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a400807b9324064efa0589d2feac719637416.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/04ef436cf624c402b33517dba3d875c5101477.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d94b3390893b91bd8ef9fe521d2858f2152893.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/25178487d4585689e163fcb0e0a532a994807.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dffeb6db09bf649dc0c380198dc5851e66927.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e766de54705dce68f7500bfbbf6859e396248.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/536a1040060adbd392a84fbeceff7458135294.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4653a0d6851a657355ce92b20d66c8da122450.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9e1116ffd522a5bf93663a35fc2c082886843.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d9281dd581b367a22cc5dadfceb4959d66745.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d3a9b276f6d320aba10b8355e04cd823112322.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9c9874d48bdf23a59f7f7fa1b0ca6cbf80765.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d645616780662d3cd6561193fd4fd8c8123798.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/83343230f24343ffffa9d2fb294a210890371.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4dbffd0c345d54ff2c0208e49428eae077230.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "1993-11-24",
+  "updated_at": "2020-03-07T16:37:44.676086Z"
+}

@@ -1,0 +1,306 @@
+{
+  "id": 98,
+  "name": "音乐之声",
+  "alias": "The Sound of Music",
+  "cover": "https://p0.meituan.net/movie/ef6d7e040278f3d727306745e8df1af5246411.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "爱情",
+    "歌舞",
+    "传记"
+  ],
+  "regions": [
+    "美国"
+  ],
+  "actors": [
+    {
+      "name": "朱莉·安德鲁斯",
+      "role": "玛利亚 Maria",
+      "image": "https://p1.meituan.net/movie/d8127b9c8d27493b7828b28a32ee4a8a5832.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "克里斯托弗·普卢默",
+      "role": "特拉普 Captain Georg von Trapp",
+      "image": "https://p0.meituan.net/movie/63181eeb1456f260295a748147f2131a79584.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "埃琳诺·帕克",
+      "role": "Baroness Elsa Schraeder",
+      "image": "https://p0.meituan.net/movie/ece0fd3a67bb13c0696594ea7505799931122.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "理查德·海顿",
+      "role": "Max Detweiler",
+      "image": "https://p1.meituan.net/movie/cdae0aad1d90b130fd809deabc45666d28187.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "安娜·李",
+      "role": "Sister Margaretta",
+      "image": "https://p0.meituan.net/movie/9b74cebe68ca4092a0c23b28568bc7a222770.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "本·怀特",
+      "role": "Herr Zeller",
+      "image": "https://p1.meituan.net/movie/142491e0d0d91eee65dfce06af3fea2317870.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "诺玛·威登",
+      "role": "Frau Schmidt",
+      "image": "https://p1.meituan.net/movie/ae5d48377d1cd34e7fa111e2574acd8d28615.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "马妮·尼克松",
+      "role": "Sister Sophia",
+      "image": "https://p0.meituan.net/movie/b6281f7f6307022141b0b912426dca0d48014.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "多丽丝·劳埃德",
+      "role": "Baroness Eberfeld",
+      "image": "https://p1.meituan.net/movie/2e715b3360485c3a54782c454952ede27607.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "希瑟·孟席斯-尤里克",
+      "role": "Louisa von Trapp",
+      "image": "https://p0.meituan.net/movie/3339cff54bd71a6775c0b91ebf02984955198.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "安吉拉·卡特怀特",
+      "role": "Brigitta von Trapp",
+      "image": "https://p1.meituan.net/movie/66d96d4352ef13b82fad725f380394869009.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "山姆·哈里斯",
+      "role": "Party Extra (uncredited)",
+      "image": "https://p1.meituan.net/movie/0f33e469f811a7e8fad835afe57270e215921.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "杰弗里·塞尔",
+      "role": "Party,Dance Extra (uncredited)",
+      "image": "https://p0.meituan.net/movie/7d0b1952fd45949e4af432deeeeb87ca26440.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Gil Stuart",
+      "role": "Franz (as Gil Stuart)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "格特鲁德·阿斯特",
+      "role": "Party Guest (uncredited)",
+      "image": "https://p1.meituan.net/movie/dfca6f1b14e487d8437635951dc3d69e27253.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "伯特史蒂文斯",
+      "role": "Party Guest (uncredited)",
+      "image": "https://p1.meituan.net/movie/fb7c79c11b8e8fadbd9b4214d9784b9d2737.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Doreen Tryden",
+      "role": "Sister Agatha (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Maria von Trapp",
+      "role": "Extra during 'I Have Confidence' number (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Alan Callow",
+      "role": "Nazi (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "查尔敏·卡尔",
+      "role": "Liesl von Trapp",
+      "image": "https://p1.meituan.net/movie/fbbf1831d486207283bd83e5a81cb2a916840.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "埃瓦德妮·贝克",
+      "role": "Sister Bernice",
+      "image": "https://p0.meituan.net/movie/e29a288bf6591af594fd1e86abfa4de913885.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "丹尼尔·特鲁希特",
+      "role": "Rolfe",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "波希娅·纳尔逊",
+      "role": "Sister Berthe",
+      "image": "https://p0.meituan.net/movie/03d64cc19e0f2f0074276318b0ba543631972.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "基姆·卡拉思",
+      "role": "Gretl von Trapp",
+      "image": "https://p1.meituan.net/movie/344b2c1d2c7ad51fd1b8ba478136ba5e16809.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "黛比·特纳",
+      "role": "Marta von Trapp",
+      "image": "https://p1.meituan.net/movie/0bf6bb2850611442b1b8f2f5acb981ce97616.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "杜安·蔡斯",
+      "role": "Kurt von Trapp",
+      "image": "https://p1.meituan.net/movie/0148848ab19c7ff0dc91398ab7b8fda776231.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "尼古拉斯·哈蒙德",
+      "role": "Friedrich von Trapp",
+      "image": "https://p1.meituan.net/movie/ba9c229ed1ea3b2c27be99ca0e8a67f416538.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "佩吉·伍德",
+      "role": "Mother Abbess",
+      "image": "https://p1.meituan.net/movie/beb0167d0a53f504efa545924604fd6d35682.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "吉尔克里斯特·斯图尔特",
+      "role": "Franz",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "弗兰克·贝克",
+      "role": "Party Guest",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Steve Carruthers",
+      "role": "Party Guest",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dorothy Jeakins",
+      "role": "Sister Augusta",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Leoda Richards",
+      "role": "Party Guest",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Bernard Sell",
+      "role": "Party Guest",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Norman Stevans",
+      "role": "Party Guest",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "罗伯特·怀斯",
+      "image": "https://p0.meituan.net/movie/91afa766fb09e80b74f83adf08f7870132793.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 9.0,
+  "rank": 11,
+  "minute": 174,
+  "drama": "玛利亚（朱丽·安德鲁斯 饰）是一个年轻活泼的修女，喜欢在大自然下高声歌唱，所以她常常忘记了修道院里的规矩。院长认为玛利亚并不属于规矩严格的修道院。院长与众嬷嬷商量后，决定安排玛利亚到一位名叫特拉普（克里斯托弗·普卢默 饰）上校家当家庭教师。上校的妻子去世多年，留下7个孩子，他要求对孩子严格管教。他告诉玛利亚在他家的家庭教师都做不长久，都是因为孩子的恶作剧。玛利亚果然也遭到了恶作剧，可是这位善良的老师并没有告诉他们的父亲，而是像个母亲一样照顾孩子，很快跟孩子打成一片。上校也渐渐在玛利亚的引导下改变了对孩子们的态度。上校与玛利亚之间发生了感情，他们完婚后回到了已被纳粹占领的奥地利，上校并不想为纳粹办事，一家人准备逃跑……",
+  "photos": [
+    "https://p0.meituan.net/movie/dbac46ed9cf780c46ba4a3e3f42e4d58147387.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c4cafac4bd914d8cd03ed06075baddd8250181.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/42a3bf94cc52a33b346d5ed17d8ef8ac100166.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/51f8353be9023c23869602ad02755acb111438.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a57817f5e4bf214426843e54fb8332cd69173.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/21af38d42ab12f7c3e84a1fe08b7818697549.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6089bf80bcccba1fb51cbda9547fabb5103393.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2eb28c3fd79bdd3e84ac620084bc48c469799.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/844709d2dd2d59a28fa9974668619f2b173121.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/40d30bce927f57d7e8e03e7bb7491be897716.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/392b93729879c9a980293bd478e8652c88014.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9b9a9949a6b7372a5c054e3538751e44135183.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/72063ccc00658b9c2ba364aee0bbb3f6279080.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8c79a010de5c173cc08a2dd59e9d575a68233.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1d3bc33b0c63116e529f292703e940c0160272.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b31bb5b2595453e1fa1943a736cca4b1179334.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b8605c00c72ccd294124c4eee6d145c8153945.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/375c82f681abda4e1edba494c0adb672135245.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b40bfccc1de26fffc7245078766d38c168029.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a49c9178baab757c5b89166aa816b32e165712.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fd5a9a6aa82335dbabaa9389e82afc93147573.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/22b68290bcdaebec74bc2d6287fc31ea216089.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4e16efabb71bea4b002fb90221161d49136842.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6e03a52fb9f93edb8a7b1402e77ae49c74229.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3158a8fb0ea9a83f7ec897472750626651505.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/feadfa1a9a0506f104ca968e1202951385294.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/df98cf21632aed082d99091bc7d44285109443.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e23c58156770d4fc0f660d7b5b4cc8d358967.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4a86337bfed5c234eb81c648a4256084102933.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ca4e29e5c81bb2822c255cbe64dcb6bf73881.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dda6b397b35679aee999daf53681328971353.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e602d3e2bb98e7883094f82b1ccda997116925.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/52fd643c703b4c6fed908db3133911f0101965.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a57df3c0ac654c99bd71e059a0cd20b079682.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/172bab04696f75996d5befe4380e3f0b209777.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/873dbcae1698833e8b5652bae337cc87128568.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6110e730002e3038062e6d26ab9ee7f2111358.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e41a9e4dc5a301ed2908844567b91e4b179815.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c3849d3756cdabd3e594b510dc832519212238.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a7a2e91f6f39e5681e245214fc992a86131751.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8334995bffd252e653b6fe532c88f34490434.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b4a98ae3081f57cdf95cfc20bc95917285282.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/54a8472c4c41085266fe475d6ea2f40d140082.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f6d4facda2ff91d8c1073ddf4d7758bf43426.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/34782ebb03536d6a2633092a701b8dd890886.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1dd8971146b6aee8d8193b916f12c48d136551.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/31df6644a327001a2c864ba824e5ffc1175338.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fd2a11b14e6a732c01930d52d5b56a77225237.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c35d50b0bee84ff3cce2472caefb8d0d109390.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/80092ce8bf0725657d801beb11d580e3224098.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9a46896851c3064a77cec2e36b404cd6150290.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ff1734648ba903259cc10adf6f16dfec114506.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/048aaa6bf29f06462254bcc877ec9ec6143980.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9c7dd9cfaabf508beace6b6ec22e67cb340778.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/521857769f259fba029385bdc3603396399666.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5dc40f8f39fa26bd68f1e0366cbda781142503.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/be338baf40a4c66761877cb9aceb1958112312.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2d547f25233347c1b8b3329876b69f47198476.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4f56dfc7ca207ca1507fc444967d5dfd395715.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c48a7c8ea1fd346e5e1010278ba88dfb273193.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d6d5f6a0c7b7400781b80ce973e7a74d171671.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c2478979983d728d5b55466223cddad1235292.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6bc004d57358ee6875faa5e9a1239140128550.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/cad3ec7974dc96b5cc3da602dd2c825b191287.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f9853a9dff78aefa9367d0b57c13f7f547039.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/06ed7618a35c394379c1fe72197c10e3171053.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e84c6c4b7589bacd0e3b2474fdf2b152113207.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1db3d861caca2c3820350490a871335690853.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d89cb68736aa037b52b8928c5106df5c113230.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/10d1568259168e7eef820494098152c5193768.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/dc3ebff93e9dc58ccccbc30c135bdb69123414.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/601ba2a4bec9c472b2ec3ea35ccbd6dd127354.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/40795f3889e3428187002ec8eadb123c164727.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f0d28dfbc4b866e51db2380053e6fe5d166682.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c67edcbed13146e0961e795e4004234a177678.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f01c407d328b392aafdc450b0662a3dc106029.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/398b1918fa65d4f99271507d993d03af150942.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cef4a3d3c26ccde3e9d80292ce1cd1b0144963.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/3374875dae7a9f5b8ec809c97e9c1897155187.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/56e0c3899ccafc1d383d7a8887f1eba393984.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/366930d1a188ce1d0b0e9dd22c335815161718.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ea7264bc30e7f8b6ca48a9da247d57a9135635.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1ab1af08742710d826f09e75728ec154172442.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ebc0e678ed6292815a072efb0ddd65cc106721.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/947c1adf516c6c061a875aae493c614e168751.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/087d7edf892c9641c3604a2fd53ac186144395.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bade7703b8116a4f01a312045f96f86d122934.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5a94c27615f75f0d6afd20237c4dcde3346120.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3c43c230ca7a69bcb77c56ad577dfc6245600.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/86c69e40511274f73b8c3f135314b5e6161352.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4cd43f5cc2e3f18d9f86b9744784c8bf167616.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a58d8466da1c26e28b230d645a2b37b7133403.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/43e384d63c7986b89b62bb24712ec890252304.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/18d7303ff19f8704c71f8f1180ed6645208421.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4a6b25b80bfc7a31b2677bcc996854f270604.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a5a4b30280a8695e376636dd13ef0d44119920.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5b31b5eb2a4b97ae1a0be7b53b907eee74591.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8e1ffcbaf026286e499aedd452d8e47e58085.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/43fd63fd280e8f5e25d1f4aa32cd6e8c147805.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bcd0d5c51aa16a7bb9ace70263e66144106550.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "1965-03-02",
+  "updated_at": "2020-03-07T16:51:48.848988Z"
+}

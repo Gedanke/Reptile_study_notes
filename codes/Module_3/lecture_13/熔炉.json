@@ -1,0 +1,240 @@
+{
+  "id": 44,
+  "name": "熔炉",
+  "alias": "도가니",
+  "cover": "https://p1.meituan.net/movie/2a0783b4fd95566568f24adfad2181bb5392280.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情"
+  ],
+  "regions": [
+    "韩国"
+  ],
+  "actors": [
+    {
+      "name": "孔刘",
+      "role": "仁浩",
+      "image": "https://p1.meituan.net/moviemachine/75705eaee8ceee0eee43b871bbaec25040803.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "郑有美",
+      "role": "柔珍",
+      "image": "https://p1.meituan.net/movie/d53f13a11a5b901880be79b13a19e22133214.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "金贤秀",
+      "role": "金妍斗",
+      "image": "https://p0.meituan.net/movie/d067a1820a2368c7d7162172d0f4109611448.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "郑仁絮",
+      "role": "陈宥利",
+      "image": "https://p1.meituan.net/movie/027d406d47b7116374297935d35a79f116056.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "白承焕",
+      "role": "全民秀",
+      "image": "https://p1.meituan.net/movie/ebb13460eb55468f47f615efe6b7fe3845650.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "张光",
+      "role": "校长兄弟",
+      "image": "https://p1.meituan.net/movie/af6006b13bbece320d49b6603caaf58835645.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "金志映",
+      "role": "In-ho`s grandmother",
+      "image": "https://p0.meituan.net/movie/4cc29238a043feeec08daca8a2fa80ee28527.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Baek Seung-Hwan",
+      "role": "Jeon Min-soo",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Hyeon-soo Kim",
+      "role": "Kim Yeon-doo",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jeong In-seo",
+      "role": "Jin Yoo-ri",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "严孝燮",
+      "role": "姜刑警",
+      "image": "https://p0.meituan.net/movie/100bdf34ef43d60e45c5161d988d139c10827.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "郑亨锡",
+      "role": "Publishing Office Employee",
+      "image": "https://p0.meituan.net/movie/50d92e58f033931cde1cbe48158afd6211116.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "林贤成",
+      "role": "英勳",
+      "image": "https://p1.meituan.net/movie/40502001d820a4c46a9dab7642b994d313852.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "全国焕",
+      "role": "(黃律師)",
+      "image": "https://p0.meituan.net/movie/e409214807f4461245cb1d405dcdfda415361.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "金周灵",
+      "role": "Yoon Ja-ae",
+      "image": "https://p1.meituan.net/movie/2a82d726170b15bd3e3b4b9fe6a6d45541248.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "金智怜",
+      "role": "(率依)",
+      "image": "https://p0.meituan.net/movie/94f8e4adc26f728526579c3d563597fd42723.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "李相熹",
+      "role": "(車庫老闆)",
+      "image": "https://p0.meituan.net/movie/03f9636d911eedfbc99d49b9c16987875235.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "许在浩",
+      "role": "(電台PD)",
+      "image": "https://p0.meituan.net/movie/b6cf2d6856f4b4f9c07241961ed65d6117237.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "洪锡然",
+      "role": "수위",
+      "image": "https://p1.meituan.net/movie/b8c74601a088482bd01b5dde97d6a77911740.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "严智星",
+      "role": "영수",
+      "image": "https://p0.meituan.net/movie/5628810980bb7376b2fd9b2aa092fe7e6710.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "张素妍",
+      "role": "Courtroom Sign Language Interpreter",
+      "image": "https://p0.meituan.net/movie/c816c93622db008d4b04a95b9ced172578914.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "金民尚",
+      "role": "Park Bo-hyun",
+      "image": "https://p0.meituan.net/movie/1e77d189be34afb3574516d2ba6648f08296.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "郑裕美",
+      "role": "徐友真",
+      "image": "https://p1.meituan.net/movie/a12e64e6de9a72e43162492a5092fa7487424.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "南明烈",
+      "role": "金正友",
+      "image": "https://p0.meituan.net/movie/ab5fa4e531fd8d40a50cd9cd197741a712702.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Park Hye-jin-i",
+      "role": "Headmaster's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "崔镇浩",
+      "role": "Prosecutor",
+      "image": "https://p0.meituan.net/movie/a79bbc2d68388f862370f68c28ce708014469.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Myeong-ryeol Nam",
+      "role": "Professor Kim Jung-woo",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "林贤成",
+      "role": "Young-Hoon",
+      "image": "https://p0.meituan.net/movie/372b5fd123b1f76a9a0d897757f434139921.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Kwon Yoo-Jin",
+      "role": "Judge",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "黄东赫",
+      "image": "https://p0.meituan.net/movie/0afa977fbab0cdbdec39cc340e38972845036.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.8,
+  "rank": 71,
+  "minute": 125,
+  "drama": "来自首尔的哑语美术老师仁浩（孔宥 饰）来到雾津，应聘慈爱聋哑人学校。天降大雾，他意外撞车，维修时邂逅了人权组织成员柔珍（郑有美 饰）。仁浩妻子早亡，8岁女儿天生哮喘由祖母照看，所以他不辞辛苦谋职养家。然而，双胞胎的校长与教导主任竟逼仁浩索贿5千万韩元。同时，仁浩逐渐发现学校笼罩着一种紧张压抑的气氛，令人窒息。有三个孩子引人关注：聪颖的金妍斗（金贤秀 饰）、贪吃的陈宥利（郑仁絮 饰）和弟弟自杀身亡的全民秀（白承焕 饰），民秀总是满脸淤青。下课后，仁浩还听到女厕所中有呼喊与哭泣，在门卫的阻拦下他未深究。之后。他意外目睹了校长行贿警察，教导员毒打民秀，宿导溺罚妍斗的行径。一个惊天的隐秘被慢慢揭开，真相令韩国震惊…… 本片取材于2005年光州一所聋哑障碍人学校的真实事件，改编自韩国作家孔枝泳的同名小说。",
+  "photos": [
+    "https://p0.meituan.net/movie/f7215a68ca39ea3708078afbfdfc4b89228243.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b6bd3131da5ce04dc45495501dd5b138272399.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8d507bf6f9f49cb05732af5b1c990822404995.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/62d276ea1ea3d8277052585deba2958d1375301.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2cb7629b033c740aa31c70d9270fa2541390713.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b648fbd4b35420685efb9a33ede61e91240115.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/aef3b5e216777f4e07d4f3175870672c203104.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/20599490711cecf9f98fba9ba6ce9b4f31513.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/cb1dd06f98296133701c70865c9014a069484.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/619389eb45758068e8c4b9aab34dd07c68242.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b2d86a3c64e3d8c3184d69ebd54bc99c99386.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/75cb7474a6161f42103db336768849cd60294.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f9aa5a0c44a633d66335b98ff724b75866511.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6556d93bd2adb6dc8689472bd8172c5382460.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a5c49d2017a609070c6f6b4a950ca06787227.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/fe83ff1012065ecafe02202f53c7439181164.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/af693412d899a7059183d1e547ef1d4076634.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/08a0649d74fc92c1fd849cde6c22d30d66043.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/529cb4b4b3b93e8bf10ed2a650a7d28272460.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/97d9e6dd6eb4f028a2a4e726b07e0f9179215.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c94b9319674e972549155490350e0dad54146.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/134a819ec620a3ba610ae5f8f701481146424.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4fe4375b30f10813353173c6b898b8a025712.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f596514514df415e98cb0b598df4151a34432.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/20264dd5c27bf5a4e267a1d75dfc2d8c51296.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a05aee25f33d53686c55084970651ae369423.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a368c85fc335b429ce7d7286ec5d6bc2237863.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d087aab537e6456ab66e49d2d2f4582f74355.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/857922f6d038f22f8b574802cad6120e112226.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3533f1bc936486eec270ae7febf6361799774.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bee9b481024538efd65133f33cc88b1b58330.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0105fa1058b553f01233e8333e998f5f77899.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c083fd952315f4165f3bcc0bb1908d5d54282.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b24572d1a0c6517a08d0a88997c760f9115268.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bc04ce4357e2ccdc2a4d52f0227d5c03280744.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/68c214b34ca0334afafdde4fa23431e9268295.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/904fcd4d773bd4da5d0c4ae263f9500a246241.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6bf62c161e029aa65b240be8d592c30d242622.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/96e5c0d41f39ac1de8ad341a88290345269177.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7b8b36e57e993848eeed8315d02e36d9229754.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1565c55de6f42763a8fb208dc65e2950312977.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7a21af055e0c4b020a9f9b7d737a1aba223527.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4ad513be2e9419ec7d7d63ba8cc2b6cc134065.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2a0783b4fd95566568f24adfad2181bb5392280.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/49773283b491695b333a9b827040cab5134462.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/df0c15efe5699b975f6bb5bf3ff99ad6100875.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d0a12881255143a142850485f3ef026c49641.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e9af7259e9c85deffd815ff468e08c6458522.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5a427c70fb1415562c121d7d2efed99451015.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b1c8b6839cfc84db2383dfe8935223f1106707.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a425ce42a57a734d61750139a52f38d993264.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/322e9922a161a9706944ed000b50c7c481263.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2be41404902749e64ec3c26b2db5347a98690.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/29cc148069b0d1f3f22f30f9e6a92c8593701.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/444ae8723e62031835bdbc7a5098ac1798508.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/77477e20d310cebafddbbf8b6165242f64177.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d419046f0a4bab3c69210e68d3d25175106182.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c1cd3b9e78ec795894c2b3829ff2917561774.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ce69433aeba179dfaa1f18cfd66a110359313.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8b1b9a2b1638c9d01b4794ec431fdafb50288.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e6046de4034639caefcf6e1ca61605f187773.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/60b3acdf9ec0af11d0da965e8fdb83a4114353.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d0f38b47a3c6b8702b81273fcdd059b542849.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6cb5e18e8cd88c11b6b10696ff9bb2fe36314.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/140063d53be2b537e5f515992f57bd8a52184.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/cb046332b9a273324b7718265718cba175538.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/aab2b8bcf8d636b36ae2d2c79fda323997534.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "2011-09-22",
+  "updated_at": "2020-03-07T16:40:45.593903Z"
+}

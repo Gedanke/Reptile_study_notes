@@ -1,0 +1,220 @@
+{
+  "id": 73,
+  "name": "十二怒汉",
+  "alias": "12 Angry Men",
+  "cover": "https://p0.meituan.net/movie/df15efd261060d3094a73ef679888d4f238149.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情"
+  ],
+  "regions": [
+    "美国"
+  ],
+  "actors": [
+    {
+      "name": "亨利·方达",
+      "role": "陪审员八号,戴维斯先生 Juror #8,Mr. Davis",
+      "image": "https://p1.meituan.net/movie/c422cb3c8a3b7d18af6acdc5eae2c24936630.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "李·科布",
+      "role": "陪审员三号 Juror #3",
+      "image": "https://p0.meituan.net/movie/f20a9970b57adc7bcb73abf8973af90127033.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "马丁·鲍尔萨姆",
+      "role": "陪审员一号 Juror #1",
+      "image": "https://p0.meituan.net/movie/ee9b82ba9691cfabc93258e3ce42dd7824521.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "杰克·瓦尔登",
+      "role": "陪审员七号 Juror #7",
+      "image": "https://p0.meituan.net/movie/a78a5aa956dffb28a96b0ee65e04574134784.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "埃德·贝格利",
+      "role": "陪审员十号 Juror #10",
+      "image": "https://p0.meituan.net/movie/dd6892751e87a7e4ca40ee8204575cf86672.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "约翰·菲德勒",
+      "role": "陪审员二号 Juror #2",
+      "image": "https://p1.meituan.net/movie/acad4c1f9462927249db69a430b766aa33611.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "杰克·克卢格曼",
+      "role": "陪审员五号 Juror #5",
+      "image": "https://p1.meituan.net/movie/94171494ca2f8b111b5aa9d9240d57d744248.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "艾德·宾斯",
+      "role": "陪审员六号 Juror #6",
+      "image": "https://p1.meituan.net/movie/eef53fd71b6bf09d2adb67af04bec4f526722.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "约瑟夫·史威尼",
+      "role": "陪审员九号,麦卡德尔先生 Juror #9,Mr. McCardle",
+      "image": "https://p1.meituan.net/movie/ace7bb146ce97f6ad43bc49aa97c196d28972.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "乔治·沃斯科维奇",
+      "role": "陪审员十一号 Juror #11",
+      "image": "https://p0.meituan.net/movie/61784e3e4f732344462751c459c7e33f87740.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "罗伯特·韦伯",
+      "role": "陪审员八号 Juror #12",
+      "image": "https://p0.meituan.net/movie/752c6b334977eb3de0c65ec829f9bcf631091.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "鲁迪·邦德",
+      "role": "法官 Judge (uncredited)",
+      "image": "https://p1.meituan.net/movie/3c103829489b260eae3d6d6edfaad6c820342.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "James Kelly",
+      "role": "Guard (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Bill Nelson",
+      "role": "Court Clerk (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "John Savoca",
+      "role": "The Accused (uncredited)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "E.G.马绍尔",
+      "role": "Juror #4",
+      "image": "https://p1.meituan.net/movie/edb69080f4fb7abe4bf55a9bea6cd5dc29451.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "尼基塔·米哈尔科夫",
+      "role": "2号陪审员",
+      "image": "https://p1.meituan.net/movie/584d92fc24eb73cd779ce90bc4fd465262859.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "谢尔盖·加尔马什",
+      "role": "3号陪审员",
+      "image": "https://p1.meituan.net/moviemachine/26d5a64412aebb1f92674da75ac108ff210325.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "阿列克谢·彼得连科",
+      "role": "5号陪审员",
+      "image": "https://p0.meituan.net/movie/d93f534fc354c54abf75c9b7b2c69b6015655.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "尤里·斯托亚诺夫",
+      "role": "6号陪审员",
+      "image": "https://p0.meituan.net/movie/b24acf3a66d7e0fa7fe1917a8f8812039787.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "谢尔盖·加扎罗夫",
+      "role": "7号陪审员",
+      "image": "https://p0.meituan.net/movie/bc10fdfe7be3dbe875e65e1900f1bfd6127707.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "米哈伊尔·叶夫列莫夫",
+      "role": "8号陪审员",
+      "image": "https://p0.meituan.net/movie/915ec4c53ecb4c6cf6743480bf4d3eaa79811.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "罗曼·马佳诺夫",
+      "role": "12号陪审员",
+      "image": "https://p1.meituan.net/movie/340a65143528681eb412bfc5ca1f5c9f95239.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "西德尼·吕美特",
+      "image": "https://p1.meituan.net/movie/711c7558837732e86823e9344aa063ab10971.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.9,
+  "rank": 38,
+  "minute": 96,
+  "drama": "一个在贫民窟长大的18岁少年因为杀害自己的父亲被告上法庭，证人言之凿凿，各方面的证据都对他极为不利。十二个不同职业的人组成了这个案件的陪审团，他们要在休息室达成一致的意见，裁定少年是否有罪，如果罪名成立，少年将会被判处死刑。十二个陪审团成员各有不同，除了8号陪审员（亨利·方达 饰）之外，其他人对这个犯罪证据如此明确的案子不屑一顾，还没有开始讨论就认定了少年有罪。8号陪审员提出了自己的“合理疑点”，耐心地说服其他的陪审员，不断进行案件重演，在这个过程中，他们每个人不同的人生观也在冲突和较量……",
+  "photos": [
+    "https://p0.meituan.net/movie/acb648df0d56aa49d93a4e0dd52db7f7138639.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9f2228c97c95a90bfb2a84ad171e3ea6105675.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0bbeef88320f6d27b65829647cdf481d85775.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cde29bdb11876da41a6d8830e39e371984277.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b6ebec10939993c7539d5a519de9fd1468821.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7da120c8b24629282b659c5c23e6c79064769.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1fb36b287a0ab3faa00ebca81c320d7964772.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c3ac29fd8c33d18584c56c1f38ce18f268736.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0672f3c182d9fe70a5b1987c5b04cf9266382.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2bb181d1e1b6f1a01be0bee06884579852195.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/05ef3068d5b21fe2c76e9445a34b5cb951316.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5ff1798a97c240f2c719d16594d8004e61633.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/31bfed27604b2b7ea61030d3543140ff118533.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a98dab3446b5097c13aae58dcc500dc964078.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/45aa8e24899a7c79b35fcb83e49dfaad95192.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f2fb7f7a97bb01beeec14d817ffdc65865540.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/34a0a7d121e99aaeebeecc8773e8470b120910.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/85487f76e248d5f4bed9e65c52f2b67a114283.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ae456dee069d12860fc02ebe47a85bdb90164.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0eca6c70f74a58f6914b7d15fdcb35f866074.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/75febadacfde5fb8c36217fef044007e109393.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f405dfa5f195c7c9a039f5b061bd8a4271829.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4e85a842b550ae62ffa2439983e7294862880.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/40f6c08a6940f7c979827e6bdd230f6d86856.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/790373948e33a82ebd1d93f671aaa2b286930.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cea082e97882027db1d283fe803aba7679536.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c76fb066cd6a851e4ddc7bc6a5706d9b91259.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d58dbe9feece4c330a7bef57571bea4270472.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3fe1642577ff7e11b797e6b2b1befa7289442.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4accdb85af256fdbdd7585c7c6e2dfcd91396.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4b1046a7e8f60db7e62269ca2bd8eecb86725.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/029322e04d9ccb61fd31044b42469f7d94276.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cacdfd083013c24875c71717381ad5ee58431.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ea313826e81534639f98b82f88a338e848036.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a06655a864c6890f43cefe1a46d4dab096989.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/99ca0327ef581827cd9cca11bced91f3116927.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/77f343cdf2a62be9059a15033bf4ffe359948.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/321ec2b614f4895d8c1fd9db7f7fbe2157781.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e93d7ea0931cb75a58610dd77ca20102240394.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f1efc924bf214f27d4be9fd508efc55a100540.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e90931ecb527b78214fa05a563f2dddc75109.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/175db4ba6740d1b8e8d9c8eb71fd923051301.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/39bca8b9d6a12f9822b5aa1768b8a0ba39898.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a4c98643184e1c266eed0ed7c081ae54108235.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9621c7969d4f5e1367c1fa81e95e2f0679272.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e88c3d17202ba5d37c47623a08416869137232.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9745a8ae7a0613f758afb8ce3e766656106391.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/544b2e328c5ebfc9a846a10634de1a45147761.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/de1e14e629133331746b2c18575f2512111098.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8d2bfd566683b91f08b093eaf7998989141744.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/20ee5c4c69cace0da3dc699c65c752b793390.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/89c80faea5796861dbe1c7ca5f0d3d5646859.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/87e45f3f020c7617f60b83e75f88da00136681.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/18344b2be37768a6131346a524b1d0b0116409.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e49c9827223d5e6335d3f201fc70313196452.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6872197f5ce9ec4ac1c50c96a850fb94143044.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b9f64dcf829a2607f9ae5ac9b9457b5084572.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2e0b897aacda055d40e8997534ad6a3f90896.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/938f1e21ed89cc43ef5c1075cb10c7bf133894.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4e406a47674872ae7ba707c7c662aaf782725.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d9685324494a225cea4a253bc3436e19140934.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a8575df7e52a6f1d1b8e00d31c917190105666.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/33abc16fb8243123df20af40ecad801b157783.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6a792b5d4967e2dc2754ee8053949bc786410.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/dd0bcd351dcdd267846143d34d17afae127809.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/350b18d8ecb571b8a947c4038626fc1239298.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b47b5d957ba0447ee29241a3119aa97e120237.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1ec285d75205f123a326f9f2c70e035f276360.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/670f6f3b03d78a6c00d85353c6ccbe6c46227.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f8ef0e565242f1650aa4c2771830160145421.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b9d007b167bdd379c98abd8860b68e4944248.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/389b517aa6b43443795c5bd922dff17647150.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b33382561e4f8e956f8bda5bcd2f784972488.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d0f5402eb7baf24c17da7cb6bfc824c158574.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2512d6f688fcc89ef491920a7dd566ff97583.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/263377e6bab64288eed4efafc73831d740269.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/28e6c4298164f15fe557d9fbe92356c083787.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "1957-04-13",
+  "updated_at": "2020-03-07T16:47:05.792142Z"
+}

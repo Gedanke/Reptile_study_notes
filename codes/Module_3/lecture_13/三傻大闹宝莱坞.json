@@ -1,0 +1,499 @@
+{
+  "id": 65,
+  "name": "三傻大闹宝莱坞",
+  "alias": "3 Idiots",
+  "cover": "https://p1.meituan.net/movie/ca4a128a5a54d5b5e35ceba622636c831810197.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "喜剧",
+    "爱情",
+    "歌舞"
+  ],
+  "regions": [
+    "印度"
+  ],
+  "actors": [
+    {
+      "name": "阿米尔·汗",
+      "role": "兰乔 Rancho",
+      "image": "https://p0.meituan.net/moviemachine/e4a015745a6702ddaa02ae22e3c3aab336493.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "黄渤",
+      "role": "兰乔（国语配音）",
+      "image": "https://p0.meituan.net/movie/c6594ef2705dcaf7d9df857d228b5e1645712.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "卡琳娜·卡普",
+      "role": "皮娅 Pia",
+      "image": "https://p1.meituan.net/movie/696715ddaa9955411604dc1acda28a3a29423.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "汤唯",
+      "role": "皮娅（国语配音）",
+      "image": "https://p0.meituan.net/moviemachine/d683d2e788ecc245da1946bc434c889e58890.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "博曼·伊拉尼",
+      "role": "Viru Sahastrabudhhe",
+      "image": "https://p0.meituan.net/movie/ea46f9a1f0a20a31306dddce5941b25f19290.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "马德哈万",
+      "role": "法罕 Farhan Qureshi",
+      "image": "https://p0.meituan.net/movie/35c3e13018fc95f4fdeb9be3105906ec10626.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "沙尔曼·乔希",
+      "role": "莱吉 Raju Rastogi",
+      "image": "https://p1.meituan.net/movie/5684635213d3c83405aa86458afde70835964.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "奥米·瓦依达",
+      "role": "Chatur Ramalingam aka 'Silencer'",
+      "image": "https://p0.meituan.net/movie/74f759c05bb6bf758b094b702c0e2d5431473.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "贾维德·贾弗里",
+      "role": "Ranchoddas Shamaldas Chanchad (as Jaaved Jaaferi)",
+      "image": "https://p0.meituan.net/movie/f87dbdb41203f5fd345ee5cb5020d5a48193.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "拉杰夫·拉宾德拉纳特安",
+      "role": "Lead Ragging Senior",
+      "image": "https://p1.meituan.net/movie/fd9d7698bf0f9a712f7c896e2b6a9bd336535.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "莫娜·辛格",
+      "role": "Mona",
+      "image": "https://p0.meituan.net/movie/22e98fd9d72ffc881fad30f9fc879ab821418.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Akil Mishra",
+      "role": "Librarian Dubey",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "阿里·扎勒",
+      "role": "Joy",
+      "image": "https://p0.meituan.net/movie/8ceab3df30dcdf0dea5079bf59fdfa8c135083.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "帕里卡沙特.萨赫尼",
+      "role": "Farhan's Father (as Pareekshit Sahani)",
+      "image": "https://p0.meituan.net/movie/16146b1e9deb56fb6adb04f0b9b7cf689216.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Jayant Kripalani",
+      "role": "Campus Interview Panel Head (as Jayant Kriplani)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Shoaib Ahmed",
+      "role": "Chote",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Arun Bali",
+      "role": "Shamaldas Chanchad",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Chandrashekhar",
+      "role": "Airlines Ground Staff 2",
+      "image": "https://p1.meituan.net/movie/f870dbafcef20373f806771342400b1e48357.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Rahul Kumar",
+      "role": "Millimetre - MM",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Meghna Bhatia",
+      "role": "Raju's Wife",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Achyut Potdar",
+      "role": "Machine Class Professor",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Supriya Shukla",
+      "role": "Matron in Hospital with Pia",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Rakesh Sharma",
+      "role": "Minister at Shyamaldas' Funeral",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "登坂广臣",
+      "role": "Chatur - pondicherry boy",
+      "image": "https://p1.meituan.net/movie/acda87ef350c3b9abe5d0f2485142cb122168.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Atul Tiwari",
+      "role": "Minister in Auditorium",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "尚卡尔·萨查德夫",
+      "role": "Ambulance Driver",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Pitobash Tripathy",
+      "role": "Junior 1",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Malvika Singh",
+      "role": "Mona's Baby",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Pooja Goswami",
+      "role": "Air Hostess",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "阿马尔迪普·杰哈",
+      "role": "Raju's Mother",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Aakash Dabhade",
+      "role": "ICE Student 2",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Mukund Bhatt",
+      "role": "Raju's Father",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Chaitali Bose",
+      "role": "Raju's Sister",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Nishi Singh",
+      "role": "Maid at Pia's House",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Vaidyanathan",
+      "role": "Professor Vaidyanathan (as Prof. Vaidyanathan)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Michael Joseph",
+      "role": "Exam Hall Professor",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Trilok Sadhwani",
+      "role": "ICE Student 4",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Tanveer Ahmed",
+      "role": "Professor in Induction Motor Class",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Harvinder Singh",
+      "role": "Mr. Dhillon",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Sitaram Sharma",
+      "role": "Manager at Pia's Wedding",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Saurabh Agnihotri",
+      "role": "Housekeeping Boy at Pia's Wedding",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Captain A.S. Duggal",
+      "role": "Pilot",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Shailaja Dhar",
+      "role": "Lady at Mona's Wedding",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dinesh Kumar",
+      "role": "Mona's Husband",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Raghunathan",
+      "role": "Professor in Corridor (as Prof. Raghunathan)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Rajendra Patwardhan",
+      "role": "Govind",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Sanjay Sood",
+      "role": "Peanut Vendor at Shimla",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Sarvanna",
+      "role": "College Security Guard",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Pandit Prayag Raj",
+      "role": "Panditji at Pia's Wedding",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dayal Sharma",
+      "role": "Caretaker at Shyamaldas' House",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Hitesh Tak",
+      "role": "Ragging Senior 2",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dharmendra Bhurji",
+      "role": "Airport Cab Driver",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Kumar Veer Singh",
+      "role": "Waiter at Mona's Wedding",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dileep Desai",
+      "role": "Priest at Joy's funeral",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Annapurna Kaul",
+      "role": "Airlines Ground Staff 1",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dr. Kishor Patil",
+      "role": "Doctor in Ambulance with Raju",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "R.S. Kodange",
+      "role": "Doctor at Airport",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Apul Jaisinghani",
+      "role": "ICE Student 3",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Sonu",
+      "role": "Library Clerk",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dr. Praful Kulkarni",
+      "role": "Doctor startled by scooter in hospital",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "马达范",
+      "role": "Farhan Qureshi",
+      "image": "https://p0.meituan.net/movie/e607d8b0c1257eaaddc3e354f08141c427265.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Olivier Lafont",
+      "role": "Suhas Tandon",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Farida Dadi",
+      "role": "Mrs. Qureshi",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Dushyant Wagh",
+      "role": "Centimeter",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Akhil Mishra",
+      "role": "Librarian Dubey",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Freny Bhagat",
+      "role": "Couple at wedding",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Komal Jha",
+      "role": "Student",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Rohitashv Gour",
+      "role": "Ranchoddas' Servant",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Pitobash",
+      "role": "Junior 1",
+      "image": "https://p0.meituan.net/moviemachine/0e48e6c42a526653e98daa9847941d6e53894.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "拉吉库马尔·希拉尼",
+      "image": "https://p1.meituan.net/movie/632f70b8c488a65152aa77aa4604b77043490.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.9,
+  "rank": 47,
+  "minute": 171,
+  "drama": "本片根据印度畅销书作家奇坦·巴哈特（Chetan Bhagat）的处女作小说《五点人》（Five Point Someone）改编而成。法兰（马德哈万 R Madhavan 饰）、拉杜（沙曼·乔希 Sharman Joshi 饰）与兰乔（阿米尔·汗 Aamir Khan 饰）是皇家工程学院的学生，三人共居一室，结为好友。在以严格著称的学院里，兰乔是个非常与众不同的学生，他不死记硬背，甚至还公然顶撞校长“病毒”（波曼·伊拉尼 Boman Irani 饰），质疑他的教学方法。他不仅鼓动法兰与拉杜去勇敢追寻理想，还劝说校长的二女儿碧雅（卡琳娜·卡普 Kareena Kapoor 饰）离开满眼铜臭的未婚夫。兰乔的特立独行引起了模范学生“消音器”（奥米·维嘉 Omi Vaidya 饰）的不满，他约定十年后再与兰乔一决高下，看哪种生活方式更能取得成功。 本片获孟买电影博览奖最佳影片、最佳导演、最佳配角（波曼·伊拉尼）、最佳剧本等六项大奖，并获国际印度电影协会最佳影片、最佳导演、最佳剧情、最佳摄影等十六项大奖。",
+  "photos": [
+    "https://p0.meituan.net/movie/3ab83af52aa20c061fd14797a51333f2146245.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cf0dbc0a2ec4635551c3faa633463c28187062.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/578cc7bfbcf558b75638f5506a452fbf87108.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c896b7caffbd983fbfd01acf0242a63597771.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b2a824421b8d1edec4858437011f7ecf64543.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/97e422736173a3b97baeef18135432d7103531.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9382259a383f7bbefce8a64eaecebc7789402.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/20225ecb797e2b66a7cba50cf2e80ce782475.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4a3e0ca68c6b229da47c5cc82f03b9d648669.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b37d62354b04a0fe3b896cf57dad8a6d105863.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7a8aa981f7215d303b51eb885ee0706b105823.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/42c3102ba802e6634dd191be42896c0f138649.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f3e5973f04d7c1a3d3bd087b79bc673566331.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fc86855093604ca3d2f44ef2101cbe21114551.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/af45f9153bf3ef47287db2c30f698d1d94635.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ad772a584132e6e4c10723643f2e5cc953035.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/89609238192c614bf35d13a194c08b0875551.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bfea8dac8cdbc8ddffa412263ecf994b91392.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4fa159a6e4d085f997795cc1f2fa8f5f111484.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5f26231535077c16ac20be0b432c252e159150.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1deafbe32ece4bac9e0010645bff657e132805.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f30a80997b46935cba4c0ebe387432e668513.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/94241a29f8685a70a5c62102ad4d2f1c106515.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b984570dd5ba549ba3328cd88a344a28120246.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/57087b88cd277c525391a96bb237d0e6125522.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/fdf80c6b7733d0bac34176046551316671663.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/72c7fca033f62bed9d2e19a99060e83196415.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e9b1c23abd595ccd2a7ada94eb0f01cd37925.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b288beb8d88ee7bb8872bedd66d9215e123530.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/44098cd187d87de7efc176175271834382824.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/66ac72b72d271d2514b5e30cf163d896104247.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/66246d2b1ca19f4378a37125074fc0d4160183.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/582e83063c93d81919c59f0dfcacf13889330.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4806588ad2d850fb0067c9f0fb211d55118018.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/90155b1f6ccdac0198b74124c890a0eb153823.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ea48b73629cecf1eca6241b7d911788d89938.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0b1c7fb4c8019d11fffb0241f5164fd2119161.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2bb85826e2b4711e724429545592378190208.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/41782a6b4d9d16c4e89ae3f2d60a82bf108527.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f38ee8db35e66fc0ec54bb594bbb184f180200.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/47eefc82dba22c4bdb4699d619b433c7196862.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/820cd54a4ecd19f691d34ef20a219bf354223.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8e10af33c34fb1fac4b4a19504841de2131615.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7472bdfd50c040f186247860996d6d28109265.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/53f64a33c26343b5427e479868e6264891840.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d96c923dd042a83027b641eaaa904bdb102400.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f96d32154bbab55ec66f24dd3343f45b146460.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2051e20d802baed7804b32e49b055c91112745.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/caf034dbd9c02d666d2ef9c3afd2cb2c71324.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/232fe363330e8b2608f77788b49d33c594195.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/823f152fe2726f00b7f1e597656a4928105147.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9085c5960f70c643e12f7f4365dada0b83405.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0da1c3924366b041d495d1d0293f6d6355280.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b87280ef3b82720c360193af1eee2f80124359.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5fafe414b3f1872786e7a159a97cac08126159.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3e7e5e4f339064e9dd1f0ac07f47279b85492.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8ecfba895b4f75e8a88c53b7977942ee406566.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7de68c639620578858777f8e8e756c14149763.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1bfc4f782c83acdd4772ff11f15159ac184173.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f7817b3f62970045a403d23a7fabae61174423.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ead49590936dfa470474dd5da3f5d460200295.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7a39e1a7b2fe6052a193e96e47db4e78244364.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/bdccf8a74849c964f72c2a5f7d187bb3129469.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/480db6096eb2f4ced11f850d8138d82c130598.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/213d7cbf554bd48268748718d2b02596190109.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f3c7740c72b9afbdc081ccddfb114671106614.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/80cb54835f029e435c70881f2cfc289b149416.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2f0f8cab35bc777431db3be8f1471392109663.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/083b237628dcf84ee7856074503d44c1140586.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6f72ffc933d34b63346c189da323a86f301614.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/dac32fcd97fc4359a62d1588367954ce95920.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a13c0c76d261ed348408005f06578a0a64726.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5269341861fd83c06d07b969df0ed80b308411.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/cf827f2c1d1f67229c85e99356a6c5de84644.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/88ac887471e8cd86d7252fc578e52654344858.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4bb144bc0a674ba6908349018fd092e6330929.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6630b46118dd85a8dcc4c2f04541bff765530.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/739c1ba148493dd5afd99402acf98e9859645.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/18da405d85b43914a2eb260d6c17184282051.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/824a353a9d4c3ea6c97d1a91e346aec3154520.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/73ceabf64f44c6bf87e1f7dfc8951b00137557.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ca783191825f07b7a8eba5e74bf804ba127952.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8ad311f73b840732d149cef478c0f824159168.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/662018d47a63fc70c6932cb03d5fc052157372.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8eb020106d50afc61b6741ad9d96be22111790.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6300b71c8f3a409dfb3d3367547386b6143956.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1328dd437ce9f31c93158c70c1bb4d9f138385.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/17a1c66b61abd7e4efc36ac1e33a3de6151602.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/bbe7240b83bc4843740b02980fe24210116664.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d8c89d29de69c2a50c9038a9d92fdb19115318.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1bce715d3f4aba1aa4ea7c8a093a260c298372.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a36422e5034997be8975f08a5e56a77391534.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8be5a67240df9181b74a70e4f92d0b7b56972.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/0433beea9095f3086c1c5583afdf8061109013.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/566b9f8af236d847ac7a0cfc8d0bb95d153891.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/4d4496159cd6eaf0461750881acb041a87454.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ab1f596a3fab5b996567b2f27b36826290858.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bcbf5aba304d29125c963f0afa7220a4115678.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/07eab8ea015e28314725c1711a592f1e134364.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/68cc65776453d13a30f2ab475d27afed75076.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c3818db244414cc2e21a1e807b2940b3176657.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ba5700bf0b244fa27e5df9c2422154c6123067.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a1977e615112e1996da02550ce1275e870137.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2692da56c7d05728cccab30a8323d50e23869.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ae83c1a6308435eeecf21bcbade0277f41141.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/5d71714f33cbf72cb2741cea96023a87101277.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c178ab27880b7ca2da08aca7ebbf30d749327.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/bc6efda4234822dccaa09cbe84d0780344461.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e70a16be6dd2c81c545ec1c053d23c1869832.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d7379cf0d3eb2078cf45900f916c41ef75371.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/934a71041552f879520381225cbc5c6567332.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/189fe665e43ad023ec250104571d6b0b40309.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/39fc0df14ff7fb37f303cac94534e7d1101409.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7e8b5bbedde230292de15e59aa6396dc98275.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/861c732443a66d154abfbe96bd18dac91251438.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3893a6f80d1081c44d3e727591e425031689110.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/009fa803753fa7547f154b55d6503fd31463519.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5c72308fdbbc842ef4b6751d139810dc1277645.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d721d67723d9a01400a58025fe8fe8081568809.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b6fcdb57c1bd7058cc1c7ee21f688a8d1517792.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/b454acbbd1e2299e46a7ffaf1f089e4c1839196.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7bb3510fe6ecca9cbb1aaac326c1e7731089999.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d863db48e477c288875e6965957c18061407185.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "2011-12-08",
+  "updated_at": "2020-03-07T16:45:25.756457Z"
+}

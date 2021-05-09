@@ -1,0 +1,172 @@
+{
+  "id": 32,
+  "name": "忠犬八公物语",
+  "alias": "ハチ公物語",
+  "cover": "https://p0.meituan.net/movie/2d42e00d7ee59ff5bd574f93b8558aa726665.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情"
+  ],
+  "regions": [
+    "日本"
+  ],
+  "actors": [
+    {
+      "name": "仲代达矢",
+      "role": "上野秀次郎 Shujiro Ueno",
+      "image": "https://p1.meituan.net/movie/9f8134176da659815bc9d738fff0008d49699.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "春川真澄",
+      "role": "Okichi",
+      "image": "https://p0.meituan.net/movie/430131e5cc53320fab2f124fb4ba1d4227148.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "井川比佐志",
+      "role": "Maekawa",
+      "image": "https://p1.meituan.net/movie/00d3baad599c9e72a8c538f40e80556d27279.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "石仓三郎",
+      "role": "Machida",
+      "image": "https://p1.meituan.net/movie/9c862018e0087845a96e56b06b00672b14253.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "石野真子",
+      "role": "千鹤子 Chizuko Ueno",
+      "image": "https://p0.meituan.net/movie/69158f88cfc1be8ecfbc4f478225e87138554.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "泉谷茂",
+      "role": "Yasui",
+      "image": "https://p0.meituan.net/movie/c1478a7d14dd9b3afee258c2f85bc9af32221.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "片桐入",
+      "role": "Oyoshi, maid",
+      "image": "https://p1.meituan.net/movie/f89cb0521c921d4405861d6c9f180a1c50171.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "加藤登纪子",
+      "role": "Tamiko",
+      "image": "https://p1.meituan.net/movie/992aca308c42a26f655b22fdabcba04524877.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "加藤嘉",
+      "role": "Kondo",
+      "image": "https://p1.meituan.net/movie/820aaae13d675eb449806b981fc1ac679763.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "岸部四郎",
+      "role": "Customer",
+      "image": "https://p0.meituan.net/movie/d745e80233edf4b9cc62f2581928c5a434870.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "三木纪平",
+      "role": "Owner at inn",
+      "image": "https://p1.meituan.net/movie/490c3c2519ee37087dd6b84db2bf50507694.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "长门裕之",
+      "role": "Kiku-san",
+      "image": "https://p1.meituan.net/movie/3008fe34601e22cd6908763fc44c002830976.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "尾美利德",
+      "role": "Ogata",
+      "image": "https://p1.meituan.net/movie/d4886c4b4cfe915f5b8f601f0401d24d27314.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "菅井琴",
+      "role": "Owner's wife at inn",
+      "image": "https://p0.meituan.net/movie/21fd28eda0330cd3699f03757720930136644.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "高桥长英",
+      "role": "Kanze",
+      "image": "https://p0.meituan.net/movie/4e6e241b7a4bb5bd120f4e2e4254fe487260.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "田村高广",
+      "role": "Furukawa",
+      "image": "https://p0.meituan.net/movie/557c6c878e87ab6c9832171e7423ab435862.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "殿山泰司",
+      "role": "Hashimoto",
+      "image": "https://p0.meituan.net/movie/fc7473b7579bfddb32385b8f53dd8b6711449.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "浦边粂子",
+      "role": "Tabacco shop owner",
+      "image": "https://p1.meituan.net/movie/5c359b2db398f9dee189b428a3ac9adc15429.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "八千草薰",
+      "role": "Shizuko Ueno",
+      "image": "https://p0.meituan.net/moviemachine/e160d1cb03d297db7a6c5980484d256636564.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "山本圭",
+      "role": "Serizawa",
+      "image": "https://p0.meituan.net/movie/9400d740ab3dec0361000da21f06284d13973.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "山城新伍",
+      "role": "Tome-san",
+      "image": "https://p0.meituan.net/movie/f37b9bceb7600d3abb5eb4ce739d6b9521216.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "柳叶敏郎",
+      "role": "Moriyama",
+      "image": "https://p0.meituan.net/movie/ed5e7af8cc0e6c58c914aecee07cc4ce32284.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "黑田亚瑟",
+      "role": "(as Âsâ Kuroda)",
+      "image": "https://p1.meituan.net/movie/148b6e4fbcc1afde19b9c900e293dec017685.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Takuji Aoki",
+      "role": "(as Taku Aoki)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Norinobu Kodama",
+      "role": "(as Yorinobu Kodama)",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "神山征二郎",
+      "image": "https://p0.meituan.net/movie/__43167985__3791497.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 8.8,
+  "rank": 84,
+  "minute": 107,
+  "drama": "1923年，日本秋田县大馆市天降大雪，近藤家纯种秋田犬产仔，赠与县土木科长间濑。后者将其中一犬转赠东京帝国大学教授上野秀次郎（仲代达矢 饰）驯养。上野的独生女千鹤子对此欢欣鼓舞，而上野夫妇却面露难色。后来，千鹤子（石野真子 饰）谈恋爱，竟怀了男友的孩子。男友专程登门造访。上野与之对谈，后者诚惶诚恐，坦言要对其女儿负责，事不宜迟，即日便举行婚礼，上野闻听此言，转怒为喜。千鹤子出嫁后，上野旋即把全部的心血与爱都投注在幼犬身上，并取名为阿八。每日上下班，阿八必在涩谷车站等候，一年四季，风雨无阻，令路人叹为观止，成为地方一道风景，主仆之情感动天地……",
+  "photos": [
+    "https://p1.meituan.net/movie/1845912da8c32e1dc755d61a3e10fbf794514.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1d56068d7a06e2408b28b0d7311461d7102133.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/8d681a92cca9b470f808f56d1b43c925102795.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/89e4e9231aa8d7a82fa8345fa9dec0cc100142.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6aabcd4bf21c8591b85c02d7dad4fbe296111.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c1806d3e945851a9faabc0ee80a6e31696104.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/cb95534e62a0ac6fb777cae955200369103595.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/bf42285087f812ccf7158688ee73a65284120.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f2de8c242d7f716500f2deaeffd4084f80329.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6aac69eba7eaadbe1f938694adad6759104370.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f93ac16b9c25807b1806b377a9fa633a26712.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c835b3588d0061ed3b992388a0a96f15160913.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dcafd16b63af92f3d412b89faf089835232643.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/096d530c9e89fa87c02f888bb129ea9a93790.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/dbcdabad6ee8c7821c1edfe1514724d1135769.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/adea30ff01ce4538b158a1f0d37bd1b2100958.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/6596fb76a6c2f5f206f5adfd6b2ad37c56117.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8239e5062bbc962821fe429bcfe82aca52640.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fd527ee552574b05a73f91c1249dd1ce74718.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "1987-08-01",
+  "updated_at": "2020-03-07T16:38:21.116317Z"
+}
