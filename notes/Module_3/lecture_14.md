@@ -17,10 +17,9 @@
 
 由于第 1 种方法难度较高，在这里我们就先介绍第 2 种方法，模拟浏览器爬取。
 
-这里使用的工具为 Selenium，我们先来了解一下 Selenium 的基本使用方法吧。
+这里使用的工具为 Selenium，我们先来了解一下 Selenium 的基本使用方法。
 
-Selenium 是一个自动化测试工具，利用它可以驱动浏览器执行特定的动作，如点击、下拉等操作，同时还可以获取浏览器当前呈现的页面源代码，做到可见即可爬。对于一些使用 JavaScript
-动态渲染的页面来说，此种抓取方式非常有效。本课时就让我们来感受一下它的强大之处吧。
+Selenium 是一个自动化测试工具，利用它可以驱动浏览器执行特定的动作，如点击、下拉等操作，同时还可以获取浏览器当前呈现的页面源代码，做到可见即可爬。对于一些使用 JavaScript 动态渲染的页面来说，此种抓取方式非常有效。
 
 ---
 ---
@@ -151,6 +150,8 @@ browser.close()
 Selenium 可以驱动浏览器完成各种操作，比如填充表单、模拟点击等。举个例子，当我们想要完成向某个输入框输入文字的操作时，首先需要知道这个输入框在哪，而 Selenium
 提供了一系列查找节点的方法，我们可以用这些方法来获取想要的节点，以便执行下一步动作或者提取信息。
 
+---
+
 ### 单个节点
 
 当我们想要从淘宝页面中提取搜索框这个节点，首先要观察它的源代码，如图所示。
@@ -227,9 +228,12 @@ browser.close()
 
 这种查找方式的功能和上面列举的查找函数完全一致，不过参数更加灵活。
 
+---
+
 ### 多个节点
 
-如果在网页中只查找一个目标，那么完全可以用 find_element 方法。但如果有多个节点需要查找，再用 find_element 方法，就只能得到第 1 个节点了。如果要查找所有满足条件的节点，需要用 find_elements
+如果在网页中只查找一个目标，那么完全可以用 ```find_element``` 方法。但如果有多个节点需要查找，再用 ```find_element``` 方法，就只能得到第 1
+个节点了。如果要查找所有满足条件的节点，需要用 ```find_elements```
 这样的方法。注意，在这个方法的名称中，element 多了一个 s，注意区分。
 
 举个例子，假如你要查找淘宝左侧导航条的所有条目，就可以这样来实现，[代码](../../codes/Module_3/lecture_14/lecture_14_6.py)如下：
@@ -404,6 +408,8 @@ browser.close()
 
 不过，既然 Selenium 已经提供了选择节点的方法，并且返回的是 WebElement 类型，那么它也有相关的方法和属性来直接提取节点信息，如属性、文本等。这样的话，我们就可以不用通过解析源代码来提取信息了，非常方便。
 
+---
+
 ### 获取属性
 
 我们可以使用 ```get_attribute``` 方法来获取节点的属性，但是前提是得先选中这个节点，[示例](../../codes/Module_3/lecture_14/lecture_14_10.py)如下：
@@ -432,6 +438,8 @@ https://dynamic2.scrape.center/img/logo.a508a8f0.png
 ```
 
 通过 ```get_attribute``` 方法，我们只需要传入想要获取的属性名，就可以得到它的值了。
+
+---
 
 ### 获取文本值
 
@@ -544,6 +552,8 @@ NoSuchElementException 异常，异常被捕捉之后，就会输出 NO LOGO。�
 
 这里等待的方式有两种：一种是隐式等待，一种是显式等待。
 
+---
+
 ### 隐式等待
 
 当使用隐式等待执行测试的时候，如果 Selenium 没有在 DOM 中找到节点，将继续等待，超出设定时间后，则抛出找不到节点的异常。换句话说，隐式等待可以在我们查找节点而节点并没有立即出现的时候，等待一段时间再查找 DOM，默认的时间是
@@ -571,6 +581,8 @@ browser.close()
 ```
 
 这里用 implicitly_wait 方法实现了隐式等待。
+
+---
 
 ### 显式等待
 
@@ -840,9 +852,9 @@ browser.close()
 ]
 ```
 
-首先访问百度，然后调用 execute_script 方法，这里我们传入 window.open 这个 JavaScript 语句新开启一个选项卡，然后切换到该选项卡，调用 window_handles
-属性获取当前开启的所有选项卡，后面的参数代表返回选项卡的代号列表。要想切换选项卡，只需要调用 switch_to.window 方法即可，其中的参数是选项卡的代号。这里我们将第 2 个选项卡代号传入，即跳转到第 2 个选项卡，接下来在第 2
-个选项卡下打开一个新页面，如果你想要切换回第 2 个选项卡，只需要重新调用 switch_to.window 方法，再执行其他操作即可。
+首先访问百度，然后调用 ```execute_script``` 方法，这里我们传入 ```window.open``` 这个 JavaScript 语句新开启一个选项卡，然后切换到该选项卡，调用 ```window_handles```
+属性获取当前开启的所有选项卡，后面的参数代表返回选项卡的代号列表。要想切换选项卡，只需要调用 ```switch_to.window``` 方法即可，其中的参数是选项卡的代号。这里我们将第 2 个选项卡代号传入，即跳转到第 2
+个选项卡，接下来在第 2 个选项卡下打开一个新页面，如果你想要切换回第 2 个选项卡，只需要重新调用 ```switch_to.window``` 方法，再执行其他操作即可。
 
 ---
 
@@ -915,8 +927,8 @@ No Element
 
 现在很多网站都加上了对 Selenium 的检测，来防止一些爬虫的恶意爬取。即如果检测到有人在使用 Selenium 打开浏览器，那就直接屏蔽。
 
-其大多数情况下，检测基本原理是检测当前浏览器窗口下的 window.navigator 对象是否包含 webdriver 这个属性。因为在正常使用浏览器的情况下，这个属性是 undefined，然而一旦我们使用了
-Selenium，Selenium 会给 window.navigator 设置 webdriver 属性。很多网站就通过 JavaScript 判断如果 webdriver 属性存在，那就直接屏蔽。
+一部分情况的检测原理是检测当前浏览器窗口下的 ```window.navigator``` 对象是否包含 ```webdriver``` 这个属性。因为在正常使用浏览器的情况下，这个属性是 undefined，然而一旦我们使用了
+Selenium，Selenium 会给 ```window.navigator``` 设置 webdriver 属性。很多网站就通过 JavaScript 判断如果 webdriver 属性存在，那就直接屏蔽。
 
 这边有一个典型的案例网站：[https://antispider1.scrape.center/](https://antispider1.scrape.center/)
 
@@ -965,7 +977,7 @@ browser.close()
 
 对于大多数的情况，以上的方法均可以实现 Selenium 反屏蔽。但对于一些特殊的网站，如果其有更多的 WebDriver 特征检测，可能需要具体排查。
 
-[](../../codes/Module_3/lecture_14/lecture_14_22.py)
+更高级的一些反屏蔽措施，可以看下面这个[例子](../../codes/Module_3/lecture_14/lecture_14_22.py)
 
 ```python
 # -*- coding: utf-8 -*-
@@ -1009,6 +1021,8 @@ if __name__ == '__main__':
         f.write(source)
 ```
 
+[https://bot.sannysoft.com/](https://bot.sannysoft.com/) 是一个测试网站，结果如下：
+
 ![](../../images/Module_3/lecture_14_11.png)
 
 ---
@@ -1043,7 +1057,7 @@ browser.close()
 
 ![](../../codes/Module_3/lecture_14/preview.png)
 
-这样我们就在无头模式下完成了页面的抓取和截图操作。
+这样就在无头模式下完成了页面的抓取和截图操作。
 
 现在，我们基本对 Selenium 的常规用法有了大体的了解。使用 Selenium，处理 JavaScript 渲染的页面不再是难事。
 
