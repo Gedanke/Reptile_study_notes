@@ -8,6 +8,7 @@
 ## 准备工作
 
 本课时开始之前，请确保已经做好了如下准备工作：
+
 * 安装好 Chrome 浏览器并正确配置了 ChromeDriver
 * 安装好 Python(至少为 3.6 版本)并能成功运行 Python 程序
 * 安装好了 Selenium 相关的包并能成功用 Selenium 打开 Chrome 浏览器
@@ -55,6 +56,7 @@ Selenium 同样也有其适用场景。对于那些带有 JavaScript 渲染的�
 token 的生成逻辑分析出来再模拟 Ajax 请求，但这种方式相对较难。所以这里我们可以直接用 Selenium 来绕过这个阶段，直接获取最终 JavaScript 渲染完成的页面源码，再提取数据就好了。
 
 所以本课时我们要完成的目标有：
+
 * 通过 Selenium 遍历列表页，获取每部电影的详情页 URL
 * 通过 Selenium 根据上一步获取的详情页 URL 爬取每部电影的详情页
 * 提取每部电影的名称、类别、分数、简介、封面等内容
@@ -162,6 +164,7 @@ def scrape_index(page):
 这里定义了两个方法。
 
 第一个方法 ```scrape_page``` 依然是一个通用的爬取方法，它可以实现任意 URL 的爬取和状态监听以及异常处理，它接收 ```url、condition、locator``` 三个参数
+
 * ```url``` 参数就是要爬取的页面 URL
 * ```condition``` 就是页面加载的判定条件，它可以是 ```expected_conditions``` 的其中某一项判定条件，如 ```visibility_of_all_elements_located```
   、```visibility_of_element_located``` 等等
@@ -281,6 +284,7 @@ def parse_detail():
 ```
 
 这里我们定义了一个 ```parse_detail``` 方法，提取了 URL、名称、类别、封面、分数、简介等内容，提取方式如下：
+
 * URL：直接调用 browser 对象的 ```current_url``` 属性即可获取当前页面的 URL
 * 名称：通过提取 h2 节点内部的文本即可获取，这里使用了 ```find_element_by_tag_name``` 方法并传入 h2，提取到了名称的节点，然后调用 text 属性即提取了节点内部的文本，即电影名称
 * 类别：为了方便，类别我们可以通过 CSS 选择器来提取，其对应的 CSS 选择器为 `````.categories button span`````，可以选中多个类别节点，这里我们通过

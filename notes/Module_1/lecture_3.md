@@ -40,7 +40,7 @@
 
 有些网站抓取返回的是 HTML 代码，而有的却是 JSON 字符串。图片，视频等抓取结果是二进制数据，提过转换可以保存到相应的文件中。
 
-此外，源代码中还会有各种文件，如 CSS，JavaSript  文件等等。
+此外，源代码中还会有各种文件，如 CSS，JavaSript 文件等等。
 
 上面内容是基于 HTTP 或者 HTTPS 协议的，都可以被抓取下来。
 
@@ -53,18 +53,19 @@
 这是因为它们是使用 Ajax，前端模块化工具构建的，网页内容是由 JavaSript 渲染得到的。
 
 如：
+
 ```html
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 </head>
 <body>
-  <script> src="content.js"</script>
+<script> src = "content.js"</script>
 </body>
 </html>
 ```

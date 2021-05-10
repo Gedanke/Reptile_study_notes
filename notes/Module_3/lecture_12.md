@@ -1,6 +1,7 @@
 # Ajax 原理和解析
 
-当使用 ```requests``` 抓取页面的时候，得到的结果可能会和在浏览器中看到的不一样：在浏览器中正常显示的页面数据，使用 ```requests``` 却没有得到结果。这是因为 ```requests``` 获取的都是原始 HTML 文档，而浏览器中的页面则是经过 JavaScript 数据处理后生成的结果。
+当使用 ```requests``` 抓取页面的时候，得到的结果可能会和在浏览器中看到的不一样：在浏览器中正常显示的页面数据，使用 ```requests``` 却没有得到结果。这是因为 ```requests``` 获取的都是原始
+HTML 文档，而浏览器中的页面则是经过 JavaScript 数据处理后生成的结果。
 
 这些数据的来源有多种，可能是通过 Ajax 加载的，可能是包含在 HTML 文档中的，也可能是经过 JavaScript 和特定算法计算后生成的。
 
@@ -17,9 +18,11 @@
 
 ## 什么是 Ajax
 
-Ajax，全称为 Asynchronous JavaScript and XML，即异步的 JavaScript 和 XML。它不是一门编程语言，而是利用 JavaScript 在保证页面不被刷新、页面链接不改变的情况下与服务器交换数据并更新部分网页的技术。
+Ajax，全称为 Asynchronous JavaScript and XML，即异步的 JavaScript 和 XML。它不是一门编程语言，而是利用 JavaScript
+在保证页面不被刷新、页面链接不改变的情况下与服务器交换数据并更新部分网页的技术。
 
-传统的网页，如果你想更新其内容，那么必须要刷新整个页面。有了 Ajax，便可以在页面不被全部刷新的情况下更新其内容。在这个过程中，页面实际上在后台与服务器进行了数据交互，获取到数据之后，再利用 JavaScript 改变网页，这样网页内容就会更新了。
+传统的网页，如果你想更新其内容，那么必须要刷新整个页面。有了 Ajax，便可以在页面不被全部刷新的情况下更新其内容。在这个过程中，页面实际上在后台与服务器进行了数据交互，获取到数据之后，再利用 JavaScript
+改变网页，这样网页内容就会更新了。
 
 你可以到 W3School 上体验几个 Demo 来感受一下：
 [https://www.w3school.com.cn/ajax/ajax_xmlhttprequest_send.asp](https://www.w3school.com.cn/ajax/ajax_xmlhttprequest_send.asp)
@@ -42,6 +45,7 @@ Ajax，全称为 Asynchronous JavaScript and XML，即异步的 JavaScript 和 X
 ## 基本原理
 
 发送 Ajax 请求到网页更新的过程可以简单分为以下 3 步：
+
 * 发送请求
 * 解析内容
 * 渲染网页
@@ -75,15 +79,18 @@ xmlhttp.open("POST", "/ajax/", true);
 xmlhttp.send();
 ```
 
-这是 JavaScript 对 Ajax 最底层的实现，这个过程实际上是新建了 ```XMLHttpRequest``` 对象，然后调用 ```onreadystatechange``` 属性设置监听，最后调用 ```open()``` 和 ```send()``` 方法向某个链接(也就是服务器)发送请求。
+这是 JavaScript 对 Ajax 最底层的实现，这个过程实际上是新建了 ```XMLHttpRequest``` 对象，然后调用 ```onreadystatechange``` 属性设置监听，最后调用 ```open()```
+和 ```send()``` 方法向某个链接(也就是服务器)发送请求。
 
-前面我们用 Python 实现请求发送之后，可以得到响应结果，但这里请求的发送由 JavaScript 来完成。由于设置了监听，所以当服务器返回响应时，```onreadystatechange``` 对应的方法便会被触发，我们在这个方法里面解析响应内容即可。
+前面我们用 Python 实现请求发送之后，可以得到响应结果，但这里请求的发送由 JavaScript 来完成。由于设置了监听，所以当服务器返回响应时，```onreadystatechange```
+对应的方法便会被触发，我们在这个方法里面解析响应内容即可。
 
 ---
 
 ### 解析内容
 
-得到响应之后，```onreadystatechange``` 属性对应的方法会被触发，此时利用 ```xmlhttp``` 的 ```responseText``` 属性便可取到响应内容。这类似于 Python 中利用 ```requests``` 向服务器发起请求，然后得到响应的过程。
+得到响应之后，```onreadystatechange``` 属性对应的方法会被触发，此时利用 ```xmlhttp``` 的 ```responseText``` 属性便可取到响应内容。这类似于 Python
+中利用 ```requests``` 向服务器发起请求，然后得到响应的过程。
 
 返回的内容可能是 ```HTML```，也可能是 ```JSON```，接下来我们只需要在方法中用 JavaScript 进一步处理即可。比如，如果返回的内容是 ```JSON``` 的话，直接对它进行解析和转化即可。
 
@@ -91,9 +98,11 @@ xmlhttp.send();
 
 ### 渲染网页
 
-JavaScript 有改变网页内容的能力，解析完响应内容之后，就可以调用 JavaScript 针对解析完的内容对网页进行下一步处理。比如，通过 document.getElementById().innerHTML 这样的操作，对某个元素内的源代码进行更改，这样网页显示的内容就改变了，这种对 Document 网页文档进行如更改、删除等操作也被称作 DOM 操作。
+JavaScript 有改变网页内容的能力，解析完响应内容之后，就可以调用 JavaScript 针对解析完的内容对网页进行下一步处理。比如，通过 document.getElementById().innerHTML
+这样的操作，对某个元素内的源代码进行更改，这样网页显示的内容就改变了，这种对 Document 网页文档进行如更改、删除等操作也被称作 DOM 操作。
 
-上例中，document.getElementById("myDiv").innerHTML=xmlhttp.responseText这个操作便将 ID 为 myDiv 的节点内部的 HTML 代码更改为服务器返回的内容，这样 myDiv 元素内部便会呈现出服务器返回的新数据，网页的部分内容看上去就更新了。
+上例中，document.getElementById("myDiv").innerHTML=xmlhttp.responseText这个操作便将 ID 为 myDiv 的节点内部的 HTML 代码更改为服务器返回的内容，这样 myDiv
+元素内部便会呈现出服务器返回的新数据，网页的部分内容看上去就更新了。
 
 可以看到，发送请求、解析内容和渲染网页这 3 个步骤其实都是由 JavaScript 完成的。
 
@@ -121,7 +130,8 @@ Ajax 有其特殊的请求类型，它叫作 xhr。在图中我们可以发现�
 
 ![](../../images/Module_3/lecture_12_3.png)
 
-在右侧可以观察到 Request Headers、URL 和 Response Headers 等信息。Request Headers 中有一个信息为 X-Requested-With:XMLHttpRequest，这就标记了此请求是 Ajax 请求，如图所示：
+在右侧可以观察到 Request Headers、URL 和 Response Headers 等信息。Request Headers 中有一个信息为 X-Requested-With:XMLHttpRequest，这就标记了此请求是
+Ajax 请求，如图所示：
 
 ![](../../images/Module_3/lecture_12_4.png)
 

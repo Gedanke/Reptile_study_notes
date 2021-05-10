@@ -32,6 +32,7 @@ pip3 install pyquery
 可以直接将 HTML 的内容当参数来初始化 ```pyquery``` 对象。
 
 [示例](../../codes/Module_2/lecture_9/lecture_9_1.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -55,11 +56,12 @@ print(doc('li'))
 结果为：
 
 ```html
+
 <li class="item-0">first item</li>
-        <li class="item-1"><a href="link2.html">second item</a></li>
-        <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-        <li class="item-0"><a href="link5.html">fifth item</a></li>
+<li class="item-1"><a href="link2.html">second item</a></li>
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+<li class="item-0"><a href="link5.html">fifth item</a></li>
 ```
 
 这里先引入 ```pyquery``` 对象，然后声明了一个 HTML 字符串，并将其当作参数传递给 ```pyquery``` 类，完成了初始化。
@@ -166,12 +168,13 @@ print(type(doc('#container .list li')))
 结果为：
 
 ```html
+
 <li class="item-0">first item</li>
-        <li class="item-1"><a href="link2.html">second item</a></li>
-        <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-        <li class="item-0"><a href="link5.html">fifth item</a></li>
-    
+<li class="item-1"><a href="link2.html">second item</a></li>
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+<li class="item-0"><a href="link5.html">fifth item</a></li>
+
 <class 'pyquery.pyquery.PyQuery'>
 ```
 
@@ -260,23 +263,25 @@ print(lis)
 结果为：
 
 ```html
+
 <class 'pyquery.pyquery.PyQuery'>
 <ul class="list">
-        <li class="item-0">first item</li>
-        <li class="item-1"><a href="link2.html">second item</a></li>
-        <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-        <li class="item-0"><a href="link5.html">fifth item</a></li>
-    </ul>
+    <li class="item-0">first item</li>
+    <li class="item-1"><a href="link2.html">second item</a></li>
+    <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+    <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+    <li class="item-0"><a href="link5.html">fifth item</a></li>
+</ul>
 <class 'pyquery.pyquery.PyQuery'>
 <li class="item-0">first item</li>
-        <li class="item-1"><a href="link2.html">second item</a></li>
-        <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-        <li class="item-0"><a href="link5.html">fifth item</a></li>
+<li class="item-1"><a href="link2.html">second item</a></li>
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+<li class="item-0"><a href="link5.html">fifth item</a></li>
 ```
 
-首先，我们通过 .list 参数选取 class 为 list 的节点，然后调用 ```find``` 方法，传入 CSS 选择器，选取其内部的 li 节点，最后打印输出。如结果所示，```find``` 方法会将选择符合条件的所有节点选择，其结果是 ```pyquery``` 类型。
+首先，我们通过 .list 参数选取 class 为 list 的节点，然后调用 ```find``` 方法，传入 CSS 选择器，选取其内部的 li 节点，最后打印输出。如结果所示，```find```
+方法会将选择符合条件的所有节点选择，其结果是 ```pyquery``` 类型。
 
 ```find``` 的查找范围是节点的所有子孙节点，如果我们只想查找子节点，可以用 ```children```方法：
 
@@ -289,12 +294,13 @@ print(lis)
 结果为
 
 ```html
+
 <class 'pyquery.pyquery.PyQuery'>
 <li class="item-0">first item</li>
-        <li class="item-1"><a href="link2.html">second item</a></li>
-        <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-        <li class="item-0"><a href="link5.html">fifth item</a></li>
+<li class="item-1"><a href="link2.html">second item</a></li>
+<li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+<li class="item-0"><a href="link5.html">fifth item</a></li>
 ```
 
 如果要筛选所有子节点中符合条件的节点，比如想筛选出子节点中 class 为 active 的节点，可以向 ```children``` 方法传入CSS选择器 .active ，代码如下：
@@ -307,8 +313,9 @@ print(lis)
 结果为：
 
 ```html
+
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
 ```
 
 输出结果进行了筛选，留下了 class 为 active 的节点。
@@ -350,16 +357,17 @@ print(container)
 结果为：
 
 ```html
+
 <class 'pyquery.pyquery.PyQuery'>
 <div id="container">
-        <ul class="list">
-            <li class="item-0">first item</li>
-            <li class="item-1"><a href="link2.html">second item</a></li>
-            <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-            <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-            <li class="item-0"><a href="link5.html">fifth item</a></li>
-        </ul>
-    </div>
+    <ul class="list">
+        <li class="item-0">first item</li>
+        <li class="item-1"><a href="link2.html">second item</a></li>
+        <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+        <li class="item-0"><a href="link5.html">fifth item</a></li>
+    </ul>
+</div>
 ```
 
 我们首先用 .list 选取 class 为 list 的节点，然后调用 ```parent``` 方法得到其父节点，其类型依然是 ```pyquery``` 类型。
@@ -399,6 +407,7 @@ print(parents)
 结果为：
 
 ```html
+
 <class 'pyquery.pyquery.PyQuery'>
 <div class="wrap">
     <div id="container">
@@ -412,14 +421,14 @@ print(parents)
     </div>
 </div>
 <div id="container">
-        <ul class="list">
-            <li class="item-0">first item</li>
-            <li class="item-1"><a href="link2.html">second item</a></li>
-            <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-            <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-            <li class="item-0"><a href="link5.html">fifth item</a></li>
-        </ul>
-    </div>
+    <ul class="list">
+        <li class="item-0">first item</li>
+        <li class="item-1"><a href="link2.html">second item</a></li>
+        <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
+        <li class="item-1 active"><a href="link4.html">fourth item</a></li>
+        <li class="item-0"><a href="link5.html">fifth item</a></li>
+    </ul>
+</div>
 ```
 
 输出结果有两个：一个是 class 为 wrap 的节点，一个是 id 为 container 的节点。也就是说，使用 ```parents``` 方法会返回所有的祖先节点。
@@ -434,6 +443,7 @@ print(parent)
 结果为：
 
 ```html
+
 <div class="wrap">
     <div id="container">
         <ul class="list">
@@ -456,6 +466,7 @@ print(parent)
 还是以上面的 HTML 代码为例，如果要获取兄弟节点，可以使用 ```siblings``` 方法。
 
 [示例](../../codes/Module_2/lecture_9/lecture_9_10.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -482,10 +493,11 @@ print(li.siblings())
 结果为：
 
 ```html
+
 <li class="item-1"><a href="link2.html">second item</a></li>
-            <li class="item-0">first item</li>
-            <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-            <li class="item-0"><a href="link5.html">fifth item</a></li>
+<li class="item-0">first item</li>
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+<li class="item-0"><a href="link5.html">fifth item</a></li>
 ```
 
 在这个例子中我们首先选择 class 为 list 的节点，内部 class 为 item-0 和 active 的节点，也就是第 3 个 li 节点。很明显，它的兄弟节点有 4 个，那就是第 1，2，4，5 个 li 节点。
@@ -501,6 +513,7 @@ print(li.siblings(".active"))
 结果为：
 
 ```html
+
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
 ```
 
@@ -542,8 +555,9 @@ print(str(li))
 结果为：
 
 ```html
+
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-            
+
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
 ```
 
@@ -560,20 +574,22 @@ for li in lis:
 结果为：
 
 ```html
+
 <class 'generator'>
 <li class="item-0">first item</li>
-             <class 'pyquery.pyquery.PyQuery'>
+<class 'pyquery.pyquery.PyQuery'>
 <li class="item-1"><a href="link2.html">second item</a></li>
-             <class 'pyquery.pyquery.PyQuery'>
+<class 'pyquery.pyquery.PyQuery'>
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-             <class 'pyquery.pyquery.PyQuery'>
+<class 'pyquery.pyquery.PyQuery'>
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-             <class 'pyquery.pyquery.PyQuery'>
+<class 'pyquery.pyquery.PyQuery'>
 <li class="item-0"><a href="link5.html">fifth item</a></li>
-         <class 'pyquery.pyquery.PyQuery'>
+<class 'pyquery.pyquery.PyQuery'>
 ```
 
-可以发现，调用 ```items``` 方法后，会得到一个生成器，遍历一下，就可以逐个得到 li 节点对象了，它的类型也是 ```pyquery``` 类型。每个li节点还可以调用前面所说的方法进行选择，比如继续查询子节点，寻找某个祖先节点等，非常灵活。
+可以发现，调用 ```items``` 方法后，会得到一个生成器，遍历一下，就可以逐个得到 li 节点对象了，它的类型也是 ```pyquery```
+类型。每个li节点还可以调用前面所说的方法进行选择，比如继续查询子节点，寻找某个祖先节点等，非常灵活。
 
 ---
 
@@ -617,7 +633,8 @@ print(a.attr("href"))
 结果为：
 
 ```html
-<a href="link3.html"><span class="bold">third item</span></a> <class 'pyquery.pyquery.PyQuery'>
+<a href="link3.html"><span class="bold">third item</span></a>
+<class 'pyquery.pyquery.PyQuery'>
 link3.html
 ```
 
@@ -647,12 +664,15 @@ print(a.attr.href)
 结果为：
 
 ```html
-<a href="link2.html">second item</a><a href="link3.html"><span class="bold">third item</span></a><a href="link4.html">fourth item</a><a href="link5.html">fifth item</a> <class 'pyquery.pyquery.PyQuery'>
+<a href="link2.html">second item</a><a href="link3.html"><span class="bold">third item</span></a><a href="link4.html">fourth
+    item</a><a href="link5.html">fifth item</a>
+<class 'pyquery.pyquery.PyQuery'>
 link2.html
 link2.html
 ```
 
-照理来说，我们选中的 a 节点应该有 4 个，打印结果也应该是 4 个，但是当我们调用 ```attr``` 方法时，返回结果却只有第 1 个。这是因为，当返回结果包含多个节点时，调用 ```attr``` 方法，只会得到第 1 个节点的属性。
+照理来说，我们选中的 a 节点应该有 4 个，打印结果也应该是 4 个，但是当我们调用 ```attr``` 方法时，返回结果却只有第 1 个。这是因为，当返回结果包含多个节点时，调用 ```attr``` 方法，只会得到第 1
+个节点的属性。
 
 那么，遇到这种情况时，如果想获取所有的 a 节点的属性，就要用到前面所说的遍历了：
 
@@ -816,14 +836,16 @@ print(li)
 结果为：
 
 ```html
+
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
-            
+
 <li class="item-0"><a href="link3.html"><span class="bold">third item</span></a></li>
-            
+
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
 ```
 
-首先选中第 3 个 li 节点，然后调用 remove_class 方法，将 li 节点的 active 这个 class 移除，第 2 步调用 ```add_class``` 方法，将 class 添加回来。每执行一次操作，就打印输出当前 li 节点的内容。
+首先选中第 3 个 li 节点，然后调用 remove_class 方法，将 li 节点的 active 这个 class 移除，第 2 步调用 ```add_class``` 方法，将 class 添加回来。每执行一次操作，就打印输出当前
+li 节点的内容。
 
 可以看到，一共输出了 3 次。第 2 次输出时，li节点的 active 这个 class 被移除了，第3次 class 又添加回来了。
 
@@ -861,17 +883,21 @@ print(li)
 结果为：
 
 ```html
+
 <li class="item-0 active"><a href="link3.html"><span class="bold">third item</span></a></li>
 <li class="item-0 active" name="link"><a href="link3.html"><span class="bold">third item</span></a></li>
 <li class="item-0 active" name="link">changed item</li>
 <li class="item-0 active" name="link"><span>changed item</span></li>
 ```
 
-这里我们首先选中 li 节点，然后调用 ```attr``` 方法来修改属性。该方法的第 1 个参数为属性名，第 2 个参数为属性值。最后调用 ```text``` 和 ```html``` 方法来改变节点内部的内容。3 次操作后，分别打印输出当前的 li 节点。
+这里我们首先选中 li 节点，然后调用 ```attr``` 方法来修改属性。该方法的第 1 个参数为属性名，第 2 个参数为属性值。最后调用 ```text``` 和 ```html``` 方法来改变节点内部的内容。3
+次操作后，分别打印输出当前的 li 节点。
 
-我们发现，调用 ```attr``` 方法后，li节点多了一个原本不存在的属性 ```name``` ，其值为 link。接着调用 ```text``` 方法传入文本，li 节点内部的文本全被改为传入的字符串文本。最后，调用 ```html``` 方法传入 HTML 文本，li 节点内部又变为传入的 HTML 文本了。
+我们发现，调用 ```attr``` 方法后，li节点多了一个原本不存在的属性 ```name``` ，其值为 link。接着调用 ```text``` 方法传入文本，li
+节点内部的文本全被改为传入的字符串文本。最后，调用 ```html``` 方法传入 HTML 文本，li 节点内部又变为传入的 HTML 文本了。
 
-所以说，使用 ```attr``` 方法时如果只传入第 1 个参数的属性名，则是获取这个属性值；如果传入第 2 个参数，可以用来修改属性值。使用 ```text``` 和 ```html``` 方法时如果不传参数，则是获取节点内纯文本和 HTML 文本，如果传入参数，则进行赋值。
+所以说，使用 ```attr``` 方法时如果只传入第 1 个参数的属性名，则是获取这个属性值；如果传入第 2 个参数，可以用来修改属性值。使用 ```text``` 和 ```html``` 方法时如果不传参数，则是获取节点内纯文本和
+HTML 文本，如果传入参数，则进行赋值。
 
 ---
 
@@ -882,6 +908,7 @@ print(li)
 以该文本为例：
 
 ```html
+
 <div class="wrap">
     Hello,world
     <p>This is a paragraph.</p>
@@ -936,7 +963,8 @@ Hello,world
 
 先选中 p 节点，然后调用 ```remove``` 方法将其移除，这时 wrap 内部就只剩下 "Hello, World" 这句话了，最后利用 ```text``` 方法提取即可。
 
-更多 ```pyquery``` 内容可以参考官方文档：[https://pyquery.readthedocs.io/en/latest/api.html](https://pyquery.readthedocs.io/en/latest/api.html) 。
+更多 ```pyquery```
+内容可以参考官方文档：[https://pyquery.readthedocs.io/en/latest/api.html](https://pyquery.readthedocs.io/en/latest/api.html) 。
 
 ---
 
@@ -982,18 +1010,19 @@ print(li)
 结果为：
 
 ```html
+
 <li class="item-0">first item</li>
-            
+
 <li class="item-0"><a href="link5.html">fifth item</a></li>
-        
+
 <li class="item-1"><a href="link2.html">second item</a></li>
-            
+
 <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-            <li class="item-0"><a href="link5.html">fifth item</a></li>
-        
+<li class="item-0"><a href="link5.html">fifth item</a></li>
+
 <li class="item-1"><a href="link2.html">second item</a></li>
-            <li class="item-1 active"><a href="link4.html">fourth item</a></li>
-            
+<li class="item-1 active"><a href="link4.html">fourth item</a></li>
+
 <li class="item-1"><a href="link2.html">second item</a></li>
 ```
 

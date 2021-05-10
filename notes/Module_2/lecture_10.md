@@ -12,8 +12,11 @@ MongoDB 是由 C++ 语言编写的非关系型数据库，是一个基于分布�
 ## 准备工作
 
 安装 MongoDB，可以参考：
-* win10 [https://www.cnblogs.com/TM0831/p/10606624.html](https://www.cnblogs.com/TM0831/p/10606624.html) 
-* ubuntu [https://blog.csdn.net/yutu75/article/details/110941936#commentBox](https://blog.csdn.net/yutu75/article/details/110941936#commentBox)
+
+* win10 [https://www.cnblogs.com/TM0831/p/10606624.html](https://www.cnblogs.com/TM0831/p/10606624.html)
+*
+
+ubuntu [https://blog.csdn.net/yutu75/article/details/110941936#commentBox](https://blog.csdn.net/yutu75/article/details/110941936#commentBox)
 
 使用 Python 来操作 MongoDB，需安装 ```pymongo```：
 
@@ -33,7 +36,8 @@ pip3 install pymongo
 
 ## 连接 MongoDB
 
-连接 MongoDB 时，需要使用 ```pymongo``` 里面的 ```MongoClient```。我们只需要向其传入 MongoDB 的 IP 及端口即可，其中第一个参数为地址 ```host``` ，第二个参数为端口 ```port``` (如果不给它传递参数，则默认是 27017 )。
+连接 MongoDB 时，需要使用 ```pymongo``` 里面的 ```MongoClient```。我们只需要向其传入 MongoDB 的 IP 及端口即可，其中第一个参数为地址 ```host```
+，第二个参数为端口 ```port``` (如果不给它传递参数，则默认是 27017 )。
 
 [示例](../../codes/Module_2/lecture_10/lecture_10_1.py) 如下：
 
@@ -292,6 +296,7 @@ print(list(results))
 ```
 
 结果为：
+
 ```textmate
 [{'_id': ObjectId('5e7739b2b0de20fb9b5a3e6b'), 'id': '20170102', 'name': 'ZhangWei', 'age': 21, 'gender': 'male'}]
 ```
@@ -319,7 +324,8 @@ print(list(results))
 
 ![](../../images/Module_2/lecture_10_4.png)
 
-更多内容可参见官方文档，[https://docs.mongodb.com/manual/reference/operator/query/](https://docs.mongodb.com/manual/reference/operator/query/) 。
+更多内容可参见官方文档，[https://docs.mongodb.com/manual/reference/operator/query/](https://docs.mongodb.com/manual/reference/operator/query/)
+。
 
 ---
 
@@ -561,7 +567,8 @@ print(result.matched_count, result.modified_count)
 1 1
 ```
 
-上面的例子中调用了 ```update_one``` 方法，使得第 2 个参数不能再直接传入修改后的字典，而是需要使用 ```{'$set':student}``` 这样的形式，其返回结果是 ```UpdateResult``` 类型。然后分别调用 ```matched_count``` 和 ```modified_count``` 属性，可以获得匹配的数据条数和影响的数据条数。
+上面的例子中调用了 ```update_one``` 方法，使得第 2 个参数不能再直接传入修改后的字典，而是需要使用 ```{'$set':student}``` 这样的形式，其返回结果是 ```UpdateResult```
+类型。然后分别调用 ```matched_count``` 和 ```modified_count``` 属性，可以获得匹配的数据条数和影响的数据条数。
 
 再看一个 [例子](../../codes/Module_2/lecture_10/lecture_10_7.py) ：
 
@@ -661,19 +668,24 @@ print(result.deleted_count)
 2
 ```
 
-```delete_one``` 即删除第一条符合条件的数据，```delete_many``` 即删除所有符合条件的数据。它们的返回结果都是 ```DeleteResult``` 类型，可以调用 ```deleted_count``` 属性获取删除的数据条数。
+```delete_one``` 即删除第一条符合条件的数据，```delete_many``` 即删除所有符合条件的数据。它们的返回结果都是 ```DeleteResult``` 类型，可以调用 ```deleted_count```
+属性获取删除的数据条数。
 
 ---
 
 ## 其他操作
 
-另外，```PyMongo``` 还提供了一些组合方法，如 ```find_one_and_delete```，```find_one_and_replace``` 和 ```find_one_and_update```，它们分别用于查找后删除，替换和更新操作，其使用方法与上述方法基本一致。
+另外，```PyMongo``` 还提供了一些组合方法，如 ```find_one_and_delete```，```find_one_and_replace``` 和 ```find_one_and_update```
+，它们分别用于查找后删除，替换和更新操作，其使用方法与上述方法基本一致。
 
 另外，我们还可以对索引进行操作，相关方法有 ```create_index```，```create_indexes``` 和 ```drop_index``` 等。
 
-更多 ```PyMongo``` 内容可以参见官方文档，[https://api.mongodb.com/python/current/api/pymongo/collection.html](https://api.mongodb.com/python/current/api/pymongo/collection.html) 。
+更多 ```PyMongo```
+内容可以参见官方文档，[https://api.mongodb.com/python/current/api/pymongo/collection.html](https://api.mongodb.com/python/current/api/pymongo/collection.html)
+。
 
-更多关于对数据库和集合的操作可以参考官方文档：[https://api.mongodb.com/python/current/api/pymongo/](https://api.mongodb.com/python/current/api/pymongo/) 或者 [https://www.runoob.com/mongodb/mongodb-tutorial.html](https://www.runoob.com/mongodb/mongodb-tutorial.html) 。
+更多关于对数据库和集合的操作可以参考官方文档：[https://api.mongodb.com/python/current/api/pymongo/](https://api.mongodb.com/python/current/api/pymongo/)
+或者 [https://www.runoob.com/mongodb/mongodb-tutorial.html](https://www.runoob.com/mongodb/mongodb-tutorial.html) 。
 
 ---
 ---

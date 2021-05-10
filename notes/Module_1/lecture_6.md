@@ -8,8 +8,9 @@
 ## 多进程的实现
 
 在 Python 中也有内置的库来实现多进程，它就是 ```multiprocessing``` 。
- 
-```multiprocessing``` 提供了一系列的组件，如 ```Process(进程)，Queue(队列)，Semaphore(信号量)，Pipe(管道)，Lock(锁)，Pool(进程池)``` 等，接下来让我们来了解下它们的使用方法。
+
+```multiprocessing``` 提供了一系列的组件，如 ```Process(进程)，Queue(队列)，Semaphore(信号量)，Pipe(管道)，Lock(锁)，Pool(进程池)```
+等，接下来让我们来了解下它们的使用方法。
 
 需要注意的是，进程是操作系统进行资源分配和调度的基本单位，因此多个进程是无法共享全局变量的，这需要有单独的机制来实现进程间的通信，如管道。
 
@@ -18,10 +19,13 @@
 ### 使用 Process 类直接创建
 
 在 ```multiprocessing``` 中，使用 ```Process``` 类创建进程：
+
 ```python
-Process([group [, target [, name [, args [, kwargs]]]]])
+Process([group[, target[, name[, args[, kwargs]]]]])
 ```
+
 其中
+
 * ```target``` : 传入方法的名字
 * ```args``` : 被调用对象的位置参数元组
 * ```kwargs``` : 调用对象的字典
@@ -31,6 +35,7 @@ Process([group [, target [, name [, args [, kwargs]]]]])
 注意：```args``` 必须要是一个元组，和被调用的方法 ```process``` 的参数是一一对应的，如果只有一个参数，那也要在元组第一个元素后面加一个逗号，如果没有逗号则和单个元素本身没有区别，无法构成元组，导致参数传递出现问题。
 
 先看个 [例子](../../codes/Module_1/lecture_6/lecture_6_1.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -48,7 +53,9 @@ if __name__ == "__main__":
         p = multiprocessing.Process(target=process, args=(i,))
         p.start()
 ```
+
 结果如下，创建顺序不唯一：
+
 ```text
 process : 0
 process : 3
@@ -56,9 +63,11 @@ process : 4
 process : 2
 process : 1
 ```
+
 ```multiprocessing``` 的其他方法，如 ```cpu_count``` 的方法来获取当前机器 CPU 的核心数量，通过 ```active_children``` 方法获取当前还在运行的所有进程。
 
 来看个 [例子](../../codes/Module_1/lecture_6/lecture_6_2.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -80,7 +89,9 @@ if __name__ == "__main__":
         print("Child process name: {0} id: {1}".format(p.name, p.pid))
     print("Process Ended")
 ```
+
 结果为，结果可能不唯一：
+
 ```text
 CPU number: 4
 Child process name: Process-4 id: 17356
@@ -105,6 +116,7 @@ process : 4
 和线程类似，我们可以继承 ```Process``` 类，重写 ```run``` 方法来实现我们的操作。
 
 来看一个 [示例](../../codes/Module_1/lecture_6/lecture_6_3.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -128,7 +140,9 @@ if __name__ == "__main__":
         p = MyProcess(i)
         p.start()
 ```
+
 结果为，结果可能不唯一：
+
 ```text
 Pid: 3212 LoopCount: 0
 Pid: 18112 LoopCount: 0
@@ -140,6 +154,7 @@ Pid: 3212 LoopCount: 2
 Pid: 21292 LoopCount: 2
 Pid: 21292 LoopCount: 3
 ```
+
 进程的执行逻辑需要在 ```run``` 方法中实现，启动进程需要调用 ```start``` 方法，调用之后 ```run``` 方法便会执行。
 
 ---
@@ -149,6 +164,7 @@ Pid: 21292 LoopCount: 3
 和多线程类似，多进程中同样存在守护进程的概念，属性是 ```daemon``` 。
 
 在上个例子的基础上，稍微修改，[如下](../../codes/Module_1/lecture_6/lecture_6_4.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -174,7 +190,9 @@ if __name__ == "__main__":
         p.start()
     print("Main Process ended")
 ```
+
 结果为：
+
 ```text
 Main Process ended
 ```
@@ -190,6 +208,7 @@ Main Process ended
 上面的例子当然有它的好处，但是子进程还没来得及运行就结束了，也不太合适，引入 ```join``` 方法，主进程可以等待所有子进程结束再结束。
 
 [示例](../../codes/Module_1/lecture_6/lecture_6_5.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -219,7 +238,9 @@ if __name__ == "__main__":
         p.join()
     print("Main Process ended")
 ```
+
 结果如下，进程 pid 不唯一：
+
 ```text
 Pid: 17848 LoopCount: 0
 Pid: 17972 LoopCount: 0
@@ -235,9 +256,11 @@ Main Process ended
 
 结果如我们所料，父进程等待所有子进程运行完后结束。
 
-但是呢，```join``` 会等到所有子进程结束后，主进程结束，否则将一直等待，如果子进程陷入死循环，主进程会一直等待，这时，```join``` 方法可以传入一个超时参数，即最长等待时间，超过该时间，子进程将强制终止，主进程不会等待子进程。
+但是呢，```join``` 会等到所有子进程结束后，主进程结束，否则将一直等待，如果子进程陷入死循环，主进程会一直等待，这时，```join```
+方法可以传入一个超时参数，即最长等待时间，超过该时间，子进程将强制终止，主进程不会等待子进程。
 
 我们传入 2，表示最长等待 2 秒，[程序](../../codes/Module_1/lecture_6/lecture_6_6.py) 如下：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -267,7 +290,9 @@ if __name__ == "__main__":
         p.join(2)
     print("Main Process ended")
 ```
+
 结果为，进程 pid 不唯一：
+
 ```text
 Pid: 16796 LoopCount: 0
 Pid: 19172 LoopCount: 0
@@ -283,6 +308,7 @@ Main Process ended
 我们也可以通过 ```terminate``` 方法来终止某个子进程，也可以通过 ```is_alive``` 方法判断进程是否还在运行。
 
 来看一个 [例子](../../codes/Module_1/lecture_6/lecture_6_7.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -309,13 +335,16 @@ if __name__ == "__main__":
     p.join()
     print("Joined: ", p, p.is_alive())
 ```
+
 结果为：
+
 ```text
 Before:  <Process(Process-1, initial)> False
 During:  <Process(Process-1, started)> True
 Terminate:  <Process(Process-1, started)> True
 Joined:  <Process(Process-1, stopped[SIGTERM])> False
 ```
+
 在调用 ```terminate``` 方法之后，用 ```is_alive``` 方法获取进程的状态发现依然还是运行状态。在调用 ```join``` 方法之后，```is_alive``` 方法获取进程的运行状态才变为终止状态。
 
 所以，**在调用 ```terminate``` 方法之后，还得调用一下 ```join``` 方法**，这里调用 ```join``` 方法可以为进程提供时间来更新对象状态，用来反映出最终的进程终止效果。
@@ -330,9 +359,11 @@ Joined:  <Process(Process-1, stopped[SIGTERM])> False
 
 如果我们能保证多个进程运行期间，只有一个进程输出，这样就不会出现多个进程并行输出显示在同一行了。
 
-这种解决方案实际上就是实现了进程互斥，避免了多个进程同时抢占临界区(输出)资源。我们可以通过 ```multiprocessing``` 中的 ```Lock``` 来实现。```Lock```，即锁，在一个进程输出时，加锁，其他进程等待。等此进程执行结束后，释放锁，其他进程可以进行输出。
+这种解决方案实际上就是实现了进程互斥，避免了多个进程同时抢占临界区(输出)资源。我们可以通过 ```multiprocessing``` 中的 ```Lock``` 来实现。```Lock```
+，即锁，在一个进程输出时，加锁，其他进程等待。等此进程执行结束后，释放锁，其他进程可以进行输出。
 
 先看一个不加锁的 [例子](../../codes/Module_1/lecture_6/lecture_6_8.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -360,7 +391,9 @@ if __name__ == "__main__":
         p = MyProcess(i, lock)
         p.start()
 ```
+
 部分结果：
+
 ```text
 Pid: 14880 LoopCount: 0Pid: 20540 LoopCount: 0
 
@@ -372,7 +405,9 @@ Pid: 14880 LoopCount: 1Pid: 20540 LoopCount: 1
 Pid: 12384 LoopCount: 1
 ...
 ```
+
 对其加锁，取消run方法的两行注释，部分结果如下：
+
 ```text
 Pid: 19324 LoopCount: 0
 Pid: 7368 LoopCount: 0
@@ -393,12 +428,15 @@ Pid: 7368 LoopCount: 2
 
 ### 信号量
 
-信号量 (Semaphore)，有时被称为信号灯，是在多线程环境下使用的一种设施，是可以用来保证两个或多个关键代码段不被并发调用。在进入一个关键代码段之前，线程必须获取一个信号量；一旦该关键代码段完成了，那么该线程必须释放信号量。其它想进入该关键代码段的线程必须等待直到第一个线程释放信号量。为了完成这个过程，需要创建一个信号量 VI，然后将 Acquire Semaphore VI 以及 Release Semaphore VI 分别放置在每个关键代码段的首末端。确认这些信号量 VI 引用的是初始创建的信号量。
+信号量 (Semaphore)
+，有时被称为信号灯，是在多线程环境下使用的一种设施，是可以用来保证两个或多个关键代码段不被并发调用。在进入一个关键代码段之前，线程必须获取一个信号量；一旦该关键代码段完成了，那么该线程必须释放信号量。其它想进入该关键代码段的线程必须等待直到第一个线程释放信号量。为了完成这个过程，需要创建一个信号量
+VI，然后将 Acquire Semaphore VI 以及 Release Semaphore VI 分别放置在每个关键代码段的首末端。确认这些信号量 VI 引用的是初始创建的信号量。
 来源于 [百度百科](https://baike.baidu.com/item/%E4%BF%A1%E5%8F%B7%E9%87%8F) 。
 
 信号量是操作系统中的重要概念，在 Python 中，我们可以用 ```multiprocessing``` 库中的 ```Semaphore``` 来实现信号量机制。
 
 来看一个 [例子](../../codes/Module_1/lecture_6/lecture_6_9.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -448,7 +486,10 @@ if __name__ == "__main__":
     c.join()
     print("Main Process Ended")
 ```
-结果为，注：Linux 端运行结果如下，win10 消费者进程发生阻塞，具体原因可以 [参考](https://stackoverflow.com/questions/50379009/python-multiprocessing-semaphore-not-working) ：
+
+结果为，注：Linux 端运行结果如下，win10
+消费者进程发生阻塞，具体原因可以 [参考](https://stackoverflow.com/questions/50379009/python-multiprocessing-semaphore-not-working) ：
+
 ```text
 Producer append an element
 Producer append an element
@@ -465,6 +506,7 @@ Producer append an element
 多进程间进行数据共享使用的是特定的数据结构 ```Queue``` 队列，这里的队列是 ```multiprocessing``` 中的 ```Queue``` 。
 
 来看一个 [例子](../../codes/Module_1/lecture_6/lecture_6_10.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -516,6 +558,7 @@ if __name__ == "__main__":
 ```
 
 结果为，注：Linux 端运行结果如下，win10 消费者进程发生阻塞：
+
 ```text
 Producer put 0.7168468518418151
 Producer put 0.0717678851372644
@@ -536,6 +579,7 @@ Producer put 0.18752387120600655
 默认声明 ```Pipe``` 对象是双向管道，如果要创建单向管道，可以在初始化的时候传入 ```deplex``` 参数为 False。
 
 来看一个 [例子](../../codes/Module_1/lecture_6/lecture_6_11.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -573,7 +617,9 @@ if __name__ == "__main__":
     c.join()
     print("Main Process Ended")
 ```
+
 结果为：
+
 ```text
 Producer Received: Consumer Words
 Consumer Received: Producer Words
@@ -588,9 +634,11 @@ Main Process Ended
 
 之前我们使用 ```Semaphore``` 来控制进程的并发执行数量，但是如果进程数量多，使用信号量机制会比较繁琐，而且并发数量高了，若不实时控制并发数量，CPU处理压力会很大。
 
-此时 ```multiprocessing``` 中的 ```Pool``` 进程池就派上用场了，```Pool``` 可以提供指定数量的进程，供用户调用，当有新的请求提交到 ```pool``` 中时，如果池还没有满，就会创建一个新的进程用来执行该请求；但如果池中的进程数已经达到规定最大值，那么该请求就会等待，直到池中有进程结束，才会创建新的进程来执行它。
+此时 ```multiprocessing``` 中的 ```Pool``` 进程池就派上用场了，```Pool``` 可以提供指定数量的进程，供用户调用，当有新的请求提交到 ```pool```
+中时，如果池还没有满，就会创建一个新的进程用来执行该请求；但如果池中的进程数已经达到规定最大值，那么该请求就会等待，直到池中有进程结束，才会创建新的进程来执行它。
 
 来看一个 [例子](../../codes/Module_1/lecture_6/lecture_6_12.py) :
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -614,7 +662,9 @@ if __name__ == "__main__":
     pool.join()
     print("Main Process ended ")
 ```
+
 结果为：
+
 ```text
 Main Process started
 Start process: 0
@@ -635,6 +685,7 @@ Main Process ended
 这里我们介绍 ```map``` 方法，```map``` 方法第一个参数就是要启动的进程对应的执行方法，第二个参数是一个可迭代对象，其中的每个元素会被传递给这个执行方法。
 
 来看一个 [例子](../../codes/Module_1/lecture_6/lecture_6_13.py) ：
+
 ```python
 # -*- coding: utf-8 -*-
 
@@ -662,16 +713,20 @@ if __name__ == "__main__":
     pool.map(scrape, urls)
     pool.close()
 ```
+
 结果为：
+
 ```text
 URL https://www.dogedoge.com/ Scraped
 URL https://bj.meituan.com/ Scraped
 URL https://www.csdn.net/ Scraped
 URL http://xxxyxxx.net not Scraped
 ```
-这个例子中我们先定义了一个 ```scrape``` 方法，它接收一个参数 url，这里就是请求了一下这个链接，然后输出爬取成功的信息，如果发生错误，则会输出爬取失败的信息。 
 
-首先我们要初始化一个 ```Pool```，指定进程数为 3。然后我们声明一个 urls 列表，接着我们调用了 ```map``` 方法，第 1 个参数就是进程对应的执行方法，第 2 个参数就是 urls列表，```map``` 方法会依次将 urls 的每个元素作为 ```scrape``` 的参数传递并启动一个新的进程，加到进程池中执行。
+这个例子中我们先定义了一个 ```scrape``` 方法，它接收一个参数 url，这里就是请求了一下这个链接，然后输出爬取成功的信息，如果发生错误，则会输出爬取失败的信息。
+
+首先我们要初始化一个 ```Pool```，指定进程数为 3。然后我们声明一个 urls 列表，接着我们调用了 ```map``` 方法，第 1 个参数就是进程对应的执行方法，第 2 个参数就是 urls列表，```map```
+方法会依次将 urls 的每个元素作为 ```scrape``` 的参数传递并启动一个新的进程，加到进程池中执行。
 
 这样，我们就可以通过 ```map``` 方法实现多进程并行运行。不同的进程相互独立地输出了对应的爬取结果。
 

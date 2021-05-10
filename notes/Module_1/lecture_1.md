@@ -13,8 +13,9 @@
 
 <br>
 
-例如，[https://www.runoob.com/python3/python3-multithreading.html](https://www.runoob.com/python3/python3-multithreading.html) ，它既是 URL 也是 URI。
-在这个网页中介绍了 python3 多线程相关知识，我们通过这个 URL/URI 来访问它，这其中包括了访问协议 HTTPS，访问路径和资源名称 ```python3-multithreading.html```。
+例如，[https://www.runoob.com/python3/python3-multithreading.html](https://www.runoob.com/python3/python3-multithreading.html)
+，它既是 URL 也是 URI。 在这个网页中介绍了 python3 多线程相关知识，我们通过这个 URL/URI 来访问它，这其中包括了访问协议
+HTTPS，访问路径和资源名称 ```python3-multithreading.html```。
 
 URL 是 URI 的子集，URN 只命名了一个资源，例如书籍的 ISBN，参考文献的标注等等。可以说 URL，URN 一起组成了 URI。
 
@@ -24,7 +25,9 @@ URL 是 URI 的子集，URN 只命名了一个资源，例如书籍的 ISBN，�
 
 ## 超文本
 
-超文本 (Hypertext) 是一种可以显示在电脑显示器或其他电子设备的文本，其中的文字包含有可以链接到其他字段或者文档的超链接，允许从当前阅读位置直接切换到超链接所指向的文字。超文本文档通过超链接相互链接，超链接通常通过鼠标点击，按键设置或触屏来点阅。来源于 [维基百科](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC) 。
+超文本 (Hypertext)
+是一种可以显示在电脑显示器或其他电子设备的文本，其中的文字包含有可以链接到其他字段或者文档的超链接，允许从当前阅读位置直接切换到超链接所指向的文字。超文本文档通过超链接相互链接，超链接通常通过鼠标点击，按键设置或触屏来点阅。来源于 [维基百科](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC)
+。
 
 浏览器中看到的网页都是由超文本解析而来，它们是一系列的 HTML 代码，这些 HTML 代码就称为超文本。
 
@@ -34,7 +37,8 @@ URL 是 URI 的子集，URN 只命名了一个资源，例如书籍的 ISBN，�
 
 ## HTTP 和 HTTPS
 
-在 [https://www.bilibili.com](https://www.bilibili.com) 中，URL 的开头是 https，它便是访问资源所需要的协议类型，有时候会有以 http，sfp，sftp，smb 等等开头的 URL，这些都是不同的访问协议，我们见的最多的便是 http 或者 https 协议了。
+在 [https://www.bilibili.com](https://www.bilibili.com) 中，URL 的开头是 https，它便是访问资源所需要的协议类型，有时候会有以 http，sfp，sftp，smb 等等开头的
+URL，这些都是不同的访问协议，我们见的最多的便是 http 或者 https 协议了。
 
 <br>
 
@@ -42,14 +46,18 @@ URL 是 URI 的子集，URN 只命名了一个资源，例如书籍的 ISBN，�
 
 设计 HTTP 最初的目的是为了提供一种发布和接收 HTML 页面的方法。通过 HTTP 或者 HTTPS 协议请求的资源由统一资源标识符 URI 来标识。
 
-目前广泛使用的版本是 HTTP1.1。参考于 [维基百科](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE) 。
+目前广泛使用的版本是
+HTTP1.1。参考于 [维基百科](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%8D%8F%E8%AE%AE) 。
 
 <br>
 
-超文本传输安全协议 (HyperText Transfer Protocol Secure，缩写：HTTPS；常称为 HTTP over TLS，HTTP over SSL 或 HTTP Secure) 是一种通过计算机网络进行安全通信的传输协议。HTTPS 经由 HTTP 进行通信，但利用 SSL/TLS 来加密数据包。
-参考于 [维基百科](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE) 。
+超文本传输安全协议 (HyperText Transfer Protocol Secure，缩写：HTTPS；常称为 HTTP over TLS，HTTP over SSL 或 HTTP Secure)
+是一种通过计算机网络进行安全通信的传输协议。HTTPS 经由 HTTP 进行通信，但利用 SSL/TLS 来加密数据包。
+参考于 [维基百科](https://zh.wikipedia.org/wiki/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE)
+。
 
 HTTPS 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL 加密的，它的主要作用可以分为两种：
+
 * 建立一个信息安全通道，来保证数据传输的安全
 * 确认网站的真实性，凡是使用了 HTTPS 的网站，都可以通过点击浏览器地址栏的锁头标志来查看网站认证之后的真实信息，也可以通过 CA 机构颁发的安全签章来查询。
 
@@ -61,7 +69,8 @@ HTTPS 的安全基础是 SSL，因此通过它传输的内容都是经过 SSL �
 
 这是一个很经典的问题，面试中经常出现，这里作一个简单的解释。
 
-当我们往浏览器地址栏输入 URL，浏览器会解析 URL，找到对应的服务器，浏览器向网站所在的服务器发送了一个请求，网站的服务器接收到这个请求后进行处理和解析，然后返回对应的响应，接着传回给浏览器。响应里会包含了页面的源代码等内容，浏览器再对其进行解析，将网页呈现出来。
+当我们往浏览器地址栏输入 URL，浏览器会解析
+URL，找到对应的服务器，浏览器向网站所在的服务器发送了一个请求，网站的服务器接收到这个请求后进行处理和解析，然后返回对应的响应，接着传回给浏览器。响应里会包含了页面的源代码等内容，浏览器再对其进行解析，将网页呈现出来。
 
 <br>
 
@@ -97,6 +106,7 @@ HTTP1.0 定义了三种请求方法：GET，POST 和 HEAD 方法。
 HTTP1.1 新增了六种请求方法：OPTIONS，PUT，PATCH，DELETE，TRACE 和 CONNECT 方法。
 
 常用的请求方法是 GET 和 POST，区别：
+
 * GET 请求的参数会直接包含在 URL 中，提交的数据至多为 1024 字节；POST 请求通常在表单提起时发起(如填写完用户名和密码后登陆时)，数据以表单形式传输，不在 URL 中，数据量没有限制。
 * 显然 POST 比 GET 更安全，也适用于文件传输。
 
@@ -107,11 +117,11 @@ HTTP 的请求与其描述如下表所示：
 | GET | 请求指定的页面信息，并返回实体主体|
 | HEAD|类似于 GET 请求，只不过返回的响应中没有具体的内容，用于获取报头|
 |PUT|从客户端向服务器传送的数据取代指定的文档的内容|
-|DELETE	|请求服务器删除指定的页面|
+|DELETE    |请求服务器删除指定的页面|
 |CONNECT|HTTP/1.1 协议中预留给能够将连接改为管道方式的代理服务器|
 |OPTIONS|允许客户端查看服务器的性能|
 | TRACE|回显服务器收到的请求，主要用于测试或诊断|
-|PATCH	| 是对PUT方法的补充，用来对已知资源进行局部更新|
+|PATCH    | 是对PUT方法的补充，用来对已知资源进行局部更新|
 |POST|向指定资源提交数据进行处理请求(例如提交表单或者上传文件)。数据被包含在请求体中。POST 请求可能会导致新的资源的建立和/或已有资源的修改|
 
 更多信息可参考，[https://www.runoob.com/http/http-methods.html](https://www.runoob.com/http/http-methods.html) 。
@@ -151,8 +161,8 @@ HTTP 的请求与其描述如下表所示：
 
 请求体一般承载的内容是 POST 请求中的表单数据，而对于 GET 请求，请求体则为空。
 
-当我们填写自己的用户名和密码时，提交时这些信息就会以表单形式传送给服务器，需要指定 Content-Type 为 application/x-www-form-urlencoded，这样才能以表单形式提交给服务器。
-如果提交 JSON 类型的数据时，Content-Type 就的为 application/json。
+当我们填写自己的用户名和密码时，提交时这些信息就会以表单形式传送给服务器，需要指定 Content-Type 为 application/x-www-form-urlencoded，这样才能以表单形式提交给服务器。 如果提交 JSON
+类型的数据时，Content-Type 就的为 application/json。
 
 在爬虫中，我们需要设定正确的 Content-Type，才能得到预期的请求，否则在提交 POST 请求后会无法正常相应。
 
@@ -163,6 +173,7 @@ HTTP 的请求与其描述如下表所示：
 ### 响应
 
 响应，由服务端返回给客户端，可以分为三部分：
+
 * 响应状态码 (Response Status Code)
 * 响应头 (Response Headers)
 * 响应体 (Response Body)。
@@ -173,7 +184,8 @@ HTTP 的请求与其描述如下表所示：
 
 响应状态码表示服务器的响应状态，如 200 代表服务器正常响应，301 代表资源(网页等)被永久转移到其它 URL，404 代表页面未找到，500 代表服务器内部发生错误。
 
-更多 HTTP 状态码分类可参见，[https://www.runoob.com/http/http-status-codes.html](https://www.runoob.com/http/http-status-codes.html) 。
+更多 HTTP
+状态码分类可参见，[https://www.runoob.com/http/http-status-codes.html](https://www.runoob.com/http/http-status-codes.html) 。
 
 ---
 
@@ -189,7 +201,7 @@ HTTP 的请求与其描述如下表所示：
 |Date| 标识响应产生的时间，用 setDateHeader 来设置这个头以避免转换时间格式的麻烦|
 |Expires|应该在什么时候认为文档已经过期，从而不再缓存它|
 |Set-Cookie|设置 Cookies。响应头中的 Set-Cookie 告诉浏览器需要将此内容放在 Cookies 中，下次请求携带 Cookies 请求|
-|Server	|服务器名字。Servlet 一般不设置这个值，而是由 Web 服务器自己设置|
+|Server    |服务器名字。Servlet 一般不设置这个值，而是由 Web 服务器自己设置|
 
 ---
 
