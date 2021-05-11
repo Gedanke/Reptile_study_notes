@@ -12,29 +12,24 @@ headers = {
 }
 
 
-async def fetch(session, url):
-    """
-
-    :param session:
-    :param url:
-    :return:
-    """
-    async with session.get(url, headers=headers) as response:
-        return await response.text(), response.status
-
-
 async def main():
     """
 
     :return:
     """
+    data = {
+        'name': 'germey', 'age': 25
+    }
+
     async with aiohttp.ClientSession() as session:
-        html, status = await fetch(session, 'https://weibo.com/')
-        print(f'html: {html[:100]}...')
-        print(f'status: {status}')
+        async with session.post('https://httpbin.org/post', headers=headers, data=data) as response:
+            print('status:', response.status)
+            print('headers:', response.headers)
+            print('body:', await response.text())
+            print('bytes:', await response.read())
+            print('json:', await response.json())
 
 
 if __name__ == '__main__':
     """"""
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(main())
+    asyncio.get_event_loop().run_until_complete(main())
