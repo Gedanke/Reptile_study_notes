@@ -2,7 +2,7 @@
 
 import time
 import asyncio
-import requests
+import aiohttp
 
 headers = {
     'Accept-Encoding': 'gzip, deflate, sdch',
@@ -15,6 +15,19 @@ headers = {
 start = time.time()
 
 
+async def get(url: str):
+    """
+
+    :param url:
+    :return:
+    """
+    session = aiohttp.ClientSession()
+    response = await session.get(url=url, headers=headers)
+    await response.text()
+    await session.close()
+    return response
+
+
 async def request():
     """
 
@@ -22,8 +35,7 @@ async def request():
     """
     url = 'https://static4.scrape.center/'
     print('Waiting for', url)
-    response = requests.get(url, headers)
-    # response = await requests.get(url, headers)
+    response = await get(url)
     print('Get response from', url, 'response', response)
 
 

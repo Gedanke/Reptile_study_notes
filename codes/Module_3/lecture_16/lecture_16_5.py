@@ -13,12 +13,21 @@ headers = {
 
 
 async def request():
-    url = 'https://www.baidu.com'
+    """
+
+    :return:
+    """
+    url = "https://www.baidu.com"
     status = requests.get(url, headers)
     return status
 
 
 def callback(task):
+    """
+
+    :param task:
+    :return:
+    """
     print('Status:', task.result())
 
 
@@ -27,6 +36,7 @@ task = asyncio.ensure_future(coroutine)
 task.add_done_callback(callback)
 print('Task:', task)
 
+# asyncio.get_event_loop().run_until_complete(task)
 loop = asyncio.get_event_loop()
 loop.run_until_complete(task)
 print('Task:', task)

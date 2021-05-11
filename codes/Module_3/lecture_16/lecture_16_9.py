@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import time
 import asyncio
 import requests
 
@@ -11,24 +12,23 @@ headers = {
     'Connection': 'keep-alive',
 }
 
+start = time.time()
+
+
+async def get(url):
+    return requests.get(url, headers)
+
 
 async def request():
-    """
-
-    :return:
-    """
-    url = 'https://www.baidu.com'
-    status = requests.get(url, headers)
-    return status
+    url = 'https://static4.scrape.center/'
+    print('Waiting for', url)
+    response = await get(url)
+    print('Get response from', url, 'response', response)
 
 
-tasks = [
-    asyncio.ensure_future(request()) for _ in range(5)
-]
-print('Tasks:', tasks)
-
+tasks = [asyncio.ensure_future(request()) for _ in range(10)]
 loop = asyncio.get_event_loop()
 loop.run_until_complete(asyncio.wait(tasks))
 
-for task in tasks:
-    print('Task Result:', task.result())
+end = time.time()
+print('Cost time:', end - start)

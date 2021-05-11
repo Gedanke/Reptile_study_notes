@@ -13,6 +13,10 @@ headers = {
 
 
 async def request():
+    """
+    
+    :return:
+    """
     url = 'https://www.baidu.com'
     status = requests.get(url, headers)
     return status

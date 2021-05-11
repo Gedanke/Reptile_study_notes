@@ -4,6 +4,11 @@ import asyncio
 
 
 async def execute(x):
+    """
+
+    :param x:
+    :return:
+    """
     print('Number:', x)
     return x
 
@@ -11,6 +16,7 @@ async def execute(x):
 coroutine = execute(1)
 print('Coroutine:', coroutine)
 print('After calling execute')
+# task = asyncio.get_event_loop().create_task(coroutine)
 loop = asyncio.get_event_loop()
 task = loop.create_task(coroutine)
 print('Task:', task)
