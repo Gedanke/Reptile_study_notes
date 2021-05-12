@@ -1,252 +1,425 @@
 # Pyppeteer 使用
 
+在前面，我们学习了 Selenium 的基本用法，它功能的确非常强大，但很多时候我们会发现 Selenium 有一些不太方便的地方，比如环境的配置，得安装好相关浏览器，比如 Chrome、Firefox
+等等，然后还要到官方网站去下载对应的驱动，最重要的还需要安装对应的 Python Selenium
+库，而且版本也得好好看看是否对应，特别是浏览器升级后，需要重新安装对应的驱动，确实不是很方便，另外如果要做大规模部署的话，环境配置的一些问题也是个头疼的事情。
+
+那么本课时我们就介绍另一个类似的替代品，叫作 Pyppeteer。
+
 ---
 ---
 
-在前面我们学习了 Selenium 的基本用法，它功能的确非常强大，但很多时候我们会发现 Selenium 有一些不太方便的地方，比如环境的配置，得安装好相关浏览器，比如 Chrome、Firefox
-等等，然后还要到官方网站去下载对应的驱动，最重要的还需要安装对应的 Python Selenium 库，而且版本也得好好看看是否对应，确实不是很方便，另外如果要做大规模部署的话，环境配置的一些问题也是个头疼的事情。
+## Pyppeteer 介绍
 
-那么本课时我们就介绍另一个类似的替代品，叫作 Pyppeteer。注意，是叫作 Pyppeteer，而不是 Puppeteer。
-
-Pyppeteer 介绍 Puppeteer 是 Google 基于 Node.js 开发的一个工具，有了它我们可以通过 JavaScript 来控制 Chrome 浏览器的一些操作，当然也可以用作网络爬虫上，其 API
-极其完善，功能非常强大，Selenium 当然同样可以做到。
+Puppeteer 是 Google 基于 Node.js 开发的一个工具，有了它我们可以通过 JavaScript 来控制 Chrome 浏览器的一些操作，当然也可以用作网络爬虫上，其 API 极其完善，功能非常强大，Selenium
+当然同样可以做到。
 
 而 Pyppeteer 又是什么呢？它实际上是 Puppeteer 的 Python 版本的实现，但它不是 Google 开发的，是一位来自于日本的工程师依据 Puppeteer 的一些功能开发出来的非官方版本。
 
 在 Pyppetter 中，实际上它背后也是有一个类似 Chrome 浏览器的 Chromium 浏览器在执行一些动作进行网页渲染，首先说下 Chrome 浏览器和 Chromium 浏览器的渊源。
 
-Chromium 是谷歌为了研发 Chrome 而启动的项目，是完全开源的。二者基于相同的源代码构建，Chrome 所有的新功能都会先在 Chromium 上实现，待验证稳定后才会移植，因此 Chromium
-的版本更新频率更高，也会包含很多新的功能，但作为一款独立的浏览器，Chromium 的用户群体要小众得多。两款浏览器“同根同源”，它们有着同样的 Logo，但配色不同，Chrome 由蓝红绿黄四种颜色组成，而 Chromium
-由不同深度的蓝色构成。
+```textmate
+Chromium 是谷歌为了研发 Chrome 而启动的项目，是完全开源的。二者基于相同的源代码构建，Chrome 所有的新功能都会先在 Chromium 上实现，待验证稳定后才会移植，因此 Chromium 的版本更新频率更高，也会包含很多新的功能，但作为一款独立的浏览器，Chromium 的用户群体要小众得多。两款浏览器“同根同源”，它们有着同样的 Logo，但配色不同，Chrome 由蓝红绿黄四种颜色组成，而 Chromium 由不同深度的蓝色构成。
+```
 
 总的来说，两款浏览器的内核是一样的，实现方式也是一样的，可以认为是开发版和正式版的区别，功能上基本是没有太大区别的。
 
 Pyppeteer 就是依赖于 Chromium 这个浏览器来运行的。那么有了 Pyppeteer 之后，我们就可以免去那些烦琐的环境配置等问题。如果第一次运行的时候，Chromium
-浏览器没有安装，那么程序会帮我们自动安装和配置，就免去了烦琐的环境配置等工作。另外 Pyppeteer 是基于 Python 的新特性 async 实现的，所以它的一些执行也支持异步操作，效率相对于 Selenium 来说也提高了。
+浏览器没有安装，那么程序会帮我们自动安装和配置，就免去了烦琐的环境配置等工作。另外 Pyppeteer 是基于 Python 的新特性 ```async``` 实现的，所以它的一些执行也支持异步操作，效率相对于 Selenium
+来说也提高了。
 
 那么下面就让我们来一起了解下 Pyppeteer 的相关用法吧。
 
-安装 首先就是安装问题了，由于 Pyppeteer 采用了 Python 的 async 机制，所以其运行要求的 Python 版本为 3.5 及以上。
+---
+
+## 安装
+
+首先就是安装问题了，由于 Pyppeteer 采用了 Python 的 ```async``` 机制，所以其运行要求的 Python 版本为 3.5 及以上。
 
 安装方式非常简单：
 
-复制代码 pip3 install pyppeteer 好了，安装完成之后我们在命令行下测试：
+```shell
+pip3 install pyppeteer
+```
 
-复制代码
-> > > import pyppeteer 如果没有报错，那么就证明安装成功了。
+安装完成之后我们在命令行下测试：
 
-快速上手 接下来我们测试基本的页面渲染操作，这里我们选用的网址为：https://dynamic2.scrape.center/，如图所示。
+```shell
+>>> import pyppeteer 
+```
 
-这个网站我们在之前的 Selenium 爬取实战课时中已经分析过了，整个页面是用 JavaScript 渲染出来的，同时一些 Ajax 接口还带有加密参数，所以这个网站的页面我们无法直接使用 requests
+如果没有报错，那么就证明安装成功了。
+
+---
+
+## 快速上手
+
+接下来我们测试基本的页面渲染操作，这里我们选用的网址为：[https://dynamic2.scrape.center/](https://dynamic2.scrape.center/) ，如图所示。
+
+![](../../images/Module_3/lecture_18_1.png)
+
+这个网站我们在之前的 Selenium 爬取实战课时中已经分析过了，整个页面是用 JavaScript 渲染出来的，同时一些 Ajax 接口还带有加密参数，所以这个网站的页面我们无法直接使用 ```requests```
 来抓取看到的数据，同时我们也不太好直接模拟 Ajax 来获取数据。
 
-所以前面一课时我们介绍了使用 Selenium 爬取的方式，其原理就是模拟浏览器的操作，直接用浏览器把页面渲染出来，然后再直接获取渲染后的结果。同样的原理，用 Pyppeteer 也可以做到。
+前面一课时我们介绍了使用 Selenium 爬取的方式，其原理就是模拟浏览器的操作，直接用浏览器把页面渲染出来，然后再直接获取渲染后的结果。同样的原理，用 Pyppeteer 也可以做到。
 
-下面我们用 Pyppeteer 来试试，代码就可以写为如下形式：
+下面我们用 Pyppeteer 来试试，[代码](../../codes/Module_3/lecture_18/lecture_18_1.py)如下：
 
-复制代码 import asyncio from pyppeteer import launch from pyquery import PyQuery as pq async def main():
-browser = await launch()
-page = await browser.newPage()
-await page.goto('https://dynamic2.scrape.center/')
-await page.waitForSelector('.item .name')
-doc = pq(await page.content())
-names = [item.text() for item in doc('.item .name').items()]
-print('Names:', names)
-await browser.close()
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+from pyquery import PyQuery
+
+
+async def main():
+    """
+
+    :return:
+    """
+    browser = await launch()
+    page = await browser.newPage()
+    await page.goto('https://dynamic2.scrape.center/')
+    await page.waitForSelector('.item .name')
+    doc = PyQuery(await page.content())
+    names = [item.text() for item in doc('.item .name').items()]
+    print('Names:', names)
+    await browser.close()
+
+
 asyncio.get_event_loop().run_until_complete(main())
+```
+
 运行结果：
 
-复制代码
+```textmate
 Names: ['霸王别姬 - Farewell My Concubine', '这个杀手不太冷 - Léon', '肖申克的救赎 - The Shawshank Redemption', '泰坦尼克号 - Titanic', '罗马假日 - Roman Holiday', '唐伯虎点秋香 - Flirting Scholar', '乱世佳人 - Gone with the Wind', '喜剧之王 - The King of Comedy', '楚门的世界 - The Truman Show', '狮子王 - The Lion King']
-先初步看下代码，大体意思是访问了这个网站，然后等待 .item .name 的节点加载出来，随后通过 pyquery 从网页源码中提取了电影的名称并输出，最后关闭 Pyppeteer。
+```
+
+先初步看下代码，大体意思是访问了这个网站，然后等待 `````.item .name````` 的节点加载出来，随后通过 ```pyquery``` 从网页源码中提取了电影的名称并输出，最后关闭 Pyppeteer。
 
 看运行结果，和之前的 Selenium 一样，我们成功模拟加载出来了页面，然后提取到了首页所有电影的名称。
 
-那么这里面的具体过程发生了什么？我们来逐行看下。
+那么这里面的具体过程发生了什么？
 
-launch 方法会新建一个 Browser 对象，其执行后最终会得到一个 Browser 对象，然后赋值给 browser。这一步就相当于启动了浏览器。
+* ```launch``` 方法会新建一个 ```Browser``` 对象，其执行后最终会得到一个 ```Browser``` 对象，然后赋值给 ```browser```。这一步就相当于启动了浏览器
+* 然后 ```browser``` 调用 ```newPage``` 方法相当于浏览器中新建了一个选项卡，同时新建了一个 ```Page``` 对象，这时候新启动了一个选项卡，但是还未访问任何页面，浏览器依然是空白
+* 随后 ```Page``` 对象调用了 ```goto``` 方法就相当于在浏览器中输入了这个 URL，浏览器跳转到了对应的页面进行加载
+* ```Page``` 对象调用 ```waitForSelector``` 方法，传入选择器，那么页面就会等待选择器所对应的节点信息加载出来，如果加载出来了，立即返回，否则会持续等待直到超时。此时如果顺利的话，页面会成功加载出来
+* 页面加载完成之后再调用 ```content``` 方法，可以获得当前浏览器页面的源代码，这就是 JavaScript 渲染后的结果。
+* 然后进一步的，用 ````pyquery``` 进行解析并提取页面的电影名称，就得到最终结果了
 
-然后 browser 调用 newPage 方法相当于浏览器中新建了一个选项卡，同时新建了一个 Page 对象，这时候新启动了一个选项卡，但是还未访问任何页面，浏览器依然是空白。
+一些方法如调用 ```asyncio``` 的 ```get_event_loop``` 等方法的相关操作则属于 Python 异步 ```async``` 相关的内容了。
 
-随后 Page 对象调用了 goto 方法就相当于在浏览器中输入了这个 URL，浏览器跳转到了对应的页面进行加载。
+通过上面的代码，我们同样也可以完成 JavaScript 渲染页面的爬取了。
 
-Page 对象调用 waitForSelector 方法，传入选择器，那么页面就会等待选择器所对应的节点信息加载出来，如果加载出来了，立即返回，否则会持续等待直到超时。此时如果顺利的话，页面会成功加载出来。
+代码相比 Selenium 是不是更简洁易读，而且环境配置更加方便。在这个过程中，我们没有配置 Chrome 浏览器，也没有配置浏览器驱动，免去了一些烦琐的步骤，同样达到了 Selenium 的效果，还实现了异步抓取。
 
-页面加载完成之后再调用 content 方法，可以获得当前浏览器页面的源代码，这就是 JavaScript 渲染后的结果。
+接下来我们再看看另外一个例子，这个例子设定了浏览器窗口大小，然后模拟了网页截图，另外还可以执行自定义的 JavaScript
+获得特定的内容，[代码](../../codes/Module_3/lecture_18/lecture_18_2.py)如下：
 
-然后进一步的，我们用 pyquery 进行解析并提取页面的电影名称，就得到最终结果了。
+```python
+# -*- coding: utf-8 -*-
 
-另外其他的一些方法如调用 asyncio 的 get_event_loop 等方法的相关操作则属于 Python 异步 async 相关的内容了，你如果不熟悉可以了解下前面所讲的异步相关知识。
-
-好，通过上面的代码，我们同样也可以完成 JavaScript 渲染页面的爬取了。怎么样？代码相比 Selenium 是不是更简洁易读，而且环境配置更加方便。在这个过程中，我们没有配置 Chrome
-浏览器，也没有配置浏览器驱动，免去了一些烦琐的步骤，同样达到了 Selenium 的效果，还实现了异步抓取。
-
-接下来我们再看看另外一个例子，这个例子设定了浏览器窗口大小，然后模拟了网页截图，另外还可以执行自定义的 JavaScript 获得特定的内容，代码如下：
-
-复制代码 import asyncio from pyppeteer import launch width, height = 1366, 768 async def main():
-browser = await launch()
-page = await browser.newPage()
-await page.setViewport({'width': width, 'height': height})
-await page.goto('https://dynamic2.scrape.center/')
-await page.waitForSelector('.item .name')
-await asyncio.sleep(2)
-await page.screenshot(path='example.png')
-dimensions = await page.evaluate('''() => { return { width: document.documentElement.clientWidth, height:
-document.documentElement.clientHeight, deviceScaleFactor: window.devicePixelRatio, } }''')
-
-print(dimensions)
-await browser.close()
-asyncio.get_event_loop().run_until_complete(main())
-这里我们又用到了几个新的 API，完成了页面窗口大小设置、网页截图保存、执行 JavaScript 并返回对应数据。
-
-首先 screenshot 方法可以传入保存的图片路径，另外还可以指定保存格式 type、清晰度 quality、是否全屏 fullPage、裁切 clip 等各个参数实现截图。
-
-截图的样例如下：
-
-可以看到它返回的就是 JavaScript 渲染后的页面，和我们在浏览器中看到的结果是一模一样的。
-
-最后我们又调用了 evaluate 方法执行了一些 JavaScript，JavaScript 传入的是一个函数，使用 return 方法返回了网页的宽高、像素大小比率三个值，最后得到的是一个 JSON 格式的对象，内容如下：
-
-复制代码 {'width': 1366, 'height': 768, 'deviceScaleFactor': 1} OK，实例就先感受到这里，还有太多太多的功能还没提及。
-
-总之利用 Pyppeteer 我们可以控制浏览器执行几乎所有动作，想要的操作和功能基本都可以实现，用它来自由地控制爬虫当然就不在话下了。
-
-详细用法 了解了基本的实例之后，我们再来梳理一下 Pyppeteer 的一些基本和常用操作。Pyppeteer 的几乎所有功能都能在其官方文档的 API Reference
-里面找到，链接为：https://miyakogi.github.io/pyppeteer/reference.html，用到哪个方法就来这里查询就好了，参数不必死记硬背，即用即查就好。
-
-launch 使用 Pyppeteer 的第一步便是启动浏览器，首先我们看下怎样启动一个浏览器，其实就相当于我们点击桌面上的浏览器图标一样，把它运行起来。用 Pyppeteer 完成同样的操作，只需要调用 launch 方法即可。
-
-我们先看下 launch 方法的 API，链接为：https://miyakogi.github.io/pyppeteer/reference.html#pyppeteer.launcher.launch，其方法定义如下：
-
-复制代码 pyppeteer.launcher.launch(options: dict = None, **kwargs) → pyppeteer.browser.Browser 可以看到它处于 launcher
-模块中，参数没有在声明中特别指定，返回类型是 browser 模块中的 Browser 对象，另外观察源码发现这是一个 async 修饰的方法，所以调用它的时候需要使用 await。
-
-接下来看看它的参数：
-
-ignoreHTTPSErrors (bool)：是否要忽略 HTTPS 的错误，默认是 False。
-
-headless (bool)：是否启用 Headless 模式，即无界面模式，如果 devtools 这个参数是 True 的话，那么该参数就会被设置为 False，否则为 True，即默认是开启无界面模式的。
-
-executablePath (str)：可执行文件的路径，如果指定之后就不需要使用默认的 Chromium 了，可以指定为已有的 Chrome 或 Chromium。
-
-slowMo (int|float)：通过传入指定的时间，可以减缓 Pyppeteer 的一些模拟操作。
-
-args (List[str])：在执行过程中可以传入的额外参数。
-
-ignoreDefaultArgs (bool)：不使用 Pyppeteer 的默认参数，如果使用了这个参数，那么最好通过 args 参数来设定一些参数，否则可能会出现一些意想不到的问题。这个参数相对比较危险，慎用。
-
-handleSIGINT (bool)：是否响应 SIGINT 信号，也就是可以使用 Ctrl + C 来终止浏览器程序，默认是 True。
-
-handleSIGTERM (bool)：是否响应 SIGTERM 信号，一般是 kill 命令，默认是 True。
-
-handleSIGHUP (bool)：是否响应 SIGHUP 信号，即挂起信号，比如终端退出操作，默认是 True。
-
-dumpio (bool)：是否将 Pyppeteer 的输出内容传给 process.stdout 和 process.stderr 对象，默认是 False。
-
-userDataDir (str)：即用户数据文件夹，即可以保留一些个性化配置和操作记录。
-
-env (dict)：环境变量，可以通过字典形式传入。
-
-devtools (bool)：是否为每一个页面自动开启调试工具，默认是 False。如果这个参数设置为 True，那么 headless 参数就会无效，会被强制设置为 False。
-
-logLevel  (int|str)：日志级别，默认和 root logger 对象的级别相同。
-
-autoClose (bool)：当一些命令执行完之后，是否自动关闭浏览器，默认是 True。
-
-loop (asyncio.AbstractEventLoop)：事件循环对象。
-
-好了，知道这些参数之后，我们可以先试试看。
-
-无头模式
-
-首先可以试用下最常用的参数 headless，如果我们将它设置为 True 或者默认不设置它，在启动的时候我们是看不到任何界面的，如果把它设置为 False，那么在启动的时候就可以看到界面了，一般我们在调试的时候会把它设置为
-False，在生产环境上就可以设置为 True，我们先尝试一下关闭 headless 模式：
-
-复制代码 import asyncio from pyppeteer import launch async def main():
-await launch(headless=False)
-await asyncio.sleep(100)
-asyncio.get_event_loop().run_until_complete(main())
-运行之后看不到任何控制台输出，但是这时候就会出现一个空白的 Chromium 界面了：
-
-但是可以看到这就是一个光秃秃的浏览器而已，看一下相关信息：
-
-看到了，这就是 Chromium，上面还写了开发者内部版本，你可以认为是开发版的 Chrome 浏览器就好。
-
-调试模式
-
-另外我们还可以开启调试模式，比如在写爬虫的时候会经常需要分析网页结构还有网络请求，所以开启调试工具还是很有必要的，我们可以将 devtools 参数设置为 True，这样每开启一个界面就会弹出一个调试窗口，非常方便，示例如下：
-
-复制代码 import asyncio from pyppeteer import launch
-
-async def main():
-browser = await launch(devtools=True)
-page = await browser.newPage()
-await page.goto('https://www.baidu.com')
-await asyncio.sleep(100)
-
-asyncio.get_event_loop().run_until_complete(main())
-刚才说过 devtools 这个参数如果设置为了 True，那么 headless 就会被关闭了，界面始终会显现出来。在这里我们新建了一个页面，打开了百度，界面运行效果如下：
-
-禁用提示条
-
-这时候我们可以看到上面的一条提示："Chrome 正受到自动测试软件的控制"，这个提示条有点烦，那该怎样关闭呢？这时候就需要用到 args 参数了，禁用操作如下：
-
-复制代码 browser = await launch(headless=False, args=['--disable-infobars'])
-这里就不再写完整代码了，就是在 launch 方法中，args 参数通过 list 形式传入即可，这里使用的是 --disable-infobars 的参数。
-
-防止检测
-
-你可能会说，如果你只是把提示关闭了，有些网站还是会检测到是 WebDriver 吧，比如拿之前的检测 WebDriver 的案例 https://antispider1.scrape.center/ 来验证下，我们可以试试：
-
-复制代码 import asyncio from pyppeteer import launch
-
-async def main():
-browser = await launch(headless=False, args=['--disable-infobars'])
-page = await browser.newPage()
-await page.goto('https://antispider1.scrape.center/')
-await asyncio.sleep(100)
-
-asyncio.get_event_loop().run_until_complete(main())
-果然还是被检测到了，页面如下：
-
-这说明 Pyppeteer 开启 Chromium 照样还是能被检测到 WebDriver 的存在。
-
-那么此时如何规避呢？Pyppeteer 的 Page 对象有一个方法叫作 evaluateOnNewDocument，意思就是在每次加载网页的时候执行某个语句，所以这里我们可以执行一下将 WebDriver 隐藏的命令，改写如下：
-
-复制代码 import asyncio from pyppeteer import launch
-
-async def main():
-browser = await launch(headless=False, args=['--disable-infobars'])
-page = await browser.newPage()
-await page.evaluateOnNewDocument('Object.defineProperty(navigator, "webdriver", {get: () => undefined})')
-await page.goto('https://antispider1.scrape.center/')
-await asyncio.sleep(100)
-
-asyncio.get_event_loop().run_until_complete(main())
-这里我们可以看到整个页面就可以成功加载出来了，如图所示。
-
-我们发现页面就成功加载出来了，绕过了 WebDriver 的检测。
-
-页面大小设置
-
-在上面的例子中，我们还发现了页面的显示 bug，整个浏览器窗口比显示的内容窗口要大，这个是某些页面会出现的情况。
-
-对于这种情况，我们通过设置窗口大小就可以解决，可以通过 Page 的 setViewport 方法设置，代码如下：
-
-复制代码 import asyncio from pyppeteer import launch
+import asyncio
+from pyppeteer import launch
 
 width, height = 1366, 768
 
+
 async def main():
-browser = await launch(headless=False, args=['--disable-infobars', f'--window-size={width},{height}'])
-page = await browser.newPage()
-await page.setViewport({'width': width, 'height': height})
-await page.evaluateOnNewDocument('Object.defineProperty(navigator, "webdriver", {get: () => undefined})')
-await page.goto('https://antispider1.scrape.center/')
-await asyncio.sleep(100)
+    """
+
+    :return:
+    """
+
+    browser = await launch()
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': width, 'height': height}
+    )
+    await page.goto('https://dynamic2.scrape.center/')
+    await page.waitForSelector('.item .name')
+    await asyncio.sleep(2)
+    await page.screenshot(path='example.png')
+    dimensions = await page.evaluate(
+        '''() => { 
+        return { 
+            width: document.documentElement.clientWidth, 
+            height: document.documentElement.clientHeight, 
+            deviceScaleFactor: window.devicePixelRatio, 
+            } 
+        }'''
+    )
+
+    print(dimensions)
+    await browser.close()
+
 
 asyncio.get_event_loop().run_until_complete(main())
+```
+
+这里又用到了几个新的 API，完成了页面窗口大小设置、网页截图保存、执行 JavaScript 并返回对应数据。
+
+首先 ```screenshot``` 方法可以传入保存的图片路径，另外还可以指定保存格式 type、清晰度 quality、是否全屏 fullPage、裁切 clip 等各个参数实现截图。
+
+截图的样例如下：
+
+[](../../codes/Module_3/lecture_18/example.png)
+
+可以看到它返回的就是 JavaScript 渲染后的页面，和我们在浏览器中看到的结果是一模一样的。
+
+最后又调用了 ```evaluate``` 方法执行了一些 JavaScript，JavaScript 传入的是一个函数，使用 return 方法返回了网页的宽高、像素大小比率三个值，最后得到的是一个 JSON 格式的对象，内容如下：
+
+```json5
+ {
+  'width': 1366,
+  'height': 768,
+  'deviceScaleFactor': 1
+} 
+```
+
+利用 Pyppeteer 我们可以控制浏览器执行几乎所有动作，想要的操作和功能基本都可以实现，用它来自由地控制爬虫当然就不在话下了。
+
+---
+
+## 详细用法
+
+了解了基本的实例之后，我们再来梳理一下 Pyppeteer 的一些基本和常用操作。Pyppeteer 的几乎所有功能都能在其官方文档的 API Reference
+里面找到，链接为：[https://miyakogi.github.io/pyppeteer/reference.html](https://miyakogi.github.io/pyppeteer/reference.html)
+，用到哪个方法就来这里查询。
+
+---
+
+### launch
+
+使用 Pyppeteer 的第一步便是启动浏览器，首先我们看下怎样启动一个浏览器，其实就相当于我们点击桌面上的浏览器图标一样，把它运行起来。用 Pyppeteer 完成同样的操作，只需要调用 ```launch``` 方法即可。
+
+我们先看下 ```launch``` 方法的
+API，链接为：[https://miyakogi.github.io/pyppeteer/reference.html#pyppeteer.launcher.launch](https://miyakogi.github.io/pyppeteer/reference.html#pyppeteer.launcher.launch)
+，其方法定义如下：
+
+```python
+pyppeteer.launcher.launch(options: dict = None, ** kwargs) → pyppeteer.browser.Browser
+```
+
+可以看到它处于 ```launcher``` 模块中，参数没有在声明中特别指定，返回类型是 ```browser``` 模块中的 ```Browser``` 对象，另外观察源码发现这是一个 ```async```
+修饰的方法，所以调用它的时候需要使用 ```await```。
+
+接下来看看它的参数：
+
+* ```ignoreHTTPSErrors(bool)```：是否要忽略 HTTPS 的错误，默认是 ```False```
+* ```headless(bool)```：是否启用 ```Headless``` 模式，即无界面模式，如果 ```devtools``` 这个参数是 ```True``` 的话，那么该参数就会被设置为 ```False```
+  ，否则为 ```True```，即默认是开启无界面模式的
+* ```executablePath(str)```：可执行文件的路径，如果指定之后就不需要使用默认的 Chromium 了，可以指定为已有的 Chrome 或 Chromium
+* ```slowMo(int|float)```：通过传入指定的时间，可以减缓 Pyppeteer 的一些模拟操作
+* ```args(List[str])```：在执行过程中可以传入的额外参数
+* ```ignoreDefaultArgs(bool)```：不使用 Pyppeteer 的默认参数，如果使用了这个参数，那么最好通过 ```args``` 参数来设定一些参数，否则可能会出现一些意想不到的问题。这个参数相对比较危险，慎用
+* ```handleSIGINT(bool)```：是否响应 SIGINT 信号，也就是可以使用 Ctrl + C 来终止浏览器程序，默认是 ```True```
+* ```handleSIGTERM(bool)```：是否响应 SIGTERM 信号，一般是 ```kill``` 命令，默认是 ```True```
+* ```handleSIGHUP(bool)```：是否响应 SIGHUP 信号，即挂起信号，比如终端退出操作，默认是 ```True```
+* ```dumpio(bool)```：是否将 Pyppeteer 的输出内容传给 ```process.stdout``` 和 ```process.stderr``` 对象，默认是 ```False```
+* ```userDataDir(str)```：即用户数据文件夹，即可以保留一些个性化配置和操作记录
+* ```env(dict)```：环境变量，可以通过字典形式传入
+* ```devtools(bool)```：是否为每一个页面自动开启调试工具，默认是 ```False```。如果这个参数设置为 ```True```，那么 ```headless```
+  参数就会无效，会被强制设置为 ```False```
+* ```logLevel(int|str)```：日志级别，默认和 ```root logger``` 对象的级别相同
+* ```autoClose(bool)```：当一些命令执行完之后，是否自动关闭浏览器，默认是 ```True```
+* ```loop(asyncio.AbstractEventLoop)```：事件循环对象
+
+知道这些参数之后，我们可以先试试看。
+
+---
+
+### 无头模式
+
+首先可以试用下最常用的参数 ```headless```，如果我们将它设置为 ```True``` 或者默认不设置它，在启动的时候我们是看不到任何界面的，如果把它设置为 ```False```
+，那么在启动的时候就可以看到界面了，一般我们在调试的时候会把它设置为 ```False```，在生产环境上就可以设置为 ```True```，我们先尝试一下关闭 ```headless```
+模式，[代码](../../codes/Module_3/lecture_18/lecture_18_3.py)：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
+
+async def main():
+    """
+    
+    :return: 
+    """
+    await launch(headless=False)
+    await asyncio.sleep(10)
+
+
+asyncio.get_event_loop().run_until_complete(main())
+```
+
+运行之后看不到任何控制台输出，但是这时候就会出现一个空白的 Chromium 界面了：
+
+![](../../images/Module_3/lecture_18_2.png)
+
+但是可以看到这就是一个光秃秃的浏览器而已，看一下相关信息：
+
+![](../../images/Module_3/lecture_18_3.png)
+
+看到了，这就是 Chromium，上面还写了开发者内部版本，可以认为是开发版的 Chrome 浏览器。
+
+---
+
+### 调试模式
+
+另外我们还可以开启调试模式，比如在写爬虫的时候会经常需要分析网页结构还有网络请求，所以开启调试工具还是很有必要的，我们可以将 ```devtools``` 参数设置为
+```True```，这样每开启一个界面就会弹出一个调试窗口，非常方便，[示例](../../codes/Module_3/lecture_18/lecture_18_4.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
+
+async def main():
+    """
+
+    :return:
+    """
+    browser = await launch(devtools=True)
+    page = await browser.newPage()
+    await page.goto('https://www.baidu.com')
+    await asyncio.sleep(10)
+
+
+asyncio.get_event_loop().run_until_complete(main())
+```
+
+刚才说过 ```devtools``` 这个参数如果设置为了 ```True```，那么 ```headless``` 就会被关闭了，界面始终会显现出来。在这里我们新建了一个页面，打开了百度，界面运行效果如下：
+
+![](../../images/Module_3/lecture_18_4.png)
+
+---
+
+### 禁用提示条
+
+我们可以看到上面的一条提示："Chrome 正受到自动测试软件的控制"，这个提示条有点烦，那该怎样关闭呢？这时候就需要用到 args 参数了，禁用操作如下：
+
+```python
+browser = await launch(headless=False, args=['--disable-infobars'])
+```
+
+在 ```launch``` 方法中，```args``` 参数通过 ```list``` 形式传入即可，这里使用的是 ```--disable-infobars``` 的参数。
+
+---
+
+### 防止检测
+
+只是把提示关闭了，有些网站还是会检测到是 WebDriver 吧，比如拿之前的检测 WebDriver
+的案例 [https://antispider1.scrape.center/](https://antispider1.scrape.center/)
+来[验证](../../codes/Module_3/lecture_18/lecture_18_5.py)下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
+
+async def main():
+    """
+    
+    :return: 
+    """
+    browser = await launch(headless=False, args=['--disable-infobars'])
+    page = await browser.newPage()
+    await page.goto('https://antispider1.scrape.center/')
+    await asyncio.sleep(10)
+
+
+asyncio.get_event_loop().run_until_complete(main())
+```
+
+果然还是被检测到了，页面如下：
+
+![](../../images/Module_3/lecture_18_5.png)
+
+这说明 Pyppeteer 开启 Chromium 照样还是能被检测到 WebDriver 的存在。
+
+那么此时如何规避呢？Pyppeteer 的 ```Page``` 对象有一个方法叫作 ```evaluateOnNewDocument```，意思就是在每次加载网页的时候执行某个语句，所以这里我们可以执行一下将 WebDriver
+隐藏的命令，[改写](../../codes/Module_3/lecture_18/lecture_18_6.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
+
+async def main():
+    """
+
+    :return:
+    """
+    browser = await launch(headless=False, args=['--disable-infobars'])
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    await page.evaluateOnNewDocument('Object.defineProperty(navigator, "webdriver", {get: () => undefined})')
+    await page.goto('https://antispider1.scrape.center/')
+    await asyncio.sleep(10)
+
+
+asyncio.get_event_loop().run_until_complete(main())
+```
+
+这里我们可以看到整个页面就可以成功加载出来了，如图所示。
+
+![](../../images/Module_3/lecture_18_6.png)
+
+我们发现页面就成功加载出来了，绕过了 WebDriver 的检测。
+
+---
+
+### 页面大小设置
+
+在上面的例子中，我们还发现了页面的显示 bug，整个浏览器窗口比显示的内容窗口要大，这个是某些页面会出现的情况。
+
+对于这种情况，我们通过设置窗口大小就可以解决，可以通过 ```Page``` 的 ```setViewport``` 方法设置，[代码](../../codes/Module_3/lecture_18/lecture_18_7.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
+width, height = 1366, 768
+
+
+async def main():
+    """
+
+    :return:
+    """
+    browser = await launch(headless=False, args=['--disable-infobars', f'--window-size={width},{height}'])
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': width, 'height': height}
+    )
+    await page.evaluateOnNewDocument(
+        'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
+    )
+    await page.goto('https://antispider1.scrape.center/')
+    await asyncio.sleep(10)
+
+
+asyncio.get_event_loop().run_until_complete(main())
+```
+
 这里我们同时设置了浏览器窗口的宽高以及显示区域的宽高，使得二者一致，最后发现显示就正常了，如图所示。
+
+![](../../images/Module_3/lecture_18_7.png)
 
 用户数据持久化
 
