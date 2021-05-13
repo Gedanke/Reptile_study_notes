@@ -421,9 +421,11 @@ asyncio.get_event_loop().run_until_complete(main())
 
 ![](../../images/Module_3/lecture_18_7.png)
 
-用户数据持久化
+---
 
-刚才我们可以看到，每次我们打开 Pyppeteer 的时候都是一个新的空白的浏览器。而且如果遇到了需要登录的网页之后，如果我们这次登录上了，下一次再启动又是空白了，又得登录一次，这的确是一个问题。
+### 用户数据持久化
+
+每次我们打开 Pyppeteer 的时候都是一个新的空白的浏览器。而且如果遇到了需要登录的网页之后，如果这次登录上了，下一次再启动又是空白了，又得登录一次，这的确是一个问题。
 
 比如以淘宝举例，平时我们逛淘宝的时候，在很多情况下关闭了浏览器再打开，淘宝依然还是登录状态。这是因为淘宝的一些关键 Cookies 已经保存到本地了，下次登录的时候可以直接读取并保持登录状态。
 
@@ -433,302 +435,473 @@ asyncio.get_event_loop().run_until_complete(main())
 这也就解决了一个问题：很多时候你在每次启动 Selenium 或 Pyppeteer
 的时候总是一个全新的浏览器，那这究其原因就是没有设置用户目录，如果设置了它，每次打开就不再是一个全新的浏览器了，它可以恢复之前的历史记录，也可以恢复很多网站的登录信息。
 
-那么这个怎么来做呢？很简单，在启动的时候设置 userDataDir 就好了，示例如下：
+那么这个怎么来做呢？很简单，在启动的时候设置 ```userDataDir``` 就好了，[示例](../../codes/Module_3/lecture_18/lecture_18_7.py)如下：
 
-复制代码 import asyncio from pyppeteer import launch
+```python
+# -*- coding: utf-8 -*-
 
-async def main():
-browser = await launch(headless=False, userDataDir='./userdata', args=['--disable-infobars'])
-page = await browser.newPage()
-await page.goto('https://www.taobao.com')
-await asyncio.sleep(100)
+import asyncio
+from pyppeteer import launch
 
-asyncio.get_event_loop().run_until_complete(main())
-好，这里就是加了一个 userDataDir 的属性，值为 userdata，即当前目录的 userdata 文件夹。我们可以首先运行一下，然后登录一次淘宝，这时候我们同时可以观察到在当前运行目录下又多了一个 userdata
-的文件夹，里面的结构是这样子的：
-
-具体的介绍可以看官方的一些说明，如： https://chromium.googlesource.com/chromium/src/+/master/docs/user_data_dir.md，这里面介绍了 userdatadir
-的相关内容。
-
-再次运行上面的代码，这时候可以发现现在就已经是登录状态了，不需要再次登录了，这样就成功跳过了登录的流程。当然可能时间太久了，Cookies 都过期了，那还是需要登录的。
-
-以上便是 launch 方法及其对应的参数的配置。
-
-Browser 上面我们了解了 launch 方法，其返回的就是一个 Browser 对象，即浏览器对象，我们会通常将其赋值给 browser 变量，其实它就是 Browser 类的一个实例。
-
-下面我们来看看 Browser 类的定义：
-
-复制代码 class pyppeteer.browser.Browser(connection: pyppeteer.connection.Connection, contextIds: List[str],
-ignoreHTTPSErrors: bool, setDefaultViewport: bool, process: Optional[subprocess.Popen] = None, closeCallback:
-Callable[[], Awaitable[None]] = None, **kwargs)
-这里我们可以看到其构造方法有很多参数，但其实多数情况下我们直接使用 launch 方法或 connect 方法创建即可。
-
-browser 作为一个对象，其自然有很多用于操作浏览器本身的方法，下面我们来选取一些比较有用的介绍下。
-
-开启无痕模式
-
-我们知道 Chrome 浏览器是有一个无痕模式的，它的好处就是环境比较干净，不与其他的浏览器示例共享 Cache、Cookies 等内容，其开启方式可以通过 createIncognitoBrowserContext 方法，示例如下：
-
-复制代码 import asyncio from pyppeteer import launch
-
-width, height = 1200, 768
 
 async def main():
-browser = await launch(headless=False, args=['--disable-infobars', f'--window-size={width},{height}'])
-context = await browser.createIncognitoBrowserContext()
-page = await context.newPage()
-await page.setViewport({'width': width, 'height': height})
-await page.goto('https://www.baidu.com')
-await asyncio.sleep(100)
+    """
+
+    :return:
+    """
+    browser = await launch(
+        headless=False, userDataDir='./userdata', args=['--disable-infobars']
+    )
+
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    await page.goto('https://kaiwu.lagou.com/')
+    await asyncio.sleep(10)
+
 
 asyncio.get_event_loop().run_until_complete(main())
-这里关键的调用就是 createIncognitoBrowserContext 方法，其返回一个 context 对象，然后利用 context 对象我们可以新建选项卡。
+```
+
+这里就是加了一个 ```userDataDir``` 的属性，值为 ```userdata```，即当前目录的 ```userdata``` 文件夹。可以首先运行一下，然后登录一次
+
+![](../../images/Module_3/lecture_18_8.png)
+
+这时候我们同时可以观察到在当前运行目录下又多了一个 ```userdata``` 的文件夹，里面的结构是这样子的：
+
+![](../../images/Module_3/lecture_18_9.png)
+
+具体的介绍可以看官方的一些说明，如： [https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/user_data_dir.md](https://chromium.googlesource.com/chromium/src/+/refs/heads/main/docs/user_data_dir.md)
+
+这里面介绍了 ```userdatadir``` 的相关内容。
+
+再次运行上面的代码，这时候可以发现现在就已经是登录状态了，不需要再次登录了，这样就成功跳过了登录的流程。当然可能时间太久了，```Cookies``` 都过期了，那还是需要登录的。
+
+以上便是 ```launch``` 方法及其对应的参数的配置。
+
+---
+
+## Browser
+
+上面我们了解了 ```launch``` 方法，其返回的就是一个 ```Browser``` 对象，即浏览器对象，我们会通常将其赋值给 ```browser``` 变量，其实它就是 ```Browser``` 类的一个实例。
+
+下面我们来看看 ```Browser``` 类的定义：
+
+```textmate
+class pyppeteer.browser.Browser(
+    connection: pyppeteer.connection.Connection, contextIds: List[str], ignoreHTTPSErrors: bool, 
+    setDefaultViewport: bool, process: Optional[subprocess.Popen] = None, closeCallback:Callable[[], 
+    Awaitable[None]] = None, **kwargs
+)
+```
+
+这里我们可以看到其构造方法有很多参数，但其实多数情况下我们直接使用 ```launch``` 方法或 ```connect``` 方法创建即可。
+
+```browser``` 作为一个对象，其自然有很多用于操作浏览器本身的方法，下面我们来选取一些比较有用的介绍下。
+
+---
+
+### 开启无痕模式
+
+浏览器是有一个无痕模式的，它的好处就是环境比较干净，不与其他的浏览器示例共享 ```Cache、Cookies``` 等内容，其开启方式可以通过 ```createIncognitoBrowserContext```
+方法，[示例](../../codes/Module_3/lecture_18/lecture_18_9.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
+width, height = 1920, 1080
+
+
+async def main():
+    """
+    
+    :return:
+    """
+    browser = await launch(
+        headless=False, args=['--disable-infobars', f'--window-size={width},{height}']
+    )
+    context = await browser.createIncognitoBrowserContext()
+    page = await context.newPage()
+    await page.setViewport({'width': width, 'height': height})
+    await page.goto('https://www.baidu.com')
+    await asyncio.sleep(100)
+
+
+asyncio.get_event_loop().run_until_complete(main())
+```
+
+这里关键的调用就是 ```createIncognitoBrowserContext``` 方法，其返回一个 ```context``` 对象，然后利用 ```context``` 对象我们可以新建选项卡。
 
 运行之后，我们发现浏览器就进入了无痕模式，界面如下：
 
-关闭 怎样关闭自不用多说了，就是 close 方法，但很多时候我们可能忘记了关闭而造成额外开销，所以要记得在使用完毕之后调用一下 close 方法，示例如下：
+![](../../images/Module_3/lecture_18_10.png)
 
-复制代码 import asyncio from pyppeteer import launch from pyquery import PyQuery as pq
+---
 
-async def main():
-browser = await launch()
-page = await browser.newPage()
-await page.goto('https://dynamic2.scrape.center/')
-await browser.close()
+### 关闭
 
-asyncio.get_event_loop().run_until_complete(main())
-Page Page 即页面，就对应一个网页，一个选项卡。在前面我们已经演示了几个 Page 方法的操作了，这里我们再详细看下它的一些常用用法。
+关闭就是 ```close``` 方法，但很多时候我们可能忘记了关闭而造成额外开销，所以要记得在使用完毕之后调用一下 ```close```
+方法，[示例](../../codes/Module_3/lecture_18/lecture_18_10.py)如下：
 
-选择器
+```python
+# -*- coding: utf-8 -*-
 
-Page 对象内置了一些用于选取节点的选择器方法，如 J 方法传入一个选择器 Selector，则能返回对应匹配的第一个节点，等价于 querySelector。如 JJ 方法则是返回符合 Selector 的列表，类似于
-querySelectorAll。
+import asyncio
+from pyppeteer import launch
 
-下面我们来看下其用法和运行结果，示例如下：
-
-复制代码 import asyncio from pyppeteer import launch from pyquery import PyQuery as pq
 
 async def main():
-browser = await launch()
-page = await browser.newPage()
-await page.goto('https://dynamic2.scrape.center/')
-await page.waitForSelector('.item .name')
-j_result1 = await page.J('.item .name')
-j_result2 = await page.querySelector('.item .name')
-jj_result1 = await page.JJ('.item .name')
-jj_result2 = await page.querySelectorAll('.item .name')
-print('J Result1:', j_result1)
-print('J Result2:', j_result2)
-print('JJ Result1:', jj_result1)
-print('JJ Result2:', jj_result2)
-await browser.close()
+    """
+
+    :return:
+    """
+    browser = await launch()
+    page = await browser.newPage()
+    await page.goto('https://dynamic2.scrape.center/')
+    await browser.close()
+
 
 asyncio.get_event_loop().run_until_complete(main())
-在这里我们分别调用了 J、querySelector、JJ、querySelectorAll 四个方法，观察下其运行效果和返回结果的类型，运行结果：
+```
 
-复制代码 J Result1: <pyppeteer.element_handle.ElementHandle object at 0x1166f7dd0>
-J Result2: <pyppeteer.element_handle.ElementHandle object at 0x1166f07d0>
-JJ
-Result1: [<pyppeteer.element_handle.ElementHandle object at 0x11677df50>, <pyppeteer.element_handle.ElementHandle object at 0x1167857d0>, <pyppeteer.element_handle.ElementHandle object at 0x116785110>, ...
-<pyppeteer.element_handle.ElementHandle object at 0x11679db10>, <pyppeteer.element_handle.ElementHandle object at 0x11679dbd0>]
-JJ
-Result2: [<pyppeteer.element_handle.ElementHandle object at 0x116794f10>, <pyppeteer.element_handle.ElementHandle object at 0x116794d10>, <pyppeteer.element_handle.ElementHandle object at 0x116794f50>, ...
-<pyppeteer.element_handle.ElementHandle object at 0x11679f690>, <pyppeteer.element_handle.ElementHandle object at 0x11679f750>]
-在这里我们可以看到，J、querySelector 一样，返回了单个匹配到的节点，返回类型为 ElementHandle 对象。JJ、querySelectorAll 则返回了节点列表，是 ElementHandle 的列表。
+---
 
-选项卡操作
+## Page
 
-前面我们已经演示了多次新建选项卡的操作了，也就是 newPage 方法，那新建了之后怎样获取和切换呢，下面我们来看一个例子：
+```Page``` 即页面，就对应一个网页，一个选项卡。在前面我们已经演示了几个 ```Page``` 方法的操作了，这里我们再详细看下它的一些常用用法。
 
-复制代码 import asyncio from pyppeteer import launch
+---
+
+### 选择器
+
+```Page``` 对象内置了一些用于选取节点的选择器方法，如 ```J``` 方法传入一个选择器 ```Selector```，则能返回对应匹配的第一个节点，等价于 ```querySelector```。如 ```JJ```
+方法则是返回符合 ```Selector``` 的列表，类似于 ```querySelectorAll```。
+
+下面我们来看下其用法和运行结果，[示例](../../codes/Module_3/lecture_18/lecture_18_11.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
 
 async def main():
-browser = await launch(headless=False)
-page = await browser.newPage()
-await page.goto('https://www.baidu.com')
-page = await browser.newPage()
-await page.goto('https://www.bing.com')
-pages = await browser.pages()
-print('Pages:', pages)
-page1 = pages[1]
-await page1.bringToFront()
-await asyncio.sleep(100)
+    """
+
+    :return:
+    """
+    browser = await launch()
+    page = await browser.newPage()
+    await page.goto('https://dynamic2.scrape.center/')
+    await page.waitForSelector('.item .name')
+    j_result1 = await page.J('.item .name')
+    j_result2 = await page.querySelector('.item .name')
+    jj_result1 = await page.JJ('.item .name')
+    jj_result2 = await page.querySelectorAll('.item .name')
+    print('J Result1:', j_result1)
+    print('J Result2:', j_result2)
+    print('JJ Result1:', jj_result1)
+    print('JJ Result2:', jj_result2)
+    await browser.close()
+
 
 asyncio.get_event_loop().run_until_complete(main())
-在这里我们启动了 Pyppeteer，然后调用了 newPage 方法新建了两个选项卡并访问了两个网站。那么如果我们要切换选项卡的话，只需要调用 pages 方法即可获取所有的页面，然后选一个页面调用其 bringToFront
-方法即可切换到该页面对应的选项卡。
+```
 
-常见操作
+在这里我们分别调用了 ```J、querySelector、JJ、querySelectorAll``` 四个方法，观察下其运行效果和返回结果的类型，运行结果：
 
-作为一个页面，我们一定要有对应的方法来控制，如加载、前进、后退、关闭、保存等，示例如下：
+```textmate
+J Result1: <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf8ef10>
+J Result2: <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf9feb0>
+JJ Result1: [<pyppeteer.element_handle.ElementHandle object at 0x7fb15bf9fee0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf9ffd0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf8efa0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf8e550>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d040>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d070>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d0a0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d0d0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d100>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d130>]
+JJ Result2: [<pyppeteer.element_handle.ElementHandle object at 0x7fb15bf9ff40>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d250>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d2e0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d1f0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d310>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d280>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d370>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d2b0>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d340>, <pyppeteer.element_handle.ElementHandle object at 0x7fb15bf4d3a0>]
+```
 
-复制代码 import asyncio from pyppeteer import launch from pyquery import PyQuery as pq
+在这里我们可以看到，```J、querySelector``` 一样，返回了单个匹配到的节点，返回类型为 ```ElementHandle``` 对象。```JJ、querySelectorAll```
+则返回了节点列表，是 ```ElementHandle``` 的列表。
+
+---
+
+### 选项卡操作
+
+前面我们已经演示了多次新建选项卡的操作了，也就是 ```newPage``` 方法，那新建了之后怎样获取和切换呢，下面我们来看一个[例子](../../codes/Module_3/lecture_18/lecture_18_12.py)：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
 
 async def main():
-browser = await launch(headless=False)
-page = await browser.newPage()
-await page.goto('https://dynamic1.scrape.center/')
-await page.goto('https://dynamic2.scrape.center/')
+    """
 
-# 后退
+    :return:
+    """
+    browser = await launch(headless=False)
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    await page.goto('https://www.baidu.com')
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    await page.goto('https://www.bing.com')
+    pages = await browser.pages()
+    print('Pages:', pages)
+    page1 = pages[1]
+    await page1.bringToFront()
+    await asyncio.sleep(100)
 
-await page.goBack()
-
-# 前进
-
-await page.goForward()
-
-# 刷新
-
-await page.reload()
-
-# 保存 PDF
-
-await page.pdf()
-
-# 截图
-
-await page.screenshot()
-
-# 设置页面 HTML
-
-await page.setContent('<h2>Hello World</h2>')
-
-# 设置 User-Agent
-
-await page.setUserAgent('Python')
-
-# 设置 Headers
-
-await page.setExtraHTTPHeaders(headers={})
-
-# 关闭
-
-await page.close()
-await browser.close()
 
 asyncio.get_event_loop().run_until_complete(main())
-这里我们介绍了一些常用方法，除了一些常用的操作，这里还介绍了设置 User-Agent、Headers 等功能。
+```
 
-点击
+在这里我们启动了 Pyppeteer，然后调用了 ```newPage``` 方法新建了两个选项卡并访问了两个网站。那么如果我们要切换选项卡的话，只需要调用 ```pages``` 方法即可获取所有的页面，然后选一个页面调用其
+```bringToFront``` 方法即可切换到该页面对应的选项卡。
 
-Pyppeteer 同样可以模拟点击，调用其 click 方法即可。比如我们这里以 https://dynamic2.scrape.center/ 为例，等待节点加载出来之后，模拟右键点击一下，示例如下：
+![](../../images/Module_3/lecture_18_11.png)
 
-复制代码 import asyncio from pyppeteer import launch from pyquery import PyQuery as pq
+---
+
+### 常见操作
+
+作为一个页面，我们一定要有对应的方法来控制，如加载、前进、后退、关闭、保存等，[示例](../../codes/Module_3/lecture_18/lecture_18_13.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
 
 async def main():
-browser = await launch(headless=False)
-page = await browser.newPage()
-await page.goto('https://dynamic2.scrape.center/')
-await page.waitForSelector('.item .name')
-await page.click('.item .name', options={
-'button': 'right',
-'clickCount': 1, # 1 or 2
-'delay': 3000, # 毫秒 })
-await browser.close()
+    """
+
+    :return:
+    """
+    browser = await launch(headless=True)
+    page = await browser.newPage()
+    await page.goto('https://dynamic1.scrape.center/')
+    await page.goto('https://dynamic2.scrape.center/')
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    # 后退
+    await page.goBack()
+    # 前进
+    await page.goForward()
+    # 刷新
+    await page.reload()
+    # 保存 PDF
+    await page.pdf()
+    # 截图
+    await page.screenshot()
+    # 设置页面 HTML
+    await page.setContent('<h2>Hello World</h2>')
+    # 设置 User-Agent
+    await page.setUserAgent(
+        'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36'
+    )
+    # 设置 Headers
+    await page.setExtraHTTPHeaders(headers={})
+    # 关闭
+    await page.close()
+    await browser.close()
+
 
 asyncio.get_event_loop().run_until_complete(main())
-这里 click 方法第一个参数就是选择器，即在哪里操作。第二个参数是几项配置：
+```
 
-button：鼠标按钮，分为 left、middle、right。
+这里我们介绍了一些常用方法，除了一些常用的操作，这里还介绍了设置 ```User-Agent、Headers``` 等功能。
 
-clickCount：点击次数，如双击、单击等。
+---
 
-delay：延迟点击。
+### 点击
 
-输入文本。
+Pyppeteer 同样可以模拟点击，调用其 ```click``` 方法即可。比如我们这里以 [https://dynamic2.scrape.center/](https://dynamic2.scrape.center/)
+为例，等待节点加载出来之后，模拟右键点击一下，[示例](../../codes/Module_3/lecture_18/lecture_18_14.py)如下：
 
-对于文本的输入，Pyppeteer 也不在话下，使用 type 方法即可，示例如下：
+```python
+# -*- coding: utf-8 -*-
 
-复制代码 import asyncio from pyppeteer import launch from pyquery import PyQuery as pq
+import asyncio
+from pyppeteer import launch
+
 
 async def main():
-browser = await launch(headless=False)
-page = await browser.newPage()
-await page.goto('https://www.taobao.com')
+    """
 
-# 后退
+    :return:
+    """
+    browser = await launch(headless=False)
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    await page.goto('https://dynamic2.scrape.center/')
+    await page.waitForSelector('.item .name')
+    await page.click(
+        '.item .name', options={
+            'button': 'right',
+            'clickCount': 1,  # 1 or 2
+            'delay': 3000,  # 毫秒
+        }
+    )
+    await browser.close()
 
-await page.type('#q', 'iPad')
-
-# 关闭
-
-await asyncio.sleep(10)
-await browser.close()
 
 asyncio.get_event_loop().run_until_complete(main())
-这里我们打开淘宝网，使用 type 方法第一个参数传入选择器，第二个参数传入输入的内容，Pyppeteer 便可以帮我们完成输入了。
+```
 
-获取信息
+这里 ```click``` 方法第一个参数就是选择器，即在哪里操作。第二个参数是几项配置：
 
-Page 获取源代码用 content 方法即可，Cookies 则可以用 cookies 方法获取，示例如下：
+* ```button```：鼠标按钮，分为 ```left、middle、right```
+* ```clickCount```：点击次数，如双击、单击等
+* ```delay```：延迟点击
+* 输入文本
 
-复制代码 import asyncio from pyppeteer import launch from pyquery import PyQuery as pq
+对于文本的输入，Pyppeteer 也不在话下，使用 ```type``` 方法即可，[示例](../../codes/Module_3/lecture_18/lecture_18_15.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
 
 async def main():
-browser = await launch(headless=False)
-page = await browser.newPage()
-await page.goto('https://dynamic2.scrape.center/')
-print('HTML:', await page.content())
-print('Cookies:', await page.cookies())
-await browser.close()
+    """
+
+    :return:
+    """
+    browser = await launch(headless=False)
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    await page.goto('https://www.bing.com/')
+    # 后退
+    await page.type('#sb_form_q', 'biying')
+    # 关闭
+    await asyncio.sleep(10)
+    await browser.close()
+
 
 asyncio.get_event_loop().run_until_complete(main())
-执行
+```
 
-Pyppeteer 可以支持 JavaScript 执行，使用 evaluate 方法即可，看之前的例子：
+![](../../images/Module_3/lecture_18_12.png)
 
-复制代码 import asyncio from pyppeteer import launch
+这里我们打开必应，使用 ```type``` 方法第一个参数传入选择器，第二个参数传入输入的内容，Pyppeteer 便可以帮我们完成输入了。
 
-width, height = 1366, 768
+---
+
+### 获取信息
+
+```Page``` 获取源代码用 ```content``` 方法即可，```Cookies``` 则可以用 ```cookies```
+方法获取，[示例](../../codes/Module_3/lecture_18/lecture_18_16.py)如下：
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch
+
 
 async def main():
-browser = await launch()
-page = await browser.newPage()
-await page.setViewport({'width': width, 'height': height})
-await page.goto('https://dynamic2.scrape.center/')
-await page.waitForSelector('.item .name')
-await asyncio.sleep(2)
-await page.screenshot(path='example.png')
-dimensions = await page.evaluate('''() => { return { width: document.documentElement.clientWidth, height:
-document.documentElement.clientHeight, deviceScaleFactor: window.devicePixelRatio, } }''')
+    """
 
-print(dimensions)
-await browser.close()
+    :return:
+    """
+    browser = await launch(headless=True)
+    page = await browser.newPage()
+    await page.goto('https://dynamic2.scrape.center/')
+    print('HTML:', await page.content())
+    print('Cookies:', await page.cookies())
+    await browser.close()
+
 
 asyncio.get_event_loop().run_until_complete(main())
-这里我们通过 evaluate 方法执行了 JavaScript，并获取到了对应的结果。另外其还有 exposeFunction、evaluateOnNewDocument、evaluateHandle 方法可以做了解。
+```
 
-延时等待
+---
 
-在本课时最开头的地方我们演示了 waitForSelector 的用法，它可以让页面等待某些符合条件的节点加载出来再返回。
+### 执行
 
-在这里 waitForSelector 就是传入一个 CSS 选择器，如果找到了，立马返回结果，否则等待直到超时。
+Pyppeteer 可以支持 JavaScript 执行，使用 ```evaluate``` 方法即可，看之前的[例子](../../codes/Module_3/lecture_18/lecture_18_17.py)：
 
-除了 waitForSelector 方法，还有很多其他的等待方法，介绍如下。
+```python
+# -*- coding: utf-8 -*-
 
-waitForFunction：等待某个 JavaScript 方法执行完毕或返回结果。
+import asyncio
+from pyppeteer import launch
 
-waitForNavigation：等待页面跳转，如果没加载出来就会报错。
 
-waitForRequest：等待某个特定的请求被发出。
+async def main():
+    """
 
-waitForResponse：等待某个特定的请求收到了回应。
+    :return:
+    """
+    browser = await launch()
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    await page.goto('https://dynamic2.scrape.center/')
+    await page.waitForSelector('.item .name')
+    await asyncio.sleep(2)
+    await page.screenshot(path='example.png')
+    dimensions = await page.evaluate(
+        '''() => { return { width: document.documentElement.clientWidth, height:
+        document.documentElement.clientHeight, deviceScaleFactor: window.devicePixelRatio, } }'''
+    )
+    print(dimensions)
+    await browser.close()
 
-waitFor：通用的等待方法。
 
-waitForSelector：等待符合选择器的节点加载出来。
+asyncio.get_event_loop().run_until_complete(main())
+```
 
-waitForXPath：等待符合 XPath 的节点加载出来。
+这里我们通过 ```evaluate``` 方法执行了 JavaScript，并获取到了对应的结果。另外其还有 ```exposeFunction、evaluateOnNewDocument、evaluateHandle```
+方法可以做了解。
+
+---
+
+### 延时等待
+
+在本课时最开头的地方我们演示了 ```waitForSelector``` 的用法，它可以让页面等待某些符合条件的节点加载出来再返回。
+
+在这里 ```waitForSelector``` 就是传入一个 CSS 选择器，如果找到了，立马返回结果，否则等待直到超时。
+
+除了 ```waitForSelector``` 方法，还有很多其他的等待方法，介绍如下。
+
+* ```waitForFunction```：等待某个 JavaScript 方法执行完毕或返回结果
+* ```waitForNavigation```：等待页面跳转，如果没加载出来就会报错
+* ```waitForRequest```：等待某个特定的请求被发出
+* ```waitForResponse```：等待某个特定的请求收到了回应
+* ```waitFor```：通用的等待方法
+* ```waitForSelector```：等待符合选择器的节点加载出来。
+* ```waitForXPath```：等待符合 ```XPath``` 的节点加载出来。
 
 通过等待条件，我们就可以控制页面加载的情况了。
 
-更多 另外 Pyppeteer
-还有很多功能，如键盘事件、鼠标事件、对话框事件等等，在这里就不再一一赘述了。更多的内容可以参考官方文档的案例说明：https://miyakogi.github.io/pyppeteer/reference.html。
+---
+
+## 更多
+
+另外 Pyppeteer 还有很多功能，如键盘事件、鼠标事件、对话框事件等等，在这里就不再一一赘述了。更多的内容可以参考官方文档的案例说明：
+[https://miyakogi.github.io/pyppeteer/reference.html](https://miyakogi.github.io/pyppeteer/reference.html)
 
 以上，我们就通过一些小的案例介绍了 Pyppeteer 的基本用法，下一课时，我们来使用 Pyppeteer 完成一个实战案例爬取。
 
-
-
 ---
 ---
+
