@@ -659,7 +659,8 @@ async def scrape_index(page: int):
     return await scrape_api(url)
 ```
 
-这里定义了一个 ```scrape_index``` 方法用于爬取列表页，它接收一个参数为 page，然后构造了列表页的 URL，将其传给 ```scrape_api``` 方法即可。这里注意方法同样需要用 ```async```
+这里定义了一个 ```scrape_index``` 方法用于爬取列表页，它接收一个参数为 ```page```，然后构造了列表页的 URL，将其传给 ```scrape_api```
+方法即可。这里注意方法同样需要用 ```async```
 修饰，调用的 ```scrape_api``` 方法前面需要加 ```await```，因为 ```scrape_api``` 调用之后本身会返回一个 ```coroutine```。另外由于 ```scrape_api``` 返回结果就是
 JSON 格式，因此 ```scrape_index``` 的返回结果就是我们想要爬取的信息，不需要再额外解析了。
 
@@ -723,7 +724,7 @@ for index_data in results:
         ids.append(item.get('id'))
 ```
 
-这样 ids 就是所有书的 id 了，然后我们用所有的 id 来构造所有详情页对应的 task，来进行异步爬取即可。
+这样 ids 就是所有书的 id 了，然后我们用所有的 id 来构造所有详情页对应的 ```task```，来进行异步爬取即可。
 
 那么这里再定义一个爬取详情页和保存数据的方法，实现如下：
 
@@ -811,3 +812,4 @@ await session.close()
 
 ---
 ---
+

@@ -24,7 +24,7 @@
 * 遍历每一页列表页，然后获取每部电影详情页的 URL
 * 爬取每部电影的详情页，然后提取其名称、评分、类别、封面、简介等信息
 * 爬取到的数据存为 JSON 文件
-* 要求和之前也是一样的，只不过我们这里的实现就全用 Pyppeteer 来做了
+* 要求和之前也是一样的，只不过我们这里的实现就全用 Pyppeteer 了
 
 ---
 
@@ -167,8 +167,8 @@ if __name__ == '__main__':
     asyncio.get_event_loop().run_until_complete(main())
 ```
 
-这里我们定义了一个 mian 方法，将前面定义的几个方法串联调用了一下。首先调用了 init 方法，然后循环遍历页码，调用了 scrape_index 方法爬取了每一页列表页，接着我们调用了 parse_index
-方法，从列表页中提取出详情页的每个 URL，然后输出结果。
+这里我们定义了一个 ```mian``` 方法，将前面定义的几个方法串联调用了一下。首先调用了 init 方法，然后循环遍历页码，调用了 ```scrape_index```
+方法爬取了每一页列表页，接着我们调用了 ```parse_index``` 方法，从列表页中提取出详情页的每个 URL，然后输出结果。
 
 运行结果如下：
 
@@ -309,7 +309,7 @@ async def save_data(data):
     )
 ```
 
-这里原理和之前是完全相同的，但是由于这里我们使用的是 Pyppeteer，是异步调用，所以 save_data 方法前面需要加 async。
+这里原理和之前是完全相同的，但是由于这里我们使用的是 Pyppeteer，是异步调用，所以 ```save_data``` 方法前面需要加 ```async```。
 
 最后添加上 ```save_data``` 的调用，完整看下运行效果。
 
@@ -341,7 +341,127 @@ closed
 
 ## 总结
 
-本课时我们通过实例来讲解了 Pyppeteer 爬取一个完整网站的过程，从而对 Pyppeteer 的使用有进一步的掌握。
+本课时通过实例来讲解了 Pyppeteer 爬取一个完整网站的过程，从而对 Pyppeteer 的使用有进一步的掌握。
+
+---
+
+## 后续
+
+我们在 [Selenium 基本使用](lecture_14.md) 中提到了 Selenium 反屏蔽措施，[代码](../../codes/Module_3/lecture_14/lecture_14_22.py)
+
+```python
+# -*- coding: utf-8 -*-
+
+from selenium.webdriver import Chrome
+from selenium.webdriver.chrome.options import Options
+
+
+def gain_driver():
+    """
+
+    :return:
+    """
+    chrome_options = Options()
+    chrome_options.add_experimental_option('excludeSwitches', ['enable-automation'])
+    chrome_options.add_experimental_option('useAutomationExtension', False)
+    chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-blink-features-AutomationControlled")
+    chrome_options.add_argument(
+        'user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.72 Safari/537.36'
+    )
+    driver = Chrome('chromedriver', options=chrome_options)
+    driver.set_window_size(1366, 768)
+    with open('stealth.min.js') as f:
+        js = f.read()
+
+    driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
+        "source": js
+    })
+    return driver
+
+
+if __name__ == '__main__':
+    """"""
+    driver = gain_driver()
+    '''test'''
+    url = "https://bot.sannysoft.com/"
+    driver.get(url)
+    source = driver.page_source
+    with open('result.html', 'w') as f:
+        f.write(source)
+```
+
+[https://bot.sannysoft.com/](https://bot.sannysoft.com/) 是一个测试网站，[结果](../../codes/Module_3/lecture_14/result.html)如下：
+
+![](../../images/Module_3/lecture_14_11.png)
+
+在使用 pyppeteer 的时候，我想采用相同的办法，执行 ```stealth.min.js``` 文件，但是没有得到和 Selenium
+类似的结果，[代码](../../codes/Module_3/lecture_18/lecture_18_18.py)
+
+```python
+# -*- coding: utf-8 -*-
+
+import asyncio
+from pyppeteer import launch, launcher
+
+
+async def gain_driver():
+    """
+
+    :return:
+    """
+    browser = await launch(headless=True)
+    page = await browser.newPage()
+    await page.setViewport(
+        {'width': 1920, 'height': 1080}
+    )
+    with open('stealth.min.js') as f:
+        js = f.read()
+    await page.evaluateOnNewDocument(js)
+    # await page.evaluateOnNewDocument(
+    #     'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
+    # )
+    # return page
+    # page = await gain_driver()
+    '''test'''
+    url = "https://bot.sannysoft.com/"
+    await page.goto(url)
+    source = await page.content()
+    with open('result.html', 'w') as f:
+        f.write(source)
+
+
+if __name__ == '__main__':
+    """"""
+    asyncio.get_event_loop().run_until_complete(gain_driver())
+```
+
+[结果](../../codes/Module_3/lecture_18/result.html)如下：
+
+![](../../images/Module_3/lecture_19_5.png)
+
+同时我也将 ```launcher.py``` 部分参数注释了
+
+![](../../images/Module_3/lecture_19_6.png)
+
+而
+
+```python
+await page.evaluateOnNewDocument(
+    'Object.defineProperty(navigator, "webdriver", {get: () => undefined})'
+)
+```
+
+将此处取消注释，检测结果并没有改进，总而言之，Pyppeteer 的方检测效果没有 Selenium 好，仅仅改变 ```webdriver```，其实意义不大，因为还有很多其他特征。
+
+当然，在不使用任何反屏蔽措施，Selenium 更容易暴露更多特征，Pyppeteer 效果好一些，但是有部分特征展示无法隐藏。
+
+Pyppeteer 和 Selenium 各有千秋，前者支持异步，api 友好，但是不是官方支持，现有版本已经很久没更新了；后者有一些 bug，但是用的人多，问题好解决。
+
+![](../../images/Module_3/lecture_19_7.png)
+
+虽然工具只是辅佐作用，最好还是使用官方支持的，生态好的，更好用的。建议使用 Selenium，或者 直接用 Pupppeteer，用 ```nodejs``` 写爬虫，用的人多，官方支持，微软的 Playwright
+更加方便，[https://playwright.dev/](https://playwright.dev/)，比 Pyppeteer 更好。
 
 ---
 ---

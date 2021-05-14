@@ -19,7 +19,7 @@
 
 ![](../../images/Module_3/lecture_16_2.png)
 
-下面我们来用 requests 写一个遍历程序，直接遍历 1~100 部电影数据，[代码](../../codes/Module_3/lecture_16/lecture_16_1.py)实现如下：
+下面我们来用 ```requests``` 写一个遍历程序，直接遍历 1~100 部电影数据，[代码](../../codes/Module_3/lecture_16/lecture_16_1.py)实现如下：
 
 ```python
 # -*- coding: utf-8 -*-
@@ -123,7 +123,7 @@ logging.info('total time %s seconds', end_time - start_time)
 
 ### 协程
 
-协程，英文叫作 Coroutine，又称微线程、纤程，协程是一种用户态的轻量级线程。
+协程，英文叫作 ```Coroutine```，又称微线程、纤程，协程是一种用户态的轻量级线程。
 
 协程拥有自己的寄存器上下文和栈。协程调度切换时，将寄存器上下文和栈保存到其他地方，在切回来的时候，恢复先前保存的寄存器上下文和栈。因此协程能保留上一次调用时的状态，即所有局部状态的一个特定组合，每次过程重入时，就相当于进入上一次调用的状态。
 
@@ -348,8 +348,7 @@ print('Task:', task)
 对象执行完毕之后，就去执行声明的 ```callback``` 方法。
 
 那么它们二者怎样关联起来呢？很简单，只需要调用 ```add_done_callback``` 方法即可，我们将 ```callback``` 方法传递给了封装好的 ```task``` 对象，这样当 ```task```
-执行完毕之后就可以调用 ```callback```
-方法了，同时 ```task``` 对象还会作为参数传递给 ```callback``` 方法，调用 ```task``` 对象的 ```result``` 方法就可以获取返回结果了。
+执行完毕之后就可以调用 ```callback``` 方法了，同时 ```task``` 对象还会作为参数传递给 ```callback``` 方法，调用 ```task``` 对象的 ```result``` 方法就可以获取返回结果了。
 
 运行结果：
 
@@ -482,7 +481,7 @@ Task Result: <Response [200]>
 
 为了让你更好地理解协程的正确使用方法，这里我们先来看看使用协程时常犯的错误，后面再给出正确的例子来对比一下。
 
-首先，我们还是拿之前的 requests 来进行网页请求，接下来我们再重新使用上面的方法请求一遍，[代码](../../codes/Module_3/lecture_16/lecture_16_8.py)：
+首先，我们还是拿之前的 ```requests``` 来进行网页请求，接下来我们再重新使用上面的方法请求一遍，[代码](../../codes/Module_3/lecture_16/lecture_16_8.py)：
 
 ```python
 # -*- coding: utf-8 -*-
@@ -570,7 +569,7 @@ Waiting for https://static4.scrape.center/
 Cost time: 50.832181453704834
 ````
 
-这次它遇到 await 方法确实挂起了，也等待了，但是最后没有得到响应。因为根据官方文档说明，```await```
+这次它遇到 ```await``` 方法确实挂起了，也等待了，但是最后没有得到响应。因为根据官方文档说明，```await```
 后面的对象必须是如下格式之一：
 
 * A native coroutine object returned from a native coroutine function，一个原生 coroutine 对象
@@ -584,7 +583,8 @@ Cost time: 50.832181453704834
 
 ```requests``` 返回的 ```Response``` 不符合上面任一条件，因此没有得到响应。
 
-await 后面可以跟一个 coroutine 对象，如果用 async 把请求的方法改成 coroutine 对象呢？我们可以试试，[代码](../../codes/Module_3/lecture_16/lecture_16_9.py)
+```await``` 后面可以跟一个 ```coroutine``` 对象，如果用 ```async``` 把请求的方法改成 ```coroutine```
+对象呢？我们可以试试，[代码](../../codes/Module_3/lecture_16/lecture_16_9.py)
 如下：
 
 ```python
@@ -846,7 +846,8 @@ Number: 500 Cost time: 1.8213098049163818
 
 ## 总结
 
-以上便是 Python 中协程的基本原理和用法，在后面一课时会详细介绍 aiohttp 的使用和爬取实战，实现快速高并发的爬取。
+以上便是 Python 中协程的基本原理和用法，在后面一课时会详细介绍 ```aiohttp``` 的使用和爬取实战，实现快速高并发的爬取。
 
 ---
 ---
+

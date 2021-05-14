@@ -160,7 +160,7 @@ Selenium 可以驱动浏览器完成各种操作，比如填充表单、模拟�
 
 可以发现，它的 id 是 q，name 也是 q，此外还有许多其他属性。此时我们就可以用多种方式获取它了。
 
-比如，find_element_by_name 代表根据 name 值获取，find_element_by_id 则是根据 id 获取，另外，还有根据 XPath、CSS 选择器等获取的方式。
+比如，```find_element_by_name``` 代表根据 name 值获取，```find_element_by_id``` 则是根据 id 获取，另外，还有根据 XPath、CSS 选择器等获取的方式。
 
 用[代码](../../codes/Module_3/lecture_14/lecture_14_4.py)实现一下：
 
@@ -233,8 +233,7 @@ browser.close()
 ### 多个节点
 
 如果在网页中只查找一个目标，那么完全可以用 ```find_element``` 方法。但如果有多个节点需要查找，再用 ```find_element``` 方法，就只能得到第 1
-个节点了。如果要查找所有满足条件的节点，需要用 ```find_elements```
-这样的方法。注意，在这个方法的名称中，element 多了一个 s，注意区分。
+个节点了。如果要查找所有满足条件的节点，需要用 ```find_elements``` 这样的方法。注意，在这个方法的名称中，element 多了一个 s，注意区分。
 
 举个例子，假如你要查找淘宝左侧导航条的所有条目，就可以这样来实现，[代码](../../codes/Module_3/lecture_14/lecture_14_6.py)如下：
 
@@ -274,7 +273,8 @@ browser.close()
 
 可以看到，得到的内容变成了列表类型，列表中的每个节点都是 WebElement 类型。
 
-也就是说，如果用 find_element 方法，只能获取匹配的第一个节点，结果是 WebElement 类型。如果用 find_elements 方法，则结果是列表类型，列表中的每个节点是 WebElement 类型。
+也就是说，如果用 ```find_element``` 方法，只能获取匹配的第一个节点，结果是 WebElement 类型。如果用 ```find_elements``` 方法，则结果是列表类型，列表中的每个节点是 WebElement
+类型。
 
 这里列出所有获取多个节点的方法：
 
@@ -289,7 +289,7 @@ find_elements_by_class_name
 find_elements_by_css_selector
 ```
 
-当然，我们也可以直接用 find_elements 方法来选择，这时可以这样写：
+当然，我们也可以直接用 ```find_elements``` 方法来选择，这时可以这样写：
 
 ```python
 lis = browser.find_elements(By.CSS_SELECTOR, '.service-bd li')
@@ -301,7 +301,8 @@ lis = browser.find_elements(By.CSS_SELECTOR, '.service-bd li')
 
 ## 节点交互
 
-Selenium 可以驱动浏览器来执行一些操作，或者说可以让浏览器模拟执行一些动作。比较常见的用法有：输入文字时用 send_keys 方法，清空文字时用 clear 方法，点击按钮时用 click 方法。
+Selenium 可以驱动浏览器来执行一些操作，或者说可以让浏览器模拟执行一些动作。比较常见的用法有：输入文字时用 ```send_keys``` 方法，清空文字时用 ```clear``` 方法，点击按钮时用 ```click```
+方法。
 
 [示例](../../codes/Module_3/lecture_14/lecture_14_7.py)如下：
 
@@ -443,7 +444,7 @@ https://dynamic2.scrape.center/img/logo.a508a8f0.png
 
 ### 获取文本值
 
-每个 WebElement 节点都有 text 属性，直接调用这个属性就可以得到节点内部的文本信息，这相当于 pyquery 的 text
+每个 WebElement 节点都有 ```text``` 属性，直接调用这个属性就可以得到节点内部的文本信息，这相当于 ```pyquery``` 的 ```text```
 方法，[示例](../../codes/Module_3/lecture_14/lecture_14_11.py)如下：
 
 ```python
@@ -459,7 +460,7 @@ print(input.text)
 browser.close()
 ```
 
-这里依然先打开页面，然后获取 class 为 logo-title 这个节点，再将其文本值打印出来。
+这里依然先打开页面，然后获取 class 为 ```logo-title``` 这个节点，再将其文本值打印出来。
 
 控制台的输出结果如下：
 
@@ -506,7 +507,7 @@ span
 ## 切换 Frame
 
 我们知道网页中有一种节点叫作 iframe，也就是子 Frame，相当于页面的子页面，它的结构和外部网页的结构完全一致。Selenium 打开页面后，默认是在父级 Frame 里面操作，而此时如果页面中还有子 Frame，Selenium
-是不能获取到子 Frame 里面的节点的。这时就需要使用 switch_to.frame 方法来切换 Frame。[示例](../../codes/Module_3/lecture_14/lecture_14_13.py)如下：
+是不能获取到子 Frame 里面的节点的。这时就需要使用 ```switch_to.frame``` 方法来切换 Frame。[示例](../../codes/Module_3/lecture_14/lecture_14_13.py)如下：
 
 ```python
 # -*- coding: utf-8 -*-
@@ -539,7 +540,7 @@ RUNOOB.COM
 ```
 
 这里还是以前面演示动作链操作的网页为例，首先通过 ```switch_to.frame``` 方法切换到子 Frame 里面，然后尝试获取子 Frame 里的 logo 节点（这是不能找到的），如果找不到的话，就会抛出
-NoSuchElementException 异常，异常被捕捉之后，就会输出 NO LOGO。接下来，我们需要重新切换回父级 Frame，然后再次重新获取节点，发现此时可以成功获取了。
+```NoSuchElementException``` 异常，异常被捕捉之后，就会输出 NO LOGO。接下来，我们需要重新切换回父级 Frame，然后再次重新获取节点，发现此时可以成功获取了。
 
 所以，当页面中包含子 Frame 时，如果想获取子 Frame 中的节点，需要先调用 ```switch_to.frame``` 方法切换到对应的 Frame，然后再进行操作。
 
@@ -547,7 +548,7 @@ NoSuchElementException 异常，异常被捕捉之后，就会输出 NO LOGO。�
 
 ## 延时等待
 
-在 Selenium 中，```get``` 方法会在网页框架加载结束后结束执行，此时如果获取 page_source，可能并不是浏览器完全加载完成的页面，如果某些页面有额外的 Ajax
+在 Selenium 中，```get``` 方法会在网页框架加载结束后结束执行，此时如果获取 ```page_source```，可能并不是浏览器完全加载完成的页面，如果某些页面有额外的 Ajax
 请求，我们在网页源代码中也不一定能成功获取到。所以，这里需要延时等待一定时间，确保节点已经加载出来。
 
 这里等待的方式有两种：一种是隐式等待，一种是显式等待。
@@ -608,13 +609,12 @@ print(input, button)
 browser.close()
 ```
 
-这里首先引入 WebDriverWait 这个对象，指定最长等待时间，然后调用它的 until() 方法，传入要等待条件 ```expected_conditions```
-。比如，这里传入了 ```presence_of_element_located```
-这个条件，代表节点出现，其参数是节点的定位元组，也就是 ID 为 q 的节点搜索框。
+这里首先引入 WebDriverWait 这个对象，指定最长等待时间，然后调用它的 ```until()``` 方法，传入要等待条件 ```expected_conditions```
+。比如，这里传入了 ```presence_of_element_located``` 这个条件，代表节点出现，其参数是节点的定位元组，也就是 ID 为 q 的节点搜索框。
 
 这样做的效果就是，在 10 秒内如果 ID 为 q 的节点(即搜索框)成功加载出来，就返回该节点；如果超过 10 秒还没有加载出来，就抛出异常。
 
-对于按钮，我们可以更改一下等待条件，比如改为 ```element_to_be_clickable```，也就是可点击，所以查找按钮时先查找 CSS 选择器为.btn-search 的按钮，如果 10
+对于按钮，我们可以更改一下等待条件，比如改为 ```element_to_be_clickable```，也就是可点击，所以查找按钮时先查找 CSS 选择器为.```btn-search``` 的按钮，如果 10
 秒内它是可点击的，也就代表它成功加载出来了，就会返回这个按钮节点；如果超过 10 秒还不可点击，也就是没有加载出来，就抛出异常。
 
 运行代码，它在网速较佳的情况下是可以成功加载出来的。
@@ -908,7 +908,7 @@ finally:
     browser.close()
 ```
 
-这里我们使用 ```try except``` 来捕获各类异常。比如，我们用 ```find_element_by_id``` 查找节点的方法捕获 NoSuchElementException
+这里我们使用 ```try except``` 来捕获各类异常。比如，我们用 ```find_element_by_id``` 查找节点的方法捕获 ```NoSuchElementException```
 异常，这样一旦出现这样的错误，就进行异常处理，程序也不会中断了。
 
 控制台的输出如下：
@@ -1050,7 +1050,7 @@ browser.get_screenshot_as_file('preview.png')
 browser.close()
 ```
 
-这里我们通过 ```ChromeOptions``` 的 ```add_argument``` 方法添加了一个参数 --headless，开启了无头模式。在无头模式下，我们最好需要设置下窗口的大小，接着打开页面，最后我们调用
+这里我们通过 ```ChromeOptions``` 的 ```add_argument``` 方法添加了一个参数 ```--headless```，开启了无头模式。在无头模式下，我们最好需要设置下窗口的大小，接着打开页面，最后我们调用
 ```get_screenshot_as_file``` 方法输出了页面的截图。
 
 运行代码之后，我们发现 Chrome 窗口就不会再弹出来了，代码依然正常运行，最后输出了页面截图如图所示。

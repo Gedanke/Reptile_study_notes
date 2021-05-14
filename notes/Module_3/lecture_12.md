@@ -3,7 +3,7 @@
 当使用 ```requests``` 抓取页面的时候，得到的结果可能会和在浏览器中看到的不一样：在浏览器中正常显示的页面数据，使用 ```requests``` 却没有得到结果。这是因为 ```requests``` 获取的都是原始
 HTML 文档，而浏览器中的页面则是经过 JavaScript 数据处理后生成的结果。
 
-这些数据的来源有多种，可能是通过 Ajax 加载的，可能是包含在 HTML 文档中的，也可能是经过 JavaScript 和特定算法计算后生成的。
+这些数据可能是通过 Ajax 加载的，可能是包含在 HTML 文档中的，也可能是经过 JavaScript 和特定算法计算后生成的。
 
 对于第 1 种情况，数据加载是异步加载方式，原始页面不会包含某些数据，只有在加载完后，才会向服务器请求某个接口获取数据，然后数据才被处理从而呈现到网页上，这个过程实际上就是向服务器接口发送了一个 Ajax 请求。
 
@@ -98,11 +98,11 @@ xmlhttp.send();
 
 ### 渲染网页
 
-JavaScript 有改变网页内容的能力，解析完响应内容之后，就可以调用 JavaScript 针对解析完的内容对网页进行下一步处理。比如，通过 document.getElementById().innerHTML
+JavaScript 有改变网页内容的能力，解析完响应内容之后，就可以调用 JavaScript 针对解析完的内容对网页进行下一步处理。比如，通过 ```document.getElementById().innerHTML```
 这样的操作，对某个元素内的源代码进行更改，这样网页显示的内容就改变了，这种对 Document 网页文档进行如更改、删除等操作也被称作 DOM 操作。
 
-上例中，document.getElementById("myDiv").innerHTML=xmlhttp.responseText这个操作便将 ID 为 myDiv 的节点内部的 HTML 代码更改为服务器返回的内容，这样 myDiv
-元素内部便会呈现出服务器返回的新数据，网页的部分内容看上去就更新了。
+上例中，```document.getElementById("myDiv").innerHTML=xmlhttp.responseText``` 这个操作便将 ID 为 myDiv 的节点内部的 HTML 代码更改为服务器返回的内容，这样
+myDiv 元素内部便会呈现出服务器返回的新数据，网页的部分内容看上去就更新了。
 
 可以看到，发送请求、解析内容和渲染网页这 3 个步骤其实都是由 JavaScript 完成的。
 
@@ -124,9 +124,9 @@ JavaScript 有改变网页内容的能力，解析完响应内容之后，就可
 
 ![](../../images/Module_3/lecture_12_2.png)
 
-前面也提到过，这里就是页面加载过程中浏览器与服务器之间发送请求和接收响应的所有记录。
+这里就是页面加载过程中浏览器与服务器之间发送请求和接收响应的所有记录。
 
-Ajax 有其特殊的请求类型，它叫作 xhr。在图中我们可以发现一个以 getIndex 开头的请求，其 Type 为 xhr，这就是一个 Ajax 请求。用鼠标点击这个请求，可以查看这个请求的详细信息。
+Ajax 有其特殊的请求类型，它叫作 xhr。在图中我们可以发现一个以 ```getIndex``` 开头的请求，其 Type 为 xhr，这就是一个 Ajax 请求。用鼠标点击这个请求，可以查看这个请求的详细信息。
 
 ![](../../images/Module_3/lecture_12_3.png)
 
@@ -137,7 +137,7 @@ Ajax 请求，如图所示：
 
 随后我们点击 Preview，即可看到响应的内容，它是 JSON 格式的。这里 Chrome 为我们自动做了解析，点击箭头即可展开和收起相应内容。
 
-我们可以观察到，返回结果是博主的个人信息，包括昵称、简介、头像等，这也是用来渲染个人主页所使用的数据。JavaScript 接收到这些数据之后，再执行相应的渲染方法，整个页面就渲染出来了。
+可以观察到，返回结果是博主的个人信息，包括昵称、简介、头像等，这也是用来渲染个人主页所使用的数据。JavaScript 接收到这些数据之后，再执行相应的渲染方法，整个页面就渲染出来了。
 
 ![](../../images/Module_3/lecture_12_5.png)
 
@@ -163,7 +163,7 @@ Ajax 请求，如图所示：
 
 接下来，不断滑动页面，可以看到页面底部有一条条新的微博被刷出，而开发者工具下方也不断地出现 Ajax 请求，这样我们就可以捕获到所有的 Ajax 请求了。
 
-随意点开一个条目，都可以清楚地看到其 Request URL、Request Headers、Response Headers、Response Body 等内容，此时想要模拟请求和提取就非常简单了。
+随意点开一个条目，都可以清楚地看到其 ```Request URL、Request Headers、Response Headers、Response Body``` 等内容，此时想要模拟请求和提取就非常简单了。
 
 下图所示的内容是某一页微博的列表信息：
 
