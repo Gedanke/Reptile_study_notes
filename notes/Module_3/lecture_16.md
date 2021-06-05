@@ -284,9 +284,9 @@ print('After calling loop')
 ```textmate
 Coroutine: <coroutine object execute at 0x7fb1e97aca40>
 After calling execute
-Task: <Task pending name='Task-1' coro=<execute() running at /home/dfs/common/Codes/python/Pycharm/github/minegit/Reptile_study/codes/Module_3/lecture_16/lecture_16_4.py:6>>
+Task: <Task pending name='Task-1' coro=<execute() running at /codes/Module_3/lecture_16/lecture_16_4.py:6>>
 Number: 1
-Task: <Task finished name='Task-1' coro=<execute() done, defined at /home/dfs/common/Codes/python/Pycharm/github/minegit/Reptile_study/codes/Module_3/lecture_16/lecture_16_4.py:6> result=1>
+Task: <Task finished name='Task-1' coro=<execute() done, defined at /codes/Module_3/lecture_16/lecture_16_4.py:6> result=1>
 After calling loop
 ```
 
