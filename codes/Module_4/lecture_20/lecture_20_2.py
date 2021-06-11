@@ -9,11 +9,10 @@ headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Connection': 'keep-alive',
 }
-proxy = '127.0.0.1:8889'
-
-'''https://github.com/urllib3/urllib3/issues/2075'''
+proxy = '127.0.0.1:1089'
 proxies = {
-    'https': 'http://' + proxy
+    'http': 'socks5://' + proxy,
+    'https': 'socks5://' + proxy
 }
 try:
     response = requests.get('https://httpbin.org/get', headers=headers, proxies=proxies)

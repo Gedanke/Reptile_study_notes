@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 
 import requests
+import socks
+import socket
 
 headers = {
     'Accept-Encoding': 'gzip, deflate, sdch',
@@ -9,14 +11,11 @@ headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Connection': 'keep-alive',
 }
-proxy = '127.0.0.1:8889'
 
-'''https://github.com/urllib3/urllib3/issues/2075'''
-proxies = {
-    'https': 'http://' + proxy
-}
+socks.set_default_proxy(socks.SOCKS5, '127.0.0.1', 1089)
+socket.socket = socks.socksocket
 try:
-    response = requests.get('https://httpbin.org/get', headers=headers, proxies=proxies)
+    response = requests.get('https://httpbin.org/get', headers=headers)
     print(response.text)
 except requests.exceptions.ConnectionError as e:
     print('Error', e.args)
