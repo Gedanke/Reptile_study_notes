@@ -24,3 +24,17 @@ def get_proxy():
             return response.text
     except ConnectionError:
         return None
+
+
+proxy = get_proxy()
+
+proxies = {
+    'http': 'http://' + proxy,
+    'https': 'https://' + proxy,
+}
+
+try:
+    response = requests.get('http://httpbin.org/get', proxies=proxies, headers=headers)
+    print(response.text)
+except  requests.exceptions.ConnectionError  as  e:
+    print('Error', e.args)
