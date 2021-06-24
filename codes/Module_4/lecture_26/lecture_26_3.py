@@ -16,14 +16,18 @@ LOGIN_URL = urljoin(BASE_URL, '/login')
 INDEX_URL = urljoin(BASE_URL, '/page/1')
 USERNAME = 'admin'
 PASSWORD = 'admin'
+session = requests.Session()
 
-response_login = requests.post(
+response_login = session.post(
     LOGIN_URL, data={
         'username': USERNAME,
         'password': PASSWORD
     }, headers=headers
 )
 
-response_index = requests.get(INDEX_URL, headers=headers)
+cookies = session.cookies
+print('Cookies', cookies)
+
+response_index = session.get(INDEX_URL, headers=headers)
 print('Response Status', response_index.status_code)
 print('Response URL', response_index.url)

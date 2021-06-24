@@ -21,9 +21,12 @@ response_login = requests.post(
     LOGIN_URL, data={
         'username': USERNAME,
         'password': PASSWORD
-    }, headers=headers
+    }, headers=headers, allow_redirects=False
 )
 
-response_index = requests.get(INDEX_URL, headers=headers)
+cookies = response_login.cookies
+print('Cookies', cookies)
+
+response_index = requests.get(INDEX_URL, cookies=cookies, headers=headers)
 print('Response Status', response_index.status_code)
 print('Response URL', response_index.url)
