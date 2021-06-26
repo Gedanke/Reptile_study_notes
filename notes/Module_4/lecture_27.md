@@ -147,6 +147,366 @@ IDE、在线工具或 ```Chrome``` 浏览器都能还原格式化的代码。
 
 总之，以上方案都是 ```JavaScript``` 混淆的实现方式，可以在不同程度上保护 ```JavaScript``` 代码。
 
+在前端开发中，现在 ```JavaScript``` 混淆主流的实现是 ```javascript-obfuscator``` 这个库，利用它我们可以非常方便地实现页面的混淆，它与 ```Webpack```
+结合起来，最终可以输出压缩和混淆后的 ```JavaScript``` 代码，使得可读性大大降低，难以逆向。
+
+下面我们会介绍下 ```javascript-obfuscator``` 对代码混淆的实现，了解了实现，那么自然我们就对混淆的机理有了更加深刻的认识。
+
+```javascript-obfuscator``` 的官网地址为：[https://obfuscator.io/](https://obfuscator.io/) ，其官方介绍内容如下：
+
+```textmate
+A free and efficient obfuscator for JavaScript (including ES2017). Make your code harder to copy and prevent people from
+stealing your work.
+```
+
+它是支持 ES8 的免费、高效的 ```JavaScript``` 混淆库，它可以使得你的 ```JavaScript``` 代码经过混淆后难以被复制、盗用，混淆后的代码具有和原来的代码一模一样的功能。
+
+怎么使用呢？首先，我们需要安装好 ```Node.js```，可以使用 ```npm``` 命令。
+
+然后新建一个文件夹，随后进入该文件夹，初始化工作空间：
+
+```shell
+npm init
+```
+
+这里会提示我们输入一些信息，创建一个 ```package.json``` 文件，这就完成了项目初始化了。
+
+接下来我们来安装 ```javascript-obfuscator``` 这个库：
+
+```shell
+npm install --save-dev javascript-obfuscator
+```
+
+接下来我们就可以编写代码来实现混淆了，如新建一个 [main.js](../../codes/Module_4/lecture_27/main.js) 文件，内容如下：
+
+```javascript
+const code = `
+let x = '1' + 1
+console.log('x', x)
+`
+
+const options = {
+    compact: false,
+    controlFlowFlattening: true
+}
+
+const obfuscator = require('javascript-obfuscator')
+
+function obfuscate(code, options) {
+    return obfuscator.obfuscate(code, options).getObfuscatedCode()
+}
+
+console.log(obfuscate(code, options))
+```
+
+在这里我们定义了两个变量，一个是 ```code```，即需要被混淆的代码，另一个是混淆选项，是一个 ```Object```。接下来我们引入了 ```javascript-obfuscator```
+库，然后定义了一个方法，传入 ```code``` 和 ```options```，来获取混淆后的代码，最后控制台输出混淆后的代码。
+
+代码逻辑比较简单，我们来执行一下代码：
+
+```shell
+node main.js
+```
+
+输出结果如下：
+
+```javascript
+const _0x5296 = [
+    '108359TABkAY',
+    '5048TihISs',
+    '983953JsgBGM',
+    '3eYuTGB',
+    '476417ZSBGZL',
+    '1373091ItxbTq',
+    '193xbAlFP',
+    '7knsFeO',
+    '1696576njihxT',
+    '11YFQuVD',
+    '1zlPjfP',
+    '4PXoEzj',
+    '239535pDEwMB',
+    'log'
+];
+
+function _0x3721(_0x4b4715, _0x3fcbf5) {
+    return _0x3721 = function (_0x52964e, _0x372193) {
+        _0x52964e = _0x52964e - 0xf6;
+        let _0x3c896a = _0x5296[_0x52964e];
+        return _0x3c896a;
+    }, _0x3721(_0x4b4715, _0x3fcbf5);
+}
+
+const _0x595fcd = _0x3721;
+(function (_0x31229b, _0x38b226) {
+    const _0x18e311 = _0x3721;
+    while (!![]) {
+        try {
+            const _0x311153 = -parseInt(_0x18e311(0x103)) * parseInt(_0x18e311(0xfc)) + -parseInt(_0x18e311(0xf9)) * -parseInt(_0x18e311(0xfe)) + -parseInt(_0x18e311(0xfd)) * parseInt(_0x18e311(0x102)) + -parseInt(_0x18e311(0x101)) * parseInt(_0x18e311(0xf8)) + -parseInt(_0x18e311(0x100)) + parseInt(_0x18e311(0xf6)) * -parseInt(_0x18e311(0xfb)) + -parseInt(_0x18e311(0xff)) * -parseInt(_0x18e311(0xfa));
+            if (_0x311153 === _0x38b226)
+                break;
+            else
+                _0x31229b['push'](_0x31229b['shift']());
+        } catch (_0x4090b2) {
+            _0x31229b['push'](_0x31229b['shift']());
+        }
+    }
+}(_0x5296, 0xee4ae));
+let x = '1' + 0x1;
+console[_0x595fcd(0xf7)]('x', x);
+```
+
+这么简单的两行代码，被混淆成了这个样子，其实这里我们就是设定了一个“控制流扁平化”的选项。
+
+整体看来，代码的可读性大大降低，也大大加大了 ```JavaScript``` 调试的难度。
+
+接下来我们来跟着 ```javascript-obfuscator``` 走一遍，就能具体知道 ```JavaScript``` 混淆到底有多少方法了。
+
+---
+
+### 代码压缩
+
+这里 ```javascript-obfuscator``` 也提供了代码压缩的功能，使用其参数 ```compact``` 即可完成 ```JavaScript``` 代码的压缩，输出为一行内容。默认是 ```true```
+，如果定义为 ```false```，则混淆后的代码会分行显示。
+
+[示例](../../codes/Module_4/lecture_27/compact.js)如下：
+
+```javascript
+const code = `
+let x = '1' + 1
+console.log('x', x)
+`
+
+const options = {
+    compact: false,
+}
+
+const obfuscator = require('javascript-obfuscator')
+
+function obfuscate(code, options) {
+    return obfuscator.obfuscate(code, options).getObfuscatedCode()
+}
+
+console.log(obfuscate(code, options))
+```
+
+这里我们先把代码压缩 ```compact``` 选项设置为 ```false```，运行结果如下：
+
+```javascript
+const _0x4bd4 = [
+    'log',
+    '1786099mHwobi',
+    '94Txguhe',
+    '439642MLDiGe',
+    '2VJrNhY',
+    '1803542aIevgA',
+    '223282wSkRaB',
+    '958180XSUrPc',
+    '3008eiTCyq',
+    '4764161zPHSLN'
+];
+const _0xc041d4 = _0x1dfc;
+
+function _0x1dfc(_0x29463e, _0x5555a4) {
+    return _0x1dfc = function (_0x4bd40c, _0x1dfcc7) {
+        _0x4bd40c = _0x4bd40c - 0x158;
+        let _0x4346f1 = _0x4bd4[_0x4bd40c];
+        return _0x4346f1;
+    }, _0x1dfc(_0x29463e, _0x5555a4);
+}
+
+(function (_0x256a08, _0x45e1f6) {
+    const _0x5c8407 = _0x1dfc;
+    while (!![]) {
+        try {
+            const _0x1e3f83 = parseInt(_0x5c8407(0x15d)) + parseInt(_0x5c8407(0x15c)) * parseInt(_0x5c8407(0x15e)) + parseInt(_0x5c8407(0x15b)) + parseInt(_0x5c8407(0x15a)) * parseInt(_0x5c8407(0x160)) + parseInt(_0x5c8407(0x15f)) + parseInt(_0x5c8407(0x159)) + -parseInt(_0x5c8407(0x161));
+            if (_0x1e3f83 === _0x45e1f6)
+                break;
+            else
+                _0x256a08['push'](_0x256a08['shift']());
+        } catch (_0x3fca66) {
+            _0x256a08['push'](_0x256a08['shift']());
+        }
+    }
+}(_0x4bd4, 0xe892a));
+let x = '1' + 0x1;
+console[_0xc041d4(0x158)]('x', x);
+```
+
+如果不设置 ```compact``` 或把 ```compact``` 设置为 ```true```，结果如下：
+
+```shell
+const _0x4a96=['487160xdeYJd','454845Wuyxqw','log','156094qDISoy','419605GfHuEv','986715KCZjfd','1LkFkTX','1171121mvEbuv','620923UjhHpa','5eQdPzh'];function _0x3488(_0x564194,_0xd33a6a){return _0x3488=function(_0x4a96e2,_0x3488fe){_0x4a96e2=_0x4a96e2-0x126;let _0x3eff03=_0x4a96[_0x4a96e2];return _0x3eff03;},_0x3488(_0x564194,_0xd33a6a);}const _0x2f8e99=_0x3488;(function(_0x1bac39,_0x1b6ccf){const _0x317957=_0x3488;while(!![]){try{const _0x3d1fb0=-parseInt(_0x317957(0x12c))+parseInt(_0x317957(0x129))+-parseInt(_0x317957(0x126))+parseInt(_0x317957(0x12b))*-parseInt(_0x317957(0x12f))+-parseInt(_0x317957(0x12d))+parseInt(_0x317957(0x12a))+-parseInt(_0x317957(0x127))*-parseInt(_0x317957(0x128));if(_0x3d1fb0===_0x1b6ccf)break;else _0x1bac39['push'](_0x1bac39['shift']());}catch(_0x2b6c7b){_0x1bac39['push'](_0x1bac39['shift']());}}}(_0x4a96,0x9b707));let x='1'+0x1;console[_0x2f8e99(0x12e)]('x',x);
+```
+
+可以看到单行显示的时候，对变量名进行了进一步的混淆和控制流扁平化操作。
+
+---
+
+### 变量名混淆
+
+变量名混淆可以通过配置 ```identifierNamesGenerator``` 参数实现，我们通过这个参数可以控制变量名混淆的方式，如 ```hexadecimal``` 则会替换为 16 进制形式的字符串，在这里我们可以设定如下值：
+
+* ```hexadecimal```：将变量名替换为 16 进制形式的字符串，如 ```0xabc123```
+* ```mangled```：将变量名替换为普通的简写字符，如 ```a、b、c``` 等
+
+该参数默认为 ```hexadecimal```
+
+我们将该参数修改为 ```mangled``` 来试一下，[示例](../../codes/Module_4/lecture_27/identifier_names_generator.js)如下：
+
+```javascript
+const code = `
+let hello = '1' + 1
+console.log('hello', hello)
+`
+
+const options = {
+    compact: true,
+    identifierNamesGenerator: 'mangled'
+}
+
+const obfuscator = require('javascript-obfuscator')
+
+function obfuscate(code, options) {
+    return obfuscator.obfuscate(code, options).getObfuscatedCode()
+}
+
+console.log(obfuscate(code, options))
+```
+
+运行结果如下：
+
+```javascript
+const a = ['1FLgMuz', '453741VOwATV', 'log', '2DrxegM', '683231sLOXGo', '899223faGfwC', '1wKRgOy', '212663FkplpM', '1FhNbhr', '653501BaKqPj', '1469183bYdSdm', '503712fLjiLm', '29SChvPw', 'hello'];
+const h = b;
+(function (c, d) {
+    const g = b;
+    while (!![]) {
+        try {
+            const e = -parseInt(g(0x128)) * parseInt(g(0x12e)) + -parseInt(g(0x12a)) + parseInt(g(0x134)) * -parseInt(g(0x12d)) + parseInt(g(0x12f)) * -parseInt(g(0x12b)) + -parseInt(g(0x130)) + -parseInt(g(0x129)) * parseInt(g(0x133)) + -parseInt(g(0x131)) * -parseInt(g(0x12c));
+            if (e === d) break; else c['push'](c['shift']());
+        } catch (f) {
+            c['push'](c['shift']());
+        }
+    }
+}(a, 0xcfcbf));
+let hello = '1' + 0x1;
+
+function b(c, d) {
+    return b = function (e, f) {
+        e = e - 0x127;
+        let g = a[e];
+        return g;
+    }, b(c, d);
+}
+
+console[h(0x127)](h(0x132), hello);
+```
+
+可以看到这里的变量命名都变成了 ```a、b``` 等形式。
+
+如果我们将 ```identifierNamesGenerator``` 修改为 ```hexadecimal```
+或者不设置，[示例](../../codes/Module_4/lecture_27/identifier_names_generator_hexadecimal.js)如下：
+
+```javascript
+const code = `
+let hello = '1' + 1
+console.log('hello', hello)
+`
+
+const options = {
+    compact: true,
+    identifierNamesGenerator: 'hexadecimal'
+}
+
+const obfuscator = require('javascript-obfuscator')
+
+function obfuscate(code, options) {
+    return obfuscator.obfuscate(code, options).getObfuscatedCode()
+}
+
+console.log(obfuscate(code, options))
+```
+
+运行结果如下：
+
+```javascript
+const _0x6e46 = ['112378QLdlzj', '438157rbycqq', '1366869kTYiVH', '63tpnIDn', '43qksUkA', '1PhzqZX', '1oZFJhJ', '19009ASXsmj', 'hello', 'log', '21998bLmIEu', '39pDtJZA', '513012kOKNiT'];
+const _0x39c44f = _0x1c06;
+(function (_0x1148e9, _0x5b4bb8) {
+    const _0x56a93b = _0x1c06;
+    while (!![]) {
+        try {
+            const _0x51bbe0 = parseInt(_0x56a93b(0x94)) * -parseInt(_0x56a93b(0x91)) + -parseInt(_0x56a93b(0x9a)) + -parseInt(_0x56a93b(0x9b)) * parseInt(_0x56a93b(0x93)) + parseInt(_0x56a93b(0x99)) + parseInt(_0x56a93b(0x92)) * parseInt(_0x56a93b(0x97)) + parseInt(_0x56a93b(0x98)) * parseInt(_0x56a93b(0x90)) + parseInt(_0x56a93b(0x8f));
+            if (_0x51bbe0 === _0x5b4bb8) break; else _0x1148e9['push'](_0x1148e9['shift']());
+        } catch (_0x4a765a) {
+            _0x1148e9['push'](_0x1148e9['shift']());
+        }
+    }
+}(_0x6e46, 0x82f5e));
+let hello = '1' + 0x1;
+
+function _0x1c06(_0xa98a3e, _0x16e643) {
+    return _0x1c06 = function (_0x6e4617, _0x1c0644) {
+        _0x6e4617 = _0x6e4617 - 0x8f;
+        let _0x897342 = _0x6e46[_0x6e4617];
+        return _0x897342;
+    }, _0x1c06(_0xa98a3e, _0x16e643);
+}
+
+console[_0x39c44f(0x96)](_0x39c44f(0x95), hello);
+```
+
+可以看到选用了 ```mangled```，其代码体积会更小，但 ```hexadecimal``` 其可读性会更低。
+
+另外我们还可以通过设置 ```identifiersPrefix``` 参数来控制混淆后的变量前缀，[示例](../../codes/Module_4/lecture_27/identifiers_prefix.js)如下：
+
+```javascript
+const code = `
+let hello = '1' + 1
+console.log('hello', hello)
+`
+
+const options = {
+    identifiersPrefix: 'germey'
+}
+
+const obfuscator = require('javascript-obfuscator')
+
+function obfuscate(code, options) {
+    return obfuscator.obfuscate(code, options).getObfuscatedCode()
+}
+
+console.log(obfuscate(code, options))
+```
+
+运行结果：
+
+```javascript
+const germey_0x44e5 = ['441015scSqYO', '1251129wVQCmv', '3287FWTPhb', '13TcOgZA', '713131BjpUte', '57241skvbmO', '1864cGSVbd', '1mXVVfq', '439XmCGGK', '163XOZGlh', '1411VixNdA', 'hello'];
+const germey_0x941b7e = germey_0xb510;
+
+function germey_0xb510(_0x223209, _0x58dbbb) {
+    return germey_0xb510 = function (_0x44e585, _0xb5105b) {
+        _0x44e585 = _0x44e585 - 0x151;
+        let _0x1cf1ff = germey_0x44e5[_0x44e585];
+        return _0x1cf1ff;
+    }, germey_0xb510(_0x223209, _0x58dbbb);
+}
+
+(function (_0x3a63ed, _0x2410e1) {
+    const _0x39b26c = germey_0xb510;
+    while (!![]) {
+        try {
+            const _0x225927 = parseInt(_0x39b26c(0x15b)) * parseInt(_0x39b26c(0x159)) + -parseInt(_0x39b26c(0x156)) * parseInt(_0x39b26c(0x15c)) + parseInt(_0x39b26c(0x158)) + parseInt(_0x39b26c(0x154)) + -parseInt(_0x39b26c(0x157)) * parseInt(_0x39b26c(0x15a)) + parseInt(_0x39b26c(0x155)) + parseInt(_0x39b26c(0x151)) * -parseInt(_0x39b26c(0x152));
+            if (_0x225927 === _0x2410e1) break; else _0x3a63ed['push'](_0x3a63ed['shift']());
+        } catch (_0xb95150) {
+            _0x3a63ed['push'](_0x3a63ed['shift']());
+        }
+    }
+}(germey_0x44e5, 0xbad72));
+let hello = '1' + 0x1;
+console['log'](germey_0x941b7e(0x153), hello);
+```
 
 ---
 ---
