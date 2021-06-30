@@ -544,11 +544,11 @@ for item in result['results']:
 
 结果为：
 
-```
+![](../../images/Module_4/lecture_29_16.png)
 
-```
+![](../../images/Module_4/lecture_29_17.png)
 
-这里模拟了详情页的加密 ```id``` 和 ```token``` 的构造过程，然后请求了详情页的 Ajax 接口，这样我们就可以爬取到详情页的内容了。
+这里模拟了详情页的加密 ```id``` 和 ```token``` 的构造过程，然后请求了详情页的 Ajax 接口，这样就可以爬取到详情页的内容了。
 
 ---
 
@@ -572,7 +572,7 @@ for item in result['results']:
 
 其实这两节的内容涉及到的面还是比较多，但相对于 JavaScript 逆向仅仅是皮毛，需要更多的学习。
 
-有时间的话，我也会进行逆向的练习，[demo](https://github.com/Gedanke/ReptileDemo)
+有时间的话，我也会进行逆向案例的练习，[demo](https://github.com/Gedanke/ReptileDemo)
 
 ---
 ---
