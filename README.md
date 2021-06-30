@@ -38,7 +38,7 @@
         * [解析模拟登录基本原理](notes/Module_4/lecture_25.md)
         * [模拟登录爬取实战案例](notes/Module_4/lecture_26.md)
         * [JavaScript 混淆技术](notes/Module_4/lecture_27.md)
-        * [JavaScript 逆向爬取实(上)](notes/Module_4/lecture_28.md)
+        * [JavaScript 逆向爬取实战(上)](notes/Module_4/lecture_28.md)
         * [JavaScript 逆向爬取实战(下)](notes/Module_4/lecture_29.md)
     * 模块五 [App 爬虫](notes/Module_5)
         * [什么是 App 爬虫](notes/Module_5/lecture_30.md)

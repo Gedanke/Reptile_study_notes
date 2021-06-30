@@ -1,0 +1,272 @@
+{
+  "id": 8,
+  "name": "喜剧之王",
+  "alias": "The King of Comedy",
+  "cover": "https://p0.meituan.net/movie/1f0d671f6a37f9d7b015e4682b8b113e174332.jpg@464w_644h_1e_1c",
+  "categories": [
+    "剧情",
+    "喜剧",
+    "爱情"
+  ],
+  "regions": [
+    "中国香港"
+  ],
+  "actors": [
+    {
+      "name": "周星驰",
+      "role": "尹天仇",
+      "image": "https://p0.meituan.net/movie/5cbe849bb17c8966a423ee015dc21aca41689.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "莫文蔚",
+      "role": "杜娟儿",
+      "image": "https://p1.meituan.net/movie/7a8ec6da5a8612a25519550806545b2e52391.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "张柏芝",
+      "role": "柳飘飘",
+      "image": "https://p0.meituan.net/movie/78b9197bc6f01d71ecb0a72d608e2b6239082.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "郑文辉",
+      "role": "洪爷手下甜筒儿",
+      "image": "https://p0.meituan.net/movie/efd82c0581ef90ffbbaa590db12129a810369.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "林子善",
+      "role": "洪爷",
+      "image": "https://p1.meituan.net/movie/982ed0347b9372855b820c945abff17541928.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "田启文",
+      "role": "洪爷手下",
+      "image": "https://p0.meituan.net/movie/f881fd5848eb7034beeb5c66569bf30d33095.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "吴孟达",
+      "role": "卧底",
+      "image": "https://p1.meituan.net/movie/13d4357722d33b46a9fa52fbe8316f9633831.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "成龙",
+      "role": "替身演员",
+      "image": "https://p1.meituan.net/movie/6f2e5018478106af726afcc7d29c86ab46295.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "郑祖",
+      "role": "突然发病的卧底",
+      "image": "https://p0.meituan.net/movie/439cb2e01376f2fc2c1b8223746801fc32043.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "李兆基",
+      "role": "江湖大佬基哥",
+      "image": "https://p0.meituan.net/moviemachine/42d5b70662a23f44e25ff6c8b1e7ddeb25272.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "李思捷",
+      "role": "导演",
+      "image": "https://p1.meituan.net/movie/cd59b21bc3085bf33d0c193977ec470847212.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "叶竞生",
+      "role": "夜总会顾客",
+      "image": "https://p1.meituan.net/movie/7fa6feb93fb2b14686f36da2e84642d233060.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Robert Sparks",
+      "role": "Hollywood Producer",
+      "image": "https://p0.meituan.net/movie/c4940bc0c23250076e2ef8810e28dc5512255.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "许愿",
+      "role": "夜总会顾客",
+      "image": "https://p0.meituan.net/movie/0c98b8726ab3aaaea428761544f277a813276.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "戴龙",
+      "role": "夜总会龙少",
+      "image": "https://p1.meituan.net/movie/3655cfa5bd6cbc8e18aaa74b2fa34a7220009.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "徐志雄",
+      "role": "外卖员",
+      "image": "https://p1.meituan.net/movie/b80dc3e497db3b3f3141bc0da9fcdf009838.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "袁富华",
+      "role": "悍匪老大",
+      "image": "https://p0.meituan.net/moviemachine/da46bee835dbdf9538da6b8f4a4a596734671.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "陆剑青",
+      "role": "Johnny",
+      "image": "https://p0.meituan.net/movie/4d7eea8dad4f78ab045db12f5f2835e517076.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "陈宝骏",
+      "role": "Peter",
+      "image": "https://p0.meituan.net/movie/9656515707589d91226af84aff5ab8f57505.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "冯勉恒",
+      "role": "柳飘飘初恋",
+      "image": "https://p0.meituan.net/movie/5d78d3c291d0a80228de7d956ce566a414849.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "詹小玲",
+      "role": "教堂打手",
+      "image": "https://p0.meituan.net/movie/354fc05a66ba7e974b02393d6c310da815414.jpeg@128w_170h_1e_1c"
+    },
+    {
+      "name": "明德丰",
+      "role": "教堂打手",
+      "image": "https://p1.meituan.net/movie/4f2f8c58dc5b49a69aec4ee02a24a63219729.jpeg@128w_170h_1e_1c"
+    },
+    {
+      "name": "戚务振",
+      "role": "CIB刑事情报科警员",
+      "image": "https://p0.meituan.net/movie/7920079a7db53565fb32efba990aec1423566.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "侯焕玲",
+      "role": "洪爷奶奶",
+      "image": "https://p0.meituan.net/movie/4cb0285a8eb0c6aa5a68e27220662f2f53604.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "林仲岐",
+      "role": "悍匪",
+      "image": "https://p0.meituan.net/movie/96e7a2e09df84229e4165be3c381c2d225675.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "蔡国平",
+      "role": "Hitman in the church",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Siu-ling Tsim",
+      "role": "Hitman in the church",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "Mo-Chan Chik",
+      "role": "C.I.B.",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    },
+    {
+      "name": "江富强",
+      "role": "Hitman in the church",
+      "image": "https://p0.meituan.net/movie/941ea4837e32965853e68e8d6b2580e311527.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "Terence Tsui",
+      "role": "Delivery boy",
+      "image": "https://p1.meituan.net/mmdb/3a2061d771d98566d3e5fa5c08c5e0b33685.png@128w_170h_1e_1c"
+    }
+  ],
+  "directors": [
+    {
+      "name": "李力持",
+      "image": "https://p1.meituan.net/movie/7c6f180a06f744aee95ab3b8bef29c2633555.jpg@128w_170h_1e_1c"
+    },
+    {
+      "name": "周星驰",
+      "image": "https://p0.meituan.net/movie/5cbe849bb17c8966a423ee015dc21aca41689.jpg@128w_170h_1e_1c"
+    }
+  ],
+  "score": 9.5,
+  "rank": 10,
+  "minute": 85,
+  "drama": "尹天仇（周星驰 饰）一直醉心戏剧，想成为一名演员，平时除了做跑龙套以外，还会在街坊福利会里开设演员训练班。此时舞小姐柳飘飘在妈妈桑的带领下来到这里要求学做戏，原来柳飘飘有一段非常不愉快的经历，在尹天仇对她指导的过程中，柳飘飘对尹天仇渐生情愫，同时她也成为了夜总会里当红的小姐。尹天仇受到了极多白眼之后，终于得到了大明星鹃姐（莫文蔚 饰）的赏识，提携他担演新戏中的男主角，但没想到突然把他的角色换掉了，令他失望不已。在片场当场务的卧底警员（吴孟达 饰）身份被识穿，尹天仇阴差阳错的帮忙破了案。之后尹天仇继续活跃在街坊福利会的演员训练班里。",
+  "photos": [
+    "https://p0.meituan.net/movie/4d42f563f02be528bcb5ee15412b6ca4192088.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e86f6543c75702e6b37833b5983de88770957.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/2efd11967b9a8b9e9c2f91087d79900f86234.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/daeab65839425607226140faceedf2a563328.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/767d387e6978ee559601d547f22eccca44664.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1f8d157ecb4b1bf2d2e23b370cd742a780926.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c3941d08ef4d2a82a9a703bc6761d34876234.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/1740aeed826a56e2b4cf02a535c83f9b26938.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e3e3b0636e6c3b95a78d3e1d1e6024b660353.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/3a641ecb175e4bd2e941338c257f33c2100018.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8a6560845ad6d6b5e67b72a0e2aedd6047080.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c87a91f458d25c8d704badb09b97a93943050.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/16c7f017db5318518b800526cbb0761b49712.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7c472c54fe60d584c25cd505f89ea3ad73123.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/81c60463eaa3ab7c0da212b55ebc4ceb52337.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/8e17f8ace7983ae8c3732c7939bb1b1241136.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/42380c64a8a30b4ebdc8381b1d71fdf166108.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/7266d27ffea2bb270b849dfcad35d5b143050.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/9e0d3649456905385a2ac171e801833519525.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/362aaaef0bc87b3af854726390ac275e62784.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2fd00a7a36518a18ee51a8947ac3dd1491366.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9c2ea9e08288df43559be1fd5a943a9e44866.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/4fc13e426cb37b4655cc2d67b717eba677351.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c5d68c8e9e5dbb4b32d75dfaac2f77dd103231.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c92364caf3d48be3053129b29ef163df63636.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/14dbf88d353e5635089766fb5f7fe02e58207.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/dd2e355eaf057cc33bb354b4178b07e299652.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/93a2b4eb1075d17ee609bab5060549c6118154.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/bf7e312c5cd0288b9d81d289d160bf2395271.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/63de507e899fc467b220374c8c517df999632.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c65e1fb9d738e53db457b6277d99172c38211.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/836f9ab6b3904a284eaf4f3b75afb9c768648.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/3c14c4957df3a745964fb2097335bd3c22984.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/c7ee1762d80d056e941eb6ce4db7362742363.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/f2dc1d9e0bdb3db5f6daba4953affd40117413.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/db58d4b61f6a22d16f996204d1b2beae49133.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/d9a98a1da537040788e146b148768d4863286.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/604042549de0661fc887ec7cf981715e67477.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/0e9ca7ae1a963c7ef0d99bc53121a15b184490.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/56b29d3cf29d10c6275663e7664915d342404.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2586ac338e1d4d0cdc7dbc1f69c7036a74767.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f5b736d8322716a82eb66d41f85fcfd566330.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/f715d2fc43ef70a0eb3bfbb584d656fb62802.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/10c730fea48944468b758d934074a38a30092.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/04894a8e3acabef6d9403bcb2e3785d369942.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/03abb7816d4f982c42d0f4603ed7432e74409.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/773f2cc31ce7f7bb2cf1358d4ffce12d76972.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/43c19dd49bdcb758055131fc128123d891905.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/a7621c61feef933dcd52b89bbba939c375667.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/50994859440415cc8e01bdaa86d8645770269.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/701861a4d2b9bbe2e4f54b5a20b9e4da51370.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/72f5d7fa3a4ad0e640e85337f229608058169.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b1a566f9e755a4db931aaf32df78561075760.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/5f8b891a6a158e29100cb272e269017868050.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/71124132d4ebe53da00a50f90bcd0e1e46188.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/eb534b45b9d7de7efa3ed52431b99c28155061.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/d231760031a1fdef11607c8c9aba459953977.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1a892dea7df1fea5ae03b670c54d954537125.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3c862c955e556f6e724ef3895d2fb77f53136.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/2a35217d37dfe20513d7a1d154fd155397327.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/68d17eac2748d1032f17cce8d381c2b949225.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/ff26501bb7dfa01feccba7be7587ec3347563.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/b3601702343984d448aab9075b1c1cbe149292.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/a30b7047a194e6c20e8a9a03f0bb6e6363828.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/37048a944e8aba11097e55344066744a141035.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/fc791c2740cf840661a944923371fd9c55525.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/18e3191039d5e71562477659301f04aa61905.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c2c309ac9566e2211a3d0626d43aed32113572.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/448f1a5d4a34d206ae9b7f3b27f5d08b102091.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/103d8ee9ff2de01c82f11de2124fe78b107489.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/72bfb6ce074dd74b60de997eecc9219661631.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/1f0d671f6a37f9d7b015e4682b8b113e174332.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/acbba09eee9e6a1ad6f60e5c4667fba539488.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/6f2b128a594669f6c9c85743bdbc4a0158068.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c3ac27b621b9bc671117ed3593b3ad0979132.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/e75b51f620d3dea0621fd8a07c6b6e4a52326.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/178109eec3fcf1fba9719d8262f4817732431.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/7281d580e4e99930c68f1865ac2e4151104743.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ff9511d37f85bc353c44aca72e65894633397.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/9ddd0e3a09832cebeff6b3da08de590654655.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c03ad76776e4cb27dbb2979613cadda539337.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/53a0ff7fb56707334a1384252286858b48132.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/dec0653122626c13ad77e07bdcd02d2e50262.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/3a98ae282b455a6c302a567a05976e7c77124.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/645b5569ac8e34716764d9e50c86c47344039.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/e9d91413a57cf6072350e983cff0c38286640.jpg@106w_106h_1e_1c",
+    "https://p1.meituan.net/movie/ed57dfcf369d97f88aab0ebe85a6b1bc137553.jpg@106w_106h_1e_1c",
+    "https://p0.meituan.net/movie/c32c15ee315d3fa43d7c768e98b35ef7113415.jpg@106w_106h_1e_1c"
+  ],
+  "published_at": "1999-02-13",
+  "updated_at": "2020-03-07T16:33:00.181007Z"
+}

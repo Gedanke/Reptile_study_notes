@@ -1,0 +1,174 @@
+{
+  "count": 100,
+  "results": [
+    {
+      "id": 1,
+      "name": "霸王别姬",
+      "alias": "Farewell My Concubine",
+      "cover": "https://p0.meituan.net/movie/ce4da3e03e655b5b88ed31b5cd7896cf62472.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "爱情"
+      ],
+      "published_at": "1993-07-26",
+      "minute": 171,
+      "score": 9.5,
+      "regions": [
+        "中国大陆",
+        "中国香港"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "这个杀手不太冷",
+      "alias": "Léon",
+      "cover": "https://p1.meituan.net/movie/6bea9af4524dfbd0b668eaa7e187c3df767253.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "动作",
+        "犯罪"
+      ],
+      "published_at": "1994-09-14",
+      "minute": 110,
+      "score": 9.5,
+      "regions": [
+        "法国"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "肖申克的救赎",
+      "alias": "The Shawshank Redemption",
+      "cover": "https://p0.meituan.net/movie/283292171619cdfd5b240c8fd093f1eb255670.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "犯罪"
+      ],
+      "published_at": "1994-09-10",
+      "minute": 142,
+      "score": 9.5,
+      "regions": [
+        "美国"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "泰坦尼克号",
+      "alias": "Titanic",
+      "cover": "https://p1.meituan.net/movie/b607fba7513e7f15eab170aac1e1400d878112.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "爱情",
+        "灾难"
+      ],
+      "published_at": "1998-04-03",
+      "minute": 194,
+      "score": 9.5,
+      "regions": [
+        "美国"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "罗马假日",
+      "alias": "Roman Holiday",
+      "cover": "https://p0.meituan.net/movie/289f98ceaa8a0ae737d3dc01cd05ab052213631.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "喜剧",
+        "爱情"
+      ],
+      "published_at": "1953-08-20",
+      "minute": 118,
+      "score": 9.5,
+      "regions": [
+        "美国"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "唐伯虎点秋香",
+      "alias": "Flirting Scholar",
+      "cover": "https://p0.meituan.net/movie/da64660f82b98cdc1b8a3804e69609e041108.jpg@464w_644h_1e_1c",
+      "categories": [
+        "喜剧",
+        "爱情",
+        "古装"
+      ],
+      "published_at": "1993-07-01",
+      "minute": 102,
+      "score": 9.5,
+      "regions": [
+        "中国香港"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "乱世佳人",
+      "alias": "Gone with the Wind",
+      "cover": "https://p0.meituan.net/movie/223c3e186db3ab4ea3bb14508c709400427933.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "爱情",
+        "历史",
+        "战争"
+      ],
+      "published_at": "1939-12-15",
+      "minute": 238,
+      "score": 9.5,
+      "regions": [
+        "美国"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "喜剧之王",
+      "alias": "The King of Comedy",
+      "cover": "https://p0.meituan.net/movie/1f0d671f6a37f9d7b015e4682b8b113e174332.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "喜剧",
+        "爱情"
+      ],
+      "published_at": "1999-02-13",
+      "minute": 85,
+      "score": 9.5,
+      "regions": [
+        "中国香港"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "楚门的世界",
+      "alias": "The Truman Show",
+      "cover": "https://p0.meituan.net/movie/8959888ee0c399b0fe53a714bc8a5a17460048.jpg@464w_644h_1e_1c",
+      "categories": [
+        "剧情",
+        "科幻"
+      ],
+      "published_at": null,
+      "minute": 103,
+      "score": 9.0,
+      "regions": [
+        "美国"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "狮子王",
+      "alias": "The Lion King",
+      "cover": "https://p0.meituan.net/movie/27b76fe6cf3903f3d74963f70786001e1438406.jpg@464w_644h_1e_1c",
+      "categories": [
+        "动画",
+        "歌舞",
+        "冒险"
+      ],
+      "published_at": "1995-07-15",
+      "minute": 89,
+      "score": 9.0,
+      "regions": [
+        "美国"
+      ]
+    }
+  ]
+}
