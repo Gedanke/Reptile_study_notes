@@ -1,8 +1,7 @@
 # -*- coding: utf-8 -*-
 
 
-import json
-import requests
+from client import DiffbotClient, DiffbotCrawl
 
 headers = {
     'Accept-Encoding': 'gzip, deflate, sdch',
@@ -11,11 +10,9 @@ headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
     'Connection': 'keep-alive',
 }
-url = 'https://api.diffbot.com/v3/article'
-params = {
-    'token': '77b41f6fbb24496d5113d528306528fa',
-    'url': 'https://news.ifeng.com/c/7kQcQG2peWU',
-    'fields': 'meta'
-}
-response = requests.get(url, params=params, headers=headers)
-print(json.dumps(response.json(), indent=2, ensure_ascii=False))
+
+diffbot = DiffbotClient()
+token = 'your_token'
+url = 'http://shichuan.github.io/javascript-patterns/'
+api = 'article'
+response = diffbot.request(url, token, api, headers=headers)
